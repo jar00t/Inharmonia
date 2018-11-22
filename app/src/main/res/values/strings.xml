@@ -9,4 +9,6 @@
     <string name="status_icon">Status Icon</string>
     <string name="store_icon">Store Icon</string>
     <string name="buyer_icon">Buyer Icon</string>
+    <string name="next_icon">Next Icon</string>
+    <string name="menu_link_icon">Menu Link Icon</string>
 </resources>
