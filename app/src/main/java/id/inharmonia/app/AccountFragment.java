@@ -35,7 +35,7 @@ public class AccountFragment extends Fragment {
 
         mMenuList = new ArrayList<>();
 
-        mMenuItem = new MainMenu("Profil", R.drawable.in_symbol_100);
+        mMenuItem = new MainMenu("Profil", R.drawable.in_ic_profile);
         mMenuList.add(mMenuItem);
         mMenuItem = new MainMenu("Pengaturan", R.drawable.in_symbol_100);
         mMenuList.add(mMenuItem);

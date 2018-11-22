@@ -1031,6 +1031,7 @@ drawable ic_search_black_24dp
 drawable ic_store_mall_directory_black_24dp
 drawable ic_update_orange_24dp
 drawable in_blank_square
+drawable in_ic_profile
 drawable in_logo
 drawable in_more_square
 drawable in_splash_logo
