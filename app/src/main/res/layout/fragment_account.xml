@@ -61,6 +61,12 @@
                     android:textSize="16sp"
                     android:text="myn.fajar@gmail.com" />
 
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_menu_link_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp" />
+
             </LinearLayout>
 
         </ScrollView>

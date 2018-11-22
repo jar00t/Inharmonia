@@ -1192,6 +1192,7 @@ id radio
 id right
 id right_icon
 id right_side
+id rv_menu_link_list
 id rv_menu_list
 id rv_order_list
 id save_image_matrix
@@ -1346,7 +1347,6 @@ layout design_text_input_password_icon
 layout fragment_account
 layout fragment_home
 layout fragment_order
-layout lv_menu_link_item_row
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1365,6 +1365,7 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout rv_menu_item_row
+layout rv_menu_link_item_row
 layout rv_order_item_row
 layout select_dialog_item_material
 layout select_dialog_multichoice_material

@@ -14,16 +14,18 @@ import java.util.List;
 public class MainMenuAdapter extends RecyclerView.Adapter<MenuViewHolder> {
     private Context mContext;
     private List<MainMenu> mMenuList;
+    private int mLayoutType;
 
-    MainMenuAdapter(Context mContext, List<MainMenu> mMenuList) {
+    MainMenuAdapter(Context mContext, List<MainMenu> mMenuList, int mLayoutType) {
         this.mContext = mContext;
         this.mMenuList = mMenuList;
+        this.mLayoutType = mLayoutType;
     }
 
     @NonNull
     @Override
     public MenuViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
-        View mView = LayoutInflater.from(parent.getContext()).inflate(R.layout.rv_menu_item_row, parent, false);
+        View mView = LayoutInflater.from(parent.getContext()).inflate(mLayoutType, parent, false);
         return new MenuViewHolder(mView);
     }
 

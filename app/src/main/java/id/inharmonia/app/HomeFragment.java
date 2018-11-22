@@ -55,7 +55,7 @@ public class HomeFragment extends Fragment {
         mMenuItem = new MainMenu("Lainnya", R.drawable.in_more_square);
         mMenuList.add(mMenuItem);
 
-        MainMenuAdapter mMainMenuAdapter = new MainMenuAdapter(getActivity(), mMenuList);
+        MainMenuAdapter mMainMenuAdapter = new MainMenuAdapter(getActivity(), mMenuList, R.layout.rv_menu_item_row);
         mRecyclerView.setAdapter(mMainMenuAdapter);
 
         return view;
