@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Inharmonia</string>
+    <string name="title_activity_main">Inharmonia</string>
+    <string name="title_home">Home</string>
+    <string name="title_order">Pesanan</string>
+    <string name="title_account">Akun</string>
+    <string name="in_logo">Inharmonia Logo</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="status_icon">Status Icon</string>
+    <string name="store_icon">Store Icon</string>
+    <string name="buyer_icon">Buyer Icon</string>
+</resources>
