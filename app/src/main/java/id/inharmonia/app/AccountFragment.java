@@ -37,17 +37,17 @@ public class AccountFragment extends Fragment {
 
         mMenuItem = new MainMenu("Profil", R.drawable.in_ic_profile);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Pengaturan", R.drawable.in_symbol_100);
+        mMenuItem = new MainMenu("Pengaturan", R.drawable.in_ic_setting);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Bantuan", R.drawable.in_symbol_100);
+        mMenuItem = new MainMenu("Bantuan", R.drawable.in_ic_help);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Tentang Kami", R.drawable.in_symbol_100);
+        mMenuItem = new MainMenu("Tentang Kami", R.drawable.in_ic_about);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Hubungi Kami", R.drawable.in_symbol_100);
+        mMenuItem = new MainMenu("Hubungi Kami", R.drawable.in_ic_contact);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Kebijakan Privasi", R.drawable.in_symbol_100);
+        mMenuItem = new MainMenu("Kebijakan Privasi", R.drawable.in_ic_secure);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Keluar", R.drawable.in_symbol_100);
+        mMenuItem = new MainMenu("Keluar", R.drawable.in_ic_close);
         mMenuList.add(mMenuItem);
 
         MainMenuAdapter mMainMenuAdapter = new MainMenuAdapter(getActivity(), mMenuList, R.layout.rv_menu_link_item_row);

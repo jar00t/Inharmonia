@@ -61,11 +61,20 @@
                     android:textSize="16sp"
                     android:text="myn.fajar@gmail.com" />
 
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rv_menu_link_list"
+                <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp" />
+                    android:layout_gravity="center_horizontal"
+                    app:cardElevation="2dp"
+                    android:layout_marginTop="30dp"
+                    app:cardUseCompatPadding="true">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_menu_link_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.v7.widget.CardView>
 
             </LinearLayout>
 

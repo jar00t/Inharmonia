@@ -1031,7 +1031,13 @@ drawable ic_search_black_24dp
 drawable ic_store_mall_directory_black_24dp
 drawable ic_update_orange_24dp
 drawable in_blank_square
+drawable in_ic_about
+drawable in_ic_close
+drawable in_ic_contact
+drawable in_ic_help
 drawable in_ic_profile
+drawable in_ic_secure
+drawable in_ic_setting
 drawable in_logo
 drawable in_more_square
 drawable in_splash_logo
@@ -1109,6 +1115,7 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id cvSearchOpener
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1331,6 +1338,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_search
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1418,10 +1426,13 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
+string back_button
 string bottom_sheet_behavior
 string buyer_icon
+string cari_sesuatu
 string character_counter_content_description
 string character_counter_pattern
+string clear_button
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
@@ -1440,6 +1451,7 @@ string status_icon
 string store_icon
 string title_account
 string title_activity_main
+string title_activity_search
 string title_activity_splash_screen
 string title_home
 string title_order

@@ -1,7 +1,9 @@
 package id.inharmonia.app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -16,6 +18,7 @@ public class HomeFragment extends Fragment {
     RecyclerView mRecyclerView;
     List<MainMenu> mMenuList;
     MainMenu mMenuItem;
+    CardView mSearchOpener;
 
     public HomeFragment() {}
 
@@ -29,6 +32,16 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        mSearchOpener = view.findViewById(R.id.cvSearchOpener);
+
+        mSearchOpener.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(getActivity(), SearchActivity.class);
+                getActivity().startActivity(myIntent);
+            }
+        });
 
         mRecyclerView = view.findViewById(R.id.rv_menu_list);
         GridLayoutManager mGridLayoutManager = new GridLayoutManager(getActivity(), 3);

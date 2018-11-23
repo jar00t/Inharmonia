@@ -11,4 +11,8 @@
     <string name="buyer_icon">Buyer Icon</string>
     <string name="next_icon">Next Icon</string>
     <string name="menu_link_icon">Menu Link Icon</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="cari_sesuatu">Cari sesuatu...</string>
+    <string name="back_button">Back Button</string>
+    <string name="clear_button">Clear Button</string>
 </resources>
