@@ -1032,6 +1032,7 @@ drawable ic_store_mall_directory_black_24dp
 drawable ic_update_orange_24dp
 drawable in_blank_square
 drawable in_ic_about
+drawable in_ic_back
 drawable in_ic_close
 drawable in_ic_contact
 drawable in_ic_help
@@ -1131,6 +1132,7 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id etSearchInput
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1158,6 +1160,8 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id ivBackButton
+id ivClearButton
 id ivIcon
 id ivOrderStatus
 id labeled
