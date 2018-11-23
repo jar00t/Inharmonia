@@ -15,4 +15,8 @@
     <string name="cari_sesuatu">Cari sesuatu...</string>
     <string name="back_button">Back Button</string>
     <string name="clear_button">Clear Button</string>
+    <string name="list_icon">List Icon</string>
+    <string name="tempat_percetakan">Tempat Percetakan</string>
+    <string name="disainer">Disainer</string>
+    <string name="lainnya">Lainnya</string>
 </resources>

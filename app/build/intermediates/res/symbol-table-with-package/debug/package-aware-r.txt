@@ -1171,6 +1171,9 @@ id line1
 id line3
 id listMode
 id list_item
+id lvDesignerList
+id lvKeywordList
+id lvStoreList
 id masked
 id media_actions
 id message
@@ -1284,6 +1287,7 @@ id tvOrderDateTime
 id tvOrderStatus
 id tvStoreAddress
 id tvStoreName
+id tvSubTitle
 id tvTitle
 id uniform
 id unlabeled
@@ -1360,6 +1364,8 @@ layout design_text_input_password_icon
 layout fragment_account
 layout fragment_home
 layout fragment_order
+layout lv_img_text_sub_item_row
+layout lv_text_item_row
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1437,10 +1443,13 @@ string cari_sesuatu
 string character_counter_content_description
 string character_counter_pattern
 string clear_button
+string disainer
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string in_logo
+string lainnya
+string list_icon
 string menu_link_icon
 string mtrl_chip_close_icon_content_description
 string next_icon
@@ -1453,6 +1462,7 @@ string search_menu_title
 string status_bar_notification_info_overflow
 string status_icon
 string store_icon
+string tempat_percetakan
 string title_account
 string title_activity_main
 string title_activity_search
