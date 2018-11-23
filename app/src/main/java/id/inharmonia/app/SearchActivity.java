@@ -68,8 +68,7 @@ public class SearchActivity extends AppCompatActivity {
 
         String[] keywords = new String[] {
                 "Nusawarna",
-                "Berkah Abadi",
-                "Jasa Pembuatan Logo",
+                "Berkah Abadi"
         };
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.lv_text_item_row, R.id.tvTitle, keywords);
