@@ -1352,6 +1352,9 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_search
+layout activity_search_designer
+layout activity_search_keyword
+layout activity_search_store
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar

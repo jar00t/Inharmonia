@@ -1,5 +1,6 @@
 package id.inharmonia.app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
@@ -67,6 +68,33 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mSearchInput.setText("");
+            }
+        });
+
+        mKeywordListMore = findViewById(R.id.tvKeywordListMore);
+        mKeywordListMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(SearchActivity.this, SearchKeywordActivity.class);
+                SearchActivity.this.startActivity(myIntent);
+            }
+        });
+
+        mStoreListMore = findViewById(R.id.tvStoreListMore);
+        mStoreListMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(SearchActivity.this, SearchStoreActivity.class);
+                SearchActivity.this.startActivity(myIntent);
+            }
+        });
+
+        mDesignerListMore = findViewById(R.id.tvDesignerListMore);
+        mDesignerListMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(SearchActivity.this, SearchDesignerActivity.class);
+                SearchActivity.this.startActivity(myIntent);
             }
         });
 

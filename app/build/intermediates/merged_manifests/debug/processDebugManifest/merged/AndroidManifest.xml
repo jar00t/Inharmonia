@@ -40,8 +40,10 @@
         <activity
             android:name="id.inharmonia.app.SearchActivity"
             android:label="@string/title_activity_search"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name="id.inharmonia.app.SearchKeywordActivity" />
+        <activity android:name="id.inharmonia.app.SearchStoreActivity" />
+        <activity android:name="id.inharmonia.app.SearchDesignerActivity" />
     </application>
 
 </manifest>
