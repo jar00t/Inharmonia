@@ -1100,7 +1100,6 @@ id blocking
 id bottom
 id buttonPanel
 id cancel_action
-id cardview
 id center
 id center_horizontal
 id center_vertical

@@ -1,4 +1,4 @@
-package id.inharmonia.app;
+package id.inharmonia.app.Account;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -12,11 +12,13 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import id.inharmonia.app.R;
+
 public class AccountFragment extends Fragment {
 
     RecyclerView mRecyclerView;
-    List<MainMenu> mMenuList;
-    MainMenu mMenuItem;
+    List<Menu> mMenuList;
+    Menu mMenuItem;
 
     public AccountFragment() {}
 
@@ -36,23 +38,23 @@ public class AccountFragment extends Fragment {
 
         mMenuList = new ArrayList<>();
 
-        mMenuItem = new MainMenu("Profil", R.drawable.in_ic_profile);
+        mMenuItem = new Menu("Profil", R.drawable.in_ic_profile);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Pengaturan", R.drawable.in_ic_setting);
+        mMenuItem = new Menu("Pengaturan", R.drawable.in_ic_setting);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Bantuan", R.drawable.in_ic_help);
+        mMenuItem = new Menu("Bantuan", R.drawable.in_ic_help);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Tentang Kami", R.drawable.in_ic_about);
+        mMenuItem = new Menu("Tentang Kami", R.drawable.in_ic_about);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Hubungi Kami", R.drawable.in_ic_contact);
+        mMenuItem = new Menu("Hubungi Kami", R.drawable.in_ic_contact);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Kebijakan Privasi", R.drawable.in_ic_secure);
+        mMenuItem = new Menu("Kebijakan Privasi", R.drawable.in_ic_secure);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Keluar", R.drawable.in_ic_close);
+        mMenuItem = new Menu("Keluar", R.drawable.in_ic_close);
         mMenuList.add(mMenuItem);
 
-        MainMenuAdapter mMainMenuAdapter = new MainMenuAdapter(getActivity(), mMenuList, R.layout.rv_menu_link_item_row);
-        mRecyclerView.setAdapter(mMainMenuAdapter);
+        MenuAdapter mMenuAdapter = new MenuAdapter(getActivity(), mMenuList, R.layout.rv_menu_link_item_row);
+        mRecyclerView.setAdapter(mMenuAdapter);
 
         return view;
     }
