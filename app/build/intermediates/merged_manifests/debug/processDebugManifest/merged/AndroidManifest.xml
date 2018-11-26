@@ -38,12 +38,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="id.inharmonia.app.SearchActivity"
+            android:name="id.inharmonia.app.Search.SearchActivity"
             android:label="@string/title_activity_search"
             android:theme="@style/AppTheme" />
-        <activity android:name="id.inharmonia.app.SearchKeywordActivity" />
-        <activity android:name="id.inharmonia.app.SearchStoreActivity" />
-        <activity android:name="id.inharmonia.app.SearchDesignerActivity" />
+        <activity android:name="id.inharmonia.app.Search.SearchKeywordActivity" />
+        <activity android:name="id.inharmonia.app.Search.SearchStoreActivity" />
+        <activity android:name="id.inharmonia.app.Search.SearchDesignerActivity" />
         <activity android:name="id.inharmonia.app.WebActivity" />
     </application>
 

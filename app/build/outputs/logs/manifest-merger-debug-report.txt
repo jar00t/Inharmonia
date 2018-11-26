@@ -114,26 +114,26 @@ action#android.intent.action.VIEW
 ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:28:17-69
 	android:name
 		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:28:25-66
-activity#id.inharmonia.app.SearchActivity
+activity#id.inharmonia.app.Search.SearchActivity
 ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:31:9-34:47
 	android:label
 		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:33:13-58
 	android:theme
 		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:34:13-44
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:32:13-43
-activity#id.inharmonia.app.SearchKeywordActivity
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:35:9-59
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:32:13-50
+activity#id.inharmonia.app.Search.SearchKeywordActivity
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:35:9-66
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:35:19-56
-activity#id.inharmonia.app.SearchStoreActivity
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:36:9-57
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:35:19-63
+activity#id.inharmonia.app.Search.SearchStoreActivity
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:36:9-64
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:36:19-54
-activity#id.inharmonia.app.SearchDesignerActivity
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:37:9-60
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:36:19-61
+activity#id.inharmonia.app.Search.SearchDesignerActivity
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:37:9-67
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:37:19-57
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:37:19-64
 activity#id.inharmonia.app.WebActivity
 ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:38:9-49
 	android:name

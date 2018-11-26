@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import id.inharmonia.app.Account.AccountFragment;
+import id.inharmonia.app.Home.HomeFragment;
+import id.inharmonia.app.Order.OrderFragment;
 
 public class MainActivity extends AppCompatActivity {
 
