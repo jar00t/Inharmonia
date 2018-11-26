@@ -28,6 +28,10 @@ public class SearchActivity extends AppCompatActivity {
     TextView mStoreListMore;
     TextView mDesignerListMore;
 
+    String mKeywordValue;
+
+    Bundle mBundle = new Bundle();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,6 +80,7 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(SearchActivity.this, SearchKeywordActivity.class);
+                getCurrentKeyword(myIntent);
                 SearchActivity.this.startActivity(myIntent);
             }
         });
@@ -85,6 +90,7 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(SearchActivity.this, SearchStoreActivity.class);
+                getCurrentKeyword(myIntent);
                 SearchActivity.this.startActivity(myIntent);
             }
         });
@@ -94,6 +100,7 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(SearchActivity.this, SearchDesignerActivity.class);
+                getCurrentKeyword(myIntent);
                 SearchActivity.this.startActivity(myIntent);
             }
         });
@@ -170,6 +177,12 @@ public class SearchActivity extends AppCompatActivity {
         layoutParams.height = height + (listView.getDividerHeight() * (adapter.getCount() - 1));
         listView.setLayoutParams(layoutParams);
         listView.requestLayout();
+    }
+
+    public void getCurrentKeyword(Intent i) {
+        mKeywordValue = mSearchInput.getText().toString();
+        mBundle.putString("keywordValue", mKeywordValue);
+        i.putExtras(mBundle);
     }
 
 }

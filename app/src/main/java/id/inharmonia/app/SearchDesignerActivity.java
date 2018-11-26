@@ -18,10 +18,14 @@ public class SearchDesignerActivity extends AppCompatActivity {
     EditText mSearchInput;
     ListView mDesignerList;
 
+    Bundle mBundle;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_designer);
+
+        mBundle = getIntent().getExtras();
 
         mBackButton = findViewById(R.id.ivBackButton);
         mBackButton.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +36,21 @@ public class SearchDesignerActivity extends AppCompatActivity {
         });
 
         mSearchInput = findViewById(R.id.etSearchInput);
+
+        mClearButton = findViewById(R.id.ivClearButton);
+        mClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mSearchInput.setText("");
+            }
+        });
+
+        if (!mBundle.getString("keywordValue").isEmpty()) {
+            mSearchInput.setText(mBundle.getString("keywordValue"));
+            mSearchInput.setSelection(mBundle.getString("keywordValue").length());
+            mClearButton.setVisibility(View.VISIBLE);
+        }
+
         mSearchInput.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -50,14 +69,6 @@ public class SearchDesignerActivity extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {
 
-            }
-        });
-
-        mClearButton = findViewById(R.id.ivClearButton);
-        mClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mSearchInput.setText("");
             }
         });
 
