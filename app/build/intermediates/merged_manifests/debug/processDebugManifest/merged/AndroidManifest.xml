@@ -44,6 +44,7 @@
         <activity android:name="id.inharmonia.app.SearchKeywordActivity" />
         <activity android:name="id.inharmonia.app.SearchStoreActivity" />
         <activity android:name="id.inharmonia.app.SearchDesignerActivity" />
+        <activity android:name="id.inharmonia.app.WebActivity" />
     </application>
 
 </manifest>

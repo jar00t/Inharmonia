@@ -11,8 +11,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class MainMenuAdapter extends RecyclerView.Adapter<MenuViewHolder> {
-    private Context mContext;
+public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuViewHolder> {
+
+    final Context mContext;
     private List<MainMenu> mMenuList;
     private int mLayoutType;
 
@@ -39,16 +40,17 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MenuViewHolder> {
     public int getItemCount() {
         return mMenuList.size();
     }
-}
 
-class MenuViewHolder extends RecyclerView.ViewHolder {
-    TextView mTitle;
-    ImageView mIcon;
+    public class MenuViewHolder extends RecyclerView.ViewHolder {
+        TextView mTitle;
+        ImageView mIcon;
 
-    MenuViewHolder(View itemView) {
-        super(itemView);
+        MenuViewHolder(View itemView) {
+            super(itemView);
 
-        mTitle = itemView.findViewById(R.id.tvTitle);
-        mIcon = itemView.findViewById(R.id.ivIcon);
+            mTitle = itemView.findViewById(R.id.tvTitle);
+            mIcon = itemView.findViewById(R.id.ivIcon);
+        }
     }
+
 }

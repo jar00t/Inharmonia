@@ -1116,6 +1116,7 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id cvMenuItem
 id cvSearchOpener
 id decor_content_parent
 id default_activity_button
@@ -1355,6 +1356,7 @@ layout activity_search
 layout activity_search_designer
 layout activity_search_keyword
 layout activity_search_store
+layout activity_web
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar

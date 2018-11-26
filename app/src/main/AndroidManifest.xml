@@ -34,7 +34,8 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".SearchKeywordActivity" />
         <activity android:name=".SearchStoreActivity" />
-        <activity android:name=".SearchDesignerActivity"></activity>
+        <activity android:name=".SearchDesignerActivity" />
+        <activity android:name=".WebActivity" />
     </application>
 
 </manifest>
