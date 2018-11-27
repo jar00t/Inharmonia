@@ -1046,6 +1046,7 @@ drawable in_symbol
 drawable in_symbol_100
 drawable in_symbol_dekok_100
 drawable in_thumb_documents_square
+drawable in_thumb_flyer_square
 drawable in_thumb_pictures_square
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
