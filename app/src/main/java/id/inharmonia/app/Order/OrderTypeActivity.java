@@ -89,8 +89,6 @@ public class OrderTypeActivity extends AppCompatActivity {
         mTypeList.add(mTypeItem);
         mTypeItem = new TypeList("Sticker", R.drawable.in_blank_square);
         mTypeList.add(mTypeItem);
-        mTypeItem = new TypeList("Lainnya", R.drawable.in_more_square);
-        mTypeList.add(mTypeItem);
 
         TypeListAdapter mTypeListAdapter = new TypeListAdapter(this, mTypeList, R.layout.rv_menu_item_row);
         mRecyclerView.setAdapter(mTypeListAdapter);
