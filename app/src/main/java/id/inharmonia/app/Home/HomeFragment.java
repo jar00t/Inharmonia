@@ -53,13 +53,13 @@ public class HomeFragment extends Fragment {
 
         mMenuList = new ArrayList<>();
 
-        mMenuItem = new MainMenu("Dokumen", R.drawable.in_blank_square);
+        mMenuItem = new MainMenu("Dokumen", R.drawable.in_thumb_documents_square);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Foto", R.drawable.in_blank_square);
+        mMenuItem = new MainMenu("Gambar", R.drawable.in_thumb_pictures_square);
         mMenuList.add(mMenuItem);
         mMenuItem = new MainMenu("Flyer", R.drawable.in_blank_square);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Pamflet", R.drawable.in_blank_square);
+        mMenuItem = new MainMenu("Undangan", R.drawable.in_blank_square);
         mMenuList.add(mMenuItem);
         mMenuItem = new MainMenu("Spanduk", R.drawable.in_blank_square);
         mMenuList.add(mMenuItem);
