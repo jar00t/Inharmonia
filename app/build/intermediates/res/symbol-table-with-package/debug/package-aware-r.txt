@@ -1215,6 +1215,7 @@ id rlListTitleStore
 id rv_menu_link_list
 id rv_menu_list
 id rv_order_list
+id rv_type_list
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1292,6 +1293,7 @@ id tvKeywordListMore
 id tvOrderCode
 id tvOrderDateTime
 id tvOrderStatus
+id tvPageName
 id tvStoreAddress
 id tvStoreListMore
 id tvStoreName
@@ -1306,6 +1308,7 @@ id visible
 id withText
 id wrap
 id wrap_content
+id wvWebContainer
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -1353,11 +1356,16 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_account_setting
 layout activity_main
+layout activity_order_detail
+layout activity_order_new
+layout activity_order_type
 layout activity_search
 layout activity_search_designer
 layout activity_search_keyword
 layout activity_search_store
+layout activity_setting
 layout activity_web
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1450,11 +1458,13 @@ string app_name
 string appbar_scrolling_view_behavior
 string back_button
 string bottom_sheet_behavior
+string buat_pesanan
 string buyer_icon
 string cari_sesuatu
 string character_counter_content_description
 string character_counter_pattern
 string clear_button
+string detil_order
 string disainer
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -1470,6 +1480,8 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string pengaturan
+string pengaturan_akun
 string search_menu_title
 string status_bar_notification_info_overflow
 string status_icon

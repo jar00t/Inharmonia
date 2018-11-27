@@ -8,10 +8,13 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="28" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
         android:debuggable="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -45,6 +48,11 @@
         <activity android:name="id.inharmonia.app.Search.SearchStoreActivity" />
         <activity android:name="id.inharmonia.app.Search.SearchDesignerActivity" />
         <activity android:name="id.inharmonia.app.WebActivity" />
+        <activity android:name="id.inharmonia.app.Order.OrderNewActivity" />
+        <activity android:name="id.inharmonia.app.Order.OrderTypeActivity" />
+        <activity android:name="id.inharmonia.app.Order.OrderDetailActivity" />
+        <activity android:name="id.inharmonia.app.Account.AccountSettingActivity" />
+        <activity android:name="id.inharmonia.app.SettingActivity" />
     </application>
 
 </manifest>

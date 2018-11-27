@@ -79,13 +79,13 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.Orde
                     Intent intent = new Intent();
                     switch (getAdapterPosition()){
                         case 0 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            intent = new Intent(itemView.getContext(), OrderDetailActivity.class);
                             break;
                         case 1 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            intent = new Intent(itemView.getContext(), OrderDetailActivity.class);
                             break;
                         case 2 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            intent = new Intent(itemView.getContext(), OrderDetailActivity.class);
                             break;
                     }
                     itemView.getContext().startActivity(intent);

@@ -19,4 +19,8 @@
     <string name="tempat_percetakan">Tempat Percetakan</string>
     <string name="disainer">Disainer</string>
     <string name="lainnya">Lainnya</string>
+    <string name="pengaturan_akun">Pengaturan Akun</string>
+    <string name="detil_order">Detil Order</string>
+    <string name="buat_pesanan">Buat Pesanan</string>
+    <string name="pengaturan">Pengaturan</string>
 </resources>

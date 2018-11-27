@@ -2,6 +2,7 @@ package id.inharmonia.app.Account;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import id.inharmonia.app.R;
+import id.inharmonia.app.SettingActivity;
 import id.inharmonia.app.WebActivity;
 
 public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder> {
@@ -64,30 +66,41 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
                     Intent intent = new Intent();
                     switch (getAdapterPosition()){
                         case 0 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            intent = new Intent(itemView.getContext(), AccountSettingActivity.class);
                             break;
                         case 1 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            intent = new Intent(itemView.getContext(), SettingActivity.class);
                             break;
                         case 2 :
                             intent = new Intent(itemView.getContext(), WebActivity.class);
+                            setPageTitle(intent, "Pusat Bantuan");
                             break;
                         case 3 :
                             intent = new Intent(itemView.getContext(), WebActivity.class);
+                            setPageTitle(intent, "Tentang Kami");
                             break;
                         case 4 :
                             intent = new Intent(itemView.getContext(), WebActivity.class);
+                            setPageTitle(intent, "Hubungi Kami");
                             break;
                         case 5 :
                             intent = new Intent(itemView.getContext(), WebActivity.class);
+                            setPageTitle(intent, "Kebijakan Privasi");
                             break;
                         case 6 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            android.os.Process.killProcess(android.os.Process.myPid());
+                            System.exit(1);
                             break;
                     }
                     itemView.getContext().startActivity(intent);
                 }
             });
+        }
+
+        public void setPageTitle(Intent i, String mPageTitle) {
+            Bundle mBundle = new Bundle();
+            mBundle.putString("pageTitle", mPageTitle);
+            i.putExtras(mBundle);
         }
     }
 

@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import id.inharmonia.app.Order.OrderNewActivity;
+import id.inharmonia.app.Order.OrderTypeActivity;
 import id.inharmonia.app.R;
 import id.inharmonia.app.WebActivity;
 
@@ -64,31 +66,31 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
                     Intent intent = new Intent();
                     switch (getAdapterPosition()){
                         case 0 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
                             break;
                         case 1 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
                             break;
                         case 2 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
                             break;
                         case 3 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
                             break;
                         case 4 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
                             break;
                         case 5 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
                             break;
                         case 6 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
                             break;
                         case 7 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
                             break;
                         case 8 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
+                            intent = new Intent(itemView.getContext(), OrderTypeActivity.class);
                             break;
                     }
                     itemView.getContext().startActivity(intent);
