@@ -79,7 +79,7 @@ public class OrderTypeActivity extends AppCompatActivity {
         mTypeList.add(mTypeItem);
         mTypeItem = new TypeList("Flyer", R.drawable.in_thumb_flyer_square);
         mTypeList.add(mTypeItem);
-        mTypeItem = new TypeList("Undangan", R.drawable.in_blank_square);
+        mTypeItem = new TypeList("Undangan", R.drawable.in_thumb_invitation_square);
         mTypeList.add(mTypeItem);
         mTypeItem = new TypeList("Spanduk", R.drawable.in_blank_square);
         mTypeList.add(mTypeItem);

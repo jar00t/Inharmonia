@@ -611,6 +611,7 @@ color colorGrey
 color colorLightGrey
 color colorPrimary
 color colorPrimaryDark
+color colorRed
 color colorWhite
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
@@ -1047,6 +1048,7 @@ drawable in_symbol_100
 drawable in_symbol_dekok_100
 drawable in_thumb_documents_square
 drawable in_thumb_flyer_square
+drawable in_thumb_invitation_square
 drawable in_thumb_pictures_square
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1299,6 +1301,7 @@ id tvStoreListMore
 id tvStoreName
 id tvSubTitle
 id tvTitle
+id tvUserFullName
 id uniform
 id unlabeled
 id up
@@ -1472,6 +1475,8 @@ string hide_bottom_view_on_scroll_behavior
 string in_logo
 string lainnya
 string list_icon
+string logout
+string logout_menu_link
 string menu_image
 string menu_link_icon
 string mtrl_chip_close_icon_content_description

@@ -24,4 +24,6 @@
     <string name="buat_pesanan">Buat Pesanan</string>
     <string name="pengaturan">Pengaturan</string>
     <string name="menu_image">Menu Image</string>
+    <string name="logout_menu_link">Logout Menu Link</string>
+    <string name="logout">Logout</string>
 </resources>

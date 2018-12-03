@@ -87,10 +87,6 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
                             intent = new Intent(itemView.getContext(), WebActivity.class);
                             setPageTitle(intent, "Kebijakan Privasi");
                             break;
-                        case 6 :
-                            android.os.Process.killProcess(android.os.Process.myPid());
-                            System.exit(1);
-                            break;
                     }
                     itemView.getContext().startActivity(intent);
                 }

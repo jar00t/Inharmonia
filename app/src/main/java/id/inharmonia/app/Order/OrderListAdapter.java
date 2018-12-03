@@ -2,6 +2,7 @@ package id.inharmonia.app.Order;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -71,6 +72,10 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.Orde
             mBuyerName = itemView.findViewById(R.id.tvBuyerName);
             mBuyerAddress = itemView.findViewById(R.id.tvBuyerAddress);
             mOrderDateTime = itemView.findViewById(R.id.tvOrderDateTime);
+
+            Typeface harabara_mais_font = Typeface.createFromAsset(itemView.getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
+            mStoreName.setTypeface(harabara_mais_font);
+            mBuyerName.setTypeface(harabara_mais_font);
 
             mMenuItem = itemView.findViewById(R.id.cvMenuItem);
             mMenuItem.setOnClickListener(new View.OnClickListener() {
