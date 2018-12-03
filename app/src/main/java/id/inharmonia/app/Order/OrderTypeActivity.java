@@ -68,6 +68,7 @@ public class OrderTypeActivity extends AppCompatActivity {
         });
 
         mRecyclerView = findViewById(R.id.rv_type_list);
+        mRecyclerView.setFocusable(false);
         GridLayoutManager mGridLayoutManager = new GridLayoutManager(this, 3);
         mRecyclerView.setLayoutManager(mGridLayoutManager);
 
@@ -81,9 +82,9 @@ public class OrderTypeActivity extends AppCompatActivity {
         mTypeList.add(mTypeItem);
         mTypeItem = new TypeList("Undangan", R.drawable.in_thumb_invitation_square);
         mTypeList.add(mTypeItem);
-        mTypeItem = new TypeList("Spanduk", R.drawable.in_blank_square);
+        mTypeItem = new TypeList("Spanduk", R.drawable.in_thumb_spanduk_square);
         mTypeList.add(mTypeItem);
-        mTypeItem = new TypeList("X-Banner", R.drawable.in_blank_square);
+        mTypeItem = new TypeList("Stand Banner", R.drawable.in_thumb_stand_banner_square);
         mTypeList.add(mTypeItem);
         mTypeItem = new TypeList("Kartu Nama", R.drawable.in_blank_square);
         mTypeList.add(mTypeItem);

@@ -1,6 +1,7 @@
 package id.inharmonia.app.Search;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
@@ -30,6 +31,9 @@ public class SearchActivity extends AppCompatActivity {
     TextView mStoreListMore;
     TextView mDesignerListMore;
 
+    TextView mListTitleStore;
+    TextView mListTitleDesigner;
+
     String mKeywordValue;
 
     Bundle mBundle = new Bundle();
@@ -38,6 +42,13 @@ public class SearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+
+        mListTitleStore = findViewById(R.id.tvListTitleStore);
+        mListTitleDesigner = findViewById(R.id.tvListTitleDesigner);
+
+        Typeface harabara_mais_font = Typeface.createFromAsset(getAssets(),  "fonts/harabara-mais.ttf");
+        mListTitleStore.setTypeface(harabara_mais_font);
+        mListTitleDesigner.setTypeface(harabara_mais_font);
 
         mBackButton = findViewById(R.id.ivBackButton);
         mBackButton.setOnClickListener(new View.OnClickListener() {

@@ -593,6 +593,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color bnv_tab_item_foreground
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1050,6 +1051,8 @@ drawable in_thumb_documents_square
 drawable in_thumb_flyer_square
 drawable in_thumb_invitation_square
 drawable in_thumb_pictures_square
+drawable in_thumb_spanduk_square
+drawable in_thumb_stand_banner_square
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1279,7 +1282,6 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
-id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1292,6 +1294,8 @@ id tvBuyerAddress
 id tvBuyerName
 id tvDesignerListMore
 id tvKeywordListMore
+id tvListTitleDesigner
+id tvListTitleStore
 id tvOrderCode
 id tvOrderDateTime
 id tvOrderStatus
@@ -1488,6 +1492,8 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string pengaturan
 string pengaturan_akun
+string pesanan
+string search_hint
 string search_menu_title
 string status_bar_notification_info_overflow
 string status_icon

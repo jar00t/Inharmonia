@@ -3,10 +3,8 @@ package id.inharmonia.app.Order;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,6 +33,7 @@ public class OrderFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_order, container, false);
 
         mRecyclerView = view.findViewById(R.id.rv_order_list);
+        mRecyclerView.setFocusable(false);
         GridLayoutManager mGridLayoutManager = new GridLayoutManager(getActivity(), 1);
         mRecyclerView.setLayoutManager(mGridLayoutManager);
 
@@ -78,10 +77,6 @@ public class OrderFragment extends Fragment {
 
         OrderListAdapter mOrderListAdapter = new OrderListAdapter(getActivity(), mOrderList);
         mRecyclerView.setAdapter(mOrderListAdapter);
-
-        Toolbar toolbar = view.findViewById(R.id.toolbar);
-        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
-        getActivity().setTitle(R.string.title_order);
 
         return view;
     }

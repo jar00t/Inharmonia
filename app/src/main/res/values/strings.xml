@@ -12,7 +12,7 @@
     <string name="next_icon">Next Icon</string>
     <string name="menu_link_icon">Menu Link Icon</string>
     <string name="title_activity_search">SearchActivity</string>
-    <string name="cari_sesuatu">Cari sesuatu...</string>
+    <string name="cari_sesuatu"><font size="15">Cari Sesuatu...</font></string>
     <string name="back_button">Back Button</string>
     <string name="clear_button">Clear Button</string>
     <string name="list_icon">List Icon</string>
@@ -26,4 +26,6 @@
     <string name="menu_image">Menu Image</string>
     <string name="logout_menu_link">Logout Menu Link</string>
     <string name="logout">Logout</string>
+    <string name="search_hint"><font size="12">Cari Sesuatu...</font></string>
+    <string name="pesanan">Pesanan</string>
 </resources>

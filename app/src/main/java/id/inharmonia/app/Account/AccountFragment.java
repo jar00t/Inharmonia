@@ -41,6 +41,7 @@ public class AccountFragment extends Fragment {
         mUserFullName.setTypeface(harabara_mais_font);
 
         mRecyclerView = view.findViewById(R.id.rv_menu_link_list);
+        mRecyclerView.setFocusable(false);
         GridLayoutManager mGridLayoutManager = new GridLayoutManager(getActivity(), 1);
         mRecyclerView.setLayoutManager(mGridLayoutManager);
 
