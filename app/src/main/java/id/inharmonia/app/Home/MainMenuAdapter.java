@@ -2,6 +2,7 @@ package id.inharmonia.app.Home;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -16,7 +17,6 @@ import java.util.List;
 import id.inharmonia.app.Order.OrderNewActivity;
 import id.inharmonia.app.Order.OrderTypeActivity;
 import id.inharmonia.app.R;
-import id.inharmonia.app.WebActivity;
 
 public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuViewHolder> {
 
@@ -58,6 +58,9 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
 
             mTitle = itemView.findViewById(R.id.tvTitle);
             mIcon = itemView.findViewById(R.id.ivIcon);
+
+            Typeface harabara_mais_font = Typeface.createFromAsset(itemView.getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
+            mTitle.setTypeface(harabara_mais_font);
 
             mMenuItem = itemView.findViewById(R.id.cvMenuItem);
             mMenuItem.setOnClickListener(new View.OnClickListener() {

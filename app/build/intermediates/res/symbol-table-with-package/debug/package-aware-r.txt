@@ -1472,6 +1472,7 @@ string hide_bottom_view_on_scroll_behavior
 string in_logo
 string lainnya
 string list_icon
+string menu_image
 string menu_link_icon
 string mtrl_chip_close_icon_content_description
 string next_icon
