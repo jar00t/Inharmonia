@@ -48,6 +48,7 @@ public class HomeFragment extends Fragment {
         });
 
         mRecyclerView = view.findViewById(R.id.rv_menu_list);
+        mRecyclerView.setFocusable(false);
         GridLayoutManager mGridLayoutManager = new GridLayoutManager(getActivity(), 3);
         mRecyclerView.setLayoutManager(mGridLayoutManager);
 
