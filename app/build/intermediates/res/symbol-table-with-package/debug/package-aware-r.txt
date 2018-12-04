@@ -1158,6 +1158,9 @@ id group_divider
 id groups
 id home
 id homeAsUp
+id ibBackButton
+id ibClearButton
+id ibSearchOpener
 id icon
 id icon_group
 id ifRoom
@@ -1169,12 +1172,9 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id ivBackButton
 id ivCartButton
-id ivClearButton
 id ivIcon
 id ivOrderStatus
-id ivSearchOpener
 id ivUserPicture
 id labeled
 id largeLabel

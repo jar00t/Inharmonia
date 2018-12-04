@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -21,8 +21,8 @@ import id.inharmonia.app.R;
 
 public class SearchActivity extends AppCompatActivity {
 
-    ImageView mBackButton;
-    ImageView mClearButton;
+    ImageButton mBackButton;
+    ImageButton mClearButton;
     EditText mSearchInput;
     ListView mKeywordList;
     ListView mStoreList;
@@ -50,7 +50,7 @@ public class SearchActivity extends AppCompatActivity {
         mListTitleStore.setTypeface(harabara_mais_font);
         mListTitleDesigner.setTypeface(harabara_mais_font);
 
-        mBackButton = findViewById(R.id.ivBackButton);
+        mBackButton = findViewById(R.id.ibBackButton);
         mBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,7 +80,7 @@ public class SearchActivity extends AppCompatActivity {
             }
         });
 
-        mClearButton = findViewById(R.id.ivClearButton);
+        mClearButton = findViewById(R.id.ibClearButton);
         mClearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

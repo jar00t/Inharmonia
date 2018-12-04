@@ -9,7 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,7 @@ public class HomeFragment extends Fragment {
     RecyclerView mRecyclerView;
     List<MainMenu> mMenuList;
     MainMenu mMenuItem;
-    ImageView mSearchOpener;
+    ImageButton mSearchOpener;
 
     public HomeFragment() {}
 
@@ -37,7 +37,7 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        mSearchOpener = view.findViewById(R.id.ivSearchOpener);
+        mSearchOpener = view.findViewById(R.id.ibSearchOpener);
 
         mSearchOpener.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -8,7 +8,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,7 +16,7 @@ public class WebActivity extends AppCompatActivity {
 
     WebView mWebView;
     TextView mPageName;
-    ImageView mBackButton;
+    ImageButton mBackButton;
     Bundle mBundle;
 
     @Override
@@ -56,9 +56,9 @@ public class WebActivity extends AppCompatActivity {
             }
         });
 
-        mWebView .loadUrl("https://www.detik.com/");
+        mWebView.loadUrl("https://www.detik.com/");
 
-        mBackButton = findViewById(R.id.ivBackButton);
+        mBackButton = findViewById(R.id.ibBackButton);
         mBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

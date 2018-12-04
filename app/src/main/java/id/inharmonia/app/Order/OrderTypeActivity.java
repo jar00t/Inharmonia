@@ -8,7 +8,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,16 +20,16 @@ public class OrderTypeActivity extends AppCompatActivity {
     RecyclerView mRecyclerView;
     List<TypeList> mTypeList;
     TypeList mTypeItem;
-    ImageView mBackButton;
+    ImageButton mBackButton;
     EditText mSearchInput;
-    ImageView mClearButton;
+    ImageButton mClearButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_type);
 
-        mBackButton = findViewById(R.id.ivBackButton);
+        mBackButton = findViewById(R.id.ibBackButton);
         mBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,7 +59,7 @@ public class OrderTypeActivity extends AppCompatActivity {
             }
         });
 
-        mClearButton = findViewById(R.id.ivClearButton);
+        mClearButton = findViewById(R.id.ibClearButton);
         mClearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

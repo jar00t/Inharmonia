@@ -6,7 +6,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -15,8 +15,8 @@ import id.inharmonia.app.R;
 
 public class SearchStoreActivity extends AppCompatActivity {
 
-    ImageView mBackButton;
-    ImageView mClearButton;
+    ImageButton mBackButton;
+    ImageButton mClearButton;
     EditText mSearchInput;
     ListView mStoreList;
 
@@ -29,7 +29,7 @@ public class SearchStoreActivity extends AppCompatActivity {
 
         mBundle = getIntent().getExtras();
 
-        mBackButton = findViewById(R.id.ivBackButton);
+        mBackButton = findViewById(R.id.ibBackButton);
         mBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +39,7 @@ public class SearchStoreActivity extends AppCompatActivity {
 
         mSearchInput = findViewById(R.id.etSearchInput);
 
-        mClearButton = findViewById(R.id.ivClearButton);
+        mClearButton = findViewById(R.id.ibClearButton);
         mClearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
