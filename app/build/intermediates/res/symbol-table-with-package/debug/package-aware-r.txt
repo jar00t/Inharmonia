@@ -1172,6 +1172,7 @@ id ivClearButton
 id ivIcon
 id ivOrderStatus
 id ivSearchOpener
+id ivUserPicture
 id labeled
 id largeLabel
 id left
@@ -1460,7 +1461,9 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string account_cover
 string app_name
+string app_version
 string appbar_scrolling_view_behavior
 string back_button
 string bottom_sheet_behavior
@@ -1478,6 +1481,7 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string in_logo
+string inharmonia_app
 string inharmonia_symbol
 string lainnya
 string list_icon
@@ -1508,6 +1512,7 @@ string title_activity_search
 string title_activity_splash_screen
 string title_home
 string title_order
+string user_picture
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

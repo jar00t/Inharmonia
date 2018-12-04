@@ -32,4 +32,8 @@
     <string name="end_separator">End Separator</string>
     <string name="search_icon">Search Icon</string>
     <string name="cart_button">Cart Button</string>
+    <string name="account_cover">Account Cover</string>
+    <string name="user_picture">User Picture</string>
+    <string name="inharmonia_app">Inharmonia App</string>
+    <string name="app_version">v.1.0</string>
 </resources>
