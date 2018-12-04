@@ -1026,8 +1026,11 @@ drawable in_blank_square
 drawable in_ic_about
 drawable in_ic_account
 drawable in_ic_back
+drawable in_ic_camera
+drawable in_ic_camera_circle
 drawable in_ic_close
 drawable in_ic_contact
+drawable in_ic_edit
 drawable in_ic_help
 drawable in_ic_home
 drawable in_ic_order

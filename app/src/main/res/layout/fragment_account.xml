@@ -24,17 +24,30 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <ImageView
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:src="@drawable/in_blank_square"
-                    android:background="@color/colorGrey"
-                    android:contentDescription="@string/account_cover"/>
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/in_blank_square"
+                        android:background="@color/colorGrey"
+                        android:contentDescription="@string/account_cover"/>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="end|bottom"
+                        android:src="@drawable/in_ic_camera_circle"/>
+
+                </FrameLayout>
 
                 <android.support.v7.widget.CardView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="center"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="2dp"
                     android:background="@color/colorWhite"
@@ -45,7 +58,7 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_margin="5dp"
-                        app:cardCornerRadius="9dp"
+                        app:cardCornerRadius="7dp"
                         app:cardElevation="0dp"
                         app:cardUseCompatPadding="false"
                         android:foreground="?android:attr/selectableItemBackground"
@@ -62,18 +75,41 @@
 
                     </android.support.v7.widget.CardView>
 
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="2dp"
+                        android:layout_gravity="end|bottom"
+                        android:src="@drawable/in_ic_camera_circle"/>
+
                 </android.support.v7.widget.CardView>
 
-                <TextView
-                    android:id="@+id/tvUserFullName"
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:textSize="7pt"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorDarkGrey"
+                    android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:text="Muhammad Yusuf Nur Fajar" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvUserFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginStart="25dp"
+                        android:textSize="7pt"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorDarkGrey"
+                        android:text="Muhammad Yusuf Nur Fajar" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/in_ic_edit"/>
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
