@@ -94,7 +94,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:tint="@color/colorDarkGrey"
-                        android:src="@drawable/ic_store_mall_directory_black_24dp"
+                        android:src="@drawable/in_ic_store"
                         android:contentDescription="@string/store_icon" />
 
                     <LinearLayout
@@ -144,7 +144,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:tint="@color/colorDarkGrey"
-                        android:src="@drawable/ic_person_pin_black_24dp"
+                        android:src="@drawable/in_ic_profile"
                         android:contentDescription="@string/buyer_icon" />
 
                     <LinearLayout

@@ -11,95 +11,106 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scrollbars="none"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true">
+            android:background="@color/colorWhite"
+            android:gravity="top"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/in_header"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="20dp"
-                android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                app:cardUseCompatPadding="false">
 
-                <ImageView
-                    android:id="@+id/in_logo"
-                    android:layout_width="130dp"
-                    android:layout_height="30dp"
-                    android:layout_marginBottom="20dp"
-                    android:src="@drawable/in_logo"
-                    android:contentDescription="@string/in_logo" />
-
-                <android.support.v7.widget.CardView
-                    android:id="@+id/cvSearchOpener"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    app:cardElevation="2dp"
-                    android:layout_margin="1dp"
-                    app:cardUseCompatPadding="true"
-                    app:cardCornerRadius="15dp"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:focusable="true">
+                    android:orientation="horizontal">
 
-                    <RelativeLayout
-                        android:id="@+id/search_layout"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="10dp"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="left"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:src="@drawable/in_symbol_100" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="30dp"
-                                android:gravity="center_vertical"
-                                android:layout_marginStart="10dp"
-                                android:text="Cari sesuatu..."/>
-
-                        </LinearLayout>
+                        android:layout_height="match_parent">
 
                         <ImageView
+                            android:id="@+id/in_logo"
+                            android:layout_width="100dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="25dp"
+                            android:src="@drawable/in_logo"
+                            android:contentDescription="@string/in_logo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="end">
+
+                        <ImageView
+                            android:id="@+id/ivSearchOpener"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:tint="@color/colorGrey"
-                            android:src="@drawable/ic_search_black_24dp"
-                            android:layout_alignParentRight="true" />
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/in_ic_search"
+                            android:layout_marginEnd="25dp"
+                            android:contentDescription="@string/search_icon" />
 
-                    </RelativeLayout>
+                        <ImageView
+                            android:id="@+id/ivCartButton"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/in_ic_troli"
+                            android:layout_marginEnd="25dp"
+                            android:contentDescription="@string/cart_button" />
 
-                </android.support.v7.widget.CardView>
+                    </LinearLayout>
 
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rv_menu_list"
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/in_header"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="0dp"
+                    android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/in_logo_bottom"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/in_symbol_dekok_100" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_menu_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
 
-            </LinearLayout>
+                    <ImageView
+                        android:id="@+id/in_logo_bottom"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/in_symbol_dekok_100"
+                        android:contentDescription="@string/end_separator" />
 
-        </ScrollView>
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
 
     </android.support.constraint.ConstraintLayout>
 

@@ -42,7 +42,7 @@ public class OrderFragment extends Fragment {
         mOrderItem = new OrderList(
                 "DP-1234567890",
                 "Selesai",
-                R.drawable.ic_assignment_turned_in_green_24dp,
+                R.drawable.in_ic_order_finish,
                 "Nusawarna Digital Printing",
                 "Jl.Suradireja No.00 Purwakarta",
                 "Muhammad Yusuf Nur Fajar",
@@ -54,7 +54,7 @@ public class OrderFragment extends Fragment {
         mOrderItem = new OrderList(
                 "DP-8123912837",
                 "Dikirim",
-                R.drawable.ic_local_shipping_orange_24dp,
+                R.drawable.in_ic_order_send,
                 "Tukang Cetak Berkah Abadi",
                 "Jl.Belakang No.00 Purwakarta",
                 "Asep Silet",
@@ -66,7 +66,7 @@ public class OrderFragment extends Fragment {
         mOrderItem = new OrderList(
                 "DP-2348291834",
                 "Diproses",
-                R.drawable.ic_update_orange_24dp,
+                R.drawable.in_ic_order_process,
                 "Makmur Sentosa Digital",
                 "Jl.Jalan ke Tengah Jalan di Purwakarta",
                 "Dadang Gantar",

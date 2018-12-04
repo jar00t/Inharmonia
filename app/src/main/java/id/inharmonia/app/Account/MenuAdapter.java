@@ -77,13 +77,9 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
                             break;
                         case 3 :
                             intent = new Intent(itemView.getContext(), WebActivity.class);
-                            setPageTitle(intent, "Tentang Kami");
-                            break;
-                        case 4 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
                             setPageTitle(intent, "Hubungi Kami");
                             break;
-                        case 5 :
+                        case 4 :
                             intent = new Intent(itemView.getContext(), WebActivity.class);
                             setPageTitle(intent, "Kebijakan Privasi");
                             break;

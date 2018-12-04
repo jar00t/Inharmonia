@@ -53,8 +53,6 @@ public class AccountFragment extends Fragment {
         mMenuList.add(mMenuItem);
         mMenuItem = new Menu("Bantuan", R.drawable.in_ic_help);
         mMenuList.add(mMenuItem);
-        mMenuItem = new Menu("Tentang Kami", R.drawable.in_ic_about);
-        mMenuList.add(mMenuItem);
         mMenuItem = new Menu("Hubungi Kami", R.drawable.in_ic_contact);
         mMenuList.add(mMenuItem);
         mMenuItem = new Menu("Kebijakan Privasi", R.drawable.in_ic_secure);

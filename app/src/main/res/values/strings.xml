@@ -28,4 +28,8 @@
     <string name="logout">Logout</string>
     <string name="search_hint"><font size="12">Cari Sesuatu...</font></string>
     <string name="pesanan">Pesanan</string>
+    <string name="inharmonia_symbol">Inharmonia Symbol</string>
+    <string name="end_separator">End Separator</string>
+    <string name="search_icon">Search Icon</string>
+    <string name="cart_button">Cart Button</string>
 </resources>
