@@ -1,6 +1,7 @@
 package id.inharmonia.app.Home;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -10,6 +11,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.synnapps.carouselview.CarouselView;
+import com.synnapps.carouselview.ImageListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +29,10 @@ public class HomeFragment extends Fragment {
     List<MainMenu> mMenuList;
     MainMenu mMenuItem;
     ImageButton mSearchOpener;
+    TextView mTypeListTitle;
+
+    CarouselView mPromoSlider;
+    int[] sampleImages = {R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape};
 
     public HomeFragment() {}
 
@@ -47,9 +57,18 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        mPromoSlider = view.findViewById(R.id.clPromoSlide);
+        mPromoSlider.setPageCount(sampleImages.length);
+        mPromoSlider.setImageListener(imageListener);
+
+        Typeface harabara_mais_font = Typeface.createFromAsset(getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
+
+        mTypeListTitle = view.findViewById(R.id.tvTypeListTitle);
+        mTypeListTitle.setTypeface(harabara_mais_font);
+
         mRecyclerView = view.findViewById(R.id.rv_menu_list);
         mRecyclerView.setFocusable(false);
-        GridLayoutManager mGridLayoutManager = new GridLayoutManager(getActivity(), 3);
+        GridLayoutManager mGridLayoutManager = new GridLayoutManager(getActivity(), 4);
         mRecyclerView.setLayoutManager(mGridLayoutManager);
 
         mMenuList = new ArrayList<>();
@@ -68,8 +87,6 @@ public class HomeFragment extends Fragment {
         mMenuList.add(mMenuItem);
         mMenuItem = new MainMenu("Kartu Nama", R.drawable.in_blank_square);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Sticker", R.drawable.in_blank_square);
-        mMenuList.add(mMenuItem);
         mMenuItem = new MainMenu("Lainnya", R.drawable.in_more_square);
         mMenuList.add(mMenuItem);
 
@@ -78,5 +95,12 @@ public class HomeFragment extends Fragment {
 
         return view;
     }
+
+    ImageListener imageListener = new ImageListener() {
+        @Override
+        public void setImageForPosition(int position, ImageView imageView) {
+            imageView.setImageResource(sampleImages[position]);
+        }
+    };
 
 }

@@ -90,9 +90,6 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
                             intent = new Intent(itemView.getContext(), OrderNewActivity.class);
                             break;
                         case 7 :
-                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
-                            break;
-                        case 8 :
                             intent = new Intent(itemView.getContext(), OrderTypeActivity.class);
                             break;
                     }
