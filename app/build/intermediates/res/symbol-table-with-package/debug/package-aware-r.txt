@@ -1059,6 +1059,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable in_blank_landscape
 drawable in_blank_square
+drawable in_button_primary
 drawable in_ic_about
 drawable in_ic_account
 drawable in_ic_back
@@ -1144,6 +1145,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btAddToCart
 id buttonPanel
 id cancel_action
 id center
@@ -1559,6 +1561,7 @@ string search_menu_title
 string status_bar_notification_info_overflow
 string status_icon
 string store_icon
+string tambahkan_ke_keranjang
 string tempat_percetakan
 string title_account
 string title_activity_main

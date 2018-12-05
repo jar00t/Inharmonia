@@ -13,4 +13,20 @@
         android:textSize="6pt"
         android:text="@string/no_content" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPurple">
+
+        <Button
+            android:id="@+id/btAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/in_button_primary"
+            android:text="@string/tambahkan_ke_keranjang" />
+
+    </FrameLayout>
+
 </LinearLayout>
