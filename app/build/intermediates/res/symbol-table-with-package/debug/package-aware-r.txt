@@ -1460,6 +1460,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout popup_size_quantity
 layout rv_menu_item_row
 layout rv_menu_link_item_row
 layout rv_order_item_row
@@ -1543,6 +1544,7 @@ string menu_image
 string menu_link_icon
 string mtrl_chip_close_icon_content_description
 string next_icon
+string no_content
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

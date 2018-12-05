@@ -202,7 +202,7 @@
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:tint="@color/colorDarkGrey"
+                            android:tint="@color/colorGrey"
                             android:src="@drawable/ic_chevron_right_black_24dp"
                             android:layout_alignParentEnd="true"
                             android:contentDescription="@string/next_icon"/>

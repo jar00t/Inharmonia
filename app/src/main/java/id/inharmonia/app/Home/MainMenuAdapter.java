@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -14,7 +15,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import id.inharmonia.app.Order.OrderNewActivity;
 import id.inharmonia.app.Order.OrderTypeActivity;
 import id.inharmonia.app.R;
 
@@ -66,34 +66,16 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
             mMenuItem.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent();
                     switch (getAdapterPosition()){
-                        case 0 :
-                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
-                            break;
-                        case 1 :
-                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
-                            break;
-                        case 2 :
-                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
-                            break;
-                        case 3 :
-                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
-                            break;
-                        case 4 :
-                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
-                            break;
-                        case 5 :
-                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
-                            break;
-                        case 6 :
-                            intent = new Intent(itemView.getContext(), OrderNewActivity.class);
+                        default:
+                            SizeQuantityPopup bottomSheetFragment = new SizeQuantityPopup();
+                            bottomSheetFragment.show(((FragmentActivity)mContext).getSupportFragmentManager(), bottomSheetFragment.getTag());
                             break;
                         case 7 :
-                            intent = new Intent(itemView.getContext(), OrderTypeActivity.class);
+                            Intent intent = new Intent(itemView.getContext(), OrderTypeActivity.class);
+                            itemView.getContext().startActivity(intent);
                             break;
                     }
-                    itemView.getContext().startActivity(intent);
                 }
             });
         }

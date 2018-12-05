@@ -1234,10 +1234,10 @@ public final class R {
         public static final int notification_template_icon_group = 0x7f0b0045;
         public static final int notification_template_part_chronometer = 0x7f0b0049;
         public static final int notification_template_part_time = 0x7f0b004a;
-        public static final int select_dialog_item_material = 0x7f0b004e;
-        public static final int select_dialog_multichoice_material = 0x7f0b004f;
-        public static final int select_dialog_singlechoice_material = 0x7f0b0050;
-        public static final int support_simple_spinner_dropdown_item = 0x7f0b0051;
+        public static final int select_dialog_item_material = 0x7f0b004f;
+        public static final int select_dialog_multichoice_material = 0x7f0b0050;
+        public static final int select_dialog_singlechoice_material = 0x7f0b0051;
+        public static final int support_simple_spinner_dropdown_item = 0x7f0b0052;
     }
     public static final class string {
         private string() {}
@@ -1289,13 +1289,13 @@ public final class R {
         public static final int fab_transformation_sheet_behavior = 0x7f0e0039;
         public static final int hide_bottom_view_on_scroll_behavior = 0x7f0e003a;
         public static final int mtrl_chip_close_icon_content_description = 0x7f0e0044;
-        public static final int password_toggle_content_description = 0x7f0e0046;
-        public static final int path_password_eye = 0x7f0e0047;
-        public static final int path_password_eye_mask_strike_through = 0x7f0e0048;
-        public static final int path_password_eye_mask_visible = 0x7f0e0049;
-        public static final int path_password_strike_through = 0x7f0e004a;
-        public static final int search_menu_title = 0x7f0e0050;
-        public static final int status_bar_notification_info_overflow = 0x7f0e0051;
+        public static final int password_toggle_content_description = 0x7f0e0047;
+        public static final int path_password_eye = 0x7f0e0048;
+        public static final int path_password_eye_mask_strike_through = 0x7f0e0049;
+        public static final int path_password_eye_mask_visible = 0x7f0e004a;
+        public static final int path_password_strike_through = 0x7f0e004b;
+        public static final int search_menu_title = 0x7f0e0051;
+        public static final int status_bar_notification_info_overflow = 0x7f0e0052;
     }
     public static final class style {
         private style() {}
