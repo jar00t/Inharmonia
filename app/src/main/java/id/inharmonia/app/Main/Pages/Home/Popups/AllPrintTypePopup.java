@@ -15,17 +15,26 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import id.inharmonia.app.Main.Pages.Home.Lists.Type.TypeList;
 import id.inharmonia.app.Main.Pages.Home.Lists.Type.TypeListAdapter;
 import id.inharmonia.app.R;
 
 public class AllPrintTypePopup extends BottomSheetDialogFragment {
 
+    @BindView(R.id.rv_type_list)
     public RecyclerView mRecyclerView;
+
+    @BindView(R.id.tvPopupTitle)
+    public TextView mPopupTitle;
+
+    @BindView(R.id.ibClosePopup)
+    public ImageButton mClosePopup;
+
     public List<TypeList> mTypeList;
     public TypeList mTypeItem;
-    public TextView mPopupTitle;
-    public ImageButton mClosePopup;
 
     public AllPrintTypePopup() {
 
@@ -37,28 +46,16 @@ public class AllPrintTypePopup extends BottomSheetDialogFragment {
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.popup_all_print_type, container, false);
 
-        Typeface harabara_mais_font = Typeface.createFromAsset(getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
+        ButterKnife.bind(this, view);
 
-        mPopupTitle = view.findViewById(R.id.tvPopupTitle);
+        Typeface harabara_mais_font = Typeface.createFromAsset(getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
         mPopupTitle.setTypeface(harabara_mais_font);
 
-        mClosePopup = view.findViewById(R.id.ibClosePopup);
-        mClosePopup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dismiss();
-            }
-        });
-
-        mRecyclerView = view.findViewById(R.id.rv_type_list);
+        mRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 4));
         mRecyclerView.setFocusable(false);
-        GridLayoutManager mGridLayoutManager = new GridLayoutManager(getActivity(), 4);
-        mRecyclerView.setLayoutManager(mGridLayoutManager);
 
         mTypeList = new ArrayList<>();
 
@@ -79,9 +76,14 @@ public class AllPrintTypePopup extends BottomSheetDialogFragment {
         mTypeItem = new TypeList("Sticker", R.drawable.in_blank_square);
         mTypeList.add(mTypeItem);
 
-        TypeListAdapter mTypeListAdapter = new TypeListAdapter(getActivity(), mTypeList, R.layout.rv_menu_item_row);
-        mRecyclerView.setAdapter(mTypeListAdapter);
+        mRecyclerView.setAdapter(new TypeListAdapter(getActivity(), mTypeList, R.layout.rv_menu_item_row));
 
         return view;
     }
+
+    @OnClick(R.id.ibClosePopup)
+    public void hideMe() {
+        dismiss();
+    }
+
 }

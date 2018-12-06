@@ -1,6 +1,7 @@
 package id.inharmonia.app.Main.Pages.Home.Lists.Type;
 
 public class TypeList {
+
     private String typeName;
     private int typeIcon;
 
@@ -16,5 +17,6 @@ public class TypeList {
     public int getTypeIcon() {
         return typeIcon;
     }
+
 }
 

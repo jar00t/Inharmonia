@@ -20,7 +20,7 @@ import id.inharmonia.app.R;
 public class DesignerListAdapter extends ArrayAdapter<DesignerList> {
 
     private Context mContext;
-    private List<DesignerList> mList = new ArrayList<>();
+    private List<DesignerList> mList;
 
     public DesignerListAdapter(@NonNull Context context, ArrayList<DesignerList> list) {
         super(context, 0 , list);
@@ -37,9 +37,9 @@ public class DesignerListAdapter extends ArrayAdapter<DesignerList> {
 
         DesignerList cList = mList.get(position);
 
-        ImageView Icon = (ImageView)listItem.findViewById(R.id.ivIcon);
-        TextView Title = (TextView) listItem.findViewById(R.id.tvTitle);
-        TextView SubTitle = (TextView) listItem.findViewById(R.id.tvSubTitle);
+        ImageView Icon = listItem.findViewById(R.id.ivIcon);
+        TextView Title = listItem.findViewById(R.id.tvTitle);
+        TextView SubTitle = listItem.findViewById(R.id.tvSubTitle);
 
         Icon.setImageResource(cList.getIcon());
         Title.setText(cList.getTitle());
@@ -50,4 +50,5 @@ public class DesignerListAdapter extends ArrayAdapter<DesignerList> {
 
         return listItem;
     }
+
 }

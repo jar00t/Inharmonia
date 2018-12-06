@@ -14,6 +14,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import id.inharmonia.app.Main.Pages.Home.Popups.SizeQuantityPopup;
 import id.inharmonia.app.R;
 
@@ -48,28 +51,31 @@ public class TypeListAdapter extends RecyclerView.Adapter<TypeListAdapter.TypeVi
     }
 
     public class TypeViewHolder extends RecyclerView.ViewHolder {
+
+        @BindView(R.id.tvTitle)
         TextView mTitle;
+
+        @BindView(R.id.ivIcon)
         ImageView mIcon;
+
+        @BindView(R.id.cvMenuItem)
         CardView mTypeItem;
 
         TypeViewHolder(final View itemView) {
             super(itemView);
 
-            mTitle = itemView.findViewById(R.id.tvTitle);
-            mIcon = itemView.findViewById(R.id.ivIcon);
+            ButterKnife.bind(this, itemView);
 
             Typeface harabara_mais_font = Typeface.createFromAsset(itemView.getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
             mTitle.setTypeface(harabara_mais_font);
-
-            mTypeItem = itemView.findViewById(R.id.cvMenuItem);
-            mTypeItem.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    SizeQuantityPopup mSizeQuantityPopup = new SizeQuantityPopup();
-                    mSizeQuantityPopup.show(((FragmentActivity)mContext).getSupportFragmentManager(), mSizeQuantityPopup.getTag());
-                }
-            });
         }
+
+        @OnClick(R.id.cvMenuItem)
+        public void showAll() {
+            SizeQuantityPopup mSizeQuantityPopup = new SizeQuantityPopup();
+            mSizeQuantityPopup.show(((FragmentActivity)mContext).getSupportFragmentManager(), mSizeQuantityPopup.getTag());
+        }
+
     }
 
 }

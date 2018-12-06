@@ -20,6 +20,9 @@ import com.synnapps.carouselview.ImageListener;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import id.inharmonia.app.Main.Pages.Home.Lists.MainMenu.MainMenu;
 import id.inharmonia.app.Main.Pages.Home.Lists.MainMenu.MainMenuAdapter;
 import id.inharmonia.app.R;
@@ -27,13 +30,20 @@ import id.inharmonia.app.Search.SearchActivity;
 
 public class HomeFragment extends Fragment {
 
+    @BindView(R.id.rv_menu_list)
     RecyclerView mRecyclerView;
-    List<MainMenu> mMenuList;
-    MainMenu mMenuItem;
+
+    @BindView(R.id.ibSearchOpener)
     ImageButton mSearchOpener;
+
+    @BindView(R.id.tvTypeListTitle)
     TextView mTypeListTitle;
 
+    @BindView(R.id.clPromoSlide)
     CarouselView mPromoSlider;
+
+    List<MainMenu> mMenuList;
+    MainMenu mMenuItem;
     int[] sampleImages = {R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape};
 
     public HomeFragment() {}
@@ -44,34 +54,19 @@ public class HomeFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        mSearchOpener = view.findViewById(R.id.ibSearchOpener);
+        ButterKnife.bind(this, view);
 
-        mSearchOpener.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(getActivity(), SearchActivity.class);
-                getActivity().startActivity(myIntent);
-            }
-        });
+        Typeface harabara_mais_font = Typeface.createFromAsset(getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
+        mTypeListTitle.setTypeface(harabara_mais_font);
 
-        mPromoSlider = view.findViewById(R.id.clPromoSlide);
         mPromoSlider.setPageCount(sampleImages.length);
         mPromoSlider.setImageListener(imageListener);
 
-        Typeface harabara_mais_font = Typeface.createFromAsset(getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
-
-        mTypeListTitle = view.findViewById(R.id.tvTypeListTitle);
-        mTypeListTitle.setTypeface(harabara_mais_font);
-
-        mRecyclerView = view.findViewById(R.id.rv_menu_list);
+        mRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 4));
         mRecyclerView.setFocusable(false);
-        GridLayoutManager mGridLayoutManager = new GridLayoutManager(getActivity(), 4);
-        mRecyclerView.setLayoutManager(mGridLayoutManager);
 
         mMenuList = new ArrayList<>();
 
@@ -92,10 +87,14 @@ public class HomeFragment extends Fragment {
         mMenuItem = new MainMenu("Lainnya", R.drawable.in_more_square);
         mMenuList.add(mMenuItem);
 
-        MainMenuAdapter mMainMenuAdapter = new MainMenuAdapter(getActivity(), mMenuList, R.layout.rv_menu_item_row);
-        mRecyclerView.setAdapter(mMainMenuAdapter);
+        mRecyclerView.setAdapter(new MainMenuAdapter(getActivity(), mMenuList, R.layout.rv_menu_item_row));
 
         return view;
+    }
+
+    @OnClick(R.id.ibSearchOpener)
+    public void openSearch() {
+        getActivity().startActivity(new Intent(getActivity(), SearchActivity.class));
     }
 
     ImageListener imageListener = new ImageListener() {

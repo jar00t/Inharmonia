@@ -11,15 +11,25 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import id.inharmonia.app.R;
 import id.inharmonia.app.Search.Lists.Store.StoreList;
 import id.inharmonia.app.Search.Lists.Store.StoreListAdapter;
 
 public class SearchStoreActivity extends AppCompatActivity {
 
+    @BindView(R.id.ibBackButton)
     ImageButton mBackButton;
+
+    @BindView(R.id.ibClearButton)
     ImageButton mClearButton;
+
+    @BindView(R.id.etSearchInput)
     EditText mSearchInput;
+
+    @BindView(R.id.lvStoreList)
     ListView mStoreList;
 
     Bundle mBundle;
@@ -29,26 +39,9 @@ public class SearchStoreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_store);
 
+        ButterKnife.bind(this);
+
         mBundle = getIntent().getExtras();
-
-        mBackButton = findViewById(R.id.ibBackButton);
-        mBackButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-        mSearchInput = findViewById(R.id.etSearchInput);
-
-        mClearButton = findViewById(R.id.ibClearButton);
-        mClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mSearchInput.setText("");
-            }
-        });
-
         if (!mBundle.getString("keywordValue").isEmpty()) {
             mSearchInput.setText(mBundle.getString("keywordValue"));
             mSearchInput.setSelection(mBundle.getString("keywordValue").length());
@@ -84,14 +77,23 @@ public class SearchStoreActivity extends AppCompatActivity {
         if (storeList.length != 0) { setStoreList(storeList); }
     }
 
+    @OnClick(R.id.ibBackButton)
+    public void exit() {
+        finish();
+    }
+
+    @OnClick(R.id.ibClearButton)
+    public void clear() {
+        mSearchInput.setText("");
+    }
+
     public void setStoreList(String[] mList) {
         ArrayList<StoreList> nList = new ArrayList<>();
         for(int i = 0; i< mList.length; i++){
             String[] cList = mList[i].split("/");
             nList.add(new StoreList(getResources().getIdentifier(cList[0],"drawable", getPackageName()), cList[1], cList[2]));
         }
-        mStoreList = findViewById(R.id.lvStoreList);
-        StoreListAdapter mStoreListAdapter = new StoreListAdapter(this, nList);
-        mStoreList.setAdapter(mStoreListAdapter);
+        mStoreList.setAdapter(new StoreListAdapter(this, nList));
     }
+
 }

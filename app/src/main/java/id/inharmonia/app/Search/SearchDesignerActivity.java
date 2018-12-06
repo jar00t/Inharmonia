@@ -11,15 +11,25 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import id.inharmonia.app.R;
 import id.inharmonia.app.Search.Lists.Designer.DesignerList;
 import id.inharmonia.app.Search.Lists.Designer.DesignerListAdapter;
 
 public class SearchDesignerActivity extends AppCompatActivity {
 
+    @BindView(R.id.ibBackButton)
     ImageButton mBackButton;
+
+    @BindView(R.id.ibClearButton)
     ImageButton mClearButton;
+
+    @BindView(R.id.etSearchInput)
     EditText mSearchInput;
+
+    @BindView(R.id.lvDesignerList)
     ListView mDesignerList;
 
     Bundle mBundle;
@@ -29,26 +39,9 @@ public class SearchDesignerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_designer);
 
+        ButterKnife.bind(this);
+
         mBundle = getIntent().getExtras();
-
-        mBackButton = findViewById(R.id.ibBackButton);
-        mBackButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-        mSearchInput = findViewById(R.id.etSearchInput);
-
-        mClearButton = findViewById(R.id.ibClearButton);
-        mClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mSearchInput.setText("");
-            }
-        });
-
         if (!mBundle.getString("keywordValue").isEmpty()) {
             mSearchInput.setText(mBundle.getString("keywordValue"));
             mSearchInput.setSelection(mBundle.getString("keywordValue").length());
@@ -84,14 +77,23 @@ public class SearchDesignerActivity extends AppCompatActivity {
         if (designerList.length != 0) { setDesignerList(designerList); }
     }
 
+    @OnClick(R.id.ibBackButton)
+    public void exit() {
+        finish();
+    }
+
+    @OnClick(R.id.ibClearButton)
+    public void clear() {
+        mSearchInput.setText("");
+    }
+
     public void setDesignerList(String[] mList) {
         ArrayList<DesignerList> nList = new ArrayList<>();
         for(int i = 0; i< mList.length; i++){
             String[] cList = mList[i].split("/");
             nList.add(new DesignerList(getResources().getIdentifier(cList[0],"drawable", getPackageName()), cList[1], cList[2]));
         }
-        mDesignerList = findViewById(R.id.lvDesignerList);
-        DesignerListAdapter mDesignerListAdapter = new DesignerListAdapter(this, nList);
-        mDesignerList.setAdapter(mDesignerListAdapter);
+        mDesignerList.setAdapter(new DesignerListAdapter(this, nList));
     }
+
 }

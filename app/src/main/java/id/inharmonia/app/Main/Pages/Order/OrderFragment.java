@@ -12,13 +12,17 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import id.inharmonia.app.Main.Pages.Order.Lists.Order.OrderList;
 import id.inharmonia.app.Main.Pages.Order.Lists.Order.OrderListAdapter;
 import id.inharmonia.app.R;
 
 public class OrderFragment extends Fragment {
 
+    @BindView(R.id.rv_order_list)
     RecyclerView mRecyclerView;
+
     List<OrderList> mOrderList;
     OrderList mOrderItem;
 
@@ -30,14 +34,13 @@ public class OrderFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_order, container, false);
 
-        mRecyclerView = view.findViewById(R.id.rv_order_list);
+        ButterKnife.bind(this, view);
+
+        mRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 1));
         mRecyclerView.setFocusable(false);
-        GridLayoutManager mGridLayoutManager = new GridLayoutManager(getActivity(), 1);
-        mRecyclerView.setLayoutManager(mGridLayoutManager);
 
         mOrderList = new ArrayList<>();
 
@@ -77,8 +80,7 @@ public class OrderFragment extends Fragment {
         );
         mOrderList.add(mOrderItem);
 
-        OrderListAdapter mOrderListAdapter = new OrderListAdapter(getActivity(), mOrderList);
-        mRecyclerView.setAdapter(mOrderListAdapter);
+        mRecyclerView.setAdapter(new OrderListAdapter(getActivity(), mOrderList));
 
         return view;
     }

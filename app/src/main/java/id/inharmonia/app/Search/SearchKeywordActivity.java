@@ -10,13 +10,23 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import id.inharmonia.app.R;
 
 public class SearchKeywordActivity extends AppCompatActivity {
 
+    @BindView(R.id.ibBackButton)
     ImageButton mBackButton;
+
+    @BindView(R.id.ibClearButton)
     ImageButton mClearButton;
+
+    @BindView(R.id.etSearchInput)
     EditText mSearchInput;
+
+    @BindView(R.id.lvKeywordList)
     ListView mKeywordList;
 
     Bundle mBundle;
@@ -26,26 +36,9 @@ public class SearchKeywordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_keyword);
 
+        ButterKnife.bind(this);
+
         mBundle = getIntent().getExtras();
-
-        mBackButton = findViewById(R.id.ibBackButton);
-        mBackButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-        mSearchInput = findViewById(R.id.etSearchInput);
-
-        mClearButton = findViewById(R.id.ibClearButton);
-        mClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mSearchInput.setText("");
-            }
-        });
-
         if (!mBundle.getString("keywordValue").isEmpty()) {
             mSearchInput.setText(mBundle.getString("keywordValue"));
             mSearchInput.setSelection(mBundle.getString("keywordValue").length());
@@ -81,10 +74,18 @@ public class SearchKeywordActivity extends AppCompatActivity {
         if (keywordList.length != 0) { setKeywordList(keywordList); }
     }
 
+    @OnClick(R.id.ibBackButton)
+    public void exit() {
+        finish();
+    }
+
+    @OnClick(R.id.ibClearButton)
+    public void clear() {
+        mSearchInput.setText("");
+    }
+
     public void setKeywordList(String[] mList) {
-        mKeywordList = findViewById(R.id.lvKeywordList);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.lv_text_item_row, R.id.tvTitle, mList);
-        mKeywordList.setAdapter(adapter);
+        mKeywordList.setAdapter(new ArrayAdapter<>(this, R.layout.lv_text_item_row, R.id.tvTitle, mList));
     }
 
 }

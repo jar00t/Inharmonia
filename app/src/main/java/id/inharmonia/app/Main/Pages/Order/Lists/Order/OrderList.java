@@ -1,6 +1,7 @@
 package id.inharmonia.app.Main.Pages.Order.Lists.Order;
 
 public class OrderList {
+
     private String orderCode;
     private String orderStatusText;
     private int orderStatusIcon;
@@ -52,4 +53,5 @@ public class OrderList {
     public String getOrderDateTime() {
         return orderDateTime;
     }
+
 }

@@ -14,6 +14,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import id.inharmonia.app.Main.Pages.Account.AccountSettingActivity;
 import id.inharmonia.app.R;
 import id.inharmonia.app.Setting.SettingActivity;
@@ -50,44 +53,45 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
     }
 
     public class MenuViewHolder extends RecyclerView.ViewHolder {
+
+        @BindView(R.id.tvTitle)
         TextView mTitle;
+
+        @BindView(R.id.ivIcon)
         ImageView mIcon;
+
+        @BindView(R.id.cvMenuItem)
         CardView mMenuItem;
 
         MenuViewHolder(final View itemView) {
             super(itemView);
+            ButterKnife.bind(this, itemView);
+        }
 
-            mTitle = itemView.findViewById(R.id.tvTitle);
-            mIcon = itemView.findViewById(R.id.ivIcon);
-
-            mMenuItem = itemView.findViewById(R.id.cvMenuItem);
-            mMenuItem.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent();
-                    switch (getAdapterPosition()){
-                        case 0 :
-                            intent = new Intent(itemView.getContext(), AccountSettingActivity.class);
-                            break;
-                        case 1 :
-                            intent = new Intent(itemView.getContext(), SettingActivity.class);
-                            break;
-                        case 2 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
-                            setPageTitle(intent, "Pusat Bantuan");
-                            break;
-                        case 3 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
-                            setPageTitle(intent, "Hubungi Kami");
-                            break;
-                        case 4 :
-                            intent = new Intent(itemView.getContext(), WebActivity.class);
-                            setPageTitle(intent, "Kebijakan Privasi");
-                            break;
-                    }
-                    itemView.getContext().startActivity(intent);
-                }
-            });
+        @OnClick(R.id.cvMenuItem)
+        public void goTo() {
+            Intent intent = new Intent();
+            switch (getAdapterPosition()){
+                case 0 :
+                    intent = new Intent(itemView.getContext(), AccountSettingActivity.class);
+                    break;
+                case 1 :
+                    intent = new Intent(itemView.getContext(), SettingActivity.class);
+                    break;
+                case 2 :
+                    intent = new Intent(itemView.getContext(), WebActivity.class);
+                    setPageTitle(intent, "Pusat Bantuan");
+                    break;
+                case 3 :
+                    intent = new Intent(itemView.getContext(), WebActivity.class);
+                    setPageTitle(intent, "Hubungi Kami");
+                    break;
+                case 4 :
+                    intent = new Intent(itemView.getContext(), WebActivity.class);
+                    setPageTitle(intent, "Kebijakan Privasi");
+                    break;
+            }
+            itemView.getContext().startActivity(intent);
         }
 
         public void setPageTitle(Intent i, String mPageTitle) {
@@ -95,6 +99,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
             mBundle.putString("pageTitle", mPageTitle);
             i.putExtras(mBundle);
         }
+
     }
 
 }

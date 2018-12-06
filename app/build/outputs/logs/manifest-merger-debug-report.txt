@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-48:12
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-65:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\Fajar\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\f4ad9a073d14abfc35469d8a15f5f56f\AndroidManifest.xml:17:1-24:12
 MERGED from [com.synnapps:carouselview:0.1.4] C:\Users\Fajar\.gradle\caches\transforms-1\files-1.1\carouselview-0.1.4.aar\44762a97353765b05c7b7b7a59ab0a3b\AndroidManifest.xml:2:1-16:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Fajar\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\5cdc40585ed2290288af7eb5530f0508\AndroidManifest.xml:17:1-22:12
@@ -39,29 +39,29 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Fajar\.gradle\cache
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Fajar\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\0341fcb23356b1658281168be056e581\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Fajar\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\d0d0baf7bf59c526cd8d1263b11e8389\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Fajar\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\5f2857860fb1627623421ad7da6443c1\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-48:12
-INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-65:12
 	package
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:3:5-32
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:4:5-32
 		INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-48:12
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-65:12
 		INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-48:12
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:1-65:12
 		INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:3:5-63
 uses-permission#android.permission.INTERNET
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:6:5-67
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:6:22-64
 application
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:7:5-46:19
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:8:5-63:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\Fajar\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\f4ad9a073d14abfc35469d8a15f5f56f\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\Fajar\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\f4ad9a073d14abfc35469d8a15f5f56f\AndroidManifest.xml:22:5-20
 MERGED from [com.synnapps:carouselview:0.1.4] C:\Users\Fajar\.gradle\caches\transforms-1\files-1.1\carouselview-0.1.4.aar\44762a97353765b05c7b7b7a59ab0a3b\AndroidManifest.xml:11:5-14:19
@@ -75,95 +75,95 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Fajar\.gra
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Fajar\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\5c75e2ff5e81ad8d2d85ff2d31579db0\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:11:9-41
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:12:9-41
 	android:fullBackupContent
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:9:9-41
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:12:9-54
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:10:9-43
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:14:9-40
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:15:9-40
 activity#id.inharmonia.app.Main.MainActivity
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:15:9-19:52
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:17:9-21:52
 	android:screenOrientation
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:19:13-49
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:21:13-49
 	android:label
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:18:13-56
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:20:13-56
 	android:configChanges
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:17:13-48
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:19:13-48
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:16:13-46
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:18:13-46
 activity#id.inharmonia.app.Splash.SplashScreen
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:20:9-33:20
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:23:9-40:20
 	android:screenOrientation
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:24:13-49
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:27:13-49
 	android:label
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:23:13-56
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:26:13-56
 	android:configChanges
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:22:13-48
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:25:13-48
 	android:theme
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:25:13-47
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:28:13-47
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:21:13-48
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:24:13-48
 intent-filter#action:name:android.intent.action.MAIN+action:name:android.intent.action.VIEW+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:26:13-32:29
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:30:13-38:29
 action#android.intent.action.MAIN
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:27:17-69
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:27:25-66
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:29:17-77
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:29:27-74
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:34:27-74
 action#android.intent.action.VIEW
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:31:17-69
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:31:25-66
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:36:25-66
 activity#id.inharmonia.app.Search.SearchActivity
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:34:9-37:47
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:42:9-45:47
 	android:label
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:36:13-58
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:44:13-58
 	android:theme
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:37:13-44
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:45:13-44
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:35:13-50
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:43:13-50
 activity#id.inharmonia.app.Search.SearchKeywordActivity
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:38:9-66
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:47:9-66
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:38:19-63
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:47:19-63
 activity#id.inharmonia.app.Search.SearchStoreActivity
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:39:9-64
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:49:9-64
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:39:19-61
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:49:19-61
 activity#id.inharmonia.app.Search.SearchDesignerActivity
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:40:9-67
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:51:9-67
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:40:19-64
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:51:19-64
 activity#id.inharmonia.app.Web.WebActivity
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:41:9-53
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:53:9-53
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:41:19-50
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:53:19-50
 activity#id.inharmonia.app.Main.Pages.Order.OrderNewActivity
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:42:9-71
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:55:9-71
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:42:19-68
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:55:19-68
 activity#id.inharmonia.app.Main.Pages.Order.OrderDetailActivity
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:43:9-74
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:57:9-74
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:43:19-71
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:57:19-71
 activity#id.inharmonia.app.Main.Pages.Account.AccountSettingActivity
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:44:9-79
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:59:9-79
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:44:19-76
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:59:19-76
 activity#id.inharmonia.app.Setting.SettingActivity
-ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:45:9-61
+ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:61:9-61
 	android:name
-		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:45:19-58
+		ADDED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml:61:19-58
 uses-sdk
 INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Jayabaru\jar00t\project\Inharmonia\app\src\main\AndroidManifest.xml

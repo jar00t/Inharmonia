@@ -1,6 +1,7 @@
 package id.inharmonia.app.Main.Pages.Home.Lists.MainMenu;
 
 public class MainMenu {
+
     private String menuName;
     private int menuIcon;
 
@@ -16,4 +17,5 @@ public class MainMenu {
     public int getMenuIcon() {
         return menuIcon;
     }
+
 }

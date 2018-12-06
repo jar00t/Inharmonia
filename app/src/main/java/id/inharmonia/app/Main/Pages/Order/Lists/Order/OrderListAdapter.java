@@ -14,10 +14,14 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import id.inharmonia.app.Main.Pages.Order.OrderDetailActivity;
 import id.inharmonia.app.R;
 
 public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.OrderListViewHolder> {
+
     final Context mContext;
     private List<OrderList> mOrderList;
 
@@ -51,52 +55,61 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.Orde
     }
 
     public class OrderListViewHolder extends RecyclerView.ViewHolder {
+
+        @BindView(R.id.tvOrderCode)
         TextView mOrderCode;
+
+        @BindView(R.id.tvOrderStatus)
         TextView mOrderStatusText;
+
+        @BindView(R.id.ivOrderStatus)
         ImageView mOrderStatusIcon;
+
+        @BindView(R.id.tvStoreName)
         TextView mStoreName;
+
+        @BindView(R.id.tvStoreAddress)
         TextView mStoreAddress;
+
+        @BindView(R.id.tvBuyerName)
         TextView mBuyerName;
+
+        @BindView(R.id.tvBuyerAddress)
         TextView mBuyerAddress;
+
+        @BindView(R.id.tvOrderDateTime)
         TextView mOrderDateTime;
+
+        @BindView(R.id.cvMenuItem)
         CardView mMenuItem;
 
         OrderListViewHolder(final View itemView) {
             super(itemView);
 
-            mOrderCode = itemView.findViewById(R.id.tvOrderCode);
-            mOrderStatusText = itemView.findViewById(R.id.tvOrderStatus);
-            mOrderStatusIcon = itemView.findViewById(R.id.ivOrderStatus);
-            mStoreName = itemView.findViewById(R.id.tvStoreName);
-            mStoreAddress = itemView.findViewById(R.id.tvStoreAddress);
-            mBuyerName = itemView.findViewById(R.id.tvBuyerName);
-            mBuyerAddress = itemView.findViewById(R.id.tvBuyerAddress);
-            mOrderDateTime = itemView.findViewById(R.id.tvOrderDateTime);
+            ButterKnife.bind(this, itemView);
 
             Typeface harabara_mais_font = Typeface.createFromAsset(itemView.getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
             mStoreName.setTypeface(harabara_mais_font);
             mBuyerName.setTypeface(harabara_mais_font);
-
-            mMenuItem = itemView.findViewById(R.id.cvMenuItem);
-            mMenuItem.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent();
-                    switch (getAdapterPosition()){
-                        case 0 :
-                            intent = new Intent(itemView.getContext(), OrderDetailActivity.class);
-                            break;
-                        case 1 :
-                            intent = new Intent(itemView.getContext(), OrderDetailActivity.class);
-                            break;
-                        case 2 :
-                            intent = new Intent(itemView.getContext(), OrderDetailActivity.class);
-                            break;
-                    }
-                    itemView.getContext().startActivity(intent);
-                }
-            });
         }
+
+        @OnClick(R.id.cvMenuItem)
+        public void goToDetails() {
+            Intent intent = new Intent();
+            switch (getAdapterPosition()){
+                case 0 :
+                    intent = new Intent(itemView.getContext(), OrderDetailActivity.class);
+                    break;
+                case 1 :
+                    intent = new Intent(itemView.getContext(), OrderDetailActivity.class);
+                    break;
+                case 2 :
+                    intent = new Intent(itemView.getContext(), OrderDetailActivity.class);
+                    break;
+            }
+            itemView.getContext().startActivity(intent);
+        }
+
     }
 
 }

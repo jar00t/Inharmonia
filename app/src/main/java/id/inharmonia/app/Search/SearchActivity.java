@@ -17,6 +17,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import id.inharmonia.app.R;
 import id.inharmonia.app.Search.Lists.Designer.DesignerList;
 import id.inharmonia.app.Search.Lists.Designer.DesignerListAdapter;
@@ -25,21 +28,40 @@ import id.inharmonia.app.Search.Lists.Store.StoreListAdapter;
 
 public class SearchActivity extends AppCompatActivity {
 
+    @BindView(R.id.ibBackButton)
     ImageButton mBackButton;
+
+    @BindView(R.id.ibClearButton)
     ImageButton mClearButton;
+
+    @BindView(R.id.etSearchInput)
     EditText mSearchInput;
+
+    @BindView(R.id.lvKeywordList)
     ListView mKeywordList;
+
+    @BindView(R.id.lvStoreList)
     ListView mStoreList;
+
+    @BindView(R.id.lvDesignerList)
     ListView mDesignerList;
+
+    @BindView(R.id.tvKeywordListMore)
     TextView mKeywordListMore;
+
+    @BindView(R.id.tvStoreListMore)
     TextView mStoreListMore;
+
+    @BindView(R.id.tvDesignerListMore)
     TextView mDesignerListMore;
 
+    @BindView(R.id.tvListTitleStore)
     TextView mListTitleStore;
+
+    @BindView(R.id.tvListTitleDesigner)
     TextView mListTitleDesigner;
 
     String mKeywordValue;
-
     Bundle mBundle = new Bundle();
 
     @Override
@@ -47,22 +69,12 @@ public class SearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
-        mListTitleStore = findViewById(R.id.tvListTitleStore);
-        mListTitleDesigner = findViewById(R.id.tvListTitleDesigner);
+        ButterKnife.bind(this);
 
         Typeface harabara_mais_font = Typeface.createFromAsset(getAssets(),  "fonts/harabara-mais.ttf");
         mListTitleStore.setTypeface(harabara_mais_font);
         mListTitleDesigner.setTypeface(harabara_mais_font);
 
-        mBackButton = findViewById(R.id.ibBackButton);
-        mBackButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-        mSearchInput = findViewById(R.id.etSearchInput);
         mSearchInput.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -84,45 +96,38 @@ public class SearchActivity extends AppCompatActivity {
             }
         });
 
-        mClearButton = findViewById(R.id.ibClearButton);
-        mClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mSearchInput.setText("");
-            }
-        });
-
-        mKeywordListMore = findViewById(R.id.tvKeywordListMore);
-        mKeywordListMore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(SearchActivity.this, SearchKeywordActivity.class);
-                getCurrentKeyword(myIntent);
-                SearchActivity.this.startActivity(myIntent);
-            }
-        });
-
-        mStoreListMore = findViewById(R.id.tvStoreListMore);
-        mStoreListMore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(SearchActivity.this, SearchStoreActivity.class);
-                getCurrentKeyword(myIntent);
-                SearchActivity.this.startActivity(myIntent);
-            }
-        });
-
-        mDesignerListMore = findViewById(R.id.tvDesignerListMore);
-        mDesignerListMore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(SearchActivity.this, SearchDesignerActivity.class);
-                getCurrentKeyword(myIntent);
-                SearchActivity.this.startActivity(myIntent);
-            }
-        });
-
         setList();
+    }
+
+    @OnClick(R.id.ibBackButton)
+    public void exit() {
+        finish();
+    }
+
+    @OnClick(R.id.ibClearButton)
+    public void clear() {
+        mSearchInput.setText("");
+    }
+
+    @OnClick(R.id.tvKeywordListMore)
+    public void moreKeywordList() {
+        Intent myIntent = new Intent(SearchActivity.this, SearchKeywordActivity.class);
+        getCurrentKeyword(myIntent);
+        SearchActivity.this.startActivity(myIntent);
+    }
+
+    @OnClick(R.id.tvStoreListMore)
+    public void moreStoreList() {
+        Intent myIntent = new Intent(SearchActivity.this, SearchStoreActivity.class);
+        getCurrentKeyword(myIntent);
+        SearchActivity.this.startActivity(myIntent);
+    }
+
+    @OnClick(R.id.tvDesignerListMore)
+    public void moreDesignerList() {
+        Intent myIntent = new Intent(SearchActivity.this, SearchDesignerActivity.class);
+        getCurrentKeyword(myIntent);
+        SearchActivity.this.startActivity(myIntent);
     }
 
     public void setList() {
@@ -148,9 +153,7 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     public void setKeywordList(String[] mList) {
-        mKeywordList = findViewById(R.id.lvKeywordList);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.lv_text_item_row, R.id.tvTitle, mList);
-        mKeywordList.setAdapter(adapter);
+        mKeywordList.setAdapter(new ArrayAdapter<>(this, R.layout.lv_text_item_row, R.id.tvTitle, mList));
         setDynamicHeight(mKeywordList);
     }
 
@@ -160,9 +163,7 @@ public class SearchActivity extends AppCompatActivity {
             String[] cList = mList[i].split("/");
             nList.add(new StoreList(getResources().getIdentifier(cList[0],"drawable", getPackageName()), cList[1], cList[2]));
         }
-        mStoreList = findViewById(R.id.lvStoreList);
-        StoreListAdapter mStoreListAdapter = new StoreListAdapter(this, nList);
-        mStoreList.setAdapter(mStoreListAdapter);
+        mStoreList.setAdapter(new StoreListAdapter(this, nList));
         setDynamicHeight(mStoreList);
     }
 
@@ -172,9 +173,7 @@ public class SearchActivity extends AppCompatActivity {
             String[] cList = mList[i].split("/");
             nList.add(new DesignerList(getResources().getIdentifier(cList[0],"drawable", getPackageName()), cList[1], cList[2]));
         }
-        mDesignerList = findViewById(R.id.lvDesignerList);
-        DesignerListAdapter mDesignerListAdapter = new DesignerListAdapter(this, nList);
-        mDesignerList.setAdapter(mDesignerListAdapter);
+        mDesignerList.setAdapter(new DesignerListAdapter(this, nList));
         setDynamicHeight(mDesignerList);
     }
 

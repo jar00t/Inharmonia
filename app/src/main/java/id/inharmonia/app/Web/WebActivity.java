@@ -5,20 +5,28 @@ import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
-import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import id.inharmonia.app.R;
 
 public class WebActivity extends AppCompatActivity {
 
+    @BindView(R.id.wvWebContainer)
     WebView mWebView;
+
+    @BindView(R.id.tvPageName)
     TextView mPageName;
+
+    @BindView(R.id.ibBackButton)
     ImageButton mBackButton;
+
     Bundle mBundle;
 
     @Override
@@ -26,17 +34,14 @@ public class WebActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
 
-        mBundle = getIntent().getExtras();
+        ButterKnife.bind(this);
 
+        mBundle = getIntent().getExtras();
         if (!mBundle.getString("pageTitle").isEmpty()) {
-            mPageName = findViewById(R.id.tvPageName);
             mPageName.setText(mBundle.getString("pageTitle"));
         }
 
         final ProgressDialog mProgressDialog = ProgressDialog.show(WebActivity.this, "", "Loading...", true);
-
-        mWebView  = findViewById(R.id.wvWebContainer);
-
         mWebView.getSettings().setJavaScriptEnabled(true);
         mWebView.getSettings().setLoadWithOverviewMode(true);
         mWebView.getSettings().setUseWideViewPort(true);
@@ -59,14 +64,11 @@ public class WebActivity extends AppCompatActivity {
         });
 
         mWebView.loadUrl("https://www.detik.com/");
+    }
 
-        mBackButton = findViewById(R.id.ibBackButton);
-        mBackButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+    @OnClick(R.id.ibBackButton)
+    public void exit() {
+        finish();
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -76,4 +78,5 @@ public class WebActivity extends AppCompatActivity {
         }
         return super.onKeyDown(keyCode, event);
     }
+
 }

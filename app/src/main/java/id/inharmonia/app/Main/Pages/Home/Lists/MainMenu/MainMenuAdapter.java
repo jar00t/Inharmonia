@@ -14,6 +14,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import id.inharmonia.app.Main.Pages.Home.Popups.AllPrintTypePopup;
 import id.inharmonia.app.Main.Pages.Home.Popups.SizeQuantityPopup;
 import id.inharmonia.app.R;
@@ -49,36 +52,39 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
     }
 
     public class MenuViewHolder extends RecyclerView.ViewHolder {
+
+        @BindView(R.id.tvTitle)
         TextView mTitle;
+
+        @BindView(R.id.ivIcon)
         ImageView mIcon;
+
+        @BindView(R.id.cvMenuItem)
         CardView mMenuItem;
 
         MenuViewHolder(final View itemView) {
             super(itemView);
 
-            mTitle = itemView.findViewById(R.id.tvTitle);
-            mIcon = itemView.findViewById(R.id.ivIcon);
+            ButterKnife.bind(this, itemView);
 
             Typeface harabara_mais_font = Typeface.createFromAsset(itemView.getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
             mTitle.setTypeface(harabara_mais_font);
-
-            mMenuItem = itemView.findViewById(R.id.cvMenuItem);
-            mMenuItem.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    switch (getAdapterPosition()){
-                        default:
-                            SizeQuantityPopup mSizeQuantityPopup = new SizeQuantityPopup();
-                            mSizeQuantityPopup.show(((FragmentActivity)mContext).getSupportFragmentManager(), mSizeQuantityPopup.getTag());
-                            break;
-                        case 7 :
-                            AllPrintTypePopup mAllPrintTypePopup = new AllPrintTypePopup();
-                            mAllPrintTypePopup.show(((FragmentActivity)mContext).getSupportFragmentManager(), mAllPrintTypePopup.getTag());
-                            break;
-                    }
-                }
-            });
         }
+
+        @OnClick(R.id.cvMenuItem)
+        public void goTo() {
+            switch (getAdapterPosition()){
+                default:
+                    SizeQuantityPopup mSizeQuantityPopup = new SizeQuantityPopup();
+                    mSizeQuantityPopup.show(((FragmentActivity)mContext).getSupportFragmentManager(), mSizeQuantityPopup.getTag());
+                    break;
+                case 7 :
+                    AllPrintTypePopup mAllPrintTypePopup = new AllPrintTypePopup();
+                    mAllPrintTypePopup.show(((FragmentActivity)mContext).getSupportFragmentManager(), mAllPrintTypePopup.getTag());
+                    break;
+            }
+        }
+
     }
 
 }

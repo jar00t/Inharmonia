@@ -8,10 +8,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import id.inharmonia.app.R;
 
 public class SizeQuantityPopup extends BottomSheetDialogFragment {
 
+    @BindView(R.id.btAddToCart)
     public Button mAddToCartButton;
 
     public SizeQuantityPopup() {
@@ -24,19 +28,17 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.popup_size_quantity, container, false);
 
-        mAddToCartButton = view.findViewById(R.id.btAddToCart);
-        mAddToCartButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        ButterKnife.bind(this, view);
 
         return view;
     }
+
+    @OnClick(R.id.btAddToCart)
+    public void addToCart() {
+
+    }
+
 }

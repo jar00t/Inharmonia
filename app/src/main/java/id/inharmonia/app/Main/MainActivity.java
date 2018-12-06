@@ -7,6 +7,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import id.inharmonia.app.Main.Pages.Account.AccountFragment;
 import id.inharmonia.app.Main.Pages.Home.HomeFragment;
 import id.inharmonia.app.Main.Pages.Order.OrderFragment;
@@ -15,12 +17,12 @@ import id.inharmonia.app.Main.Adapters.ViewPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
-    BottomNavigationView navigation;
-    private ViewPager mViewPager;
+    @BindView(R.id.navigation)
+    BottomNavigationView mBottomNavigationView;
 
-    HomeFragment homeFragment;
-    OrderFragment orderFragment;
-    AccountFragment accountFragment;
+    @BindView(R.id.fragment_container)
+    ViewPager mViewPager;
+
     MenuItem prevMenuItem;
 
     @Override
@@ -28,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mViewPager = findViewById(R.id.fragment_container);
-        navigation = findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        ButterKnife.bind(this);
+
+        mBottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
@@ -59,10 +61,10 @@ public class MainActivity extends AppCompatActivity {
                 if (prevMenuItem != null) {
                     prevMenuItem.setChecked(false);
                 } else {
-                    navigation.getMenu().getItem(0).setChecked(false);
+                    mBottomNavigationView.getMenu().getItem(0).setChecked(false);
                 }
-                navigation.getMenu().getItem(position).setChecked(true);
-                prevMenuItem = navigation.getMenu().getItem(position);
+                mBottomNavigationView.getMenu().getItem(position).setChecked(true);
+                prevMenuItem = mBottomNavigationView.getMenu().getItem(position);
 
             }
 
@@ -77,12 +79,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        homeFragment = new HomeFragment();
-        orderFragment = new OrderFragment();
-        accountFragment = new AccountFragment();
-        adapter.addFragment(homeFragment);
-        adapter.addFragment(orderFragment);
-        adapter.addFragment(accountFragment);
+        adapter.addFragment(new HomeFragment());
+        adapter.addFragment(new OrderFragment());
+        adapter.addFragment(new AccountFragment());
         viewPager.setAdapter(adapter);
     }
 

@@ -14,14 +14,20 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import id.inharmonia.app.Main.Pages.Account.Lists.Menu.Menu;
 import id.inharmonia.app.Main.Pages.Account.Lists.Menu.MenuAdapter;
 import id.inharmonia.app.R;
 
 public class AccountFragment extends Fragment {
 
+    @BindView(R.id.tvUserFullName)
     TextView mUserFullName;
+
+    @BindView(R.id.rv_menu_link_list)
     RecyclerView mRecyclerView;
+
     List<Menu> mMenuList;
     Menu mMenuItem;
 
@@ -33,19 +39,16 @@ public class AccountFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_account, container, false);
 
-        mUserFullName = view.findViewById(R.id.tvUserFullName);
+        ButterKnife.bind(this, view);
 
         Typeface harabara_mais_font = Typeface.createFromAsset(view.getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
         mUserFullName.setTypeface(harabara_mais_font);
 
-        mRecyclerView = view.findViewById(R.id.rv_menu_link_list);
+        mRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 1));
         mRecyclerView.setFocusable(false);
-        GridLayoutManager mGridLayoutManager = new GridLayoutManager(getActivity(), 1);
-        mRecyclerView.setLayoutManager(mGridLayoutManager);
 
         mMenuList = new ArrayList<>();
 
@@ -60,8 +63,7 @@ public class AccountFragment extends Fragment {
         mMenuItem = new Menu("Kebijakan Privasi", R.drawable.in_ic_secure);
         mMenuList.add(mMenuItem);
 
-        MenuAdapter mMenuAdapter = new MenuAdapter(getActivity(), mMenuList, R.layout.rv_menu_link_item_row);
-        mRecyclerView.setAdapter(mMenuAdapter);
+        mRecyclerView.setAdapter(new MenuAdapter(getActivity(), mMenuList, R.layout.rv_menu_link_item_row));
 
         return view;
     }

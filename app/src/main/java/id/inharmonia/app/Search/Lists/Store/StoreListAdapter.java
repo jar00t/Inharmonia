@@ -50,4 +50,5 @@ public class StoreListAdapter extends ArrayAdapter<StoreList> {
 
         return listItem;
     }
+
 }
