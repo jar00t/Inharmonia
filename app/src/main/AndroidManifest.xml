@@ -13,12 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".Main.MainActivity"
             android:configChanges="orientation"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".Splash.SplashScreen"
             android:configChanges="orientation"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait"
@@ -38,12 +38,11 @@
         <activity android:name=".Search.SearchKeywordActivity" />
         <activity android:name=".Search.SearchStoreActivity" />
         <activity android:name=".Search.SearchDesignerActivity" />
-        <activity android:name=".WebActivity" />
-        <activity android:name=".Order.OrderNewActivity" />
-        <activity android:name=".Order.OrderTypeActivity" />
-        <activity android:name=".Order.OrderDetailActivity" />
-        <activity android:name=".Account.AccountSettingActivity" />
-        <activity android:name=".SettingActivity" />
+        <activity android:name=".Web.WebActivity" />
+        <activity android:name=".Main.Pages.Order.OrderNewActivity" />
+        <activity android:name=".Main.Pages.Order.OrderDetailActivity" />
+        <activity android:name=".Main.Pages.Account.AccountSettingActivity" />
+        <activity android:name=".Setting.SettingActivity" />
     </application>
 
 </manifest>

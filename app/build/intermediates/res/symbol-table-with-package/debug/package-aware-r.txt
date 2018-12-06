@@ -1204,6 +1204,7 @@ id homeAsUp
 id horizontal
 id ibBackButton
 id ibClearButton
+id ibClosePopup
 id ibSearchOpener
 id icon
 id icon_group
@@ -1349,6 +1350,7 @@ id tvOrderCode
 id tvOrderDateTime
 id tvOrderStatus
 id tvPageName
+id tvPopupTitle
 id tvStoreAddress
 id tvStoreListMore
 id tvStoreName
@@ -1420,7 +1422,6 @@ layout activity_account_setting
 layout activity_main
 layout activity_order_detail
 layout activity_order_new
-layout activity_order_type
 layout activity_search
 layout activity_search_designer
 layout activity_search_keyword
@@ -1463,6 +1464,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout popup_all_print_type
 layout popup_size_quantity
 layout rv_menu_item_row
 layout rv_menu_link_item_row
@@ -1559,6 +1561,7 @@ string pesanan
 string search_hint
 string search_icon
 string search_menu_title
+string semua_layanan
 string status_bar_notification_info_overflow
 string status_icon
 string store_icon

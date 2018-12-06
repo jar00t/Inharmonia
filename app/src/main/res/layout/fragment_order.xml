@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorWhite"
     android:orientation="vertical"
-    tools:context=".Order.OrderFragment">
+    tools:context=".Main.Pages.Order.OrderFragment">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"

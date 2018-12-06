@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorWhite"
     android:orientation="vertical"
-    tools:context=".Account.AccountFragment">
+    tools:context=".Main.Pages.Account.AccountFragment">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"

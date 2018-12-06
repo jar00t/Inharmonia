@@ -18,6 +18,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import id.inharmonia.app.R;
+import id.inharmonia.app.Search.Lists.Designer.DesignerList;
+import id.inharmonia.app.Search.Lists.Designer.DesignerListAdapter;
+import id.inharmonia.app.Search.Lists.Store.StoreList;
+import id.inharmonia.app.Search.Lists.Store.StoreListAdapter;
 
 public class SearchActivity extends AppCompatActivity {
 
@@ -151,25 +155,25 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     public void setStoreList(String[] mList) {
-        ArrayList<ImageTextSubList> nList = new ArrayList<>();
+        ArrayList<StoreList> nList = new ArrayList<>();
         for(int i = 0; i< mList.length; i++){
             String[] cList = mList[i].split("/");
-            nList.add(new ImageTextSubList(getResources().getIdentifier(cList[0],"drawable", getPackageName()), cList[1], cList[2]));
+            nList.add(new StoreList(getResources().getIdentifier(cList[0],"drawable", getPackageName()), cList[1], cList[2]));
         }
         mStoreList = findViewById(R.id.lvStoreList);
-        ImageTextSubListAdapter mImageTextSubListAdapter = new ImageTextSubListAdapter(this, nList);
-        mStoreList.setAdapter(mImageTextSubListAdapter);
+        StoreListAdapter mStoreListAdapter = new StoreListAdapter(this, nList);
+        mStoreList.setAdapter(mStoreListAdapter);
         setDynamicHeight(mStoreList);
     }
 
     public void setDesignerList(String[] mList) {
-        ArrayList<ImageTextSubList> nList = new ArrayList<>();
+        ArrayList<DesignerList> nList = new ArrayList<>();
         for(int i = 0; i< mList.length; i++){
             String[] cList = mList[i].split("/");
-            nList.add(new ImageTextSubList(getResources().getIdentifier(cList[0],"drawable", getPackageName()), cList[1], cList[2]));
+            nList.add(new DesignerList(getResources().getIdentifier(cList[0],"drawable", getPackageName()), cList[1], cList[2]));
         }
         mDesignerList = findViewById(R.id.lvDesignerList);
-        ImageTextSubListAdapter mDesignerListAdapter = new ImageTextSubListAdapter(this, nList);
+        DesignerListAdapter mDesignerListAdapter = new DesignerListAdapter(this, nList);
         mDesignerList.setAdapter(mDesignerListAdapter);
         setDynamicHeight(mDesignerList);
     }

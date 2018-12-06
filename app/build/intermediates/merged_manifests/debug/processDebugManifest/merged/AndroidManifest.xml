@@ -22,12 +22,12 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="id.inharmonia.app.MainActivity"
+            android:name="id.inharmonia.app.Main.MainActivity"
             android:configChanges="orientation"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.inharmonia.app.SplashScreen"
+            android:name="id.inharmonia.app.Splash.SplashScreen"
             android:configChanges="orientation"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait"
@@ -47,12 +47,11 @@
         <activity android:name="id.inharmonia.app.Search.SearchKeywordActivity" />
         <activity android:name="id.inharmonia.app.Search.SearchStoreActivity" />
         <activity android:name="id.inharmonia.app.Search.SearchDesignerActivity" />
-        <activity android:name="id.inharmonia.app.WebActivity" />
-        <activity android:name="id.inharmonia.app.Order.OrderNewActivity" />
-        <activity android:name="id.inharmonia.app.Order.OrderTypeActivity" />
-        <activity android:name="id.inharmonia.app.Order.OrderDetailActivity" />
-        <activity android:name="id.inharmonia.app.Account.AccountSettingActivity" />
-        <activity android:name="id.inharmonia.app.SettingActivity" />
+        <activity android:name="id.inharmonia.app.Web.WebActivity" />
+        <activity android:name="id.inharmonia.app.Main.Pages.Order.OrderNewActivity" />
+        <activity android:name="id.inharmonia.app.Main.Pages.Order.OrderDetailActivity" />
+        <activity android:name="id.inharmonia.app.Main.Pages.Account.AccountSettingActivity" />
+        <activity android:name="id.inharmonia.app.Setting.SettingActivity" />
     </application>
 
 </manifest>

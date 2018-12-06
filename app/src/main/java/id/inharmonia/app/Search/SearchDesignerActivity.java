@@ -12,6 +12,8 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import id.inharmonia.app.R;
+import id.inharmonia.app.Search.Lists.Designer.DesignerList;
+import id.inharmonia.app.Search.Lists.Designer.DesignerListAdapter;
 
 public class SearchDesignerActivity extends AppCompatActivity {
 
@@ -83,13 +85,13 @@ public class SearchDesignerActivity extends AppCompatActivity {
     }
 
     public void setDesignerList(String[] mList) {
-        ArrayList<ImageTextSubList> nList = new ArrayList<>();
+        ArrayList<DesignerList> nList = new ArrayList<>();
         for(int i = 0; i< mList.length; i++){
             String[] cList = mList[i].split("/");
-            nList.add(new ImageTextSubList(getResources().getIdentifier(cList[0],"drawable", getPackageName()), cList[1], cList[2]));
+            nList.add(new DesignerList(getResources().getIdentifier(cList[0],"drawable", getPackageName()), cList[1], cList[2]));
         }
         mDesignerList = findViewById(R.id.lvDesignerList);
-        ImageTextSubListAdapter mDesignerListAdapter = new ImageTextSubListAdapter(this, nList);
+        DesignerListAdapter mDesignerListAdapter = new DesignerListAdapter(this, nList);
         mDesignerList.setAdapter(mDesignerListAdapter);
     }
 }
