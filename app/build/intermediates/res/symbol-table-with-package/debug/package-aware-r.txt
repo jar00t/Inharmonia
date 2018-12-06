@@ -1082,6 +1082,7 @@ drawable in_ic_store
 drawable in_ic_troli
 drawable in_logo
 drawable in_more_square
+drawable in_rounded_dialog
 drawable in_splash_logo
 drawable in_symbol
 drawable in_symbol_100
@@ -1576,6 +1577,8 @@ style Animation_AppCompat_Dialog
 style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
+style AppBottomSheetDialogTheme
+style AppModalStyle
 style AppTheme
 style AppTheme_AppBarOverlay
 style AppTheme_PopupOverlay

@@ -37,7 +37,6 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
             }
         });
 
-
         return view;
     }
 }
