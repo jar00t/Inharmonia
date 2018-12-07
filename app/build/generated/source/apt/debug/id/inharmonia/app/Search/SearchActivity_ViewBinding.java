@@ -18,15 +18,15 @@ import java.lang.Override;
 public class SearchActivity_ViewBinding implements Unbinder {
   private SearchActivity target;
 
-  private View view2131230812;
+  private View view2131230814;
 
-  private View view2131230813;
+  private View view2131230815;
 
-  private View view2131230953;
+  private View view2131230955;
 
-  private View view2131230962;
+  private View view2131230965;
 
-  private View view2131230952;
+  private View view2131230954;
 
   @UiThread
   public SearchActivity_ViewBinding(SearchActivity target) {
@@ -40,7 +40,7 @@ public class SearchActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.ibBackButton, "field 'mBackButton' and method 'exit'");
     target.mBackButton = Utils.castView(view, R.id.ibBackButton, "field 'mBackButton'", ImageButton.class);
-    view2131230812 = view;
+    view2131230814 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -49,7 +49,7 @@ public class SearchActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.ibClearButton, "field 'mClearButton' and method 'clear'");
     target.mClearButton = Utils.castView(view, R.id.ibClearButton, "field 'mClearButton'", ImageButton.class);
-    view2131230813 = view;
+    view2131230815 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,7 +62,7 @@ public class SearchActivity_ViewBinding implements Unbinder {
     target.mDesignerList = Utils.findRequiredViewAsType(source, R.id.lvDesignerList, "field 'mDesignerList'", ListView.class);
     view = Utils.findRequiredView(source, R.id.tvKeywordListMore, "field 'mKeywordListMore' and method 'moreKeywordList'");
     target.mKeywordListMore = Utils.castView(view, R.id.tvKeywordListMore, "field 'mKeywordListMore'", TextView.class);
-    view2131230953 = view;
+    view2131230955 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -71,7 +71,7 @@ public class SearchActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.tvStoreListMore, "field 'mStoreListMore' and method 'moreStoreList'");
     target.mStoreListMore = Utils.castView(view, R.id.tvStoreListMore, "field 'mStoreListMore'", TextView.class);
-    view2131230962 = view;
+    view2131230965 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -80,7 +80,7 @@ public class SearchActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.tvDesignerListMore, "field 'mDesignerListMore' and method 'moreDesignerList'");
     target.mDesignerListMore = Utils.castView(view, R.id.tvDesignerListMore, "field 'mDesignerListMore'", TextView.class);
-    view2131230952 = view;
+    view2131230954 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -110,15 +110,15 @@ public class SearchActivity_ViewBinding implements Unbinder {
     target.mListTitleStore = null;
     target.mListTitleDesigner = null;
 
-    view2131230812.setOnClickListener(null);
-    view2131230812 = null;
-    view2131230813.setOnClickListener(null);
-    view2131230813 = null;
-    view2131230953.setOnClickListener(null);
-    view2131230953 = null;
-    view2131230962.setOnClickListener(null);
-    view2131230962 = null;
-    view2131230952.setOnClickListener(null);
-    view2131230952 = null;
+    view2131230814.setOnClickListener(null);
+    view2131230814 = null;
+    view2131230815.setOnClickListener(null);
+    view2131230815 = null;
+    view2131230955.setOnClickListener(null);
+    view2131230955 = null;
+    view2131230965.setOnClickListener(null);
+    view2131230965 = null;
+    view2131230954.setOnClickListener(null);
+    view2131230954 = null;
   }
 }

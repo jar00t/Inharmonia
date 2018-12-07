@@ -40,4 +40,10 @@
     <string name="no_content">No Content</string>
     <string name="tambahkan_ke_keranjang">Tambahkan Ke Keranjang</string>
     <string name="semua_layanan">Semua Layanan</string>
+    <string name="berapa_banyak">Berapa banyak?</string>
+    <string name="minus">-</string>
+    <string name="zero">0</string>
+    <string name="plus">+</string>
+    <string name="decrease_button">Decrease Button</string>
+    <string name="increase_button">Increase Button</string>
 </resources>

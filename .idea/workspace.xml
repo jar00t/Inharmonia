@@ -12,6 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f50aa680-021d-49ab-a246-8af2c9f244ee" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/Size/SizeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/Size/SizeListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/rv_size_quantity_item_row.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
@@ -22,160 +25,254 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/asynclayoutinflater/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/asynclayoutinflater/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/compat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/compat/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/constraint/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/constraint/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/coordinatorlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/coordinatorlayout/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/coreui/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/coreui/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/coreutils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/coreutils/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/customview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/customview/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/design/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/design/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/drawerlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/drawerlayout/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/fragment/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/fragment/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/graphics/drawable/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/graphics/drawable/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/loader/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/loader/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/mediacompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/mediacompat/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/slidingpanelayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/slidingpanelayout/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/swiperefreshlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/swiperefreshlayout/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/transition/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/transition/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/v4/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/v4/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/v7/appcompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/v7/appcompat/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/v7/recyclerview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/v7/recyclerview/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/v7/viewpager/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/v7/viewpager/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/synnapps/carouselview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/synnapps/carouselview/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/id/inharmonia/app/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/id/inharmonia/app/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Account/AccountSettingActivity_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Account/AccountSettingActivity_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter$MenuViewHolder_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter$MenuViewHolder_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Home/HomeFragment_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Home/HomeFragment_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter$MenuViewHolder_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter$MenuViewHolder_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter$TypeViewHolder_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter$TypeViewHolder_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter$OrderListViewHolder_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter$OrderListViewHolder_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Order/OrderDetailActivity_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Order/OrderDetailActivity_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Order/OrderNewActivity_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Main/Pages/Order/OrderNewActivity_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Search/SearchActivity_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Search/SearchActivity_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Search/SearchDesignerActivity_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Search/SearchDesignerActivity_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Search/SearchKeywordActivity_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Search/SearchKeywordActivity_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Search/SearchStoreActivity_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Search/SearchStoreActivity_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Setting/SettingActivity_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Setting/SettingActivity_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Web/WebActivity_ViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/id/inharmonia/app/Web/WebActivity_ViewBinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Adapters/ViewPagerAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Adapters/ViewPagerAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/jqd_MVfejfDpciF5I2p+pJG0bhs=" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/jqd_MVfejfDpciF5I2p+pJG0bhs=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/asynclayoutinflater/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/constraint/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/constraint/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coordinatorlayout/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreui/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/coreutils/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/customview/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/design/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/design/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/design/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/design/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/design/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/design/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/drawerlayout/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/fragment/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/graphics/drawable/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/loader/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/mediacompat/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/mediacompat/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/mediacompat/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/mediacompat/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/slidingpanelayout/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/swiperefreshlayout/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/transition/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/transition/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/transition/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/transition/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v4/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v4/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v4/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v4/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/appcompat/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/recyclerview/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/v7/viewpager/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/synnapps/carouselview/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/synnapps/carouselview/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/synnapps/carouselview/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/synnapps/carouselview/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/synnapps/carouselview/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/synnapps/carouselview/R$string.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/MainActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/MainActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/MainActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/MainActivity$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/MainActivity_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/MainActivity_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/AccountFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/AccountFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/AccountSettingActivity$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/AccountFragment_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/AccountFragment_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/AccountSettingActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/AccountSettingActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/Lists/Menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/Lists/Menu/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter$MenuViewHolder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/AccountSettingActivity_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/AccountSettingActivity_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter$MenuViewHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter$MenuViewHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/HomeFragment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/HomeFragment$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/HomeFragment$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter$MenuViewHolder_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter$MenuViewHolder_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/HomeFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/HomeFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter$MenuViewHolder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/HomeFragment_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/HomeFragment_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter$MenuViewHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter$MenuViewHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeList.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter$TypeViewHolder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter$MenuViewHolder_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter$MenuViewHolder_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter$TypeViewHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter$TypeViewHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter$TypeViewHolder_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter$TypeViewHolder_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderList.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter$OrderListViewHolder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup_ViewBinding$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup_ViewBinding$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter$OrderListViewHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter$OrderListViewHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/OrderDetailActivity$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter$OrderListViewHolder_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter$OrderListViewHolder_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/OrderDetailActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/OrderDetailActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/OrderDetailActivity_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/OrderDetailActivity_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/OrderFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/OrderFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/OrderNewActivity$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/OrderFragment_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/OrderFragment_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/OrderNewActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/OrderNewActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/OrderNewActivity_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Main/Pages/Order/OrderNewActivity_ViewBinding.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$id.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$integer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$interpolator.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$interpolator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$mipmap.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$mipmap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$style.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/R$styleable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/Lists/Designer/DesignerListAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/Lists/Designer/DesignerListAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchActivity$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchActivity$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchActivity$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchActivity$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchActivity$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/Lists/Store/StoreListAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/Lists/Store/StoreListAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchDesignerActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchDesignerActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchDesignerActivity$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchDesignerActivity$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchActivity_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchActivity_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchDesignerActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchDesignerActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchKeywordActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchKeywordActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchKeywordActivity$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchKeywordActivity$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchDesignerActivity_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchDesignerActivity_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchKeywordActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchKeywordActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchStoreActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchStoreActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchStoreActivity$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchStoreActivity$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchKeywordActivity_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchKeywordActivity_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchStoreActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchStoreActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Setting/SettingActivity$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchStoreActivity_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Search/SearchStoreActivity_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Setting/SettingActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Setting/SettingActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Splash/SplashScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Splash/SplashScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Web/WebActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Web/WebActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Web/WebActivity$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Setting/SettingActivity_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Setting/SettingActivity_ViewBinding.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Web/WebActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Web/WebActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Adapters/ViewPagerAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Adapters/ViewPagerAdapter.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Web/WebActivity_ViewBinding.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/id/inharmonia/app/Web/WebActivity_ViewBinding.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_popup_all_print_type.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_popup_all_print_type.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_popup_size_quantity.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_popup_size_quantity.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/asynclayoutinflater/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/asynclayoutinflater/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/asynclayoutinflater/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/asynclayoutinflater/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/compat/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/compat/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/compat/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/compat/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/constraint/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/constraint/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/coordinatorlayout/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/coordinatorlayout/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/coordinatorlayout/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/coordinatorlayout/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/coreui/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/coreui/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/coreui/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/coreui/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/coreutils/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/coreutils/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/coreutils/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/coreutils/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/customview/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/customview/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/customview/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/customview/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/design/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/design/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/design/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/design/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/design/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/design/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/drawerlayout/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/drawerlayout/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/drawerlayout/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/drawerlayout/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/fragment/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/fragment/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/fragment/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/fragment/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/graphics/drawable/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/graphics/drawable/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/graphics/drawable/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/graphics/drawable/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/loader/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/loader/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/loader/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/loader/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/mediacompat/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/mediacompat/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/mediacompat/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/mediacompat/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/slidingpanelayout/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/slidingpanelayout/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/slidingpanelayout/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/slidingpanelayout/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/swiperefreshlayout/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/swiperefreshlayout/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/swiperefreshlayout/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/swiperefreshlayout/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/transition/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/transition/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/transition/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/transition/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v4/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v4/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v4/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v4/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v7/appcompat/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v7/appcompat/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v7/appcompat/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v7/appcompat/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v7/appcompat/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v7/appcompat/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v7/recyclerview/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v7/recyclerview/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v7/recyclerview/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v7/recyclerview/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v7/viewpager/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v7/viewpager/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v7/viewpager/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/android/support/v7/viewpager/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/com/synnapps/carouselview/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/com/synnapps/carouselview/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/com/synnapps/carouselview/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/com/synnapps/carouselview/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/com/synnapps/carouselview/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/com/synnapps/carouselview/R$string.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/MainActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/MainActivity$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/MainActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/MainActivity$2.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/MainActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/MainActivity_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/MainActivity_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/AccountFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/AccountFragment.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/AccountSettingActivity$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/AccountFragment_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/AccountFragment_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/AccountSettingActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/AccountSettingActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/Lists/Menu/Menu.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/Lists/Menu/Menu.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter$MenuViewHolder$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/AccountSettingActivity_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/AccountSettingActivity_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter$MenuViewHolder.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter$MenuViewHolder.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/HomeFragment$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/HomeFragment$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/HomeFragment$2.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter$MenuViewHolder_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter$MenuViewHolder_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/HomeFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/HomeFragment.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenu.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenu.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter$MenuViewHolder$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/HomeFragment_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/HomeFragment_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter$MenuViewHolder.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter$MenuViewHolder.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeList.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeList.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter$TypeViewHolder$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter$MenuViewHolder_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter$MenuViewHolder_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter$TypeViewHolder.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter$TypeViewHolder.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter$TypeViewHolder_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter$TypeViewHolder_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderList.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderList.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter$OrderListViewHolder$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup_ViewBinding$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup_ViewBinding$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter$OrderListViewHolder.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter$OrderListViewHolder.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/OrderDetailActivity$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter$OrderListViewHolder_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter$OrderListViewHolder_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/OrderDetailActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/OrderDetailActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/OrderDetailActivity_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/OrderDetailActivity_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/OrderFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/OrderFragment.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/OrderNewActivity$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/OrderFragment_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/OrderFragment_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/OrderNewActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/OrderNewActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/OrderNewActivity_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Main/Pages/Order/OrderNewActivity_ViewBinding.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$id.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$integer.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$integer.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$interpolator.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$interpolator.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$layout.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$menu.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$menu.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$mipmap.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$mipmap.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$style.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$style.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$styleable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/R$styleable.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/Lists/Designer/DesignerListAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/Lists/Designer/DesignerListAdapter.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchActivity$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchActivity$2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchActivity$3.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchActivity$4.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchActivity$5.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchActivity$6.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/Lists/Store/StoreListAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/Lists/Store/StoreListAdapter.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchDesignerActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchDesignerActivity$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchDesignerActivity$2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchDesignerActivity$3.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchActivity_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchActivity_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchDesignerActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchDesignerActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchKeywordActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchKeywordActivity$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchKeywordActivity$2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchKeywordActivity$3.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchDesignerActivity_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchDesignerActivity_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchKeywordActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchKeywordActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchStoreActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchStoreActivity$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchStoreActivity$2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchStoreActivity$3.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchKeywordActivity_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchKeywordActivity_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchStoreActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchStoreActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Setting/SettingActivity$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchStoreActivity_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Search/SearchStoreActivity_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Setting/SettingActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Setting/SettingActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Splash/SplashScreen.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Splash/SplashScreen.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Web/WebActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Web/WebActivity$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Web/WebActivity$2.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Setting/SettingActivity_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Setting/SettingActivity_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Web/WebActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Web/WebActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Web/WebActivity_ViewBinding.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/38/id/inharmonia/app/Web/WebActivity_ViewBinding.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Adapters/ViewPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Adapters/ViewPagerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Account/AccountFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Account/AccountFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Account/AccountSettingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Account/AccountSettingActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Account/Lists/Menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Account/Lists/Menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Account/Lists/Menu/MenuAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/HomeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Order/OrderDetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Order/OrderDetailActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Order/OrderFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Order/OrderFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Order/OrderNewActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Order/OrderNewActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Search/Lists/Designer/DesignerListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Search/Lists/Designer/DesignerListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Search/Lists/Store/StoreListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Search/Lists/Store/StoreListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Search/SearchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Search/SearchActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Search/SearchDesignerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Search/SearchDesignerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Search/SearchKeywordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Search/SearchKeywordActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Search/SearchStoreActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Search/SearchStoreActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Setting/SettingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Setting/SettingActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Splash/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Splash/SplashScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Web/WebActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Web/WebActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/popup_all_print_type.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/popup_all_print_type.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/popup_size_quantity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/popup_size_quantity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -204,8 +301,8 @@
       <list>
         <option value="layoutResourceFile_vertical" />
         <option value="resourceFile" />
-        <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -2471,15 +2568,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Home/HomeFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/in_button_primary.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/in_rounded_dialog.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/popup_size_quantity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Home/TypeList.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Home/TypeListAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/popup_all_print_type.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Account/AccountFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Account/Menu/MenuAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Home/AllPrintTypePopup.java" />
@@ -2502,8 +2594,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/MainMenu/MainMenuAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeList.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Account/AccountFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderList.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Order/Lists/Order/OrderListAdapter.java" />
@@ -2522,6 +2612,13 @@
         <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Setting/SettingActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Web/WebActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/popup_all_print_type.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/popup_size_quantity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/SizeList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/SizeListAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/rv_size_quantity_item_row.xml" />
       </list>
     </option>
   </component>
@@ -2539,6 +2636,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
@@ -2550,27 +2649,18 @@
             <path>
               <item name="Inharmonia" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
               <item name="Inharmonia" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="app" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Inharmonia" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="app" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="Setting" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2737,6 +2827,7 @@
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32882273" />
+      <window_info anchor="right" id="Preview" order="4" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32882273" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -2754,7 +2845,6 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Assistant" order="5" weight="0.3295129" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Preview" order="4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -2779,36 +2869,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_order_new.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_web.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -2860,16 +2920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/rv_menu_item_row.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="32" selection-start-line="15" selection-start-column="8" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/in_button_primary.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2897,16 +2947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/popup_size_quantity.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="41" lean-forward="true" selection-end-line="31" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_order_type.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Order/OrderTypeActivity.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_account.xml">
@@ -2929,29 +2969,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/popup_all_print_type.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="e#804#827#0" expanded="true" />
-            <element signature="e#1599#1618#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Search/ImageTextSubList.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Search/ImageTextSubListAdapter.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Adapters/ViewPagerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2986,9 +3009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3005,46 +3025,6 @@
           <caret line="67" column="45" lean-forward="true" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AllPrintTypePopup#0;class#AllPrintTypePopup#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#SizeQuantityPopup#0;class#SizeQuantityPopup#0" />
-            <element signature="method#addToCart#0;class#SizeQuantityPopup#0" />
           </folding>
         </state>
       </provider>
@@ -3074,9 +3054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3091,9 +3068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3119,9 +3093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3136,9 +3107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3146,11 +3114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-941">
           <caret line="114" column="34" lean-forward="true" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#beforeTextChanged#0;class#2204:2817" />
-            <element signature="method#afterTextChanged#0;class#2204:2817" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3158,11 +3121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#beforeTextChanged#0;class#1491:2104" />
-            <element signature="method#afterTextChanged#0;class#1491:2104" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3182,11 +3140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#beforeTextChanged#0;class#1467:2080" />
-            <element signature="method#afterTextChanged#0;class#1467:2080" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3201,9 +3154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3215,13 +3165,128 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
           <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/popup_all_print_type.xml">
+      <provider editor-type-id="android-designer2">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="42" column="47" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="42" selection-end-column="47" />
+          <folding>
+            <element signature="e#770#793#0" expanded="true" />
+            <element signature="e#1354#1373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" lean-forward="true" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/Type/TypeListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/Size/SizeList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Lists/Size/SizeListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/rv_menu_item_row.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="32" selection-end-line="47" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Popups/AllPrintTypePopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="56" column="80" lean-forward="true" selection-start-line="56" selection-start-column="80" selection-end-line="56" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#AllPrintTypePopup#0;class#AllPrintTypePopup#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/rv_size_quantity_item_row.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="e#1106#1126#0" expanded="true" />
+            <element signature="e#1958#1983#0" expanded="true" />
+            <element signature="e#2211#2225#0" expanded="true" />
+            <element signature="e#3154#3179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/popup_size_quantity.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="33" column="36" selection-start-line="28" selection-start-column="12" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="e#770#793#0" expanded="true" />
+            <element signature="e#1354#1373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/id/inharmonia/app/Main/Pages/Home/Popups/SizeQuantityPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#SizeQuantityPopup#0;class#SizeQuantityPopup#0" />
+            <element signature="method#addToCart#0;class#SizeQuantityPopup#0" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

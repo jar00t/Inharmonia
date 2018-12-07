@@ -24,7 +24,6 @@
             android:id="@+id/ibClosePopup"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:tint="@color/colorGrey"
             android:src="@drawable/in_ic_close"
             android:layout_alignParentEnd="true"
             android:padding="2dp"
