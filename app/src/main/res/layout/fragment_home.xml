@@ -68,20 +68,43 @@
                             android:focusable="true"
                             android:contentDescription="@string/search_icon" />
 
-                        <ImageButton
-                            android:id="@+id/ivCartButton"
+                        <RelativeLayout
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_vertical"
-                            android:src="@drawable/in_ic_troli"
                             android:layout_marginEnd="25dp"
-                            android:padding="2dp"
-                            android:background="?android:attr/selectableItemBackgroundBorderless"
-                            android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:contentDescription="@string/cart_button" />
+                            android:padding="2dp">
+
+                            <ImageButton
+                                android:id="@+id/ivCartButton"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/in_ic_troli"
+                                android:background="?android:attr/selectableItemBackgroundBorderless"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:contentDescription="@string/cart_button" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/ivCartButton"
+                                android:layout_alignEnd="@+id/ivCartButton">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorWhite"
+                                    android:gravity="center"
+                                    android:textSize="5pt"
+                                    android:background="@drawable/in_count_label_background"
+                                    android:text="30" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
 
                     </LinearLayout>
 

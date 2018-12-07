@@ -17,7 +17,7 @@ import java.lang.Override;
 public class MenuAdapter$MenuViewHolder_ViewBinding implements Unbinder {
   private MenuAdapter.MenuViewHolder target;
 
-  private View view2131230778;
+  private View view2131230776;
 
   @UiThread
   public MenuAdapter$MenuViewHolder_ViewBinding(final MenuAdapter.MenuViewHolder target,
@@ -29,7 +29,7 @@ public class MenuAdapter$MenuViewHolder_ViewBinding implements Unbinder {
     target.mIcon = Utils.findRequiredViewAsType(source, R.id.ivIcon, "field 'mIcon'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.cvMenuItem, "field 'mMenuItem' and method 'goTo'");
     target.mMenuItem = Utils.castView(view, R.id.cvMenuItem, "field 'mMenuItem'", CardView.class);
-    view2131230778 = view;
+    view2131230776 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -49,7 +49,7 @@ public class MenuAdapter$MenuViewHolder_ViewBinding implements Unbinder {
     target.mIcon = null;
     target.mMenuItem = null;
 
-    view2131230778.setOnClickListener(null);
-    view2131230778 = null;
+    view2131230776.setOnClickListener(null);
+    view2131230776 = null;
   }
 }

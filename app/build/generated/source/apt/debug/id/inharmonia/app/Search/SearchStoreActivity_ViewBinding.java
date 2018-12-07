@@ -17,9 +17,9 @@ import java.lang.Override;
 public class SearchStoreActivity_ViewBinding implements Unbinder {
   private SearchStoreActivity target;
 
-  private View view2131230814;
+  private View view2131230812;
 
-  private View view2131230815;
+  private View view2131230813;
 
   @UiThread
   public SearchStoreActivity_ViewBinding(SearchStoreActivity target) {
@@ -33,7 +33,7 @@ public class SearchStoreActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.ibBackButton, "field 'mBackButton' and method 'exit'");
     target.mBackButton = Utils.castView(view, R.id.ibBackButton, "field 'mBackButton'", ImageButton.class);
-    view2131230814 = view;
+    view2131230812 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class SearchStoreActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.ibClearButton, "field 'mClearButton' and method 'clear'");
     target.mClearButton = Utils.castView(view, R.id.ibClearButton, "field 'mClearButton'", ImageButton.class);
-    view2131230815 = view;
+    view2131230813 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -65,9 +65,9 @@ public class SearchStoreActivity_ViewBinding implements Unbinder {
     target.mSearchInput = null;
     target.mStoreList = null;
 
-    view2131230814.setOnClickListener(null);
-    view2131230814 = null;
-    view2131230815.setOnClickListener(null);
-    view2131230815 = null;
+    view2131230812.setOnClickListener(null);
+    view2131230812 = null;
+    view2131230813.setOnClickListener(null);
+    view2131230813 = null;
   }
 }

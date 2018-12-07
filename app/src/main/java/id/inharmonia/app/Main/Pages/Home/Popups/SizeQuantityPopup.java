@@ -63,25 +63,20 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
 
         mSizeList = new ArrayList<>();
 
-        mSizeItem = new SizeList(R.drawable.in_thumb_documents_square);
+        mSizeItem = new SizeList(R.drawable.in_thumb_text_size_a4_square);
         mSizeList.add(mSizeItem);
-        mSizeItem = new SizeList(R.drawable.in_thumb_documents_square);
+        mSizeItem = new SizeList(R.drawable.in_thumb_text_size_a5_square);
         mSizeList.add(mSizeItem);
-        mSizeItem = new SizeList(R.drawable.in_thumb_documents_square);
+        mSizeItem = new SizeList(R.drawable.in_thumb_text_size_f4_square);
         mSizeList.add(mSizeItem);
-        mSizeItem = new SizeList(R.drawable.in_thumb_documents_square);
+        mSizeItem = new SizeList(R.drawable.in_thumb_text_blank_square);
         mSizeList.add(mSizeItem);
-        mSizeItem = new SizeList(R.drawable.in_thumb_documents_square);
+        mSizeItem = new SizeList(R.drawable.in_thumb_text_blank_square);
         mSizeList.add(mSizeItem);
-        mSizeItem = new SizeList(R.drawable.in_thumb_documents_square);
+        mSizeItem = new SizeList(R.drawable.in_thumb_text_blank_square);
         mSizeList.add(mSizeItem);
-        mSizeItem = new SizeList(R.drawable.in_thumb_documents_square);
+        mSizeItem = new SizeList(R.drawable.in_thumb_text_blank_square);
         mSizeList.add(mSizeItem);
-        mSizeItem = new SizeList(R.drawable.in_thumb_documents_square);
-        mSizeList.add(mSizeItem);
-        mSizeItem = new SizeList(R.drawable.in_thumb_documents_square);
-        mSizeList.add(mSizeItem);
-
         mRecyclerView.setAdapter(new SizeListAdapter(getActivity(), mSizeList, R.layout.rv_size_quantity_item_row));
 
         return view;

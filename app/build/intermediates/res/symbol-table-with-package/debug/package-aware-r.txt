@@ -629,6 +629,7 @@ color colorAccent
 color colorDarkGrey
 color colorGrey
 color colorLightGrey
+color colorLightPurple
 color colorLightRed
 color colorPrimary
 color colorPrimaryDark
@@ -1060,6 +1061,7 @@ drawable ic_mtrl_chip_close_circle
 drawable in_blank_landscape
 drawable in_blank_square
 drawable in_button_primary
+drawable in_count_label_background
 drawable in_ic_about
 drawable in_ic_account
 drawable in_ic_back
@@ -1070,10 +1072,12 @@ drawable in_ic_contact
 drawable in_ic_edit
 drawable in_ic_help
 drawable in_ic_home
+drawable in_ic_minus
 drawable in_ic_order
 drawable in_ic_order_finish
 drawable in_ic_order_process
 drawable in_ic_order_send
+drawable in_ic_plus
 drawable in_ic_profile
 drawable in_ic_search
 drawable in_ic_secure
@@ -1093,6 +1097,10 @@ drawable in_thumb_invitation_square
 drawable in_thumb_pictures_square
 drawable in_thumb_spanduk_square
 drawable in_thumb_stand_banner_square
+drawable in_thumb_text_blank_square
+drawable in_thumb_text_size_a4_square
+drawable in_thumb_text_size_a5_square
+drawable in_thumb_text_size_f4_square
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1147,8 +1155,6 @@ id beginning
 id blocking
 id bottom
 id btAddToCart
-id btDecreaseButton
-id btIncreaseButton
 id buttonPanel
 id cancel_action
 id center
@@ -1207,6 +1213,8 @@ id horizontal
 id ibBackButton
 id ibClearButton
 id ibClosePopup
+id ibDecreaseButton
+id ibIncreaseButton
 id ibSearchOpener
 id icon
 id icon_group
