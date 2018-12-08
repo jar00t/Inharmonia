@@ -37,9 +37,6 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
     @BindView(R.id.btAddToCart)
     public Button mAddToCartButton;
 
-    @BindView(R.id.tvTotalItem)
-    public TextView mTotalItem;
-
     public List<SizeList> mSizeList;
     public SizeList mSizeItem;
 
@@ -71,14 +68,6 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
         mSizeItem = new SizeList(R.drawable.in_thumb_text_size_a5_square);
         mSizeList.add(mSizeItem);
         mSizeItem = new SizeList(R.drawable.in_thumb_text_size_f4_square);
-        mSizeList.add(mSizeItem);
-        mSizeItem = new SizeList(R.drawable.in_thumb_text_blank_square);
-        mSizeList.add(mSizeItem);
-        mSizeItem = new SizeList(R.drawable.in_thumb_text_blank_square);
-        mSizeList.add(mSizeItem);
-        mSizeItem = new SizeList(R.drawable.in_thumb_text_blank_square);
-        mSizeList.add(mSizeItem);
-        mSizeItem = new SizeList(R.drawable.in_thumb_text_blank_square);
         mSizeList.add(mSizeItem);
         mRecyclerView.setAdapter(new SizeListAdapter(getActivity(), mSizeList, R.layout.rv_size_quantity_item_row));
 

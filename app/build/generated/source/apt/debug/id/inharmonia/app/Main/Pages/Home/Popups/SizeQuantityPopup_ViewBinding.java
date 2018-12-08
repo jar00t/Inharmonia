@@ -47,7 +47,6 @@ public class SizeQuantityPopup_ViewBinding implements Unbinder {
         target.addToCart();
       }
     });
-    target.mTotalItem = Utils.findRequiredViewAsType(source, R.id.tvTotalItem, "field 'mTotalItem'", TextView.class);
   }
 
   @Override
@@ -61,7 +60,6 @@ public class SizeQuantityPopup_ViewBinding implements Unbinder {
     target.mPopupTitle = null;
     target.mClosePopup = null;
     target.mAddToCartButton = null;
-    target.mTotalItem = null;
 
     view2131230815.setOnClickListener(null);
     view2131230815 = null;
