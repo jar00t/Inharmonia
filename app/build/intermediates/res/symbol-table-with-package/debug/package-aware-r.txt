@@ -636,6 +636,7 @@ color colorPrimaryDark
 color colorPurple
 color colorRed
 color colorWhite
+color colorWhitePurple
 color default_circle_indicator_fill_color
 color default_circle_indicator_page_color
 color default_circle_indicator_stroke_color
@@ -1101,6 +1102,7 @@ drawable in_thumb_text_blank_square
 drawable in_thumb_text_size_a4_square
 drawable in_thumb_text_size_a5_square
 drawable in_thumb_text_size_f4_square
+drawable in_total_background
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1155,6 +1157,7 @@ id beginning
 id blocking
 id bottom
 id btAddToCart
+id btNextStep
 id buttonPanel
 id cancel_action
 id center
@@ -1546,6 +1549,7 @@ string increase_button
 string inharmonia_app
 string inharmonia_symbol
 string lainnya
+string lanjut
 string list_icon
 string logout
 string logout_menu_link

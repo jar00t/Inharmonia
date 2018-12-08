@@ -15,7 +15,7 @@ import java.lang.Override;
 public class OrderDetailActivity_ViewBinding implements Unbinder {
   private OrderDetailActivity target;
 
-  private View view2131230812;
+  private View view2131230813;
 
   @UiThread
   public OrderDetailActivity_ViewBinding(OrderDetailActivity target) {
@@ -29,7 +29,7 @@ public class OrderDetailActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.ibBackButton, "field 'mBackButton' and method 'exit'");
     target.mBackButton = Utils.castView(view, R.id.ibBackButton, "field 'mBackButton'", ImageButton.class);
-    view2131230812 = view;
+    view2131230813 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class OrderDetailActivity_ViewBinding implements Unbinder {
 
     target.mBackButton = null;
 
-    view2131230812.setOnClickListener(null);
-    view2131230812 = null;
+    view2131230813.setOnClickListener(null);
+    view2131230813 = null;
   }
 }

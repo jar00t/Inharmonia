@@ -9,6 +9,7 @@
     <color name="colorDarkGrey">#323232</color>
     <color name="colorRed">#D03438</color>
     <color name="colorPurple">#5354FF</color>
+    <color name="colorWhitePurple">#d1d1ff</color>
     <color name="colorLightPurple">#BB27FF</color>
     <color name="colorLightRed">#FFF2F3</color>
 </resources>

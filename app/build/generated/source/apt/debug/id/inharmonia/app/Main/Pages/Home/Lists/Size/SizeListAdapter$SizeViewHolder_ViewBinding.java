@@ -17,9 +17,9 @@ import java.lang.Override;
 public class SizeListAdapter$SizeViewHolder_ViewBinding implements Unbinder {
   private SizeListAdapter.SizeViewHolder target;
 
-  private View view2131230815;
-
   private View view2131230816;
+
+  private View view2131230817;
 
   @UiThread
   public SizeListAdapter$SizeViewHolder_ViewBinding(final SizeListAdapter.SizeViewHolder target,
@@ -30,7 +30,7 @@ public class SizeListAdapter$SizeViewHolder_ViewBinding implements Unbinder {
     target.mIcon = Utils.findRequiredViewAsType(source, R.id.ivIcon, "field 'mIcon'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.ibDecreaseButton, "field 'mDecreaseButton' and method 'decreaseValue'");
     target.mDecreaseButton = Utils.castView(view, R.id.ibDecreaseButton, "field 'mDecreaseButton'", ImageButton.class);
-    view2131230815 = view;
+    view2131230816 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -39,7 +39,7 @@ public class SizeListAdapter$SizeViewHolder_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.ibIncreaseButton, "field 'mIncreaseButton' and method 'increaseValue'");
     target.mIncreaseButton = Utils.castView(view, R.id.ibIncreaseButton, "field 'mIncreaseButton'", ImageButton.class);
-    view2131230816 = view;
+    view2131230817 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,9 +61,9 @@ public class SizeListAdapter$SizeViewHolder_ViewBinding implements Unbinder {
     target.mIncreaseButton = null;
     target.mNumberValue = null;
 
-    view2131230815.setOnClickListener(null);
-    view2131230815 = null;
     view2131230816.setOnClickListener(null);
     view2131230816 = null;
+    view2131230817.setOnClickListener(null);
+    view2131230817 = null;
   }
 }
