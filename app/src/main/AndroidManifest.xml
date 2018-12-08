@@ -44,12 +44,6 @@
             android:label="@string/title_activity_search"
             android:theme="@style/AppTheme" />
 
-        <activity android:name=".Search.SearchKeywordActivity" />
-
-        <activity android:name=".Search.SearchStoreActivity" />
-
-        <activity android:name=".Search.SearchDesignerActivity" />
-
         <activity android:name=".Web.WebActivity" />
 
         <activity android:name=".Main.Pages.Order.OrderNewActivity" />

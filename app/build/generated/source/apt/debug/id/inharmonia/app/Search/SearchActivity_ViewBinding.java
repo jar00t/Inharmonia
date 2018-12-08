@@ -3,11 +3,10 @@ package id.inharmonia.app.Search;
 
 import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ListView;
-import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Utils;
@@ -21,12 +20,6 @@ public class SearchActivity_ViewBinding implements Unbinder {
   private View view2131230812;
 
   private View view2131230813;
-
-  private View view2131230955;
-
-  private View view2131230965;
-
-  private View view2131230954;
 
   @UiThread
   public SearchActivity_ViewBinding(SearchActivity target) {
@@ -57,38 +50,7 @@ public class SearchActivity_ViewBinding implements Unbinder {
       }
     });
     target.mSearchInput = Utils.findRequiredViewAsType(source, R.id.etSearchInput, "field 'mSearchInput'", EditText.class);
-    target.mKeywordList = Utils.findRequiredViewAsType(source, R.id.lvKeywordList, "field 'mKeywordList'", ListView.class);
-    target.mStoreList = Utils.findRequiredViewAsType(source, R.id.lvStoreList, "field 'mStoreList'", ListView.class);
-    target.mDesignerList = Utils.findRequiredViewAsType(source, R.id.lvDesignerList, "field 'mDesignerList'", ListView.class);
-    view = Utils.findRequiredView(source, R.id.tvKeywordListMore, "field 'mKeywordListMore' and method 'moreKeywordList'");
-    target.mKeywordListMore = Utils.castView(view, R.id.tvKeywordListMore, "field 'mKeywordListMore'", TextView.class);
-    view2131230955 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.moreKeywordList();
-      }
-    });
-    view = Utils.findRequiredView(source, R.id.tvStoreListMore, "field 'mStoreListMore' and method 'moreStoreList'");
-    target.mStoreListMore = Utils.castView(view, R.id.tvStoreListMore, "field 'mStoreListMore'", TextView.class);
-    view2131230965 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.moreStoreList();
-      }
-    });
-    view = Utils.findRequiredView(source, R.id.tvDesignerListMore, "field 'mDesignerListMore' and method 'moreDesignerList'");
-    target.mDesignerListMore = Utils.castView(view, R.id.tvDesignerListMore, "field 'mDesignerListMore'", TextView.class);
-    view2131230954 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.moreDesignerList();
-      }
-    });
-    target.mListTitleStore = Utils.findRequiredViewAsType(source, R.id.tvListTitleStore, "field 'mListTitleStore'", TextView.class);
-    target.mListTitleDesigner = Utils.findRequiredViewAsType(source, R.id.tvListTitleDesigner, "field 'mListTitleDesigner'", TextView.class);
+    target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_store_list, "field 'mRecyclerView'", RecyclerView.class);
   }
 
   @Override
@@ -101,24 +63,11 @@ public class SearchActivity_ViewBinding implements Unbinder {
     target.mBackButton = null;
     target.mClearButton = null;
     target.mSearchInput = null;
-    target.mKeywordList = null;
-    target.mStoreList = null;
-    target.mDesignerList = null;
-    target.mKeywordListMore = null;
-    target.mStoreListMore = null;
-    target.mDesignerListMore = null;
-    target.mListTitleStore = null;
-    target.mListTitleDesigner = null;
+    target.mRecyclerView = null;
 
     view2131230812.setOnClickListener(null);
     view2131230812 = null;
     view2131230813.setOnClickListener(null);
     view2131230813 = null;
-    view2131230955.setOnClickListener(null);
-    view2131230955 = null;
-    view2131230965.setOnClickListener(null);
-    view2131230965 = null;
-    view2131230954.setOnClickListener(null);
-    view2131230954 = null;
   }
 }

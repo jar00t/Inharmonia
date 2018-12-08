@@ -81,95 +81,20 @@
         </android.support.v7.widget.CardView>
 
         <ScrollView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:fillViewport="true">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@color/colorWhite">
+                android:padding="10dp"
+                android:orientation="vertical">
 
-                <ListView
-                    android:id="@+id/lvKeywordList"
-                    android:layout_height="wrap_content"
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_store_list"
                     android:layout_width="match_parent"
-                    android:background="@color/colorWhite" />
-
-                <TextView
-                    android:id="@+id/tvKeywordListMore"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:gravity="center_vertical|center_horizontal"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:text="@string/lainnya" />
-
-                <RelativeLayout
-                    android:id="@+id/rlListTitleStore"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tvListTitleStore"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:gravity="center_vertical"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorDarkGrey"
-                        android:text="@string/tempat_percetakan" />
-
-                    <TextView
-                        android:id="@+id/tvStoreListMore"
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:text="@string/lainnya"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:gravity="center_vertical"
-                        android:layout_alignParentEnd="true" />
-
-                </RelativeLayout>
-
-                <ListView
-                    android:id="@+id/lvStoreList"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:background="@color/colorWhite" />
-
-                <RelativeLayout
-                    android:id="@+id/rlListTitleDesigner"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tvListTitleDesigner"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:gravity="center_vertical"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorDarkGrey"
-                        android:text="@string/disainer" />
-
-                    <TextView
-                        android:id="@+id/tvDesignerListMore"
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:text="@string/lainnya"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:gravity="center_vertical"
-                        android:layout_alignParentEnd="true" />
-
-                </RelativeLayout>
-
-                <ListView
-                    android:id="@+id/lvDesignerList"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:background="@color/colorWhite" />
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
 

@@ -1239,9 +1239,6 @@ id line1
 id line3
 id listMode
 id list_item
-id lvDesignerList
-id lvKeywordList
-id lvStoreList
 id masked
 id media_actions
 id message
@@ -1275,11 +1272,10 @@ id radio
 id right
 id right_icon
 id right_side
-id rlListTitleDesigner
-id rlListTitleStore
 id rv_menu_link_list
 id rv_menu_list
 id rv_order_list
+id rv_store_list
 id rv_type_list
 id save_image_matrix
 id save_non_transition_alpha
@@ -1352,10 +1348,6 @@ id transition_scene_layoutid_cache
 id transition_transform
 id tvBuyerAddress
 id tvBuyerName
-id tvDesignerListMore
-id tvKeywordListMore
-id tvListTitleDesigner
-id tvListTitleStore
 id tvNumberValue
 id tvOrderCode
 id tvOrderDateTime
@@ -1363,7 +1355,6 @@ id tvOrderStatus
 id tvPageName
 id tvPopupTitle
 id tvStoreAddress
-id tvStoreListMore
 id tvStoreName
 id tvSubTitle
 id tvTitle
@@ -1434,9 +1425,6 @@ layout activity_main
 layout activity_order_detail
 layout activity_order_new
 layout activity_search
-layout activity_search_designer
-layout activity_search_keyword
-layout activity_search_store
 layout activity_setting
 layout activity_web
 layout design_bottom_navigation_item
@@ -1481,6 +1469,7 @@ layout rv_menu_item_row
 layout rv_menu_link_item_row
 layout rv_order_item_row
 layout rv_size_quantity_item_row
+layout rv_store_list_item_row
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
