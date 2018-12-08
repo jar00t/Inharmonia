@@ -1062,6 +1062,7 @@ drawable ic_mtrl_chip_close_circle
 drawable in_blank_landscape
 drawable in_blank_square
 drawable in_button_primary
+drawable in_button_secondary
 drawable in_count_label_background
 drawable in_ic_about
 drawable in_ic_account
@@ -1361,6 +1362,7 @@ id tvStoreAddress
 id tvStoreName
 id tvSubTitle
 id tvTitle
+id tvTotalItem
 id tvTypeListTitle
 id tvUserFullName
 id uniform

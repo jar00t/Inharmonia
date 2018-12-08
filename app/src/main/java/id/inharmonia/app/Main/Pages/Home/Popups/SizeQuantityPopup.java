@@ -37,6 +37,9 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
     @BindView(R.id.btAddToCart)
     public Button mAddToCartButton;
 
+    @BindView(R.id.tvTotalItem)
+    public TextView mTotalItem;
+
     public List<SizeList> mSizeList;
     public SizeList mSizeItem;
 

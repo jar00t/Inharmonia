@@ -37,6 +37,7 @@
     </RelativeLayout>
 
     <TextView
+        android:id="@+id/tvTotalItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="6pt"
@@ -57,36 +58,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorLightPurple">
+        android:baselineAligned="false"
+        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btAddToCart"
-            android:layout_width="match_parent"
+        <FrameLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:padding="20dp"
-            android:textColor="@color/colorWhite"
-            android:background="@drawable/in_button_primary"
-            android:text="@string/tambahkan_ke_keranjang" />
+            android:layout_weight="2"
+            android:background="@color/colorLightPurple">
 
-    </FrameLayout>
+            <Button
+                android:id="@+id/btAddToCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/in_button_secondary"
+                android:text="@string/tambahkan_ke_keranjang" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPurple">
+        </FrameLayout>
 
-        <Button
-            android:id="@+id/btNextStep"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="20dp"
-            android:textColor="@color/colorWhite"
-            android:background="@drawable/in_button_primary"
-            android:text="@string/lanjut" />
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPurple">
 
-    </FrameLayout>
+            <Button
+                android:id="@+id/btNextStep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/in_button_primary"
+                android:text="@string/lanjut" />
+
+        </FrameLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
