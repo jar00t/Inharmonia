@@ -27,6 +27,10 @@
 
     <style name="AppModalStyle"
         parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/in_rounded_popup</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="android:background">@drawable/in_rounded_dialog</item>
     </style>
 

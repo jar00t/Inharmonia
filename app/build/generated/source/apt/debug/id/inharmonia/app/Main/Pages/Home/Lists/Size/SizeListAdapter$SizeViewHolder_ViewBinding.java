@@ -4,9 +4,9 @@ package id.inharmonia.app.Main.Pages.Home.Lists.Size;
 import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Utils;
@@ -17,9 +17,11 @@ import java.lang.Override;
 public class SizeListAdapter$SizeViewHolder_ViewBinding implements Unbinder {
   private SizeListAdapter.SizeViewHolder target;
 
-  private View view2131230816;
-
   private View view2131230817;
+
+  private View view2131230818;
+
+  private View view2131230794;
 
   @UiThread
   public SizeListAdapter$SizeViewHolder_ViewBinding(final SizeListAdapter.SizeViewHolder target,
@@ -30,7 +32,7 @@ public class SizeListAdapter$SizeViewHolder_ViewBinding implements Unbinder {
     target.mIcon = Utils.findRequiredViewAsType(source, R.id.ivIcon, "field 'mIcon'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.ibDecreaseButton, "field 'mDecreaseButton' and method 'decreaseValue'");
     target.mDecreaseButton = Utils.castView(view, R.id.ibDecreaseButton, "field 'mDecreaseButton'", ImageButton.class);
-    view2131230816 = view;
+    view2131230817 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -39,14 +41,22 @@ public class SizeListAdapter$SizeViewHolder_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.ibIncreaseButton, "field 'mIncreaseButton' and method 'increaseValue'");
     target.mIncreaseButton = Utils.castView(view, R.id.ibIncreaseButton, "field 'mIncreaseButton'", ImageButton.class);
-    view2131230817 = view;
+    view2131230818 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.increaseValue();
       }
     });
-    target.mNumberValue = Utils.findRequiredViewAsType(source, R.id.tvNumberValue, "field 'mNumberValue'", TextView.class);
+    view = Utils.findRequiredView(source, R.id.etNumberValue, "field 'mNumberValue' and method 'focusMe'");
+    target.mNumberValue = Utils.castView(view, R.id.etNumberValue, "field 'mNumberValue'", EditText.class);
+    view2131230794 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.focusMe();
+      }
+    });
   }
 
   @Override
@@ -61,9 +71,11 @@ public class SizeListAdapter$SizeViewHolder_ViewBinding implements Unbinder {
     target.mIncreaseButton = null;
     target.mNumberValue = null;
 
-    view2131230816.setOnClickListener(null);
-    view2131230816 = null;
     view2131230817.setOnClickListener(null);
     view2131230817 = null;
+    view2131230818.setOnClickListener(null);
+    view2131230818 = null;
+    view2131230794.setOnClickListener(null);
+    view2131230794 = null;
   }
 }

@@ -6,9 +6,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import java.util.List;
 
@@ -23,10 +23,20 @@ public class SizeListAdapter extends RecyclerView.Adapter<SizeListAdapter.SizeVi
     private List<SizeList> mSizeList;
     private int mLayoutType;
 
+    public String[][] allData;
+
     public SizeListAdapter(Context mContext, List<SizeList> mSizeList, int mLayoutType) {
         this.mContext = mContext;
         this.mSizeList = mSizeList;
         this.mLayoutType = mLayoutType;
+    }
+
+    public void setData(String[][] quantityData) {
+        this.allData = quantityData;
+    }
+
+    public String[][] getData() {
+        return allData;
     }
 
     @NonNull
@@ -57,13 +67,19 @@ public class SizeListAdapter extends RecyclerView.Adapter<SizeListAdapter.SizeVi
         @BindView(R.id.ibIncreaseButton)
         ImageButton mIncreaseButton;
 
-        @BindView(R.id.tvNumberValue)
-        TextView mNumberValue;
+        @BindView(R.id.etNumberValue)
+        EditText mNumberValue;
 
         SizeViewHolder(final View itemView) {
             super(itemView);
 
             ButterKnife.bind(this, itemView);
+            mNumberValue.setCursorVisible(false);
+        }
+
+        @OnClick(R.id.etNumberValue)
+        public void focusMe() {
+            mNumberValue.setCursorVisible(true);
         }
 
         @OnClick(R.id.ibDecreaseButton)
@@ -72,8 +88,10 @@ public class SizeListAdapter extends RecyclerView.Adapter<SizeListAdapter.SizeVi
             int newValue = oldValue - 1;
             if (newValue <= 0) {
                 mNumberValue.setText("0");
+                SizeListAdapter.this.allData[getAdapterPosition()][1] = "0";
             } else {
                 mNumberValue.setText(String.valueOf(newValue));
+                SizeListAdapter.this.allData[getAdapterPosition()][1] = String.valueOf(newValue);
             }
         }
 
@@ -83,8 +101,10 @@ public class SizeListAdapter extends RecyclerView.Adapter<SizeListAdapter.SizeVi
             int newValue = oldValue + 1;
             if (newValue <= 0) {
                 mNumberValue.setText("0");
+                SizeListAdapter.this.allData[getAdapterPosition()][1] = "0";
             } else {
                 mNumberValue.setText(String.valueOf(newValue));
+                SizeListAdapter.this.allData[getAdapterPosition()][1] = String.valueOf(newValue);
             }
         }
 

@@ -1089,6 +1089,7 @@ drawable in_ic_troli
 drawable in_logo
 drawable in_more_square
 drawable in_rounded_dialog
+drawable in_rounded_popup
 drawable in_splash_logo
 drawable in_symbol
 drawable in_symbol_100
@@ -1103,7 +1104,6 @@ drawable in_thumb_text_blank_square
 drawable in_thumb_text_size_a4_square
 drawable in_thumb_text_size_a5_square
 drawable in_thumb_text_size_f4_square
-drawable in_total_background
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1195,6 +1195,7 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id etNumberValue
 id etSearchInput
 id exitUntilCollapsed
 id expand_activities_button
@@ -1352,7 +1353,6 @@ id transition_scene_layoutid_cache
 id transition_transform
 id tvBuyerAddress
 id tvBuyerName
-id tvNumberValue
 id tvOrderCode
 id tvOrderDateTime
 id tvOrderStatus
@@ -1362,7 +1362,6 @@ id tvStoreAddress
 id tvStoreName
 id tvSubTitle
 id tvTitle
-id tvTotalItem
 id tvTypeListTitle
 id tvUserFullName
 id uniform
@@ -1446,6 +1445,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_size_quantity_confirmation
 layout fragment_account
 layout fragment_home
 layout fragment_order
@@ -1789,6 +1789,7 @@ style Base_Widget_MaterialComponents_TextInputLayout
 style CardView
 style CardView_Dark
 style CardView_Light
+style DialogTheme
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
