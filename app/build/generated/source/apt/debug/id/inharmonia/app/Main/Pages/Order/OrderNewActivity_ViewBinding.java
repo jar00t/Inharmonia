@@ -5,6 +5,7 @@ import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Utils;
@@ -36,6 +37,7 @@ public class OrderNewActivity_ViewBinding implements Unbinder {
         target.exit();
       }
     });
+    target.mPageName = Utils.findRequiredViewAsType(source, R.id.tvPageName, "field 'mPageName'", TextView.class);
   }
 
   @Override
@@ -46,6 +48,7 @@ public class OrderNewActivity_ViewBinding implements Unbinder {
     this.target = null;
 
     target.mBackButton = null;
+    target.mPageName = null;
 
     view2131230814.setOnClickListener(null);
     view2131230814 = null;

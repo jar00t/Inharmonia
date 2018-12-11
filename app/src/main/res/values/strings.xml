@@ -47,4 +47,5 @@
     <string name="decrease_button">Decrease Button</string>
     <string name="increase_button">Increase Button</string>
     <string name="lanjut">Lanjut</string>
+    <string name="store_cover">Store Cover</string>
 </resources>

@@ -1,0 +1,19 @@
+#Internal package file, do not edit.
+#Tue Dec 11 14:33:05 ICT 2018
+1.base=D\:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+2.path=fonts/comfortaa-light.ttf
+0.baseType=DIRECTORY
+3.baseType=DIRECTORY
+2.base=D\:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+3.set=ASSET
+2.set=ASSET
+1.baseType=DIRECTORY
+3.path=fonts/harabara-mais.ttf
+count=4
+1.set=ASSET
+0.path=fonts/comfortaa-bold.ttf
+3.base=D\:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+0.set=ASSET
+0.base=D\:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+2.baseType=DIRECTORY
+1.path=fonts/comfortaa-regular.ttf

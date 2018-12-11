@@ -1,5 +1,6 @@
 package id.inharmonia.app.Search;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
@@ -17,8 +18,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import id.inharmonia.app.R;
-import id.inharmonia.app.Search.Store.StoreList;
-import id.inharmonia.app.Search.Store.StoreListAdapter;
+import id.inharmonia.app.Search.Lists.Store.StoreList;
+import id.inharmonia.app.Search.Lists.Store.StoreListAdapter;
 
 public class SearchActivity extends AppCompatActivity {
 
@@ -43,6 +44,9 @@ public class SearchActivity extends AppCompatActivity {
         setContentView(R.layout.activity_search);
 
         ButterKnife.bind(this);
+
+        Typeface comfortaa_regular_font = Typeface.createFromAsset(this.getApplicationContext().getAssets(),  "fonts/comfortaa-regular.ttf");
+        mSearchInput.setTypeface(comfortaa_regular_font);
 
         mSearchInput.addTextChangedListener(new TextWatcher() {
             @Override

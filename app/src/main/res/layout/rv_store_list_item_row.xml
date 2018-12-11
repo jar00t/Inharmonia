@@ -11,9 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         app:cardElevation="2dp"
-        android:layout_margin="1dp"
-        app:cardUseCompatPadding="true"
-        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="false"
+        app:cardCornerRadius="0dp"
         android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true">
@@ -23,17 +22,24 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/in_blank_landscape"
+                android:contentDescription="@string/store_cover"/>
+
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@drawable/in_blank_landscape"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorWhite"
-                    android:padding="10dp"
+                    android:padding="15dp"
                     android:layout_alignParentBottom="true"
                     android:orientation="horizontal">
 
@@ -53,9 +59,9 @@
                         <TextView
                             android:id="@+id/tvStoreName"
                             android:layout_width="wrap_content"
-                            android:layout_height="30dp"
+                            android:layout_height="wrap_content"
                             android:textColor="@color/colorDarkGrey"
-                            android:gravity="center_vertical"
+                            android:gravity="start|top"
                             android:layout_marginStart="10dp"
                             android:textStyle="bold"
                             android:text="" />

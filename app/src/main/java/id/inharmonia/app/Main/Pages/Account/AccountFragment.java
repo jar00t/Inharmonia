@@ -25,6 +25,15 @@ public class AccountFragment extends Fragment {
     @BindView(R.id.tvUserFullName)
     TextView mUserFullName;
 
+    @BindView(R.id.tvUserEmail)
+    TextView mUserEmail;
+
+    @BindView(R.id.tvAppName)
+    TextView mAppName;
+
+    @BindView(R.id.tvAppVersion)
+    TextView mAppVersion;
+
     @BindView(R.id.rv_menu_link_list)
     RecyclerView mRecyclerView;
 
@@ -45,7 +54,12 @@ public class AccountFragment extends Fragment {
         ButterKnife.bind(this, view);
 
         Typeface harabara_mais_font = Typeface.createFromAsset(view.getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
+        Typeface comfortaa_regular_font = Typeface.createFromAsset(view.getContext().getApplicationContext().getAssets(),  "fonts/comfortaa-regular.ttf");
+
         mUserFullName.setTypeface(harabara_mais_font);
+        mAppName.setTypeface(harabara_mais_font);
+        mUserEmail.setTypeface(comfortaa_regular_font);
+        mAppVersion.setTypeface(comfortaa_regular_font);
 
         mRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 1));
         mRecyclerView.setFocusable(false);

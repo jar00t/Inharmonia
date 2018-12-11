@@ -89,8 +89,15 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.Orde
             ButterKnife.bind(this, itemView);
 
             Typeface harabara_mais_font = Typeface.createFromAsset(itemView.getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
+            Typeface comfortaa_regular_font = Typeface.createFromAsset(itemView.getContext().getApplicationContext().getAssets(),  "fonts/comfortaa-regular.ttf");
+
+            mOrderCode.setTypeface(comfortaa_regular_font);
+            mOrderStatusText.setTypeface(harabara_mais_font);
             mStoreName.setTypeface(harabara_mais_font);
+            mStoreAddress.setTypeface(comfortaa_regular_font);
             mBuyerName.setTypeface(harabara_mais_font);
+            mBuyerAddress.setTypeface(comfortaa_regular_font);
+            mOrderDateTime.setTypeface(comfortaa_regular_font);
         }
 
         @OnClick(R.id.cvMenuItem)

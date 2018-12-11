@@ -41,6 +41,9 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
     @BindView(R.id.btAddToCart)
     public Button mAddToCartButton;
 
+    @BindView(R.id.btNextStep)
+    public Button mNextStepButton;
+
     public SizeListAdapter mSizeListAdapter;
     public List<SizeList> mSizeList;
     public SizeList mSizeItem;
@@ -64,7 +67,10 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
         ButterKnife.bind(this, view);
 
         Typeface harabara_mais_font = Typeface.createFromAsset(getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
+        Typeface comfortaa_bold_font = Typeface.createFromAsset(getContext().getApplicationContext().getAssets(),  "fonts/comfortaa-bold.ttf");
         mPopupTitle.setTypeface(harabara_mais_font);
+        mAddToCartButton.setTypeface(comfortaa_bold_font);
+        mNextStepButton.setTypeface(comfortaa_bold_font);
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         mRecyclerView.setFocusable(false);
@@ -95,6 +101,11 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
     public void addToCart() {
         /*quantityData = mSizeListAdapter.getData();
         mPopupTitle.setText(quantityData[2][1]);*/
+        confirmSizeQuantity();
+    }
+
+    @OnClick(R.id.btNextStep)
+    public void nextStep() {
         confirmSizeQuantity();
     }
 

@@ -22,6 +22,8 @@ public class SizeQuantityPopup_ViewBinding implements Unbinder {
 
   private View view2131230756;
 
+  private View view2131230757;
+
   @UiThread
   public SizeQuantityPopup_ViewBinding(final SizeQuantityPopup target, View source) {
     this.target = target;
@@ -47,6 +49,15 @@ public class SizeQuantityPopup_ViewBinding implements Unbinder {
         target.addToCart();
       }
     });
+    view = Utils.findRequiredView(source, R.id.btNextStep, "field 'mNextStepButton' and method 'nextStep'");
+    target.mNextStepButton = Utils.castView(view, R.id.btNextStep, "field 'mNextStepButton'", Button.class);
+    view2131230757 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.nextStep();
+      }
+    });
   }
 
   @Override
@@ -60,10 +71,13 @@ public class SizeQuantityPopup_ViewBinding implements Unbinder {
     target.mPopupTitle = null;
     target.mClosePopup = null;
     target.mAddToCartButton = null;
+    target.mNextStepButton = null;
 
     view2131230816.setOnClickListener(null);
     view2131230816 = null;
     view2131230756.setOnClickListener(null);
     view2131230756 = null;
+    view2131230757.setOnClickListener(null);
+    view2131230757 = null;
   }
 }

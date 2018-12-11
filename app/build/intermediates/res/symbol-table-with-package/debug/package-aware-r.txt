@@ -1351,6 +1351,8 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tvAppName
+id tvAppVersion
 id tvBuyerAddress
 id tvBuyerName
 id tvOrderCode
@@ -1363,6 +1365,7 @@ id tvStoreName
 id tvSubTitle
 id tvTitle
 id tvTypeListTitle
+id tvUserEmail
 id tvUserFullName
 id uniform
 id unlabeled
@@ -1576,6 +1579,7 @@ string search_menu_title
 string semua_layanan
 string status_bar_notification_info_overflow
 string status_icon
+string store_cover
 string store_icon
 string tambahkan_ke_keranjang
 string tempat_percetakan
