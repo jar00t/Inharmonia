@@ -2,7 +2,6 @@ package id.inharmonia.app.Web;
 
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
-import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -36,9 +35,6 @@ public class WebActivity extends AppCompatActivity {
         setContentView(R.layout.activity_web);
 
         ButterKnife.bind(this);
-
-        Typeface comfortaa_regular_font = Typeface.createFromAsset(this.getApplicationContext().getAssets(),  "fonts/comfortaa-regular.ttf");
-        mPageName.setTypeface(comfortaa_regular_font);
 
         mBundle = getIntent().getExtras();
         if (!mBundle.getString("pageTitle").isEmpty()) {

@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -23,7 +24,8 @@ public class SizeListAdapter extends RecyclerView.Adapter<SizeListAdapter.SizeVi
     private List<SizeList> mSizeList;
     private int mLayoutType;
 
-    public String[][] allData;
+    public List<String[]> allData;
+    public List<String[]> filteredData;
 
     public SizeListAdapter(Context mContext, List<SizeList> mSizeList, int mLayoutType) {
         this.mContext = mContext;
@@ -31,12 +33,18 @@ public class SizeListAdapter extends RecyclerView.Adapter<SizeListAdapter.SizeVi
         this.mLayoutType = mLayoutType;
     }
 
-    public void setData(String[][] quantityData) {
+    public void setData(List<String[]> quantityData) {
         this.allData = quantityData;
     }
 
-    public String[][] getData() {
-        return allData;
+    public List<String[]> getData() {
+        filteredData = new ArrayList<>();
+        for(int i = 0; i < allData.size(); i++) {
+            if (!allData.get(i)[1].equals("0")) {
+                filteredData.add(new String[]{allData.get(i)[0], allData.get(i)[1]});
+            }
+        }
+        return filteredData;
     }
 
     @NonNull
@@ -88,10 +96,10 @@ public class SizeListAdapter extends RecyclerView.Adapter<SizeListAdapter.SizeVi
             int newValue = oldValue - 1;
             if (newValue <= 0) {
                 mNumberValue.setText("0");
-                SizeListAdapter.this.allData[getAdapterPosition()][1] = "0";
+                SizeListAdapter.this.allData.get(getAdapterPosition())[1] = "0";
             } else {
                 mNumberValue.setText(String.valueOf(newValue));
-                SizeListAdapter.this.allData[getAdapterPosition()][1] = String.valueOf(newValue);
+                SizeListAdapter.this.allData.get(getAdapterPosition())[1] = String.valueOf(newValue);
             }
         }
 
@@ -101,10 +109,10 @@ public class SizeListAdapter extends RecyclerView.Adapter<SizeListAdapter.SizeVi
             int newValue = oldValue + 1;
             if (newValue <= 0) {
                 mNumberValue.setText("0");
-                SizeListAdapter.this.allData[getAdapterPosition()][1] = "0";
+                SizeListAdapter.this.allData.get(getAdapterPosition())[1] = "0";
             } else {
                 mNumberValue.setText(String.valueOf(newValue));
-                SizeListAdapter.this.allData[getAdapterPosition()][1] = String.valueOf(newValue);
+                SizeListAdapter.this.allData.get(getAdapterPosition())[1] = String.valueOf(newValue);
             }
         }
 

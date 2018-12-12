@@ -1,6 +1,5 @@
 package id.inharmonia.app.Setting;
 
-import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageButton;
@@ -25,9 +24,6 @@ public class SettingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_setting);
 
         ButterKnife.bind(this);
-
-        Typeface comfortaa_regular_font = Typeface.createFromAsset(this.getApplicationContext().getAssets(),  "fonts/comfortaa-regular.ttf");
-        mPageName.setTypeface(comfortaa_regular_font);
     }
 
     @OnClick(R.id.ibBackButton)

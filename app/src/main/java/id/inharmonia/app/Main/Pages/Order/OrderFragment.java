@@ -1,6 +1,5 @@
 package id.inharmonia.app.Main.Pages.Order;
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -9,7 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,9 +22,6 @@ public class OrderFragment extends Fragment {
 
     @BindView(R.id.rv_order_list)
     RecyclerView mRecyclerView;
-
-    @BindView(R.id.tvPageName)
-    TextView mPageName;
 
     List<OrderList> mOrderList;
     OrderList mOrderItem;
@@ -43,9 +38,6 @@ public class OrderFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_order, container, false);
 
         ButterKnife.bind(this, view);
-
-        Typeface comfortaa_regular_font = Typeface.createFromAsset(view.getContext().getApplicationContext().getAssets(),  "fonts/comfortaa-regular.ttf");
-        mPageName.setTypeface(comfortaa_regular_font);
 
         mRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 1));
         mRecyclerView.setFocusable(false);

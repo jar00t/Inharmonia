@@ -5,7 +5,6 @@ import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
 import id.inharmonia.app.R;
@@ -20,7 +19,6 @@ public class OrderFragment_ViewBinding implements Unbinder {
     this.target = target;
 
     target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_order_list, "field 'mRecyclerView'", RecyclerView.class);
-    target.mPageName = Utils.findRequiredViewAsType(source, R.id.tvPageName, "field 'mPageName'", TextView.class);
   }
 
   @Override
@@ -31,6 +29,5 @@ public class OrderFragment_ViewBinding implements Unbinder {
     this.target = null;
 
     target.mRecyclerView = null;
-    target.mPageName = null;
   }
 }

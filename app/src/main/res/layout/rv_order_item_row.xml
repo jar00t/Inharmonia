@@ -46,6 +46,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:gravity="center_vertical"
+                        android:fontFamily="@font/comfortaa_regular"
                         android:layout_marginStart="10dp"
                         android:text="" />
 
@@ -65,6 +66,7 @@
                         android:gravity="center_vertical"
                         android:layout_marginEnd="10dp"
                         android:textStyle="bold"
+                        android:fontFamily="@font/harabara_mais"
                         android:text="" />
 
                     <ImageView
@@ -109,6 +111,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@color/colorDarkGrey"
                             android:gravity="top|start"
+                            android:fontFamily="@font/harabara_mais"
                             android:layout_marginStart="10dp"
                             android:textStyle="bold"
                             android:text="" />
@@ -118,6 +121,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="start"
+                            android:fontFamily="@font/comfortaa_regular"
                             android:layout_marginStart="10dp"
                             android:text="" />
 
@@ -159,6 +163,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@color/colorDarkGrey"
                             android:gravity="top|start"
+                            android:fontFamily="@font/harabara_mais"
                             android:layout_marginStart="10dp"
                             android:textStyle="bold"
                             android:text="" />
@@ -168,6 +173,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="start"
+                            android:fontFamily="@font/comfortaa_regular"
                             android:layout_marginStart="10dp"
                             android:text="" />
 
@@ -182,6 +188,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
+                android:fontFamily="@font/comfortaa_regular"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:textSize="5pt"

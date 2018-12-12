@@ -1,6 +1,5 @@
 package id.inharmonia.app.Main.Pages.Home.Popups;
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetDialogFragment;
@@ -10,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,9 +24,6 @@ public class AllPrintTypePopup extends BottomSheetDialogFragment {
 
     @BindView(R.id.rv_type_list)
     public RecyclerView mRecyclerView;
-
-    @BindView(R.id.tvPopupTitle)
-    public TextView mPopupTitle;
 
     @BindView(R.id.ibClosePopup)
     public ImageButton mClosePopup;
@@ -50,9 +45,6 @@ public class AllPrintTypePopup extends BottomSheetDialogFragment {
         View view = inflater.inflate(R.layout.popup_all_print_type, container, false);
 
         ButterKnife.bind(this, view);
-
-        Typeface harabara_mais_font = Typeface.createFromAsset(getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
-        mPopupTitle.setTypeface(harabara_mais_font);
 
         mRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 4));
         mRecyclerView.setFocusable(false);

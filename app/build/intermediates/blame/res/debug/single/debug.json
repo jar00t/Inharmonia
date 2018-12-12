@@ -444,12 +444,12 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\layout\\abc_tooltip.xml"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23_abc_control_background_material.xml.flat",
@@ -518,6 +518,10 @@
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_out.xml.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\font_comfortaa_bold.ttf.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\font\\comfortaa_bold.ttf"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_size_quantity_confirmation.xml.flat",
@@ -836,6 +840,10 @@
         "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\layout\\fragment_account.xml"
     },
     {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\font_comfortaa_regular.ttf.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\font\\comfortaa_regular.ttf"
+    },
+    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_design_ic_visibility.xml.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     },
@@ -878,6 +886,10 @@
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media_custom.xml.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\be03eb140797c7a8c9d4f4f45f7e9d92\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\font_harabara_mais.ttf.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\font\\harabara_mais.ttf"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_dialog_title_material.xml.flat",
@@ -1216,10 +1228,6 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\drawable-xxhdpi-v4\\design_ic_visibility_off.png"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_lv_text_item_row.xml.flat",
-        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\layout\\lv_text_item_row.xml"
-    },
-    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_dark.xml.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\color\\abc_secondary_text_material_dark.xml"
     },
@@ -1346,6 +1354,10 @@
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_splash.png.flat",
         "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_splash.png"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\font_comfortaa_light.ttf.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\font\\comfortaa_light.ttf"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_symbol_dekok_100.png.flat",
@@ -1994,6 +2006,10 @@
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_rv_quantity_list_item_row.xml.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\layout\\rv_quantity_list_item_row.xml"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",

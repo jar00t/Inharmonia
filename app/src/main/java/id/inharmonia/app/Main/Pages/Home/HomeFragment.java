@@ -1,7 +1,6 @@
 package id.inharmonia.app.Main.Pages.Home;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -12,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
@@ -36,9 +34,6 @@ public class HomeFragment extends Fragment {
     @BindView(R.id.ibSearchOpener)
     ImageButton mSearchOpener;
 
-    @BindView(R.id.tvTypeListTitle)
-    TextView mTypeListTitle;
-
     @BindView(R.id.clPromoSlide)
     CarouselView mPromoSlider;
 
@@ -58,9 +53,6 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         ButterKnife.bind(this, view);
-
-        Typeface harabara_mais_font = Typeface.createFromAsset(getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
-        mTypeListTitle.setTypeface(harabara_mais_font);
 
         mPromoSlider.setPageCount(sampleImages.length);
         mPromoSlider.setImageListener(imageListener);

@@ -1,7 +1,6 @@
 package id.inharmonia.app.Search.Lists.Store;
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -59,11 +58,6 @@ public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.Stor
             super(itemView);
 
             ButterKnife.bind(this, itemView);
-
-            Typeface harabara_mais_font = Typeface.createFromAsset(itemView.getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
-            Typeface comfortaa_regular_font = Typeface.createFromAsset(itemView.getContext().getApplicationContext().getAssets(),  "fonts/comfortaa-regular.ttf");
-            mStoreName.setTypeface(harabara_mais_font);
-            mStoreAddress.setTypeface(comfortaa_regular_font);
         }
 
     }

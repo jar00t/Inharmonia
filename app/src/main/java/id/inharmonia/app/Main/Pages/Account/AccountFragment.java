@@ -1,6 +1,5 @@
 package id.inharmonia.app.Main.Pages.Account;
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -9,7 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,18 +19,6 @@ import id.inharmonia.app.Main.Pages.Account.Lists.Menu.MenuAdapter;
 import id.inharmonia.app.R;
 
 public class AccountFragment extends Fragment {
-
-    @BindView(R.id.tvUserFullName)
-    TextView mUserFullName;
-
-    @BindView(R.id.tvUserEmail)
-    TextView mUserEmail;
-
-    @BindView(R.id.tvAppName)
-    TextView mAppName;
-
-    @BindView(R.id.tvAppVersion)
-    TextView mAppVersion;
 
     @BindView(R.id.rv_menu_link_list)
     RecyclerView mRecyclerView;
@@ -52,14 +38,6 @@ public class AccountFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_account, container, false);
 
         ButterKnife.bind(this, view);
-
-        Typeface harabara_mais_font = Typeface.createFromAsset(view.getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
-        Typeface comfortaa_regular_font = Typeface.createFromAsset(view.getContext().getApplicationContext().getAssets(),  "fonts/comfortaa-regular.ttf");
-
-        mUserFullName.setTypeface(harabara_mais_font);
-        mAppName.setTypeface(harabara_mais_font);
-        mUserEmail.setTypeface(comfortaa_regular_font);
-        mAppVersion.setTypeface(comfortaa_regular_font);
 
         mRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 1));
         mRecyclerView.setFocusable(false);

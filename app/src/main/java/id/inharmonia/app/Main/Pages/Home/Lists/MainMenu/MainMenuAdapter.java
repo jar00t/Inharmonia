@@ -1,7 +1,6 @@
 package id.inharmonia.app.Main.Pages.Home.Lists.MainMenu;
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.CardView;
@@ -66,9 +65,6 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
             super(itemView);
 
             ButterKnife.bind(this, itemView);
-
-            Typeface harabara_mais_font = Typeface.createFromAsset(itemView.getContext().getApplicationContext().getAssets(),  "fonts/harabara-mais.ttf");
-            mTitle.setTypeface(harabara_mais_font);
         }
 
         @OnClick(R.id.cvMenuItem)

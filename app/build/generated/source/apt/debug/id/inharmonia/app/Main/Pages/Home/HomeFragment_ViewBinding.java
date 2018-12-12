@@ -6,7 +6,6 @@ import android.support.annotation.UiThread;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Utils;
@@ -18,7 +17,7 @@ import java.lang.Override;
 public class HomeFragment_ViewBinding implements Unbinder {
   private HomeFragment target;
 
-  private View view2131230819;
+  private View view2131296356;
 
   @UiThread
   public HomeFragment_ViewBinding(final HomeFragment target, View source) {
@@ -28,14 +27,13 @@ public class HomeFragment_ViewBinding implements Unbinder {
     target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_menu_list, "field 'mRecyclerView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.ibSearchOpener, "field 'mSearchOpener' and method 'openSearch'");
     target.mSearchOpener = Utils.castView(view, R.id.ibSearchOpener, "field 'mSearchOpener'", ImageButton.class);
-    view2131230819 = view;
+    view2131296356 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.openSearch();
       }
     });
-    target.mTypeListTitle = Utils.findRequiredViewAsType(source, R.id.tvTypeListTitle, "field 'mTypeListTitle'", TextView.class);
     target.mPromoSlider = Utils.findRequiredViewAsType(source, R.id.clPromoSlide, "field 'mPromoSlider'", CarouselView.class);
   }
 
@@ -48,10 +46,9 @@ public class HomeFragment_ViewBinding implements Unbinder {
 
     target.mRecyclerView = null;
     target.mSearchOpener = null;
-    target.mTypeListTitle = null;
     target.mPromoSlider = null;
 
-    view2131230819.setOnClickListener(null);
-    view2131230819 = null;
+    view2131296356.setOnClickListener(null);
+    view2131296356 = null;
   }
 }

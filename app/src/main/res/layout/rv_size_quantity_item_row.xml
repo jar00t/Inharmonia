@@ -59,8 +59,10 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:textStyle="bold"
+                    android:textColorHint="@color/colorDarkGrey"
+                    android:fontFamily="@font/comfortaa_regular"
                     android:textColor="@color/colorDarkGrey"
-                    android:textSize="6pt" />
+                    android:textSize="7pt" />
 
                 <ImageButton
                     android:id="@+id/ibIncreaseButton"

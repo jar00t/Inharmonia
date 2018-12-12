@@ -54,8 +54,10 @@
                         android:layout_height="30dp"
                         android:gravity="center_vertical"
                         android:inputType="text"
+                        android:textSize="7pt"
+                        android:fontFamily="@font/comfortaa_regular"
                         android:hint="@string/search_hint"
-                        android:textColorHint="@color/colorGrey"
+                        android:textColorHint="@color/colorDarkGrey"
                         android:background="@color/colorWhite"
                         android:layout_marginStart="10dp" />
 

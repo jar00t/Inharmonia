@@ -1121,6 +1121,10 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font comfortaa_bold
+font comfortaa_light
+font comfortaa_regular
+font harabara_mais
 id ALT
 id CTRL
 id FUNCTION
@@ -1179,6 +1183,7 @@ id coordinator
 id custom
 id customPanel
 id cvMenuItem
+id cvQuantityListItem
 id decor_content_parent
 id default_activity_button
 id depth
@@ -1280,6 +1285,7 @@ id right_side
 id rv_menu_link_list
 id rv_menu_list
 id rv_order_list
+id rv_quantity_list
 id rv_store_list
 id rv_type_list
 id save_image_matrix
@@ -1355,6 +1361,7 @@ id tvAppName
 id tvAppVersion
 id tvBuyerAddress
 id tvBuyerName
+id tvName
 id tvOrderCode
 id tvOrderDateTime
 id tvOrderStatus
@@ -1364,6 +1371,7 @@ id tvStoreAddress
 id tvStoreName
 id tvSubTitle
 id tvTitle
+id tvTotal
 id tvTypeListTitle
 id tvUserEmail
 id tvUserFullName
@@ -1453,7 +1461,6 @@ layout fragment_account
 layout fragment_home
 layout fragment_order
 layout lv_img_text_sub_item_row
-layout lv_text_item_row
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1476,6 +1483,7 @@ layout popup_size_quantity
 layout rv_menu_item_row
 layout rv_menu_link_item_row
 layout rv_order_item_row
+layout rv_quantity_list_item_row
 layout rv_size_quantity_item_row
 layout rv_store_list_item_row
 layout select_dialog_item_material
@@ -1600,8 +1608,6 @@ style Animation_Design_BottomSheetDialog
 style AppBottomSheetDialogTheme
 style AppModalStyle
 style AppTheme
-style AppTheme_AppBarOverlay
-style AppTheme_PopupOverlay
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -1977,7 +1983,6 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
-style Toolbar_TitleText
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
@@ -2050,6 +2055,7 @@ style Widget_AppCompat_Spinner_Underlined
 style Widget_AppCompat_TextView_SpinnerItem
 style Widget_AppCompat_Toolbar
 style Widget_AppCompat_Toolbar_Button_Navigation
+style Widget_BottomNavigationView
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
 style Widget_Design_AppBarLayout

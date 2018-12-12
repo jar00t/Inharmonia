@@ -48,6 +48,7 @@
                             android:textStyle="bold"
                             android:background="@color/colorWhite"
                             android:layout_marginStart="10dp"
+                            android:fontFamily="@font/comfortaa_bold"
                             android:text="@string/pesanan"/>
 
                     </LinearLayout>
