@@ -1,6 +1,7 @@
 package id.inharmonia.app.Main.Pages.Home.Lists.MainMenu;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.CardView;
@@ -71,7 +72,12 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
         public void goTo() {
             switch (getAdapterPosition()){
                 default:
+                    Bundle sheetData = new Bundle();
+                    sheetData.putInt("icon", mMenuList.get(getAdapterPosition()).getMenuIcon());
+                    sheetData.putString("title", mMenuList.get(getAdapterPosition()).getMenuName());
+
                     SizeQuantityPopup mSizeQuantityPopup = new SizeQuantityPopup();
+                    mSizeQuantityPopup.setArguments(sheetData);
                     mSizeQuantityPopup.show(((FragmentActivity)mContext).getSupportFragmentManager(), mSizeQuantityPopup.getTag());
                     break;
                 case 7 :

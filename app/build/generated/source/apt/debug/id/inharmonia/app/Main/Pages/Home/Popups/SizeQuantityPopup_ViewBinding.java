@@ -7,6 +7,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Utils;
@@ -28,6 +30,8 @@ public class SizeQuantityPopup_ViewBinding implements Unbinder {
     this.target = target;
 
     View view;
+    target.mSelectedTypeIcon = Utils.findRequiredViewAsType(source, R.id.ivSelectedTypeIcon, "field 'mSelectedTypeIcon'", ImageView.class);
+    target.mSelectedTypeTitle = Utils.findRequiredViewAsType(source, R.id.tvSelectedTypeTitle, "field 'mSelectedTypeTitle'", TextView.class);
     target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_type_list, "field 'mRecyclerView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.ibClosePopup, "field 'mClosePopup' and method 'hideMe'");
     target.mClosePopup = Utils.castView(view, R.id.ibClosePopup, "field 'mClosePopup'", ImageButton.class);
@@ -65,6 +69,8 @@ public class SizeQuantityPopup_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
+    target.mSelectedTypeIcon = null;
+    target.mSelectedTypeTitle = null;
     target.mRecyclerView = null;
     target.mClosePopup = null;
     target.mAddToCartButton = null;

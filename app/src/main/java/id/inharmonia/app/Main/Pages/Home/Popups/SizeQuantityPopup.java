@@ -15,6 +15,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +31,12 @@ import id.inharmonia.app.Main.Pages.Home.Lists.Size.SizeListAdapter;
 import id.inharmonia.app.R;
 
 public class SizeQuantityPopup extends BottomSheetDialogFragment {
+
+    @BindView(R.id.ivSelectedTypeIcon)
+    ImageView mSelectedTypeIcon;
+
+    @BindView(R.id.tvSelectedTypeTitle)
+    TextView mSelectedTypeTitle;
 
     @BindView(R.id.rv_type_list)
     public RecyclerView mRecyclerView;
@@ -64,6 +72,8 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
 
         ButterKnife.bind(this, view);
 
+        setSelectedType();
+
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         mRecyclerView.setFocusable(false);
 
@@ -82,6 +92,13 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
         mSizeListAdapter.setData(quantityData);
 
         return view;
+    }
+
+    public void setSelectedType() {
+        Bundle sheetData = getArguments();
+
+        mSelectedTypeIcon.setImageResource(sheetData.getInt("icon"));
+        mSelectedTypeTitle.setText(sheetData.getString("title"));
     }
 
     @OnClick(R.id.ibClosePopup)
