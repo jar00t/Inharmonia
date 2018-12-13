@@ -1,6 +1,7 @@
 package id.inharmonia.app.Main.Pages.Home.Lists.Type;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.CardView;
@@ -68,7 +69,12 @@ public class TypeListAdapter extends RecyclerView.Adapter<TypeListAdapter.TypeVi
 
         @OnClick(R.id.cvMenuItem)
         public void showAll() {
+            Bundle sheetData = new Bundle();
+            sheetData.putInt("icon", mTypeList.get(getAdapterPosition()).getTypeIcon());
+            sheetData.putString("title", mTypeList.get(getAdapterPosition()).getTypeName());
+
             SizeQuantityPopup mSizeQuantityPopup = new SizeQuantityPopup();
+            mSizeQuantityPopup.setArguments(sheetData);
             mSizeQuantityPopup.show(((FragmentActivity)mContext).getSupportFragmentManager(), mSizeQuantityPopup.getTag());
         }
 
