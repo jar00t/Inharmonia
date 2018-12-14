@@ -1,6 +1,8 @@
 package id.inharmonia.app.Main.Pages.Home.Lists.MainMenu;
 
 import android.content.Context;
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
@@ -44,6 +46,13 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
     public void onBindViewHolder(@NonNull MenuViewHolder holder, int position) {
         holder.mTitle.setText(mMenuList.get(position).getMenuName());
         holder.mIcon.setImageResource(mMenuList.get(position).getMenuIcon());
+        holder.mMenuItem.setEnabled(mMenuList.get(position).getMenuEnabled());
+        if (!holder.mMenuItem.isEnabled()) {
+            ColorMatrix matrix = new ColorMatrix();
+            matrix.setSaturation(0);
+            holder.mIcon.setColorFilter(new ColorMatrixColorFilter(matrix));
+            holder.mTitle.setTextColor(mContext.getResources().getColor(R.color.colorGrey));
+        }
     }
 
     @Override

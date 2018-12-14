@@ -62,21 +62,21 @@ public class HomeFragment extends Fragment {
 
         mMenuList = new ArrayList<>();
 
-        mMenuItem = new MainMenu("Dokumen", R.drawable.in_thumb_documents_square);
+        mMenuItem = new MainMenu("Dokumen", R.drawable.in_thumb_documents_square, true);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Gambar", R.drawable.in_thumb_pictures_square);
+        mMenuItem = new MainMenu("Gambar", R.drawable.in_thumb_pictures_square, true);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Flyer", R.drawable.in_thumb_flyer_square);
+        mMenuItem = new MainMenu("Flyer", R.drawable.in_thumb_flyer_square, false);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Undangan", R.drawable.in_thumb_invitation_square);
+        mMenuItem = new MainMenu("Undangan", R.drawable.in_thumb_invitation_square, false);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Spanduk", R.drawable.in_thumb_spanduk_square);
+        mMenuItem = new MainMenu("Spanduk", R.drawable.in_thumb_spanduk_square, false);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Stand Banner", R.drawable.in_thumb_stand_banner_square);
+        mMenuItem = new MainMenu("Stand Banner", R.drawable.in_thumb_stand_banner_square, false);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Kartu Nama", R.drawable.in_blank_square);
+        mMenuItem = new MainMenu("Kartu Nama", R.drawable.in_blank_square, false);
         mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Lainnya", R.drawable.in_more_square);
+        mMenuItem = new MainMenu("Lainnya", R.drawable.in_more_square, true);
         mMenuList.add(mMenuItem);
 
         mRecyclerView.setAdapter(new MainMenuAdapter(getActivity(), mMenuList, R.layout.rv_menu_item_row));
