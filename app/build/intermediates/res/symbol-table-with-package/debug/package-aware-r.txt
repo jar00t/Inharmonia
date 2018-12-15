@@ -1086,6 +1086,7 @@ drawable in_ic_secure
 drawable in_ic_setting
 drawable in_ic_store
 drawable in_ic_troli
+drawable in_label_corner_coming_soon
 drawable in_logo
 drawable in_more_square
 drawable in_rounded_dialog
@@ -1097,9 +1098,11 @@ drawable in_symbol_dekok_100
 drawable in_thumb_documents_square
 drawable in_thumb_flyer_square
 drawable in_thumb_invitation_square
+drawable in_thumb_namecard_square
 drawable in_thumb_pictures_square
 drawable in_thumb_spanduk_square
 drawable in_thumb_stand_banner_square
+drawable in_thumb_sticker_square
 drawable in_thumb_text_blank_square
 drawable in_thumb_text_size_a4_square
 drawable in_thumb_text_size_a5_square
@@ -1210,6 +1213,8 @@ id fill_horizontal
 id fill_vertical
 id filled
 id fixed
+id flAddToCart
+id flNextStep
 id flow
 id forever
 id fragment_container
@@ -1240,6 +1245,7 @@ id italic
 id item_touch_helper_previous_elevation
 id ivCartButton
 id ivIcon
+id ivLabelCorner
 id ivOrderStatus
 id ivSelectedTypeIcon
 id ivUserPicture
@@ -1368,6 +1374,7 @@ id tvOrderDateTime
 id tvOrderStatus
 id tvPageName
 id tvPopupTitle
+id tvQuantityTotal
 id tvSelectedTypeTitle
 id tvStoreAddress
 id tvStoreName
@@ -1563,6 +1570,7 @@ string in_logo
 string increase_button
 string inharmonia_app
 string inharmonia_symbol
+string label_corner
 string lainnya
 string lanjut
 string list_icon

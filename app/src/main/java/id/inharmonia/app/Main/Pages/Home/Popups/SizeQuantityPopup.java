@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -38,11 +39,20 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
     @BindView(R.id.tvSelectedTypeTitle)
     TextView mSelectedTypeTitle;
 
+    @BindView(R.id.tvQuantityTotal)
+    TextView mQuantityTotal;
+
     @BindView(R.id.rv_type_list)
     public RecyclerView mRecyclerView;
 
     @BindView(R.id.ibClosePopup)
     public ImageButton mClosePopup;
+
+    @BindView(R.id.flAddToCart)
+    public FrameLayout mAddToCartFrame;
+
+    @BindView(R.id.flNextStep)
+    public FrameLayout mNextStepFrame;
 
     @BindView(R.id.btAddToCart)
     public Button mAddToCartButton;
@@ -87,7 +97,7 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
             quantityData.add(new String[]{supportedSize[i], "0"});
         }
 
-        mSizeListAdapter = new SizeListAdapter(getActivity(), mSizeList, R.layout.rv_size_quantity_item_row);
+        mSizeListAdapter = new SizeListAdapter(getActivity(), mSizeList, R.layout.rv_size_quantity_item_row, this);
         mRecyclerView.setAdapter(mSizeListAdapter);
         mSizeListAdapter.setData(quantityData);
 
@@ -99,6 +109,32 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
 
         mSelectedTypeIcon.setImageResource(sheetData.getInt("icon"));
         mSelectedTypeTitle.setText(sheetData.getString("title"));
+    }
+
+    public void enableButton() {
+        mNextStepButton.setEnabled(true);
+        mAddToCartButton.setEnabled(true);
+        mNextStepButton.setAlpha(1);
+        mAddToCartButton.setAlpha(1);
+        mNextStepFrame.setAlpha(1);
+        mAddToCartFrame.setAlpha(1);
+    }
+
+    public void disableButton() {
+        mNextStepButton.setEnabled(false);
+        mAddToCartButton.setEnabled(false);
+        mNextStepButton.setAlpha(0.5f);
+        mAddToCartButton.setAlpha(0.5f);
+        mNextStepFrame.setAlpha(0.5f);
+        mAddToCartFrame.setAlpha(0.5f);
+    }
+
+    public void updateTotal(int newTotal) {
+        if (newTotal == 0) {
+            mQuantityTotal.setText(String.valueOf(newTotal));
+        } else {
+            mQuantityTotal.setText(String.format("%s lembar", newTotal));
+        }
     }
 
     @OnClick(R.id.ibClosePopup)
@@ -168,6 +204,7 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
 
             mQuantityListRecyclerView.setAdapter(new QuantityListAdapter(getActivity(), mQuantityList, R.layout.rv_quantity_list_item_row));
         }
+
     }
 
 }

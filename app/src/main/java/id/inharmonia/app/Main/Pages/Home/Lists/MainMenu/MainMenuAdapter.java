@@ -52,6 +52,7 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
             matrix.setSaturation(0);
             holder.mIcon.setColorFilter(new ColorMatrixColorFilter(matrix));
             holder.mTitle.setTextColor(mContext.getResources().getColor(R.color.colorGrey));
+            holder.mLabelCorner.setVisibility(View.VISIBLE);
         }
     }
 
@@ -70,6 +71,9 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
 
         @BindView(R.id.cvMenuItem)
         CardView mMenuItem;
+
+        @BindView(R.id.ivLabelCorner)
+        ImageView mLabelCorner;
 
         MenuViewHolder(final View itemView) {
             super(itemView);

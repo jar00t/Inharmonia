@@ -36,6 +36,7 @@ public class MainMenuAdapter$MenuViewHolder_ViewBinding implements Unbinder {
         target.goTo();
       }
     });
+    target.mLabelCorner = Utils.findRequiredViewAsType(source, R.id.ivLabelCorner, "field 'mLabelCorner'", ImageView.class);
   }
 
   @Override
@@ -48,6 +49,7 @@ public class MainMenuAdapter$MenuViewHolder_ViewBinding implements Unbinder {
     target.mTitle = null;
     target.mIcon = null;
     target.mMenuItem = null;
+    target.mLabelCorner = null;
 
     view2131296313.setOnClickListener(null);
     view2131296313 = null;

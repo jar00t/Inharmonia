@@ -78,18 +78,35 @@
                         android:src="@drawable/in_blank_square"
                         android:contentDescription="@string/menu_image" />
 
-                    <TextView
-                        android:id="@+id/tvSelectedTypeTitle"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:textAlignment="center"
-                        android:gravity="center_vertical"
-                        android:layout_marginTop="5dp"
-                        android:fontFamily="@font/harabara_mais"
-                        android:textColor="@color/colorDarkGrey"
-                        android:layout_marginBottom="5dp"
-                        android:textSize="5pt"
-                        android:text="" />
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tvSelectedTypeTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="@font/harabara_mais"
+                            android:textColor="@color/colorDarkGrey"
+                            android:textSize="5pt"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/tvQuantityTotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="@font/comfortaa_regular"
+                            android:textColor="@color/colorDarkGrey"
+                            android:textSize="5pt"
+                            android:text="@string/zero" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -118,9 +135,11 @@
         android:orientation="horizontal">
 
         <FrameLayout
+            android:id="@+id/flAddToCart"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
+            android:alpha="0.5"
             android:background="@color/colorLightPurple">
 
             <Button
@@ -129,6 +148,8 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:padding="20dp"
+                android:enabled="false"
+                android:alpha="0.5"
                 android:textColor="@color/colorWhite"
                 android:background="@drawable/in_button_secondary"
                 android:fontFamily="@font/comfortaa_bold"
@@ -137,9 +158,11 @@
         </FrameLayout>
 
         <FrameLayout
+            android:id="@+id/flNextStep"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:alpha="0.5"
             android:background="@color/colorPurple">
 
             <Button
@@ -148,6 +171,8 @@
                 android:layout_height="wrap_content"
                 android:padding="20dp"
                 android:textStyle="bold"
+                android:enabled="false"
+                android:alpha="0.5"
                 android:layout_gravity="center_vertical"
                 android:fontFamily="@font/comfortaa_bold"
                 android:textColor="@color/colorWhite"

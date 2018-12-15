@@ -2,7 +2,6 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <android.support.v7.widget.CardView
@@ -22,13 +21,28 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/ivIcon"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                android:src="@drawable/in_blank_square"
-                android:contentDescription="@string/menu_image" />
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/in_blank_square"
+                    android:contentDescription="@string/menu_image" />
+
+                <ImageView
+                    android:id="@+id/ivLabelCorner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:visibility="invisible"
+                    android:src="@drawable/in_label_corner_coming_soon"
+                    android:contentDescription="@string/label_corner" />
+
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/tvTitle"

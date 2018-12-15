@@ -51,21 +51,21 @@ public class AllPrintTypePopup extends BottomSheetDialogFragment {
 
         mTypeList = new ArrayList<>();
 
-        mTypeItem = new TypeList("Dokumen", R.drawable.in_thumb_documents_square);
+        mTypeItem = new TypeList("Dokumen", R.drawable.in_thumb_documents_square, true);
         mTypeList.add(mTypeItem);
-        mTypeItem = new TypeList("Gambar", R.drawable.in_thumb_pictures_square);
+        mTypeItem = new TypeList("Gambar", R.drawable.in_thumb_pictures_square, true);
         mTypeList.add(mTypeItem);
-        mTypeItem = new TypeList("Flyer", R.drawable.in_thumb_flyer_square);
+        mTypeItem = new TypeList("Flyer", R.drawable.in_thumb_flyer_square, false);
         mTypeList.add(mTypeItem);
-        mTypeItem = new TypeList("Undangan", R.drawable.in_thumb_invitation_square);
+        mTypeItem = new TypeList("Undangan", R.drawable.in_thumb_invitation_square, false);
         mTypeList.add(mTypeItem);
-        mTypeItem = new TypeList("Spanduk", R.drawable.in_thumb_spanduk_square);
+        mTypeItem = new TypeList("Spanduk", R.drawable.in_thumb_spanduk_square, false);
         mTypeList.add(mTypeItem);
-        mTypeItem = new TypeList("Stand Banner", R.drawable.in_thumb_stand_banner_square);
+        mTypeItem = new TypeList("Stand Banner", R.drawable.in_thumb_stand_banner_square, false);
         mTypeList.add(mTypeItem);
-        mTypeItem = new TypeList("Kartu Nama", R.drawable.in_blank_square);
+        mTypeItem = new TypeList("Kartu Nama", R.drawable.in_thumb_namecard_square, false);
         mTypeList.add(mTypeItem);
-        mTypeItem = new TypeList("Sticker", R.drawable.in_blank_square);
+        mTypeItem = new TypeList("Sticker", R.drawable.in_thumb_sticker_square, false);
         mTypeList.add(mTypeItem);
 
         mRecyclerView.setAdapter(new TypeListAdapter(getActivity(), mTypeList, R.layout.rv_menu_item_row));

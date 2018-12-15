@@ -4,10 +4,12 @@ public class TypeList {
 
     private String typeName;
     private int typeIcon;
+    private Boolean typeEnabled;
 
-    public TypeList(String typeName, int typeIcon) {
+    public TypeList(String typeName, int typeIcon, Boolean typeEnabled) {
         this.typeName = typeName;
         this.typeIcon = typeIcon;
+        this.typeEnabled = typeEnabled;
     }
 
     public String getTypeName() {
@@ -17,6 +19,8 @@ public class TypeList {
     public int getTypeIcon() {
         return typeIcon;
     }
+
+    public Boolean getTypeEnabled() { return typeEnabled; }
 
 }
 

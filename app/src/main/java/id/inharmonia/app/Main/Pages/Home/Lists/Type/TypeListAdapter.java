@@ -1,6 +1,8 @@
 package id.inharmonia.app.Main.Pages.Home.Lists.Type;
 
 import android.content.Context;
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
@@ -43,6 +45,14 @@ public class TypeListAdapter extends RecyclerView.Adapter<TypeListAdapter.TypeVi
     public void onBindViewHolder(@NonNull TypeViewHolder holder, int position) {
         holder.mTitle.setText(mTypeList.get(position).getTypeName());
         holder.mIcon.setImageResource(mTypeList.get(position).getTypeIcon());
+        holder.mTypeItem.setEnabled(mTypeList.get(position).getTypeEnabled());
+        if (!holder.mTypeItem.isEnabled()) {
+            ColorMatrix matrix = new ColorMatrix();
+            matrix.setSaturation(0);
+            holder.mIcon.setColorFilter(new ColorMatrixColorFilter(matrix));
+            holder.mTitle.setTextColor(mContext.getResources().getColor(R.color.colorGrey));
+            holder.mLabelCorner.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override
@@ -60,6 +70,9 @@ public class TypeListAdapter extends RecyclerView.Adapter<TypeListAdapter.TypeVi
 
         @BindView(R.id.cvMenuItem)
         CardView mTypeItem;
+
+        @BindView(R.id.ivLabelCorner)
+        ImageView mLabelCorner;
 
         TypeViewHolder(final View itemView) {
             super(itemView);
