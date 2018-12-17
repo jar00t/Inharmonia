@@ -67,6 +67,8 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
     private String[] supportedSize = {"a4", "a5", "f4"};
     public List<String[]> quantityData;
 
+    int userTryOpenCount = 0;
+
     public SizeQuantityPopup() {
 
     }
@@ -104,6 +106,11 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
         return view;
     }
 
+    public Boolean checkSheet() {
+        userTryOpenCount = userTryOpenCount + 1;
+        return (userTryOpenCount <= 1);
+    }
+
     public void setSelectedType() {
         Bundle sheetData = getArguments();
 
@@ -135,6 +142,12 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
         } else {
             mQuantityTotal.setText(String.format("%s lembar", newTotal));
         }
+    }
+
+    @Override
+    public void onDismiss(DialogInterface dialog) {
+        super.onDismiss(dialog);
+        userTryOpenCount = 0;
     }
 
     @OnClick(R.id.ibClosePopup)
@@ -180,7 +193,11 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
         Dialog dialogConfirmSizeQuantity = builderConfirmSizeQuantity.create();
         dialogConfirmSizeQuantity.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         dialogConfirmSizeQuantity.setCancelable(true);
-        dialogConfirmSizeQuantity.setTitle("Konfirmasi Pesanan");
+
+        View customTitle = getLayoutInflater().inflate(R.layout.ad_dialog_title, null);
+        TextView theTitle = customTitle.findViewById(R.id.tvTitle);
+        theTitle.setText(R.string.konfirmasi_pesanan);
+        ((AlertDialog) dialogConfirmSizeQuantity).setCustomTitle(customTitle);
 
         dialogConfirmSizeQuantity.show();
     }
@@ -198,7 +215,7 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
             mQuantityListRecyclerView.setFocusable(false);
 
             for(int i = 0; i < quantityData.size(); i++) {
-                mQuantityListItem = new QuantityList(quantityData.get(i)[0], quantityData.get(i)[1]);
+                mQuantityListItem = new QuantityList(String.format("Ukuran %s", quantityData.get(i)[0].toUpperCase()), String.format("%s lembar", quantityData.get(i)[1]));
                 mQuantityList.add(mQuantityListItem);
             }
 

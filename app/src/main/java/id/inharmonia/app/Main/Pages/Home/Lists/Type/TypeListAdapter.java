@@ -28,6 +28,8 @@ public class TypeListAdapter extends RecyclerView.Adapter<TypeListAdapter.TypeVi
     private List<TypeList> mTypeList;
     private int mLayoutType;
 
+    SizeQuantityPopup mSizeQuantityPopup = new SizeQuantityPopup();
+
     public TypeListAdapter(Context mContext, List<TypeList> mTypeList, int mLayoutType) {
         this.mContext = mContext;
         this.mTypeList = mTypeList;
@@ -82,13 +84,14 @@ public class TypeListAdapter extends RecyclerView.Adapter<TypeListAdapter.TypeVi
 
         @OnClick(R.id.cvMenuItem)
         public void showAll() {
-            Bundle sheetData = new Bundle();
-            sheetData.putInt("icon", mTypeList.get(getAdapterPosition()).getTypeIcon());
-            sheetData.putString("title", mTypeList.get(getAdapterPosition()).getTypeName());
+            if (mSizeQuantityPopup.checkSheet()) {
+                Bundle sheetData = new Bundle();
+                sheetData.putInt("icon", mTypeList.get(getAdapterPosition()).getTypeIcon());
+                sheetData.putString("title", mTypeList.get(getAdapterPosition()).getTypeName());
 
-            SizeQuantityPopup mSizeQuantityPopup = new SizeQuantityPopup();
-            mSizeQuantityPopup.setArguments(sheetData);
-            mSizeQuantityPopup.show(((FragmentActivity)mContext).getSupportFragmentManager(), mSizeQuantityPopup.getTag());
+                mSizeQuantityPopup.setArguments(sheetData);
+                mSizeQuantityPopup.show(((FragmentActivity)mContext).getSupportFragmentManager(), mSizeQuantityPopup.getTag());
+            }
         }
 
     }

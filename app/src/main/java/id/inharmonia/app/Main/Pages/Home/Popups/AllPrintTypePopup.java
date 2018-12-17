@@ -1,5 +1,6 @@
 package id.inharmonia.app.Main.Pages.Home.Popups;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetDialogFragment;
@@ -30,6 +31,8 @@ public class AllPrintTypePopup extends BottomSheetDialogFragment {
 
     public List<TypeList> mTypeList;
     public TypeList mTypeItem;
+
+    int userTryOpenCount = 0;
 
     public AllPrintTypePopup() {
 
@@ -71,6 +74,17 @@ public class AllPrintTypePopup extends BottomSheetDialogFragment {
         mRecyclerView.setAdapter(new TypeListAdapter(getActivity(), mTypeList, R.layout.rv_menu_item_row));
 
         return view;
+    }
+
+    public Boolean checkSheet() {
+        userTryOpenCount = userTryOpenCount + 1;
+        return (userTryOpenCount <= 1);
+    }
+
+    @Override
+    public void onDismiss(DialogInterface dialog) {
+        super.onDismiss(dialog);
+        userTryOpenCount = 0;
     }
 
     @OnClick(R.id.ibClosePopup)

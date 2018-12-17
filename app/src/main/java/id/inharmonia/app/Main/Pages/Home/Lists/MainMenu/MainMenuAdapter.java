@@ -29,6 +29,9 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
     private List<MainMenu> mMenuList;
     private int mLayoutType;
 
+    SizeQuantityPopup mSizeQuantityPopup = new SizeQuantityPopup();
+    AllPrintTypePopup mAllPrintTypePopup = new AllPrintTypePopup();
+
     public MainMenuAdapter(Context mContext, List<MainMenu> mMenuList, int mLayoutType) {
         this.mContext = mContext;
         this.mMenuList = mMenuList;
@@ -85,17 +88,19 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
         public void goTo() {
             switch (getAdapterPosition()){
                 default:
-                    Bundle sheetData = new Bundle();
-                    sheetData.putInt("icon", mMenuList.get(getAdapterPosition()).getMenuIcon());
-                    sheetData.putString("title", mMenuList.get(getAdapterPosition()).getMenuName());
+                    if (mSizeQuantityPopup.checkSheet()) {
+                        Bundle sheetData = new Bundle();
+                        sheetData.putInt("icon", mMenuList.get(getAdapterPosition()).getMenuIcon());
+                        sheetData.putString("title", mMenuList.get(getAdapterPosition()).getMenuName());
 
-                    SizeQuantityPopup mSizeQuantityPopup = new SizeQuantityPopup();
-                    mSizeQuantityPopup.setArguments(sheetData);
-                    mSizeQuantityPopup.show(((FragmentActivity)mContext).getSupportFragmentManager(), mSizeQuantityPopup.getTag());
+                        mSizeQuantityPopup.setArguments(sheetData);
+                        mSizeQuantityPopup.show(((FragmentActivity) mContext).getSupportFragmentManager(), mSizeQuantityPopup.getTag());
+                    }
                     break;
                 case 7 :
-                    AllPrintTypePopup mAllPrintTypePopup = new AllPrintTypePopup();
-                    mAllPrintTypePopup.show(((FragmentActivity)mContext).getSupportFragmentManager(), mAllPrintTypePopup.getTag());
+                    if (mAllPrintTypePopup.checkSheet()) {
+                        mAllPrintTypePopup.show(((FragmentActivity) mContext).getSupportFragmentManager(), mAllPrintTypePopup.getTag());
+                    }
                     break;
             }
         }

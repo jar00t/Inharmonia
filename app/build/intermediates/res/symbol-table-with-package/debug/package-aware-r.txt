@@ -1451,6 +1451,7 @@ layout activity_order_new
 layout activity_search
 layout activity_setting
 layout activity_web
+layout ad_dialog_title
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1570,6 +1571,7 @@ string in_logo
 string increase_button
 string inharmonia_app
 string inharmonia_symbol
+string konfirmasi_pesanan
 string label_corner
 string lainnya
 string lanjut
