@@ -1,4 +1,4 @@
-#Mon Dec 17 17:11:49 ICT 2018
-base.0=D\:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+#Mon Dec 17 22:39:45 ICT 2018
+base.0=D\:\\Android\\Project\\Inharmonia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
 path.0=classes.dex
 renamed.0=classes.dex

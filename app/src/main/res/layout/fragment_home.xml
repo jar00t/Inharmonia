@@ -145,7 +145,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="200dp"
                                 app:fillColor="@color/colorPurple"
-                                app:pageColor="@color/colorGrey"
+                                app:pageColor="@color/colorWhite"
                                 app:radius="3dp"
                                 app:slideInterval="5000"
                                 app:strokeWidth="0dp"/>

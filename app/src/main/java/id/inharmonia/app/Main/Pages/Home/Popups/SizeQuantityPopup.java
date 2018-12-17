@@ -210,6 +210,9 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
             QuantityList mQuantityListItem;
             mQuantityList = new ArrayList<>();
 
+            TextView mTotal = dialogView.findViewById(R.id.tvTotal);
+            mTotal.setText(mQuantityTotal.getText().toString());
+
             RecyclerView mQuantityListRecyclerView = dialogView.findViewById(R.id.rv_quantity_list);
             mQuantityListRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 1));
             mQuantityListRecyclerView.setFocusable(false);

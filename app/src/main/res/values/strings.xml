@@ -50,4 +50,5 @@
     <string name="store_cover">Store Cover</string>
     <string name="label_corner">Label Corner</string>
     <string name="konfirmasi_pesanan">Konfirmasi Pesanan</string>
+    <string name="total">Total</string>
 </resources>

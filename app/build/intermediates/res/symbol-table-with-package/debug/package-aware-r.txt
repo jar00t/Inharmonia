@@ -1609,6 +1609,7 @@ string title_activity_search
 string title_activity_splash_screen
 string title_home
 string title_order
+string total
 string user_picture
 string zero
 style AlertDialog_AppCompat
