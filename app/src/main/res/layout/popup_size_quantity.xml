@@ -34,7 +34,7 @@
             android:scaleType="fitCenter"
             android:clickable="true"
             android:focusable="true"
-            android:contentDescription="@string/next_icon"/>
+            android:contentDescription="@string/close_button"/>
 
     </RelativeLayout>
 

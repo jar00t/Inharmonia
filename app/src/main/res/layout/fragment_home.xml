@@ -94,6 +94,7 @@
                                 android:layout_alignEnd="@+id/ivCartButton">
 
                                 <TextView
+                                    android:id="@+id/tvCartTotal"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:textColor="@color/colorWhite"
@@ -101,7 +102,7 @@
                                     android:textSize="5pt"
                                     android:fontFamily="@font/comfortaa_regular"
                                     android:background="@drawable/in_count_label_background"
-                                    android:text="30" />
+                                    android:text="@string/zero" />
 
                             </RelativeLayout>
 

@@ -64,10 +64,11 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
     public List<SizeList> mSizeList;
     public SizeList mSizeItem;
 
-    private String[] supportedSize = {"a4", "a5", "f4"};
+    String[] supportedSize;
     public List<String[]> quantityData;
 
     int userTryOpenCount = 0;
+    AlertDialog.Builder builderConfirmSizeQuantity = null;
 
     public SizeQuantityPopup() {
 
@@ -116,6 +117,15 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
 
         mSelectedTypeIcon.setImageResource(sheetData.getInt("icon"));
         mSelectedTypeTitle.setText(sheetData.getString("title"));
+
+        switch (sheetData.getString("title")) {
+            case "Gambar":
+                supportedSize = new String[]{"a4", "a5"};
+                break;
+            case "Dokumen":
+                supportedSize = new String[]{"a4", "a5", "f4"};
+                break;
+        }
     }
 
     public void enableButton() {
@@ -157,49 +167,58 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
 
     @OnClick(R.id.btAddToCart)
     public void addToCart() {
-        confirmSizeQuantity();
+        confirmSizeQuantity("add");
     }
 
     @OnClick(R.id.btNextStep)
     public void nextStep() {
-        confirmSizeQuantity();
+        confirmSizeQuantity("next");
     }
 
-    public void confirmSizeQuantity() {
-        AlertDialog.Builder builderConfirmSizeQuantity = new AlertDialog.Builder(getActivity(), R.style.DialogTheme);
-        View dialogConfirmSizeQuantityView = getLayoutInflater().inflate(R.layout.dialog_size_quantity_confirmation, null);
-        builderConfirmSizeQuantity.setView(dialogConfirmSizeQuantityView);
+    public void confirmSizeQuantity(final String action) {
+        if (builderConfirmSizeQuantity == null){
+            builderConfirmSizeQuantity = new AlertDialog.Builder(getActivity(), R.style.DialogTheme);
+            View dialogConfirmSizeQuantityView = getLayoutInflater().inflate(R.layout.dialog_size_quantity_confirmation, null);
+            builderConfirmSizeQuantity.setView(dialogConfirmSizeQuantityView);
 
-        showQuantityList(dialogConfirmSizeQuantityView);
+            showQuantityList(dialogConfirmSizeQuantityView);
 
-        builderConfirmSizeQuantity.setPositiveButton("Ok Sip", new DialogInterface.OnClickListener() {
+            builderConfirmSizeQuantity.setPositiveButton("Ok Sip", new DialogInterface.OnClickListener() {
 
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    if (action.equals("add")) updateCart();
+                    dialog.dismiss();
+                }
 
-        });
+            });
 
-        builderConfirmSizeQuantity.setNegativeButton("Batal", new DialogInterface.OnClickListener() {
+            builderConfirmSizeQuantity.setNegativeButton("Batal", new DialogInterface.OnClickListener() {
 
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
 
-        });
+            });
 
-        Dialog dialogConfirmSizeQuantity = builderConfirmSizeQuantity.create();
-        dialogConfirmSizeQuantity.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-        dialogConfirmSizeQuantity.setCancelable(true);
+            Dialog dialogConfirmSizeQuantity = builderConfirmSizeQuantity.create();
+            dialogConfirmSizeQuantity.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+            dialogConfirmSizeQuantity.setCancelable(true);
 
-        View customTitle = getLayoutInflater().inflate(R.layout.ad_dialog_title, null);
-        TextView theTitle = customTitle.findViewById(R.id.tvTitle);
-        theTitle.setText(R.string.konfirmasi_pesanan);
-        ((AlertDialog) dialogConfirmSizeQuantity).setCustomTitle(customTitle);
+            View customTitle = getLayoutInflater().inflate(R.layout.ad_dialog_title, null);
+            TextView theTitle = customTitle.findViewById(R.id.tvTitle);
+            theTitle.setText(R.string.konfirmasi_pesanan);
+            ((AlertDialog) dialogConfirmSizeQuantity).setCustomTitle(customTitle);
 
-        dialogConfirmSizeQuantity.show();
+            dialogConfirmSizeQuantity.show();
+            dialogConfirmSizeQuantity.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                @Override
+                public void onDismiss(DialogInterface dialogInterface) {
+                    builderConfirmSizeQuantity = null;
+                }
+            });
+        }
     }
 
     private void showQuantityList(View dialogView) {
@@ -225,6 +244,10 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
             mQuantityListRecyclerView.setAdapter(new QuantityListAdapter(getActivity(), mQuantityList, R.layout.rv_quantity_list_item_row));
         }
 
+    }
+
+    private void updateCart() {
+        dismiss();
     }
 
 }

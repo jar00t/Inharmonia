@@ -1368,6 +1368,7 @@ id tvAppName
 id tvAppVersion
 id tvBuyerAddress
 id tvBuyerName
+id tvCartTotal
 id tvName
 id tvOrderCode
 id tvOrderDateTime
@@ -1560,6 +1561,7 @@ string cetak_apa_aja_gak_pake_repot
 string character_counter_content_description
 string character_counter_pattern
 string clear_button
+string close_button
 string decrease_button
 string detil_order
 string disainer
