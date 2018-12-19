@@ -18,7 +18,7 @@ import java.lang.Override;
 public class HomeFragment_ViewBinding implements Unbinder {
   private HomeFragment target;
 
-  private View view2131296359;
+  private View view2131296360;
 
   @UiThread
   public HomeFragment_ViewBinding(final HomeFragment target, View source) {
@@ -28,7 +28,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
     target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_menu_list, "field 'mRecyclerView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.ibSearchOpener, "field 'mSearchOpener' and method 'openSearch'");
     target.mSearchOpener = Utils.castView(view, R.id.ibSearchOpener, "field 'mSearchOpener'", ImageButton.class);
-    view2131296359 = view;
+    view2131296360 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
     target.mCartTotal = null;
     target.mPromoSlider = null;
 
-    view2131296359.setOnClickListener(null);
-    view2131296359 = null;
+    view2131296360.setOnClickListener(null);
+    view2131296360 = null;
   }
 }

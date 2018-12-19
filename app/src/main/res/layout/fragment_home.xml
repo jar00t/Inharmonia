@@ -129,17 +129,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:paddingBottom="20dp"
-                    android:paddingTop="0dp"
                     android:orientation="vertical">
 
                     <android.support.v7.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="15dp"
-                        android:layout_margin="10dp"
                         app:cardElevation="0dp">
 
                         <FrameLayout
@@ -160,32 +154,44 @@
 
                     </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:id="@+id/tvTypeListTitle"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="7pt"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorDarkGrey"
-                        android:paddingTop="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:paddingBottom="5dp"
-                        android:fontFamily="@font/harabara_mais"
-                        android:text="@string/cetak_apa_aja_gak_pake_repot" />
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="0dp">
 
-                    <android.support.v7.widget.RecyclerView
-                        android:id="@+id/rv_menu_list"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tvTypeListTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="7pt"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorDarkGrey"
+                            android:paddingTop="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="5dp"
+                            android:fontFamily="@font/harabara_mais"
+                            android:text="@string/cetak_apa_aja_gak_pake_repot" />
 
-                    <ImageView
-                        android:id="@+id/in_logo_bottom"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="20dp"
-                        android:src="@drawable/in_symbol_dekok_100"
-                        android:contentDescription="@string/end_separator" />
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_menu_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/in_logo_bottom"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/in_symbol_dekok_100"
+                            android:contentDescription="@string/end_separator" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 

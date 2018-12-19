@@ -8,9 +8,11 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -82,6 +84,12 @@ public class SizeListAdapter extends RecyclerView.Adapter<SizeListAdapter.SizeVi
         @BindView(R.id.ibIncreaseButton)
         ImageButton mIncreaseButton;
 
+        @BindView(R.id.btAddButton)
+        Button mAddButton;
+
+        @BindView(R.id.llQuantityCustomer)
+        LinearLayout mQuantityCustomer;
+
         @BindView(R.id.etNumberValue)
         EditText mNumberValue;
 
@@ -133,6 +141,12 @@ public class SizeListAdapter extends RecyclerView.Adapter<SizeListAdapter.SizeVi
                 }
 
             });
+        }
+
+        @OnClick(R.id.btAddButton)
+        public void showQuantityCustomer() {
+            mAddButton.setVisibility(View.GONE);
+            mQuantityCustomer.setVisibility(View.VISIBLE);
         }
 
         @OnClick(R.id.etNumberValue)

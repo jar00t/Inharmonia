@@ -1,5 +1,7 @@
 package id.inharmonia.app.Main.Pages.Home.Popups;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -156,7 +158,9 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
     public void updateTotal(int newTotal) {
         if (newTotal == 0) {
             mQuantityTotal.setText(String.valueOf(newTotal));
+            mQuantityTotal.setVisibility(View.GONE);
         } else {
+            mQuantityTotal.setVisibility(View.VISIBLE);
             mQuantityTotal.setText(String.format("%s lembar", newTotal));
         }
     }

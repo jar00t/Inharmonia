@@ -1165,6 +1165,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btAddButton
 id btAddToCart
 id btNextStep
 id buttonPanel
@@ -1257,6 +1258,7 @@ id line1
 id line3
 id listMode
 id list_item
+id llQuantityCustomer
 id masked
 id media_actions
 id message
@@ -1606,6 +1608,7 @@ string status_bar_notification_info_overflow
 string status_icon
 string store_cover
 string store_icon
+string tambah
 string tambahkan_ke_keranjang
 string tempat_percetakan
 string title_account
