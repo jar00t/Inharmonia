@@ -103,6 +103,7 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
                     break;
                 case 7 :
                     if (mAllPrintTypePopup.checkSheet()) {
+                        mAllPrintTypePopup.sendMom(mHomeFragment);
                         mAllPrintTypePopup.show(((FragmentActivity) mContext).getSupportFragmentManager(), mAllPrintTypePopup.getTag());
                     }
                     break;

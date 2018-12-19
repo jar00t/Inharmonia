@@ -19,6 +19,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import id.inharmonia.app.Main.Pages.Home.HomeFragment;
 import id.inharmonia.app.Main.Pages.Home.Popups.SizeQuantityPopup;
 import id.inharmonia.app.R;
 
@@ -27,13 +28,15 @@ public class TypeListAdapter extends RecyclerView.Adapter<TypeListAdapter.TypeVi
     final Context mContext;
     private List<TypeList> mTypeList;
     private int mLayoutType;
+    HomeFragment mHomeFragment;
 
     SizeQuantityPopup mSizeQuantityPopup = new SizeQuantityPopup();
 
-    public TypeListAdapter(Context mContext, List<TypeList> mTypeList, int mLayoutType) {
+    public TypeListAdapter(Context mContext, List<TypeList> mTypeList, int mLayoutType, HomeFragment mHomeFragment) {
         this.mContext = mContext;
         this.mTypeList = mTypeList;
         this.mLayoutType = mLayoutType;
+        this.mHomeFragment = mHomeFragment;
     }
 
     @NonNull
@@ -89,6 +92,7 @@ public class TypeListAdapter extends RecyclerView.Adapter<TypeListAdapter.TypeVi
                 sheetData.putInt("icon", mTypeList.get(getAdapterPosition()).getTypeIcon());
                 sheetData.putString("title", mTypeList.get(getAdapterPosition()).getTypeName());
 
+                mSizeQuantityPopup.sendMom(mHomeFragment);
                 mSizeQuantityPopup.setArguments(sheetData);
                 mSizeQuantityPopup.show(((FragmentActivity)mContext).getSupportFragmentManager(), mSizeQuantityPopup.getTag());
             }

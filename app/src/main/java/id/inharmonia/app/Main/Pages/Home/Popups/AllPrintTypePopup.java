@@ -17,6 +17,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import id.inharmonia.app.Main.Pages.Home.HomeFragment;
 import id.inharmonia.app.Main.Pages.Home.Lists.Type.TypeList;
 import id.inharmonia.app.Main.Pages.Home.Lists.Type.TypeListAdapter;
 import id.inharmonia.app.R;
@@ -31,6 +32,8 @@ public class AllPrintTypePopup extends BottomSheetDialogFragment {
 
     public List<TypeList> mTypeList;
     public TypeList mTypeItem;
+
+    HomeFragment mHomeFragment;
 
     int userTryOpenCount = 0;
 
@@ -71,9 +74,13 @@ public class AllPrintTypePopup extends BottomSheetDialogFragment {
         mTypeItem = new TypeList("Sticker", R.drawable.in_thumb_sticker_square, false);
         mTypeList.add(mTypeItem);
 
-        mRecyclerView.setAdapter(new TypeListAdapter(getActivity(), mTypeList, R.layout.rv_menu_item_row));
+        mRecyclerView.setAdapter(new TypeListAdapter(getActivity(), mTypeList, R.layout.rv_menu_item_row, mHomeFragment));
 
         return view;
+    }
+
+    public void sendMom(HomeFragment mHomeFragment) {
+        this.mHomeFragment = mHomeFragment;
     }
 
     public Boolean checkSheet() {

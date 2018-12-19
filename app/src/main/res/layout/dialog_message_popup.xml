@@ -2,10 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="10dp"
-    android:paddingBottom="20dp"
-    android:paddingStart="20dp"
-    android:paddingEnd="20dp"
+    android:padding="20dp"
     android:orientation="vertical">
 
     <TextView
@@ -13,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
+        android:textColor="@color/colorDarkGrey"
         android:fontFamily="@font/comfortaa_regular"
         android:gravity="center_vertical" />
 
