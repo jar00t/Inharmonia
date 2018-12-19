@@ -25,6 +25,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import id.inharmonia.app.Main.Pages.Home.HomeFragment;
 import id.inharmonia.app.Main.Pages.Home.Lists.Quantity.QuantityList;
 import id.inharmonia.app.Main.Pages.Home.Lists.Quantity.QuantityListAdapter;
 import id.inharmonia.app.Main.Pages.Home.Lists.Size.SizeList;
@@ -70,6 +71,8 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
     int userTryOpenCount = 0;
     AlertDialog.Builder builderConfirmSizeQuantity = null;
 
+    HomeFragment mHomeFragment;
+
     public SizeQuantityPopup() {
 
     }
@@ -110,6 +113,10 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
     public Boolean checkSheet() {
         userTryOpenCount = userTryOpenCount + 1;
         return (userTryOpenCount <= 1);
+    }
+
+    public void sendMom(HomeFragment mHomeFragment) {
+        this.mHomeFragment = mHomeFragment;
     }
 
     public void setSelectedType() {
@@ -247,6 +254,7 @@ public class SizeQuantityPopup extends BottomSheetDialogFragment {
     }
 
     private void updateCart() {
+        mHomeFragment.updateCart();
         dismiss();
     }
 

@@ -11,6 +11,7 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+anim bounce
 anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
@@ -1226,6 +1227,7 @@ id home
 id homeAsUp
 id horizontal
 id ibBackButton
+id ibCartButton
 id ibClearButton
 id ibClosePopup
 id ibDecreaseButton
@@ -1243,7 +1245,6 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id ivCartButton
 id ivIcon
 id ivLabelCorner
 id ivOrderStatus
@@ -1369,6 +1370,7 @@ id tvAppVersion
 id tvBuyerAddress
 id tvBuyerName
 id tvCartTotal
+id tvMessages
 id tvName
 id tvOrderCode
 id tvOrderDateTime
@@ -1467,6 +1469,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_message_popup
 layout dialog_size_quantity_confirmation
 layout fragment_account
 layout fragment_home

@@ -1,6 +1,10 @@
 package id.inharmonia.app.Main.Pages.Home;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -9,8 +13,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
@@ -21,6 +29,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import id.inharmonia.app.Animations.BounceAnimation;
 import id.inharmonia.app.Main.Pages.Home.Lists.MainMenu.MainMenu;
 import id.inharmonia.app.Main.Pages.Home.Lists.MainMenu.MainMenuAdapter;
 import id.inharmonia.app.R;
@@ -33,6 +42,12 @@ public class HomeFragment extends Fragment {
 
     @BindView(R.id.ibSearchOpener)
     ImageButton mSearchOpener;
+
+    @BindView(R.id.ibCartButton)
+    ImageButton mCartButton;
+
+    @BindView(R.id.tvCartTotal)
+    TextView mCartTotal;
 
     @BindView(R.id.clPromoSlide)
     CarouselView mPromoSlider;
@@ -79,9 +94,47 @@ public class HomeFragment extends Fragment {
         mMenuItem = new MainMenu("Lainnya", R.drawable.in_more_square, true);
         mMenuList.add(mMenuItem);
 
-        mRecyclerView.setAdapter(new MainMenuAdapter(getActivity(), mMenuList, R.layout.rv_menu_item_row));
+        mRecyclerView.setAdapter(new MainMenuAdapter(getActivity(), mMenuList, R.layout.rv_menu_item_row, this));
 
         return view;
+    }
+
+    public void updateCart() {
+        final Animation buttonAnim = AnimationUtils.loadAnimation(getActivity(), R.anim.bounce);
+
+        BounceAnimation interpolator = new BounceAnimation(0.2, 20);
+        buttonAnim.setInterpolator(interpolator);
+
+        mCartTotal.setVisibility(View.VISIBLE);
+        mCartTotal.startAnimation(buttonAnim);
+        mCartTotal.setText(String.format("%s", (Integer.parseInt(mCartTotal.getText().toString()) + 1)));
+        msgPopup("Pesanan berhasil ditambahkan ke keranjang");
+    }
+
+    public void msgPopup(String messages) {
+        AlertDialog.Builder msgPopup = new AlertDialog.Builder(getActivity(), R.style.DialogTheme);
+        View msgPopupView = getLayoutInflater().inflate(R.layout.dialog_message_popup, null);
+        msgPopup.setView(msgPopupView);
+
+        TextView mMessages = msgPopupView.findViewById(R.id.tvMessages);
+        mMessages.setText(messages);
+
+        msgPopup.setPositiveButton("Ok Sip", new DialogInterface.OnClickListener() {
+
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+
+        });
+
+        Dialog dialogMsgPopup = msgPopup.create();
+        dialogMsgPopup.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialogMsgPopup.setCancelable(true);
+
+        dialogMsgPopup.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        dialogMsgPopup.show();
     }
 
     @OnClick(R.id.ibSearchOpener)

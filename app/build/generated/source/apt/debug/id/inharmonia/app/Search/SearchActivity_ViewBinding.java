@@ -19,7 +19,7 @@ public class SearchActivity_ViewBinding implements Unbinder {
 
   private View view2131296353;
 
-  private View view2131296354;
+  private View view2131296355;
 
   @UiThread
   public SearchActivity_ViewBinding(SearchActivity target) {
@@ -42,7 +42,7 @@ public class SearchActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.ibClearButton, "field 'mClearButton' and method 'clear'");
     target.mClearButton = Utils.castView(view, R.id.ibClearButton, "field 'mClearButton'", ImageButton.class);
-    view2131296354 = view;
+    view2131296355 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -67,7 +67,7 @@ public class SearchActivity_ViewBinding implements Unbinder {
 
     view2131296353.setOnClickListener(null);
     view2131296353 = null;
-    view2131296354.setOnClickListener(null);
-    view2131296354 = null;
+    view2131296355.setOnClickListener(null);
+    view2131296355 = null;
   }
 }

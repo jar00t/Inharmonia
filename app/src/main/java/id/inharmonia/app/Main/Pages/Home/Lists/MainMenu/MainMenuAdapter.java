@@ -19,6 +19,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import id.inharmonia.app.Main.Pages.Home.HomeFragment;
 import id.inharmonia.app.Main.Pages.Home.Popups.AllPrintTypePopup;
 import id.inharmonia.app.Main.Pages.Home.Popups.SizeQuantityPopup;
 import id.inharmonia.app.R;
@@ -28,14 +29,16 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
     final Context mContext;
     private List<MainMenu> mMenuList;
     private int mLayoutType;
+    HomeFragment mHomeFragment;
 
     SizeQuantityPopup mSizeQuantityPopup = new SizeQuantityPopup();
     AllPrintTypePopup mAllPrintTypePopup = new AllPrintTypePopup();
 
-    public MainMenuAdapter(Context mContext, List<MainMenu> mMenuList, int mLayoutType) {
+    public MainMenuAdapter(Context mContext, List<MainMenu> mMenuList, int mLayoutType, HomeFragment mHomeFragment) {
         this.mContext = mContext;
         this.mMenuList = mMenuList;
         this.mLayoutType = mLayoutType;
+        this.mHomeFragment = mHomeFragment;
     }
 
     @NonNull
@@ -93,6 +96,7 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuAdapter.MenuVi
                         sheetData.putInt("icon", mMenuList.get(getAdapterPosition()).getMenuIcon());
                         sheetData.putString("title", mMenuList.get(getAdapterPosition()).getMenuName());
 
+                        mSizeQuantityPopup.sendMom(mHomeFragment);
                         mSizeQuantityPopup.setArguments(sheetData);
                         mSizeQuantityPopup.show(((FragmentActivity) mContext).getSupportFragmentManager(), mSizeQuantityPopup.getTag());
                     }
