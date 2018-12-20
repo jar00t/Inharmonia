@@ -1,4 +1,0 @@
-#Wed Dec 19 15:13:29 ICT 2018
-base.0=D\:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
-path.0=classes.dex
-renamed.0=classes.dex

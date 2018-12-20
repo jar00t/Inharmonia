@@ -1,7 +1,5 @@
 package id.inharmonia.app.Main.Pages.Home.Popups;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
