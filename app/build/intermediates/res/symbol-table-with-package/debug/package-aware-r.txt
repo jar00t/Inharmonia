@@ -1190,6 +1190,7 @@ id custom
 id customPanel
 id cvMenuItem
 id cvQuantityListItem
+id cvSearchOpener
 id decor_content_parent
 id default_activity_button
 id depth
@@ -1234,7 +1235,6 @@ id ibClearButton
 id ibClosePopup
 id ibDecreaseButton
 id ibIncreaseButton
-id ibSearchOpener
 id icon
 id icon_group
 id ifRoom
@@ -1387,7 +1387,6 @@ id tvStoreName
 id tvSubTitle
 id tvTitle
 id tvTotal
-id tvTypeListTitle
 id tvUserEmail
 id tvUserFullName
 id uniform

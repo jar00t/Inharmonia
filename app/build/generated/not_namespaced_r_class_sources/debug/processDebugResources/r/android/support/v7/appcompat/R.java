@@ -650,15 +650,15 @@ public final class R {
         public static final int contentPanel = 0x7f090036;
         public static final int custom = 0x7f090038;
         public static final int customPanel = 0x7f090039;
-        public static final int decor_content_parent = 0x7f09003c;
-        public static final int default_activity_button = 0x7f09003d;
-        public static final int edit_query = 0x7f090047;
-        public static final int end = 0x7f090048;
-        public static final int expand_activities_button = 0x7f09004f;
-        public static final int expanded_menu = 0x7f090050;
-        public static final int forever = 0x7f090059;
-        public static final int group_divider = 0x7f09005d;
-        public static final int home = 0x7f09005f;
+        public static final int decor_content_parent = 0x7f09003d;
+        public static final int default_activity_button = 0x7f09003e;
+        public static final int edit_query = 0x7f090048;
+        public static final int end = 0x7f090049;
+        public static final int expand_activities_button = 0x7f090050;
+        public static final int expanded_menu = 0x7f090051;
+        public static final int forever = 0x7f09005a;
+        public static final int group_divider = 0x7f09005e;
+        public static final int home = 0x7f090060;
         public static final int icon = 0x7f090069;
         public static final int icon_group = 0x7f09006a;
         public static final int image = 0x7f09006c;
@@ -721,9 +721,9 @@ public final class R {
         public static final int title_template = 0x7f0900e5;
         public static final int top = 0x7f0900e6;
         public static final int topPanel = 0x7f0900e7;
-        public static final int uniform = 0x7f090104;
-        public static final int up = 0x7f090106;
-        public static final int wrap_content = 0x7f09010d;
+        public static final int uniform = 0x7f090103;
+        public static final int up = 0x7f090105;
+        public static final int wrap_content = 0x7f09010c;
     }
     public static final class integer {
         private integer() {}

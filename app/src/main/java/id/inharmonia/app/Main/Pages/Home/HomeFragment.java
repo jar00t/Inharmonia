@@ -8,6 +8,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -40,8 +41,8 @@ public class HomeFragment extends Fragment {
     @BindView(R.id.rv_menu_list)
     RecyclerView mRecyclerView;
 
-    @BindView(R.id.ibSearchOpener)
-    ImageButton mSearchOpener;
+    @BindView(R.id.cvSearchOpener)
+    CardView mSearchOpener;
 
     @BindView(R.id.ibCartButton)
     ImageButton mCartButton;
@@ -137,7 +138,7 @@ public class HomeFragment extends Fragment {
         dialogMsgPopup.show();
     }
 
-    @OnClick(R.id.ibSearchOpener)
+    @OnClick(R.id.cvSearchOpener)
     public void openSearch() {
         getActivity().startActivity(new Intent(getActivity(), SearchActivity.class));
     }

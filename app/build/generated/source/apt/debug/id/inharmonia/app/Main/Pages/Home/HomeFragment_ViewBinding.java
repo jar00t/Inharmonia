@@ -3,6 +3,7 @@ package id.inharmonia.app.Main.Pages.Home;
 
 import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageButton;
@@ -18,7 +19,7 @@ import java.lang.Override;
 public class HomeFragment_ViewBinding implements Unbinder {
   private HomeFragment target;
 
-  private View view2131296360;
+  private View view2131296316;
 
   @UiThread
   public HomeFragment_ViewBinding(final HomeFragment target, View source) {
@@ -26,9 +27,9 @@ public class HomeFragment_ViewBinding implements Unbinder {
 
     View view;
     target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_menu_list, "field 'mRecyclerView'", RecyclerView.class);
-    view = Utils.findRequiredView(source, R.id.ibSearchOpener, "field 'mSearchOpener' and method 'openSearch'");
-    target.mSearchOpener = Utils.castView(view, R.id.ibSearchOpener, "field 'mSearchOpener'", ImageButton.class);
-    view2131296360 = view;
+    view = Utils.findRequiredView(source, R.id.cvSearchOpener, "field 'mSearchOpener' and method 'openSearch'");
+    target.mSearchOpener = Utils.castView(view, R.id.cvSearchOpener, "field 'mSearchOpener'", CardView.class);
+    view2131296316 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +54,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
     target.mCartTotal = null;
     target.mPromoSlider = null;
 
-    view2131296360.setOnClickListener(null);
-    view2131296360 = null;
+    view2131296316.setOnClickListener(null);
+    view2131296316 = null;
   }
 }
