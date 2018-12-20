@@ -147,6 +147,7 @@ public class SizeListAdapter extends RecyclerView.Adapter<SizeListAdapter.SizeVi
         public void showQuantityCustomer() {
             mAddButton.setVisibility(View.GONE);
             mQuantityCustomer.setVisibility(View.VISIBLE);
+            mNumberValue.setText("1");
         }
 
         @OnClick(R.id.etNumberValue)
