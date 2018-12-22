@@ -31,6 +31,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import id.inharmonia.app.Animations.BounceAnimation;
+import id.inharmonia.app.Cart.CartActivity;
 import id.inharmonia.app.Main.Pages.Home.Lists.MainMenu.MainMenu;
 import id.inharmonia.app.Main.Pages.Home.Lists.MainMenu.MainMenuAdapter;
 import id.inharmonia.app.R;
@@ -141,6 +142,11 @@ public class HomeFragment extends Fragment {
     @OnClick(R.id.cvSearchOpener)
     public void openSearch() {
         getActivity().startActivity(new Intent(getActivity(), SearchActivity.class));
+    }
+
+    @OnClick(R.id.ibCartButton)
+    public void openCart() {
+        getActivity().startActivity(new Intent(getActivity(), CartActivity.class));
     }
 
     ImageListener imageListener = new ImageListener() {

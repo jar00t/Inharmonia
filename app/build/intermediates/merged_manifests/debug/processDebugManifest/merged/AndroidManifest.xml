@@ -19,6 +19,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="id.inharmonia.app.Main.MainActivity"
@@ -48,6 +49,7 @@
         <activity android:name="id.inharmonia.app.Main.Pages.Order.OrderDetailActivity" />
         <activity android:name="id.inharmonia.app.Main.Pages.Account.AccountSettingActivity" />
         <activity android:name="id.inharmonia.app.Setting.SettingActivity" />
+        <activity android:name="id.inharmonia.app.Cart.CartActivity" />
     </application>
 
 </manifest>

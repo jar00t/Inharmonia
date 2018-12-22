@@ -49,6 +49,7 @@
         <activity android:name="id.inharmonia.app.Main.Pages.Order.OrderDetailActivity" />
         <activity android:name="id.inharmonia.app.Main.Pages.Account.AccountSettingActivity" />
         <activity android:name="id.inharmonia.app.Setting.SettingActivity" />
+        <activity android:name="id.inharmonia.app.Cart.CartActivity" />
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"

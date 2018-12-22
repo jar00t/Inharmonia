@@ -21,6 +21,8 @@ public class HomeFragment_ViewBinding implements Unbinder {
 
   private View view2131296316;
 
+  private View view2131296356;
+
   @UiThread
   public HomeFragment_ViewBinding(final HomeFragment target, View source) {
     this.target = target;
@@ -36,7 +38,15 @@ public class HomeFragment_ViewBinding implements Unbinder {
         target.openSearch();
       }
     });
-    target.mCartButton = Utils.findRequiredViewAsType(source, R.id.ibCartButton, "field 'mCartButton'", ImageButton.class);
+    view = Utils.findRequiredView(source, R.id.ibCartButton, "field 'mCartButton' and method 'openCart'");
+    target.mCartButton = Utils.castView(view, R.id.ibCartButton, "field 'mCartButton'", ImageButton.class);
+    view2131296356 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.openCart();
+      }
+    });
     target.mCartTotal = Utils.findRequiredViewAsType(source, R.id.tvCartTotal, "field 'mCartTotal'", TextView.class);
     target.mPromoSlider = Utils.findRequiredViewAsType(source, R.id.clPromoSlide, "field 'mPromoSlider'", CarouselView.class);
   }
@@ -56,5 +66,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
 
     view2131296316.setOnClickListener(null);
     view2131296316 = null;
+    view2131296356.setOnClickListener(null);
+    view2131296356 = null;
   }
 }

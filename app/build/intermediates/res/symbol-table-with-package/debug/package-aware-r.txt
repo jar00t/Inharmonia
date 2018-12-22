@@ -1450,6 +1450,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_account_setting
+layout activity_cart
 layout activity_main
 layout activity_order_detail
 layout activity_order_new
@@ -1578,6 +1579,7 @@ string in_logo
 string increase_button
 string inharmonia_app
 string inharmonia_symbol
+string keranjangku
 string konfirmasi_pesanan
 string label_corner
 string lainnya
