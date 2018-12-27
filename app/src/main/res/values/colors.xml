@@ -6,6 +6,7 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorGrey">#CCCCCC</color>
     <color name="colorLightGrey">#F2F2F2</color>
+    <color name="colorSemiDarkGrey">#818181</color>
     <color name="colorDarkGrey">#323232</color>
     <color name="colorRed">#D03438</color>
     <color name="colorPurple">#5354FF</color>

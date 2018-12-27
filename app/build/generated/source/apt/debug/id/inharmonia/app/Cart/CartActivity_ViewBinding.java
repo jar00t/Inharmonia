@@ -3,6 +3,7 @@ package id.inharmonia.app.Cart;
 
 import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageButton;
 import butterknife.Unbinder;
@@ -15,7 +16,7 @@ import java.lang.Override;
 public class CartActivity_ViewBinding implements Unbinder {
   private CartActivity target;
 
-  private View view2131296355;
+  private View view2131296357;
 
   @UiThread
   public CartActivity_ViewBinding(CartActivity target) {
@@ -29,13 +30,14 @@ public class CartActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.ibBackButton, "field 'mBackButton' and method 'exit'");
     target.mBackButton = Utils.castView(view, R.id.ibBackButton, "field 'mBackButton'", ImageButton.class);
-    view2131296355 = view;
+    view2131296357 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.exit();
       }
     });
+    target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_cart_list, "field 'mRecyclerView'", RecyclerView.class);
   }
 
   @Override
@@ -46,8 +48,9 @@ public class CartActivity_ViewBinding implements Unbinder {
     this.target = null;
 
     target.mBackButton = null;
+    target.mRecyclerView = null;
 
-    view2131296355.setOnClickListener(null);
-    view2131296355 = null;
+    view2131296357.setOnClickListener(null);
+    view2131296357 = null;
   }
 }

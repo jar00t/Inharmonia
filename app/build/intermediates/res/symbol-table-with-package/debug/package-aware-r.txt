@@ -636,6 +636,7 @@ color colorPrimary
 color colorPrimaryDark
 color colorPurple
 color colorRed
+color colorSemiDarkGrey
 color colorWhite
 color colorWhitePurple
 color default_circle_indicator_fill_color
@@ -1055,6 +1056,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_chevron_right_black_24dp
+drawable ic_expand_more_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1166,6 +1168,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id brand_select
 id btAddButton
 id btAddToCart
 id btNextStep
@@ -1188,6 +1191,7 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id cvCartDetail
 id cvMenuItem
 id cvQuantityListItem
 id cvSearchOpener
@@ -1251,6 +1255,7 @@ id ivIcon
 id ivLabelCorner
 id ivOrderStatus
 id ivSelectedTypeIcon
+id ivToggleButton
 id ivUserPicture
 id labeled
 id largeLabel
@@ -1293,6 +1298,7 @@ id radio
 id right
 id right_icon
 id right_side
+id rv_cart_list
 id rv_menu_link_list
 id rv_menu_list
 id rv_order_list
@@ -1382,6 +1388,7 @@ id tvPageName
 id tvPopupTitle
 id tvQuantityTotal
 id tvSelectedTypeTitle
+id tvSizeList
 id tvStoreAddress
 id tvStoreName
 id tvSubTitle
@@ -1497,6 +1504,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout popup_all_print_type
 layout popup_size_quantity
+layout rv_cart_list_item_row
 layout rv_menu_item_row
 layout rv_menu_link_item_row
 layout rv_order_item_row
@@ -1621,6 +1629,7 @@ string title_activity_splash_screen
 string title_home
 string title_order
 string total
+string type_icon
 string user_picture
 string zero
 style AlertDialog_AppCompat

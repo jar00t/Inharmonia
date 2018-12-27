@@ -16,7 +16,7 @@ import java.lang.Override;
 public class AllPrintTypePopup_ViewBinding implements Unbinder {
   private AllPrintTypePopup target;
 
-  private View view2131296358;
+  private View view2131296360;
 
   @UiThread
   public AllPrintTypePopup_ViewBinding(final AllPrintTypePopup target, View source) {
@@ -26,7 +26,7 @@ public class AllPrintTypePopup_ViewBinding implements Unbinder {
     target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_type_list, "field 'mRecyclerView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.ibClosePopup, "field 'mClosePopup' and method 'hideMe'");
     target.mClosePopup = Utils.castView(view, R.id.ibClosePopup, "field 'mClosePopup'", ImageButton.class);
-    view2131296358 = view;
+    view2131296360 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class AllPrintTypePopup_ViewBinding implements Unbinder {
     target.mRecyclerView = null;
     target.mClosePopup = null;
 
-    view2131296358.setOnClickListener(null);
-    view2131296358 = null;
+    view2131296360.setOnClickListener(null);
+    view2131296360 = null;
   }
 }
