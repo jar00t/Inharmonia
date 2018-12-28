@@ -32,13 +32,15 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
     List<String> checkedCart = new ArrayList<>();
     List<Integer> cartTotal = new ArrayList<>();
     int checkedCartTotal = 0;
+    boolean isCheckAll;
 
     CartActivity mCartActivity;
 
-    public CartListAdapter(Context mContext, List<CartList> mCartList, CartActivity mCartActivity) {
+    public CartListAdapter(Context mContext, List<CartList> mCartList, CartActivity mCartActivity, boolean isCheckAll) {
         this.mContext = mContext;
         this.mCartList = mCartList;
         this.mCartActivity = mCartActivity;
+        this.isCheckAll = isCheckAll;
     }
 
     @NonNull
@@ -60,6 +62,7 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
                 holder.mName.setText(mContext.getString(R.string.gambar));
                 break;
         }
+        if(isCheckAll) holder.mCartSelect.setChecked(true);
         holder.mSizeList.setText(String.format("Ukuran %s", mCartList.get(position).getCartType().toUpperCase().replaceAll(",", ", ")));
         setList(holder, position);
         holder.mCartSelect.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

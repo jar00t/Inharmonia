@@ -6,6 +6,7 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -56,13 +57,24 @@ public class CartActivity extends AppCompatActivity {
         cartData.add(new String[]{"dokumen", "f4,a4", "76,5"});
         cartData.add(new String[]{"gambar", "f4,a4,a5", "56,76,78"});
 
-        setList();
+        setList(false);
+
+        mCheckAll.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                if(isChecked) {
+                    setList(true);
+                } else {
+                    setList(false);
+                }
+            }
+        });
     }
 
     @OnClick(R.id.ibBackButton)
     public void exit() { finish(); }
 
-    public void setList() {
+    public void setList(boolean isCheckAll) {
         if(cartData.size() != 0) {
             mCartList = new ArrayList<>();
             for(int i = 0; i < cartData.size(); i++) {
@@ -71,7 +83,7 @@ public class CartActivity extends AppCompatActivity {
             }
             mRecyclerView.setLayoutManager(new GridLayoutManager(this, 1));
             mRecyclerView.setFocusable(false);
-            mRecyclerView.setAdapter(new CartListAdapter(this, mCartList, this));
+            mRecyclerView.setAdapter(new CartListAdapter(this, mCartList, this, isCheckAll));
         }
     }
 
