@@ -17,7 +17,7 @@ import java.lang.Override;
 public class TypeListAdapter$TypeViewHolder_ViewBinding implements Unbinder {
   private TypeListAdapter.TypeViewHolder target;
 
-  private View view2131296316;
+  private View view2131296317;
 
   @UiThread
   public TypeListAdapter$TypeViewHolder_ViewBinding(final TypeListAdapter.TypeViewHolder target,
@@ -29,7 +29,7 @@ public class TypeListAdapter$TypeViewHolder_ViewBinding implements Unbinder {
     target.mIcon = Utils.findRequiredViewAsType(source, R.id.ivIcon, "field 'mIcon'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.cvMenuItem, "field 'mTypeItem' and method 'showAll'");
     target.mTypeItem = Utils.castView(view, R.id.cvMenuItem, "field 'mTypeItem'", CardView.class);
-    view2131296316 = view;
+    view2131296317 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -51,7 +51,7 @@ public class TypeListAdapter$TypeViewHolder_ViewBinding implements Unbinder {
     target.mTypeItem = null;
     target.mLabelCorner = null;
 
-    view2131296316.setOnClickListener(null);
-    view2131296316 = null;
+    view2131296317.setOnClickListener(null);
+    view2131296317 = null;
   }
 }

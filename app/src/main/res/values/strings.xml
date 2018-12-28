@@ -58,4 +58,7 @@
     <string name="type_icon">Type Icon</string>
     <string name="dokumen">Dokumen</string>
     <string name="gambar">Gambar</string>
+    <string name="pilih_semua">Pilih Semua</string>
+    <string name="subtotal">SubTotal</string>
+    <string name="checkout">Checkout</string>
 </resources>

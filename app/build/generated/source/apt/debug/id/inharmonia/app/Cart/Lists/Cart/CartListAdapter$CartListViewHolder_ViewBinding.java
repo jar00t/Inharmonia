@@ -18,7 +18,7 @@ import java.lang.Override;
 public class CartListAdapter$CartListViewHolder_ViewBinding implements Unbinder {
   private CartListAdapter.CartListViewHolder target;
 
-  private View view2131296379;
+  private View view2131296380;
 
   @UiThread
   public CartListAdapter$CartListViewHolder_ViewBinding(final CartListAdapter.CartListViewHolder target,
@@ -31,7 +31,7 @@ public class CartListAdapter$CartListViewHolder_ViewBinding implements Unbinder 
     target.mSizeList = Utils.findRequiredViewAsType(source, R.id.tvSizeList, "field 'mSizeList'", TextView.class);
     view = Utils.findRequiredView(source, R.id.ivToggleButton, "field 'mToggleButton' and method 'toggleDetail'");
     target.mToggleButton = Utils.castView(view, R.id.ivToggleButton, "field 'mToggleButton'", ImageView.class);
-    view2131296379 = view;
+    view2131296380 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -58,7 +58,7 @@ public class CartListAdapter$CartListViewHolder_ViewBinding implements Unbinder 
     target.mQuantityListRecyclerView = null;
     target.mTotal = null;
 
-    view2131296379.setOnClickListener(null);
-    view2131296379 = null;
+    view2131296380.setOnClickListener(null);
+    view2131296380 = null;
   }
 }

@@ -1192,6 +1192,7 @@ id coordinator
 id custom
 id customPanel
 id cvCartDetail
+id cvCheckoutButton
 id cvMenuItem
 id cvQuantityListItem
 id cvSearchOpener
@@ -1265,6 +1266,7 @@ id line3
 id listMode
 id list_item
 id llQuantityCustomer
+id llRightSection
 id masked
 id media_actions
 id message
@@ -1392,6 +1394,7 @@ id tvSizeList
 id tvStoreAddress
 id tvStoreName
 id tvSubTitle
+id tvSubTotal
 id tvTitle
 id tvTotal
 id tvUserEmail
@@ -1574,6 +1577,7 @@ string cart_button
 string cetak_apa_aja_gak_pake_repot
 string character_counter_content_description
 string character_counter_pattern
+string checkout
 string clear_button
 string close_button
 string decrease_button
@@ -1612,6 +1616,7 @@ string path_password_strike_through
 string pengaturan
 string pengaturan_akun
 string pesanan
+string pilih_semua
 string plus
 string search_hint
 string search_icon
@@ -1621,6 +1626,7 @@ string status_bar_notification_info_overflow
 string status_icon
 string store_cover
 string store_icon
+string subtotal
 string tambah
 string tambahkan_ke_keranjang
 string tempat_percetakan
