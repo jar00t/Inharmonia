@@ -6,7 +6,7 @@
     density="hdpi"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1545983678969"
+    timestamp="1545984919038"
     token="-3954910265736265733"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -106,7 +106,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1545983678969"
+        timestamp="1545984919038"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\instant-run-apk\debug\app-debug.apk"

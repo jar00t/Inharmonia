@@ -177,12 +177,13 @@
                                 android:id="@+id/tvSubTotal"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:gravity="center_vertical"
+                                android:layout_gravity="end"
+                                android:gravity="end"
                                 android:textSize="5pt"
                                 android:fontFamily="@font/comfortaa_regular"
                                 android:background="@color/colorWhite"
                                 android:textColor="@color/colorPurple"
-                                android:text="900 lembar"/>
+                                android:text="@string/zero"/>
 
                         </LinearLayout>
 
