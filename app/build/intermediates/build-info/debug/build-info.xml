@@ -5,92 +5,95 @@
     build-mode="COLD"
     density="hdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
+    ir-eligibility="FIELD_REMOVED"
     plugin-version="3.2.1"
-    timestamp="1545995162133"
-    token="-3954910265736265733"
+    timestamp="1546002916014"
+    token="-2557994350373595845"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2859" />
+        duration="8762" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="37" />
+        duration="142" />
     <task
         name="verifier"
-        duration="11" />
+        duration="47" />
 
     <artifact
-        location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        location="D:\Android\Project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
     <artifact
-        location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        location="D:\Android\Project\Inharmonia\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1545994638080"
+        timestamp="1546002701479"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
         <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1545995108129"
+        timestamp="1546002823547"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1545995162133"
+        ir-eligibility="FIELD_REMOVED"
+        timestamp="1546002916014"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            location="D:\Android\Project\Inharmonia\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
 

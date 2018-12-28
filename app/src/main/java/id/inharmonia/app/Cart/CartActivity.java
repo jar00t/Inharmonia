@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -59,10 +59,10 @@ public class CartActivity extends AppCompatActivity {
 
         setList(false);
 
-        mCheckAll.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        mCheckAll.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                if(isChecked) {
+            public void onClick(View v) {
+                if(mCheckAll.isChecked()) {
                     setList(true);
                 } else {
                     setList(false);
@@ -102,10 +102,12 @@ public class CartActivity extends AppCompatActivity {
             mSubTotal.setTextColor(getResources().getColor(R.color.colorGrey));
         }
 
-        if(checkedCart.size() == totalCart) {
-            mCheckAll.setChecked(true);
-        } else {
-            mCheckAll.setChecked(false);
+        if(checkedCart != null) {
+            if(checkedCart.size() == totalCart) {
+                mCheckAll.setChecked(true);
+            } else {
+                mCheckAll.setChecked(false);
+            }
         }
     }
 

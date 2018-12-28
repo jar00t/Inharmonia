@@ -103,6 +103,16 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
         holder.mQuantityListRecyclerView.setAdapter(new QuantityListAdapter(mContext, holder.mQuantityList, R.layout.rv_quantity_list_item_row));
 
         holder.mTotal.setText(String.format("%s lembar", grandTotal));
+
+        if(isCheckAll) {
+            checkedCart.add(mCartList.get(position).getCartName());
+            checkedCartTotal = checkedCartTotal + cartTotal.get(position);
+            mCartActivity.setSubTotal(checkedCartTotal, checkedCart, getItemCount());
+        } else {
+            checkedCart = new ArrayList<>();
+            checkedCartTotal = 0;
+            mCartActivity.setSubTotal(checkedCartTotal, checkedCart, getItemCount());
+        }
     }
 
     public class CartListViewHolder extends RecyclerView.ViewHolder {
