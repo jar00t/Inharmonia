@@ -56,4 +56,6 @@
     <string name="moniprint_logo">MoniPrint Logo</string>
     <string name="keranjangku">Keranjangku</string>
     <string name="type_icon">Type Icon</string>
+    <string name="dokumen">Dokumen</string>
+    <string name="gambar">Gambar</string>
 </resources>

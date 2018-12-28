@@ -1579,9 +1579,11 @@ string close_button
 string decrease_button
 string detil_order
 string disainer
+string dokumen
 string end_separator
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string gambar
 string hide_bottom_view_on_scroll_behavior
 string in_logo
 string increase_button
