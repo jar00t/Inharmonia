@@ -65,21 +65,6 @@
             ]
         },
         {
-            "outputFile": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\values-h720dp-v13_values-h720dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "66",
-                        "endOffsets": "117"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\values-am_values-am.arsc.flat",
             "map": [
                 {
@@ -107,6 +92,21 @@
                         "startOffsets": "2817",
                         "endColumns": "100",
                         "endOffsets": "2913"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\values-h720dp-v13_values-h720dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
                     }
                 }
             ]
@@ -272,21 +272,6 @@
             ]
         },
         {
-            "outputFile": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\values-port_values-port.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\values-port\\values-port.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "55",
-                        "endOffsets": "106"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\values-is_values-is.arsc.flat",
             "map": [
                 {
@@ -314,6 +299,21 @@
                         "startOffsets": "105,205,302,414,499,600,714,794,874,965,1058,1154,1248,1355,1448,1543,1638,1729,1823,1904,2014,2122,2220,2329,2428,2531,2686,2784",
                         "endColumns": "99,96,111,84,100,113,79,79,90,92,95,93,106,92,94,94,90,93,80,109,107,97,108,98,102,154,97,80",
                         "endOffsets": "200,297,409,494,595,709,789,869,960,1053,1149,1243,1350,1443,1538,1633,1724,1818,1899,2009,2117,2215,2324,2423,2526,2681,2779,2860"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\values-port_values-port.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
                     }
                 }
             ]
@@ -609,38 +609,6 @@
             ]
         },
         {
-            "outputFile": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\values-v24_values-v24.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\be03eb140797c7a8c9d4f4f45f7e9d92\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,121,182,248",
-                        "endColumns": "65,60,65,66",
-                        "endOffsets": "116,177,243,310"
-                    },
-                    "to": {
-                        "startLines": "4,5,6,7",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "347,413,474,540",
-                        "endColumns": "65,60,65,66",
-                        "endOffsets": "408,469,535,602"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\values-be_values-be.arsc.flat",
             "map": [
                 {
@@ -668,6 +636,38 @@
                         "startOffsets": "2915",
                         "endColumns": "100",
                         "endOffsets": "3011"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\values-v24_values-v24.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\be03eb140797c7a8c9d4f4f45f7e9d92\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,121,182,248",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "116,177,243,310"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "347,413,474,540",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "408,469,535,602"
                     }
                 }
             ]

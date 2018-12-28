@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,6 +19,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import id.inharmonia.app.Cart.CartActivity;
 import id.inharmonia.app.Cart.Lists.Quantity.QuantityListAdapter;
 import id.inharmonia.app.Main.Pages.Home.Lists.Quantity.QuantityList;
 import id.inharmonia.app.R;
@@ -26,9 +29,16 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
     final Context mContext;
     private List<CartList> mCartList;
 
-    public CartListAdapter(Context mContext, List<CartList> mCartList) {
+    List<String> checkedCart = new ArrayList<>();
+    List<Integer> cartTotal = new ArrayList<>();
+    int checkedCartTotal = 0;
+
+    CartActivity mCartActivity;
+
+    public CartListAdapter(Context mContext, List<CartList> mCartList, CartActivity mCartActivity) {
         this.mContext = mContext;
         this.mCartList = mCartList;
+        this.mCartActivity = mCartActivity;
     }
 
     @NonNull
@@ -39,7 +49,7 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CartListViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final CartListViewHolder holder, final int position) {
         switch (mCartList.get(position).getCartName()) {
             case "dokumen":
                 holder.mIcon.setImageResource(R.drawable.in_thumb_documents_square);
@@ -52,6 +62,20 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
         }
         holder.mSizeList.setText(String.format("Ukuran %s", mCartList.get(position).getCartType().toUpperCase().replaceAll(",", ", ")));
         setList(holder, position);
+        holder.mCartSelect.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton mCartSelect, boolean isChecked) {
+                if(isChecked) {
+                    checkedCart.add(mCartList.get(holder.getAdapterPosition()).getCartName());
+                    checkedCartTotal = checkedCartTotal + cartTotal.get(holder.getAdapterPosition());
+                    mCartActivity.setSubTotal(checkedCartTotal, checkedCart, getItemCount());
+                } else {
+                    checkedCart.remove(mCartList.get(holder.getAdapterPosition()).getCartName());
+                    if(checkedCartTotal > 0) checkedCartTotal = checkedCartTotal - cartTotal.get(holder.getAdapterPosition());
+                    mCartActivity.setSubTotal(checkedCartTotal, checkedCart, getItemCount());
+                }
+            }
+        });
     }
 
     @Override
@@ -70,6 +94,7 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
             holder.mQuantityListItem = new QuantityList(String.format("Ukuran %s", sizes[s].toUpperCase()), String.format("%s lembar", quantities[s]));
             holder.mQuantityList.add(holder.mQuantityListItem);
         }
+        cartTotal.add(grandTotal);
         holder.mQuantityListRecyclerView.setLayoutManager(new GridLayoutManager(mContext, 1));
         holder.mQuantityListRecyclerView.setFocusable(false);
         holder.mQuantityListRecyclerView.setAdapter(new QuantityListAdapter(mContext, holder.mQuantityList, R.layout.rv_quantity_list_item_row));
@@ -99,6 +124,9 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
 
         @BindView(R.id.tvTotal)
         TextView mTotal;
+
+        @BindView(R.id.cbCartSelect)
+        CheckBox mCartSelect;
 
         List<QuantityList> mQuantityList;
         QuantityList mQuantityListItem;

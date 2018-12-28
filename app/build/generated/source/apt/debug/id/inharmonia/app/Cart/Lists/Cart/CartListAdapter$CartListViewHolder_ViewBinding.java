@@ -6,6 +6,7 @@ import android.support.annotation.UiThread;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 import butterknife.Unbinder;
@@ -18,7 +19,7 @@ import java.lang.Override;
 public class CartListAdapter$CartListViewHolder_ViewBinding implements Unbinder {
   private CartListAdapter.CartListViewHolder target;
 
-  private View view2131296380;
+  private View view2131296381;
 
   @UiThread
   public CartListAdapter$CartListViewHolder_ViewBinding(final CartListAdapter.CartListViewHolder target,
@@ -31,7 +32,7 @@ public class CartListAdapter$CartListViewHolder_ViewBinding implements Unbinder 
     target.mSizeList = Utils.findRequiredViewAsType(source, R.id.tvSizeList, "field 'mSizeList'", TextView.class);
     view = Utils.findRequiredView(source, R.id.ivToggleButton, "field 'mToggleButton' and method 'toggleDetail'");
     target.mToggleButton = Utils.castView(view, R.id.ivToggleButton, "field 'mToggleButton'", ImageView.class);
-    view2131296380 = view;
+    view2131296381 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -41,6 +42,7 @@ public class CartListAdapter$CartListViewHolder_ViewBinding implements Unbinder 
     target.mCartDetail = Utils.findRequiredViewAsType(source, R.id.cvCartDetail, "field 'mCartDetail'", CardView.class);
     target.mQuantityListRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_quantity_list, "field 'mQuantityListRecyclerView'", RecyclerView.class);
     target.mTotal = Utils.findRequiredViewAsType(source, R.id.tvTotal, "field 'mTotal'", TextView.class);
+    target.mCartSelect = Utils.findRequiredViewAsType(source, R.id.cbCartSelect, "field 'mCartSelect'", CheckBox.class);
   }
 
   @Override
@@ -57,8 +59,9 @@ public class CartListAdapter$CartListViewHolder_ViewBinding implements Unbinder 
     target.mCartDetail = null;
     target.mQuantityListRecyclerView = null;
     target.mTotal = null;
+    target.mCartSelect = null;
 
-    view2131296380.setOnClickListener(null);
-    view2131296380 = null;
+    view2131296381.setOnClickListener(null);
+    view2131296381 = null;
   }
 }

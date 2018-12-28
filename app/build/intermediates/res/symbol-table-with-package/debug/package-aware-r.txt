@@ -1168,12 +1168,13 @@ id barrier
 id beginning
 id blocking
 id bottom
-id brand_select
 id btAddButton
 id btAddToCart
 id btNextStep
 id buttonPanel
 id cancel_action
+id cbCartSelect
+id cbCheckAll
 id center
 id center_horizontal
 id center_vertical
@@ -1381,6 +1382,7 @@ id tvAppVersion
 id tvBuyerAddress
 id tvBuyerName
 id tvCartTotal
+id tvCheckoutText
 id tvMessages
 id tvName
 id tvOrderCode

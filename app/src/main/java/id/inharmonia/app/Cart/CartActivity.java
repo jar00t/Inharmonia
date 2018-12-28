@@ -2,9 +2,12 @@ package id.inharmonia.app.Cart;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.CheckBox;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +26,18 @@ public class CartActivity extends AppCompatActivity {
 
     @BindView(R.id.rv_cart_list)
     RecyclerView mRecyclerView;
+
+    @BindView(R.id.tvSubTotal)
+    TextView mSubTotal;
+
+    @BindView(R.id.cvCheckoutButton)
+    CardView mCheckoutButton;
+
+    @BindView(R.id.tvCheckoutText)
+    TextView mCheckoutText;
+
+    @BindView(R.id.cbCheckAll)
+    CheckBox mCheckAll;
 
     List<CartList> mCartList;
     CartList mCartItem;
@@ -56,7 +71,29 @@ public class CartActivity extends AppCompatActivity {
             }
             mRecyclerView.setLayoutManager(new GridLayoutManager(this, 1));
             mRecyclerView.setFocusable(false);
-            mRecyclerView.setAdapter(new CartListAdapter(this, mCartList));
+            mRecyclerView.setAdapter(new CartListAdapter(this, mCartList, this));
+        }
+    }
+
+    public void setSubTotal(int subtotal, List<String> checkedCart, int totalCart) {
+        if(subtotal != 0) {
+            mSubTotal.setText(String.format("%s lembar", subtotal));
+            mCheckoutButton.setEnabled(true);
+            mCheckoutButton.setCardBackgroundColor(getResources().getColor(R.color.colorPurple));
+            mCheckoutText.setTextColor(getResources().getColor(R.color.colorWhite));
+            mSubTotal.setTextColor(getResources().getColor(R.color.colorPurple));
+        } else {
+            mSubTotal.setText("0");
+            mCheckoutButton.setEnabled(false);
+            mCheckoutButton.setCardBackgroundColor(getResources().getColor(R.color.colorLightGrey));
+            mCheckoutText.setTextColor(getResources().getColor(R.color.colorGrey));
+            mSubTotal.setTextColor(getResources().getColor(R.color.colorGrey));
+        }
+
+        if(checkedCart.size() == totalCart) {
+            mCheckAll.setChecked(true);
+        } else {
+            mCheckAll.setChecked(false);
         }
     }
 

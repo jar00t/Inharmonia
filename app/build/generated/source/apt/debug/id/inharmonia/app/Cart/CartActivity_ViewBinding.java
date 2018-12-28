@@ -3,9 +3,12 @@ package id.inharmonia.app.Cart;
 
 import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Utils;
@@ -16,7 +19,7 @@ import java.lang.Override;
 public class CartActivity_ViewBinding implements Unbinder {
   private CartActivity target;
 
-  private View view2131296358;
+  private View view2131296359;
 
   @UiThread
   public CartActivity_ViewBinding(CartActivity target) {
@@ -30,7 +33,7 @@ public class CartActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.ibBackButton, "field 'mBackButton' and method 'exit'");
     target.mBackButton = Utils.castView(view, R.id.ibBackButton, "field 'mBackButton'", ImageButton.class);
-    view2131296358 = view;
+    view2131296359 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -38,6 +41,10 @@ public class CartActivity_ViewBinding implements Unbinder {
       }
     });
     target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_cart_list, "field 'mRecyclerView'", RecyclerView.class);
+    target.mSubTotal = Utils.findRequiredViewAsType(source, R.id.tvSubTotal, "field 'mSubTotal'", TextView.class);
+    target.mCheckoutButton = Utils.findRequiredViewAsType(source, R.id.cvCheckoutButton, "field 'mCheckoutButton'", CardView.class);
+    target.mCheckoutText = Utils.findRequiredViewAsType(source, R.id.tvCheckoutText, "field 'mCheckoutText'", TextView.class);
+    target.mCheckAll = Utils.findRequiredViewAsType(source, R.id.cbCheckAll, "field 'mCheckAll'", CheckBox.class);
   }
 
   @Override
@@ -49,8 +56,12 @@ public class CartActivity_ViewBinding implements Unbinder {
 
     target.mBackButton = null;
     target.mRecyclerView = null;
+    target.mSubTotal = null;
+    target.mCheckoutButton = null;
+    target.mCheckoutText = null;
+    target.mCheckAll = null;
 
-    view2131296358.setOnClickListener(null);
-    view2131296358 = null;
+    view2131296359.setOnClickListener(null);
+    view2131296359 = null;
   }
 }
