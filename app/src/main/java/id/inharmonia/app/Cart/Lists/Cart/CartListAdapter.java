@@ -29,7 +29,7 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
     final Context mContext;
     private List<CartList> mCartList;
 
-    List<Integer> checkedCart = new ArrayList<>();
+    List<String> checkedCart = new ArrayList<>();
     List<Integer> cartTotal = new ArrayList<>();
     int checkedCartTotal = 0;
 
@@ -66,11 +66,11 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
             @Override
             public void onClick(View view) {
                 if(holder.mCartSelect.isChecked()) {
-                    if(checkedCart.get(holder.getAdapterPosition()) != 2) checkedCart.set(holder.getAdapterPosition(), 1);
+                    if(!checkedCart.get(holder.getAdapterPosition()).equals("deleted")) checkedCart.set(holder.getAdapterPosition(), "checked");
                     checkedCartTotal = checkedCartTotal + cartTotal.get(holder.getAdapterPosition());
                     mCartActivity.setSubTotal(checkedCartTotal, checkedCart, getItemCount());
                 } else {
-                    if(checkedCart.get(holder.getAdapterPosition()) != 2) checkedCart.set(holder.getAdapterPosition(), 0);
+                    if(!checkedCart.get(holder.getAdapterPosition()).equals("deleted")) checkedCart.set(holder.getAdapterPosition(), "unchecked");
                     if(checkedCartTotal > 0) checkedCartTotal = checkedCartTotal - cartTotal.get(holder.getAdapterPosition());
                     mCartActivity.setSubTotal(checkedCartTotal, checkedCart, getItemCount());
                 }
@@ -95,7 +95,7 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
             holder.mQuantityList.add(holder.mQuantityListItem);
         }
         cartTotal.add(grandTotal);
-        checkedCart.add(0);
+        checkedCart.add("unchecked");
         holder.mQuantityListRecyclerView.setLayoutManager(new GridLayoutManager(mContext, 1));
         holder.mQuantityListRecyclerView.setFocusable(false);
         holder.mQuantityListRecyclerView.setAdapter(new QuantityListAdapter(mContext, holder.mQuantityList, R.layout.rv_quantity_list_item_row));
@@ -149,10 +149,10 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
 
         @OnClick(R.id.cvCartDeleteButton)
         public void deleteCart() {
-            if(checkedCart.get(getAdapterPosition()) == 1) {
+            if(checkedCart.get(getAdapterPosition()).equals("checked")) {
                 if(checkedCartTotal > 0) checkedCartTotal = checkedCartTotal - cartTotal.get(getAdapterPosition());
             }
-            checkedCart.set(getAdapterPosition(), 2);
+            checkedCart.set(getAdapterPosition(), "deleted");
             cartTotal.remove(getAdapterPosition());
             mCartList.remove(getAdapterPosition());
             notifyItemRemoved(getAdapterPosition());

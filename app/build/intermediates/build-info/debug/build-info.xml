@@ -6,7 +6,7 @@
     density="hdpi"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1546078329782"
+    timestamp="1546081043300"
     token="-3954910265736265733"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -103,7 +103,7 @@
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1546077450132"
+        timestamp="1546080791482"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -112,7 +112,7 @@
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1546078250965"
+        timestamp="1546080895206"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Jayabaru\jar00t\project\Inharmonia\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
@@ -123,7 +123,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1546078329782"
+        timestamp="1546081043300"
         verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

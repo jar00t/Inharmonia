@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import butterknife.BindView;
@@ -73,7 +74,6 @@ public class CartActivity extends AppCompatActivity {
         mCheckAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int cartIndex = 0;
                 for(int i = 0; i < mRecyclerView.getAdapter().getItemCount(); i++) {
                     CheckBox cartSelect = mRecyclerView.findViewHolderForAdapterPosition(i).itemView.findViewById(R.id.cbCartSelect);
                     if(mCheckAll.isChecked()) {
@@ -104,21 +104,14 @@ public class CartActivity extends AppCompatActivity {
         }
     }
 
-    public void setSubTotal(int subtotal, List<Integer> checkedCart, int totalCart) {
-        int totalCheckedCart = 0;
+    public void setSubTotal(int subtotal, List<String> checkedCart, int totalCart) {
+        int totalCheckedCart = checkedCart.size() - Collections.frequency(checkedCart, "unchecked");
         if(totalCart != 0 && subtotal > 0) {
             mSubTotal.setText(String.format("%s lembar", subtotal));
             mCheckoutButton.setEnabled(true);
             mCheckoutButton.setCardBackgroundColor(getResources().getColor(R.color.colorPurple));
             mCheckoutText.setTextColor(getResources().getColor(R.color.colorWhite));
             mSubTotal.setTextColor(getResources().getColor(R.color.colorPurple));
-
-            totalCheckedCart = 0;
-            for(int i = 0; i < checkedCart.size(); i++) {
-                if(checkedCart.get(i) == 1) {
-                    totalCheckedCart = totalCheckedCart + 1;
-                }
-            }
 
             setMargins(mListLayout,0,0,0,120);
             mSelectStoreButton.setVisibility(View.VISIBLE);
@@ -128,8 +121,6 @@ public class CartActivity extends AppCompatActivity {
             mCheckoutButton.setCardBackgroundColor(getResources().getColor(R.color.colorLightGrey));
             mCheckoutText.setTextColor(getResources().getColor(R.color.colorGrey));
             mSubTotal.setTextColor(getResources().getColor(R.color.colorGrey));
-
-            totalCheckedCart = 0;
 
             setMargins(mListLayout,0,0,0,70);
             mSelectStoreButton.setVisibility(View.GONE);
