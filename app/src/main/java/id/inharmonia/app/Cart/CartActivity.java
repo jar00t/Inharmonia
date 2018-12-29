@@ -57,15 +57,19 @@ public class CartActivity extends AppCompatActivity {
         cartData.add(new String[]{"dokumen", "f4,a4", "76,5"});
         cartData.add(new String[]{"gambar", "f4,a4,a5", "56,76,78"});
 
-        setList(false);
+        setList();
 
         mCheckAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mCheckAll.isChecked()) {
-                    setList(true);
-                } else {
-                    setList(false);
+                for(int i = 0; i < mRecyclerView.getAdapter().getItemCount(); i++) {
+                    CheckBox cartSelect = mRecyclerView.findViewHolderForAdapterPosition(i).itemView.findViewById(R.id.cbCartSelect);
+                    if(mCheckAll.isChecked()) {
+                        if(!cartSelect.isChecked()) cartSelect.performClick();
+                        mCheckAll.setChecked(true);
+                    } else {
+                        if(cartSelect.isChecked()) cartSelect.performClick();
+                    }
                 }
             }
         });
@@ -74,7 +78,7 @@ public class CartActivity extends AppCompatActivity {
     @OnClick(R.id.ibBackButton)
     public void exit() { finish(); }
 
-    public void setList(boolean isCheckAll) {
+    public void setList() {
         if(cartData.size() != 0) {
             mCartList = new ArrayList<>();
             for(int i = 0; i < cartData.size(); i++) {
@@ -83,7 +87,7 @@ public class CartActivity extends AppCompatActivity {
             }
             mRecyclerView.setLayoutManager(new GridLayoutManager(this, 1));
             mRecyclerView.setFocusable(false);
-            mRecyclerView.setAdapter(new CartListAdapter(this, mCartList, this, isCheckAll));
+            mRecyclerView.setAdapter(new CartListAdapter(this, mCartList, this));
         }
     }
 
