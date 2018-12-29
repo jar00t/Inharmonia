@@ -6,8 +6,10 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -31,14 +33,23 @@ public class CartActivity extends AppCompatActivity {
     @BindView(R.id.tvSubTotal)
     TextView mSubTotal;
 
+    @BindView(R.id.llListLayout)
+    LinearLayout mListLayout;
+
     @BindView(R.id.cvCheckoutButton)
     CardView mCheckoutButton;
 
     @BindView(R.id.tvCheckoutText)
     TextView mCheckoutText;
 
+    @BindView(R.id.tvSelectAll)
+    TextView mSelectAll;
+
     @BindView(R.id.cbCheckAll)
     CheckBox mCheckAll;
+
+    @BindView(R.id.cvSelectStoreButton)
+    CardView mSelectStoreButton;
 
     List<CartList> mCartList;
     CartList mCartItem;
@@ -62,6 +73,7 @@ public class CartActivity extends AppCompatActivity {
         mCheckAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int cartIndex = 0;
                 for(int i = 0; i < mRecyclerView.getAdapter().getItemCount(); i++) {
                     CheckBox cartSelect = mRecyclerView.findViewHolderForAdapterPosition(i).itemView.findViewById(R.id.cbCartSelect);
                     if(mCheckAll.isChecked()) {
@@ -69,6 +81,7 @@ public class CartActivity extends AppCompatActivity {
                         mCheckAll.setChecked(true);
                     } else {
                         if(cartSelect.isChecked()) cartSelect.performClick();
+                        mCheckAll.setChecked(false);
                     }
                 }
             }
@@ -91,27 +104,64 @@ public class CartActivity extends AppCompatActivity {
         }
     }
 
-    public void setSubTotal(int subtotal, List<String> checkedCart, int totalCart) {
-        if(subtotal != 0) {
+    public void setSubTotal(int subtotal, List<Integer> checkedCart, int totalCart) {
+        int totalCheckedCart = 0;
+        if(totalCart != 0 && subtotal > 0) {
             mSubTotal.setText(String.format("%s lembar", subtotal));
             mCheckoutButton.setEnabled(true);
             mCheckoutButton.setCardBackgroundColor(getResources().getColor(R.color.colorPurple));
             mCheckoutText.setTextColor(getResources().getColor(R.color.colorWhite));
             mSubTotal.setTextColor(getResources().getColor(R.color.colorPurple));
+
+            totalCheckedCart = 0;
+            for(int i = 0; i < checkedCart.size(); i++) {
+                if(checkedCart.get(i) == 1) {
+                    totalCheckedCart = totalCheckedCart + 1;
+                }
+            }
+
+            setMargins(mListLayout,0,0,0,120);
+            mSelectStoreButton.setVisibility(View.VISIBLE);
         } else {
             mSubTotal.setText("0");
             mCheckoutButton.setEnabled(false);
             mCheckoutButton.setCardBackgroundColor(getResources().getColor(R.color.colorLightGrey));
             mCheckoutText.setTextColor(getResources().getColor(R.color.colorGrey));
             mSubTotal.setTextColor(getResources().getColor(R.color.colorGrey));
+
+            totalCheckedCart = 0;
+
+            setMargins(mListLayout,0,0,0,70);
+            mSelectStoreButton.setVisibility(View.GONE);
         }
 
+        mSelectAll.setText(String.format("%s", totalCheckedCart));
+
         if(checkedCart != null) {
-            if(checkedCart.size() == totalCart) {
+            if(totalCart != 0 && totalCheckedCart != 0 && totalCheckedCart == totalCart) {
+                if(!mCheckAll.isEnabled()) mCheckAll.setEnabled(true);
                 mCheckAll.setChecked(true);
             } else {
+                if(totalCart == 0) mCheckAll.setEnabled(false);
                 mCheckAll.setChecked(false);
             }
+        }
+    }
+
+    @SuppressWarnings("SameParameterValue")
+    private void setMargins (View view, int left, int top, int right, int bottom) {
+        if (view.getLayoutParams() instanceof ViewGroup.MarginLayoutParams) {
+            ViewGroup.MarginLayoutParams p = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
+
+            final float scale = getBaseContext().getResources().getDisplayMetrics().density;
+
+            int l =  (int)(left * scale + 0.5f);
+            int r =  (int)(right * scale + 0.5f);
+            int t =  (int)(top * scale + 0.5f);
+            int b =  (int)(bottom * scale + 0.5f);
+
+            p.setMargins(l, t, r, b);
+            view.requestLayout();
         }
     }
 

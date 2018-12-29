@@ -1181,6 +1181,7 @@ id center_vertical
 id chains
 id checkbox
 id chronometer
+id clCartItem
 id clPromoSlide
 id clip_horizontal
 id clip_vertical
@@ -1192,11 +1193,13 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id cvCartDeleteButton
 id cvCartDetail
 id cvCheckoutButton
 id cvMenuItem
 id cvQuantityListItem
 id cvSearchOpener
+id cvSelectStoreButton
 id decor_content_parent
 id default_activity_button
 id depth
@@ -1266,6 +1269,7 @@ id line1
 id line3
 id listMode
 id list_item
+id llListLayout
 id llQuantityCustomer
 id llRightSection
 id masked
@@ -1391,6 +1395,7 @@ id tvOrderStatus
 id tvPageName
 id tvPopupTitle
 id tvQuantityTotal
+id tvSelectAll
 id tvSelectedTypeTitle
 id tvSizeList
 id tvStoreAddress
@@ -1590,6 +1595,7 @@ string end_separator
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string gambar
+string hapus
 string hide_bottom_view_on_scroll_behavior
 string in_logo
 string increase_button
@@ -1618,6 +1624,7 @@ string path_password_strike_through
 string pengaturan
 string pengaturan_akun
 string pesanan
+string pilih_lokasi_percetakan
 string pilih_semua
 string plus
 string search_hint

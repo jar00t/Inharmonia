@@ -19,13 +19,13 @@ import java.lang.Override;
 public class SizeListAdapter$SizeViewHolder_ViewBinding implements Unbinder {
   private SizeListAdapter.SizeViewHolder target;
 
-  private View view2131296363;
+  private View view2131296366;
 
-  private View view2131296364;
+  private View view2131296367;
 
   private View view2131296292;
 
-  private View view2131296337;
+  private View view2131296340;
 
   @UiThread
   public SizeListAdapter$SizeViewHolder_ViewBinding(final SizeListAdapter.SizeViewHolder target,
@@ -36,7 +36,7 @@ public class SizeListAdapter$SizeViewHolder_ViewBinding implements Unbinder {
     target.mIcon = Utils.findRequiredViewAsType(source, R.id.ivIcon, "field 'mIcon'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.ibDecreaseButton, "field 'mDecreaseButton' and method 'decreaseValue'");
     target.mDecreaseButton = Utils.castView(view, R.id.ibDecreaseButton, "field 'mDecreaseButton'", ImageButton.class);
-    view2131296363 = view;
+    view2131296366 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class SizeListAdapter$SizeViewHolder_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.ibIncreaseButton, "field 'mIncreaseButton' and method 'increaseValue'");
     target.mIncreaseButton = Utils.castView(view, R.id.ibIncreaseButton, "field 'mIncreaseButton'", ImageButton.class);
-    view2131296364 = view;
+    view2131296367 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -64,7 +64,7 @@ public class SizeListAdapter$SizeViewHolder_ViewBinding implements Unbinder {
     target.mQuantityCustomer = Utils.findRequiredViewAsType(source, R.id.llQuantityCustomer, "field 'mQuantityCustomer'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.etNumberValue, "field 'mNumberValue' and method 'focusMe'");
     target.mNumberValue = Utils.castView(view, R.id.etNumberValue, "field 'mNumberValue'", EditText.class);
-    view2131296337 = view;
+    view2131296340 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -87,13 +87,13 @@ public class SizeListAdapter$SizeViewHolder_ViewBinding implements Unbinder {
     target.mQuantityCustomer = null;
     target.mNumberValue = null;
 
-    view2131296363.setOnClickListener(null);
-    view2131296363 = null;
-    view2131296364.setOnClickListener(null);
-    view2131296364 = null;
+    view2131296366.setOnClickListener(null);
+    view2131296366 = null;
+    view2131296367.setOnClickListener(null);
+    view2131296367 = null;
     view2131296292.setOnClickListener(null);
     view2131296292 = null;
-    view2131296337.setOnClickListener(null);
-    view2131296337 = null;
+    view2131296340.setOnClickListener(null);
+    view2131296340 = null;
   }
 }

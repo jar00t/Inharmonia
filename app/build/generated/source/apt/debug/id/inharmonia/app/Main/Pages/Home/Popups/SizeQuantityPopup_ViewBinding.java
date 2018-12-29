@@ -20,7 +20,7 @@ import java.lang.Override;
 public class SizeQuantityPopup_ViewBinding implements Unbinder {
   private SizeQuantityPopup target;
 
-  private View view2131296362;
+  private View view2131296365;
 
   private View view2131296293;
 
@@ -37,7 +37,7 @@ public class SizeQuantityPopup_ViewBinding implements Unbinder {
     target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_type_list, "field 'mRecyclerView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.ibClosePopup, "field 'mClosePopup' and method 'hideMe'");
     target.mClosePopup = Utils.castView(view, R.id.ibClosePopup, "field 'mClosePopup'", ImageButton.class);
-    view2131296362 = view;
+    view2131296365 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -83,8 +83,8 @@ public class SizeQuantityPopup_ViewBinding implements Unbinder {
     target.mAddToCartButton = null;
     target.mNextStepButton = null;
 
-    view2131296362.setOnClickListener(null);
-    view2131296362 = null;
+    view2131296365.setOnClickListener(null);
+    view2131296365 = null;
     view2131296293.setOnClickListener(null);
     view2131296293 = null;
     view2131296294.setOnClickListener(null);

@@ -61,4 +61,6 @@
     <string name="pilih_semua">Pilih Semua</string>
     <string name="subtotal">SubTotal</string>
     <string name="checkout">Checkout</string>
+    <string name="pilih_lokasi_percetakan">Pilih Lokasi Percetakan</string>
+    <string name="hapus">Hapus</string>
 </resources>

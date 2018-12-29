@@ -2,6 +2,7 @@ package id.inharmonia.app.Cart.Lists.Cart;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -9,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -29,7 +29,7 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
     final Context mContext;
     private List<CartList> mCartList;
 
-    List<String> checkedCart = new ArrayList<>();
+    List<Integer> checkedCart = new ArrayList<>();
     List<Integer> cartTotal = new ArrayList<>();
     int checkedCartTotal = 0;
 
@@ -62,15 +62,15 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
         }
         holder.mSizeList.setText(String.format("Ukuran %s", mCartList.get(position).getCartType().toUpperCase().replaceAll(",", ", ")));
         setList(holder, position);
-        holder.mCartSelect.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        holder.mCartSelect.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCheckedChanged(CompoundButton mCartSelect, boolean isChecked) {
-                if(isChecked) {
-                    checkedCart.add(mCartList.get(holder.getAdapterPosition()).getCartName());
+            public void onClick(View view) {
+                if(holder.mCartSelect.isChecked()) {
+                    if(checkedCart.get(holder.getAdapterPosition()) != 2) checkedCart.set(holder.getAdapterPosition(), 1);
                     checkedCartTotal = checkedCartTotal + cartTotal.get(holder.getAdapterPosition());
                     mCartActivity.setSubTotal(checkedCartTotal, checkedCart, getItemCount());
                 } else {
-                    checkedCart.remove(mCartList.get(holder.getAdapterPosition()).getCartName());
+                    if(checkedCart.get(holder.getAdapterPosition()) != 2) checkedCart.set(holder.getAdapterPosition(), 0);
                     if(checkedCartTotal > 0) checkedCartTotal = checkedCartTotal - cartTotal.get(holder.getAdapterPosition());
                     mCartActivity.setSubTotal(checkedCartTotal, checkedCart, getItemCount());
                 }
@@ -95,6 +95,7 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
             holder.mQuantityList.add(holder.mQuantityListItem);
         }
         cartTotal.add(grandTotal);
+        checkedCart.add(0);
         holder.mQuantityListRecyclerView.setLayoutManager(new GridLayoutManager(mContext, 1));
         holder.mQuantityListRecyclerView.setFocusable(false);
         holder.mQuantityListRecyclerView.setAdapter(new QuantityListAdapter(mContext, holder.mQuantityList, R.layout.rv_quantity_list_item_row));
@@ -103,6 +104,9 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
     }
 
     public class CartListViewHolder extends RecyclerView.ViewHolder {
+
+        @BindView(R.id.clCartItem)
+        ConstraintLayout mCartItem;
 
         @BindView(R.id.ivIcon)
         ImageView mIcon;
@@ -128,6 +132,9 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
         @BindView(R.id.cbCartSelect)
         CheckBox mCartSelect;
 
+        @BindView(R.id.cvCartDeleteButton)
+        CardView mCartDeleteButton;
+
         List<QuantityList> mQuantityList;
         QuantityList mQuantityListItem;
 
@@ -138,6 +145,18 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
 
             ButterKnife.bind(this, itemView);
             isUp = true;
+        }
+
+        @OnClick(R.id.cvCartDeleteButton)
+        public void deleteCart() {
+            if(checkedCart.get(getAdapterPosition()) == 1) {
+                if(checkedCartTotal > 0) checkedCartTotal = checkedCartTotal - cartTotal.get(getAdapterPosition());
+            }
+            checkedCart.set(getAdapterPosition(), 2);
+            cartTotal.remove(getAdapterPosition());
+            mCartList.remove(getAdapterPosition());
+            notifyItemRemoved(getAdapterPosition());
+            mCartActivity.setSubTotal(checkedCartTotal, checkedCart, getItemCount());
         }
 
         @OnClick(R.id.ivToggleButton)
