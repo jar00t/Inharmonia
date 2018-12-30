@@ -8,6 +8,7 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import butterknife.Unbinder;
@@ -21,6 +22,8 @@ public class CartListAdapter$CartListViewHolder_ViewBinding implements Unbinder 
   private CartListAdapter.CartListViewHolder target;
 
   private View view2131296384;
+
+  private View view2131296297;
 
   private View view2131296317;
 
@@ -46,7 +49,15 @@ public class CartListAdapter$CartListViewHolder_ViewBinding implements Unbinder 
     target.mCartDetail = Utils.findRequiredViewAsType(source, R.id.cvCartDetail, "field 'mCartDetail'", CardView.class);
     target.mQuantityListRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_quantity_list, "field 'mQuantityListRecyclerView'", RecyclerView.class);
     target.mTotal = Utils.findRequiredViewAsType(source, R.id.tvTotal, "field 'mTotal'", TextView.class);
-    target.mCartSelect = Utils.findRequiredViewAsType(source, R.id.cbCartSelect, "field 'mCartSelect'", CheckBox.class);
+    view = Utils.findRequiredView(source, R.id.cbCartSelect, "field 'mCartSelect' and method 'selectCart'");
+    target.mCartSelect = Utils.castView(view, R.id.cbCartSelect, "field 'mCartSelect'", CheckBox.class);
+    view2131296297 = view;
+    ((CompoundButton) view).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+      @Override
+      public void onCheckedChanged(CompoundButton p0, boolean p1) {
+        target.selectCart();
+      }
+    });
     view = Utils.findRequiredView(source, R.id.cvCartDeleteButton, "field 'mCartDeleteButton' and method 'deleteCart'");
     target.mCartDeleteButton = Utils.castView(view, R.id.cvCartDeleteButton, "field 'mCartDeleteButton'", CardView.class);
     view2131296317 = view;
@@ -78,6 +89,8 @@ public class CartListAdapter$CartListViewHolder_ViewBinding implements Unbinder 
 
     view2131296384.setOnClickListener(null);
     view2131296384 = null;
+    ((CompoundButton) view2131296297).setOnCheckedChangeListener(null);
+    view2131296297 = null;
     view2131296317.setOnClickListener(null);
     view2131296317 = null;
   }

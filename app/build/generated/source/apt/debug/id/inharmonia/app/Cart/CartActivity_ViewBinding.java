@@ -22,6 +22,8 @@ public class CartActivity_ViewBinding implements Unbinder {
 
   private View view2131296362;
 
+  private View view2131296298;
+
   @UiThread
   public CartActivity_ViewBinding(CartActivity target) {
     this(target, target.getWindow().getDecorView());
@@ -47,7 +49,15 @@ public class CartActivity_ViewBinding implements Unbinder {
     target.mCheckoutButton = Utils.findRequiredViewAsType(source, R.id.cvCheckoutButton, "field 'mCheckoutButton'", CardView.class);
     target.mCheckoutText = Utils.findRequiredViewAsType(source, R.id.tvCheckoutText, "field 'mCheckoutText'", TextView.class);
     target.mSelectAll = Utils.findRequiredViewAsType(source, R.id.tvSelectAll, "field 'mSelectAll'", TextView.class);
-    target.mCheckAll = Utils.findRequiredViewAsType(source, R.id.cbCheckAll, "field 'mCheckAll'", CheckBox.class);
+    view = Utils.findRequiredView(source, R.id.cbCheckAll, "field 'mCheckAll' and method 'checkAll'");
+    target.mCheckAll = Utils.castView(view, R.id.cbCheckAll, "field 'mCheckAll'", CheckBox.class);
+    view2131296298 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.checkAll();
+      }
+    });
     target.mSelectStoreButton = Utils.findRequiredViewAsType(source, R.id.cvSelectStoreButton, "field 'mSelectStoreButton'", CardView.class);
   }
 
@@ -70,5 +80,7 @@ public class CartActivity_ViewBinding implements Unbinder {
 
     view2131296362.setOnClickListener(null);
     view2131296362 = null;
+    view2131296298.setOnClickListener(null);
+    view2131296298 = null;
   }
 }

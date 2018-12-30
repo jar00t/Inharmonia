@@ -13,7 +13,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import butterknife.BindView;
@@ -53,8 +52,6 @@ public class CartActivity extends AppCompatActivity {
     CardView mSelectStoreButton;
 
     List<CartList> mCartList;
-    CartList mCartItem;
-
     List<String[]> cartData;
 
     @Override
@@ -65,27 +62,21 @@ public class CartActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         cartData = new ArrayList<>();
-        cartData.add(new String[]{"gambar", "f4,a4,a5", "56,576,5"});
-        cartData.add(new String[]{"dokumen", "f4,a4", "76,5"});
-        cartData.add(new String[]{"gambar", "f4,a4,a5", "56,76,78"});
+        cartData.add(new String[]{"1", "gambar", "f4,a4,a5", "56,576,5"});
+        cartData.add(new String[]{"2", "dokumen", "f4,a4", "76,5"});
+        cartData.add(new String[]{"3", "gambar", "f4,a4,a5", "56,76,78"});
 
         setList();
+    }
 
-        mCheckAll.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                for(int i = 0; i < mRecyclerView.getAdapter().getItemCount(); i++) {
-                    CheckBox cartSelect = mRecyclerView.findViewHolderForAdapterPosition(i).itemView.findViewById(R.id.cbCartSelect);
-                    if(mCheckAll.isChecked()) {
-                        if(!cartSelect.isChecked()) cartSelect.performClick();
-                        mCheckAll.setChecked(true);
-                    } else {
-                        if(cartSelect.isChecked()) cartSelect.performClick();
-                        mCheckAll.setChecked(false);
-                    }
-                }
-            }
-        });
+    @OnClick(R.id.cbCheckAll)
+    public void checkAll() {
+        CheckBox cartSelect;
+        Boolean isChecked = mCheckAll.isChecked();
+        for(int i = 0; i < mRecyclerView.getAdapter().getItemCount(); i++) {
+            cartSelect = mRecyclerView.findViewHolderForAdapterPosition(i).itemView.findViewById(R.id.cbCartSelect);
+            cartSelect.setChecked(isChecked);
+        }
     }
 
     @OnClick(R.id.ibBackButton)
@@ -95,8 +86,7 @@ public class CartActivity extends AppCompatActivity {
         if(cartData.size() != 0) {
             mCartList = new ArrayList<>();
             for(int i = 0; i < cartData.size(); i++) {
-                mCartItem = new CartList(cartData.get(i)[0], cartData.get(i)[1], cartData.get(i)[2]);
-                mCartList.add(mCartItem);
+                mCartList.add(new CartList(cartData.get(i)[0], cartData.get(i)[1], cartData.get(i)[2], cartData.get(i)[3],false));
             }
             mRecyclerView.setLayoutManager(new GridLayoutManager(this, 1));
             mRecyclerView.setFocusable(false);
@@ -104,38 +94,30 @@ public class CartActivity extends AppCompatActivity {
         }
     }
 
-    public void setSubTotal(int subtotal, List<String> checkedCart, int totalCart) {
-        int totalCheckedCart = checkedCart.size() - Collections.frequency(checkedCart, "unchecked");
-        if(totalCart != 0 && subtotal > 0) {
-            mSubTotal.setText(String.format("%s lembar", subtotal));
-            mCheckoutButton.setEnabled(true);
-            mCheckoutButton.setCardBackgroundColor(getResources().getColor(R.color.colorPurple));
-            mCheckoutText.setTextColor(getResources().getColor(R.color.colorWhite));
-            mSubTotal.setTextColor(getResources().getColor(R.color.colorPurple));
-
-            setMargins(mListLayout,0,0,0,120);
-            mSelectStoreButton.setVisibility(View.VISIBLE);
-        } else {
+    public void setReport(int selectedCartTotal, List<CartList> listCart, List<String> selectedCart) {
+        if(selectedCartTotal == 0) {
             mSubTotal.setText("0");
-            mCheckoutButton.setEnabled(false);
+            mSubTotal.setTextColor(getResources().getColor(R.color.colorGrey));
             mCheckoutButton.setCardBackgroundColor(getResources().getColor(R.color.colorLightGrey));
             mCheckoutText.setTextColor(getResources().getColor(R.color.colorGrey));
-            mSubTotal.setTextColor(getResources().getColor(R.color.colorGrey));
-
-            setMargins(mListLayout,0,0,0,70);
+            setMargins(mListLayout, 0,0,0,70);
             mSelectStoreButton.setVisibility(View.GONE);
+        } else {
+            mSubTotal.setText(String.format("%s lembar", selectedCartTotal));
+            mSubTotal.setTextColor(getResources().getColor(R.color.colorPurple));
+            mCheckoutButton.setCardBackgroundColor(getResources().getColor(R.color.colorPurple));
+            mCheckoutText.setTextColor(getResources().getColor(R.color.colorWhite));
+            setMargins(mListLayout, 0,0,0,120);
+            mSelectStoreButton.setVisibility(View.VISIBLE);
         }
 
-        mSelectAll.setText(String.format("%s", totalCheckedCart));
-
-        if(checkedCart != null) {
-            if(totalCart != 0 && totalCheckedCart != 0 && totalCheckedCart == totalCart) {
-                if(!mCheckAll.isEnabled()) mCheckAll.setEnabled(true);
-                mCheckAll.setChecked(true);
-            } else {
-                if(totalCart == 0) mCheckAll.setEnabled(false);
-                mCheckAll.setChecked(false);
-            }
+        mCheckAll.setChecked(listCart.size() == selectedCart.size());
+        if(listCart.size() == 0) {
+            mCheckAll.setChecked(false);
+            mCheckAll.setEnabled(false);
+        } else {
+            mCheckAll.setChecked(true);
+            mCheckAll.setEnabled(true);
         }
     }
 

@@ -18,6 +18,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnCheckedChanged;
 import butterknife.OnClick;
 import id.inharmonia.app.Cart.CartActivity;
 import id.inharmonia.app.Cart.Lists.Quantity.QuantityListAdapter;
@@ -29,11 +30,9 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
     final Context mContext;
     private List<CartList> mCartList;
 
-    List<String> checkedCart = new ArrayList<>();
-    List<Integer> cartTotal = new ArrayList<>();
-    int checkedCartTotal = 0;
-
     CartActivity mCartActivity;
+    List<String> selectedCart = new ArrayList<>();
+    int selectedCartTotal = 0;
 
     public CartListAdapter(Context mContext, List<CartList> mCartList, CartActivity mCartActivity) {
         this.mContext = mContext;
@@ -61,21 +60,8 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
                 break;
         }
         holder.mSizeList.setText(String.format("Ukuran %s", mCartList.get(position).getCartType().toUpperCase().replaceAll(",", ", ")));
+        holder.mCartSelect.setChecked(mCartList.get(position).getCartSelected());
         setList(holder, position);
-        holder.mCartSelect.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(holder.mCartSelect.isChecked()) {
-                    if(!checkedCart.get(holder.getAdapterPosition()).equals("deleted")) checkedCart.set(holder.getAdapterPosition(), "checked");
-                    checkedCartTotal = checkedCartTotal + cartTotal.get(holder.getAdapterPosition());
-                    mCartActivity.setSubTotal(checkedCartTotal, checkedCart, getItemCount());
-                } else {
-                    if(!checkedCart.get(holder.getAdapterPosition()).equals("deleted")) checkedCart.set(holder.getAdapterPosition(), "unchecked");
-                    if(checkedCartTotal > 0) checkedCartTotal = checkedCartTotal - cartTotal.get(holder.getAdapterPosition());
-                    mCartActivity.setSubTotal(checkedCartTotal, checkedCart, getItemCount());
-                }
-            }
-        });
     }
 
     @Override
@@ -84,23 +70,19 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
     }
 
     public void setList(@NonNull CartListViewHolder holder, int position) {
-        int grandTotal = 0;
-
+        int thisTotal = 0;
         holder.mQuantityList = new ArrayList<>();
         String[] sizes = mCartList.get(position).getCartType().split(",");
         String[] quantities = mCartList.get(position).getCartQuantity().split(",");
         for(int s = 0; s < sizes.length; s++) {
-            grandTotal = grandTotal + Integer.parseInt(quantities[s]);
             holder.mQuantityListItem = new QuantityList(String.format("Ukuran %s", sizes[s].toUpperCase()), String.format("%s lembar", quantities[s]));
             holder.mQuantityList.add(holder.mQuantityListItem);
+            thisTotal = thisTotal + Integer.parseInt(quantities[s]);
         }
-        cartTotal.add(grandTotal);
-        checkedCart.add("unchecked");
+        if(thisTotal > 0) holder.mTotal.setText(String.format("%s lembar", thisTotal));
         holder.mQuantityListRecyclerView.setLayoutManager(new GridLayoutManager(mContext, 1));
         holder.mQuantityListRecyclerView.setFocusable(false);
         holder.mQuantityListRecyclerView.setAdapter(new QuantityListAdapter(mContext, holder.mQuantityList, R.layout.rv_quantity_list_item_row));
-
-        holder.mTotal.setText(String.format("%s lembar", grandTotal));
     }
 
     public class CartListViewHolder extends RecyclerView.ViewHolder {
@@ -147,16 +129,31 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
             isUp = true;
         }
 
+        @OnCheckedChanged(R.id.cbCartSelect)
+        public void selectCart() {
+            mCartList.get(getAdapterPosition()).setCartSelected(mCartSelect.isChecked());
+            String[] cartQuantities = mCartList.get(getAdapterPosition()).getCartQuantity().split(",");
+            if(mCartSelect.isChecked()) {
+                selectedCart.add(mCartList.get(getAdapterPosition()).getCartId());
+                for(int i = 0; i < cartQuantities.length; i++) selectedCartTotal = selectedCartTotal + Integer.parseInt(cartQuantities[i]);
+            } else {
+                selectedCart.remove(mCartList.get(getAdapterPosition()).getCartId());
+                for(int i = 0; i < cartQuantities.length; i++) selectedCartTotal = selectedCartTotal - Integer.parseInt(cartQuantities[i]);
+            }
+            mCartActivity.setReport(selectedCartTotal, mCartList, selectedCart);
+        }
+
         @OnClick(R.id.cvCartDeleteButton)
         public void deleteCart() {
-            if(checkedCart.get(getAdapterPosition()).equals("checked")) {
-                if(checkedCartTotal > 0) checkedCartTotal = checkedCartTotal - cartTotal.get(getAdapterPosition());
+            if(mCartSelect.isChecked()) {
+                mCartList.get(getAdapterPosition()).setCartSelected(false);
+                String[] cartQuantities = mCartList.get(getAdapterPosition()).getCartQuantity().split(",");
+                selectedCart.remove(mCartList.get(getAdapterPosition()).getCartId());
+                for (int i = 0; i < cartQuantities.length; i++) selectedCartTotal = selectedCartTotal - Integer.parseInt(cartQuantities[i]);
             }
-            checkedCart.set(getAdapterPosition(), "deleted");
-            cartTotal.remove(getAdapterPosition());
             mCartList.remove(getAdapterPosition());
-            notifyItemRemoved(getAdapterPosition());
-            mCartActivity.setSubTotal(checkedCartTotal, checkedCart, getItemCount());
+            mCartActivity.setReport(selectedCartTotal, mCartList, selectedCart);
+            notifyDataSetChanged();
         }
 
         @OnClick(R.id.ivToggleButton)
