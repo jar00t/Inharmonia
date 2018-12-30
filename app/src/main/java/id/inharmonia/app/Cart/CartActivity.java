@@ -116,7 +116,6 @@ public class CartActivity extends AppCompatActivity {
             mCheckAll.setChecked(false);
             mCheckAll.setEnabled(false);
         } else {
-            mCheckAll.setChecked(true);
             mCheckAll.setEnabled(true);
         }
     }
