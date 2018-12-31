@@ -63,4 +63,5 @@
     <string name="checkout">Checkout</string>
     <string name="pilih_lokasi_percetakan">Pilih Lokasi Percetakan</string>
     <string name="hapus">Hapus</string>
+    <string name="q_hapus_dari_keranjang">Hapus dari keranjang?</string>
 </resources>

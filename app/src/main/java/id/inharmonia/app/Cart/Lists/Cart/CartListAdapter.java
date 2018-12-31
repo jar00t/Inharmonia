@@ -1,6 +1,10 @@
 package id.inharmonia.app.Cart.Lists.Cart;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.graphics.drawable.ColorDrawable;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.CardView;
@@ -9,6 +13,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -119,6 +124,7 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
 
         List<QuantityList> mQuantityList;
         QuantityList mQuantityListItem;
+        AlertDialog.Builder builderConfirmSizeQuantity = null;
 
         boolean isUp;
 
@@ -145,15 +151,56 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
 
         @OnClick(R.id.cvCartDeleteButton)
         public void deleteCart() {
-            if(mCartSelect.isChecked()) {
-                mCartList.get(getAdapterPosition()).setCartSelected(false);
-                String[] cartQuantities = mCartList.get(getAdapterPosition()).getCartQuantity().split(",");
-                selectedCart.remove(mCartList.get(getAdapterPosition()).getCartId());
-                for (int i = 0; i < cartQuantities.length; i++) selectedCartTotal = selectedCartTotal - Integer.parseInt(cartQuantities[i]);
+            if (builderConfirmSizeQuantity == null){
+                builderConfirmSizeQuantity = new AlertDialog.Builder(mContext, R.style.DialogTheme);
+                LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                View dialogConfirmSizeQuantityView = inflater.inflate(R.layout.dialog_message_popup, null);
+                builderConfirmSizeQuantity.setView(dialogConfirmSizeQuantityView);
+
+                TextView mMessages = dialogConfirmSizeQuantityView.findViewById(R.id.tvMessages);
+                mMessages.setText(mContext.getString(R.string.q_hapus_dari_keranjang));
+
+                builderConfirmSizeQuantity.setPositiveButton("Ok Sip", new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        if(mCartSelect.isChecked()) {
+                            mCartList.get(getAdapterPosition()).setCartSelected(false);
+                            String[] cartQuantities = mCartList.get(getAdapterPosition()).getCartQuantity().split(",");
+                            selectedCart.remove(mCartList.get(getAdapterPosition()).getCartId());
+                            for (int i = 0; i < cartQuantities.length; i++) selectedCartTotal = selectedCartTotal - Integer.parseInt(cartQuantities[i]);
+                        }
+                        mCartList.remove(getAdapterPosition());
+                        notifyItemRemoved(getAdapterPosition());
+                        mCartActivity.setReport(selectedCartTotal, mCartList, selectedCart);
+                        dialog.dismiss();
+                    }
+
+                });
+
+                builderConfirmSizeQuantity.setNegativeButton("Batal", new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+
+                });
+
+                Dialog dialogConfirmSizeQuantity = builderConfirmSizeQuantity.create();
+                dialogConfirmSizeQuantity.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+                dialogConfirmSizeQuantity.setCancelable(true);
+
+                dialogConfirmSizeQuantity.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+                dialogConfirmSizeQuantity.show();
+                dialogConfirmSizeQuantity.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                    @Override
+                    public void onDismiss(DialogInterface dialogInterface) {
+                        builderConfirmSizeQuantity = null;
+                    }
+                });
             }
-            mCartList.remove(getAdapterPosition());
-            notifyItemRemoved(getAdapterPosition());
-            mCartActivity.setReport(selectedCartTotal, mCartList, selectedCart);
         }
 
         @OnClick(R.id.ivToggleButton)
