@@ -152,8 +152,8 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.CartLi
                 for (int i = 0; i < cartQuantities.length; i++) selectedCartTotal = selectedCartTotal - Integer.parseInt(cartQuantities[i]);
             }
             mCartList.remove(getAdapterPosition());
+            notifyItemRemoved(getAdapterPosition());
             mCartActivity.setReport(selectedCartTotal, mCartList, selectedCart);
-            notifyDataSetChanged();
         }
 
         @OnClick(R.id.ivToggleButton)
