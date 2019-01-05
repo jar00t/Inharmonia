@@ -22,7 +22,9 @@ public class CartActivity_ViewBinding implements Unbinder {
 
   private View view2131296362;
 
-  private View view2131296298;
+  private View view2131296299;
+
+  private View view2131296321;
 
   @UiThread
   public CartActivity_ViewBinding(CartActivity target) {
@@ -34,8 +36,8 @@ public class CartActivity_ViewBinding implements Unbinder {
     this.target = target;
 
     View view;
-    view = Utils.findRequiredView(source, R.id.ibBackButton, "field 'mBackButton' and method 'exit'");
-    target.mBackButton = Utils.castView(view, R.id.ibBackButton, "field 'mBackButton'", ImageButton.class);
+    view = Utils.findRequiredView(source, R.id.ib_button_back, "field 'ib_button_back' and method 'exit'");
+    target.ib_button_back = Utils.castView(view, R.id.ib_button_back, "field 'ib_button_back'", ImageButton.class);
     view2131296362 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
@@ -43,22 +45,30 @@ public class CartActivity_ViewBinding implements Unbinder {
         target.exit();
       }
     });
-    target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_cart_list, "field 'mRecyclerView'", RecyclerView.class);
-    target.mSubTotal = Utils.findRequiredViewAsType(source, R.id.tvSubTotal, "field 'mSubTotal'", TextView.class);
-    target.mListLayout = Utils.findRequiredViewAsType(source, R.id.llListLayout, "field 'mListLayout'", LinearLayout.class);
-    target.mCheckoutButton = Utils.findRequiredViewAsType(source, R.id.cvCheckoutButton, "field 'mCheckoutButton'", CardView.class);
-    target.mCheckoutText = Utils.findRequiredViewAsType(source, R.id.tvCheckoutText, "field 'mCheckoutText'", TextView.class);
-    target.mSelectAll = Utils.findRequiredViewAsType(source, R.id.tvSelectAll, "field 'mSelectAll'", TextView.class);
-    view = Utils.findRequiredView(source, R.id.cbCheckAll, "field 'mCheckAll' and method 'checkAll'");
-    target.mCheckAll = Utils.castView(view, R.id.cbCheckAll, "field 'mCheckAll'", CheckBox.class);
-    view2131296298 = view;
+    target.rv_list_cart = Utils.findRequiredViewAsType(source, R.id.rv_list_cart, "field 'rv_list_cart'", RecyclerView.class);
+    target.tv_sub_total = Utils.findRequiredViewAsType(source, R.id.tv_sub_total, "field 'tv_sub_total'", TextView.class);
+    target.ll_layout_list = Utils.findRequiredViewAsType(source, R.id.ll_layout_list, "field 'll_layout_list'", LinearLayout.class);
+    target.cv_button_checkout = Utils.findRequiredViewAsType(source, R.id.cv_button_checkout, "field 'cv_button_checkout'", CardView.class);
+    target.tv_checkout = Utils.findRequiredViewAsType(source, R.id.tv_checkout, "field 'tv_checkout'", TextView.class);
+    target.tv_select_all = Utils.findRequiredViewAsType(source, R.id.tv_select_all, "field 'tv_select_all'", TextView.class);
+    view = Utils.findRequiredView(source, R.id.cb_select_all, "field 'cb_select_all' and method 'select_all'");
+    target.cb_select_all = Utils.castView(view, R.id.cb_select_all, "field 'cb_select_all'", CheckBox.class);
+    view2131296299 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
-        target.checkAll();
+        target.select_all();
       }
     });
-    target.mSelectStoreButton = Utils.findRequiredViewAsType(source, R.id.cvSelectStoreButton, "field 'mSelectStoreButton'", CardView.class);
+    view = Utils.findRequiredView(source, R.id.cv_button_store_selecter, "field 'cv_button_store_selecter' and method 'go_to_store_finder'");
+    target.cv_button_store_selecter = Utils.castView(view, R.id.cv_button_store_selecter, "field 'cv_button_store_selecter'", CardView.class);
+    view2131296321 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.go_to_store_finder();
+      }
+    });
   }
 
   @Override
@@ -68,19 +78,21 @@ public class CartActivity_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.mBackButton = null;
-    target.mRecyclerView = null;
-    target.mSubTotal = null;
-    target.mListLayout = null;
-    target.mCheckoutButton = null;
-    target.mCheckoutText = null;
-    target.mSelectAll = null;
-    target.mCheckAll = null;
-    target.mSelectStoreButton = null;
+    target.ib_button_back = null;
+    target.rv_list_cart = null;
+    target.tv_sub_total = null;
+    target.ll_layout_list = null;
+    target.cv_button_checkout = null;
+    target.tv_checkout = null;
+    target.tv_select_all = null;
+    target.cb_select_all = null;
+    target.cv_button_store_selecter = null;
 
     view2131296362.setOnClickListener(null);
     view2131296362 = null;
-    view2131296298.setOnClickListener(null);
-    view2131296298 = null;
+    view2131296299.setOnClickListener(null);
+    view2131296299 = null;
+    view2131296321.setOnClickListener(null);
+    view2131296321 = null;
   }
 }

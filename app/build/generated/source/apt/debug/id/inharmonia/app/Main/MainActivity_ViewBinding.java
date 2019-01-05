@@ -24,8 +24,8 @@ public class MainActivity_ViewBinding implements Unbinder {
   public MainActivity_ViewBinding(MainActivity target, View source) {
     this.target = target;
 
-    target.mBottomNavigationView = Utils.findRequiredViewAsType(source, R.id.navigation, "field 'mBottomNavigationView'", BottomNavigationView.class);
-    target.mViewPager = Utils.findRequiredViewAsType(source, R.id.fragment_container, "field 'mViewPager'", ViewPager.class);
+    target.bnv_navigation = Utils.findRequiredViewAsType(source, R.id.bnv_navigation, "field 'bnv_navigation'", BottomNavigationView.class);
+    target.vp_fragment_container = Utils.findRequiredViewAsType(source, R.id.vp_fragment_container, "field 'vp_fragment_container'", ViewPager.class);
   }
 
   @Override
@@ -35,7 +35,7 @@ public class MainActivity_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.mBottomNavigationView = null;
-    target.mViewPager = null;
+    target.bnv_navigation = null;
+    target.vp_fragment_container = null;
   }
 }

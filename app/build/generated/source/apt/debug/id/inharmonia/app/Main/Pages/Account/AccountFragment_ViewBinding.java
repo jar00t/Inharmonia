@@ -18,7 +18,7 @@ public class AccountFragment_ViewBinding implements Unbinder {
   public AccountFragment_ViewBinding(AccountFragment target, View source) {
     this.target = target;
 
-    target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_menu_link_list, "field 'mRecyclerView'", RecyclerView.class);
+    target.rv_list_link_menu = Utils.findRequiredViewAsType(source, R.id.rv_list_link_menu, "field 'rv_list_link_menu'", RecyclerView.class);
   }
 
   @Override
@@ -28,6 +28,6 @@ public class AccountFragment_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.mRecyclerView = null;
+    target.rv_list_link_menu = null;
   }
 }

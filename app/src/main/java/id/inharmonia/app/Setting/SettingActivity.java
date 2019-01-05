@@ -12,11 +12,11 @@ import id.inharmonia.app.R;
 
 public class SettingActivity extends AppCompatActivity {
 
-    @BindView(R.id.ibBackButton)
-    ImageButton mBackButton;
+    @BindView(R.id.ib_button_back)
+    ImageButton ib_button_back;
 
-    @BindView(R.id.tvPageName)
-    TextView mPageName;
+    @BindView(R.id.tv_page_name)
+    TextView tv_page_name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class SettingActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick(R.id.ibBackButton)
+    @OnClick(R.id.ib_button_back)
     public void exit() {
         finish();
     }

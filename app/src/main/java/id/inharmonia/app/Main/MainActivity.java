@@ -13,17 +13,17 @@ import id.inharmonia.app.Main.Pages.Account.AccountFragment;
 import id.inharmonia.app.Main.Pages.Home.HomeFragment;
 import id.inharmonia.app.Main.Pages.Order.OrderFragment;
 import id.inharmonia.app.R;
-import id.inharmonia.app.Main.Adapters.ViewPagerAdapter;
+import id.inharmonia.app.Main.Adapter.ViewPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.navigation)
-    BottomNavigationView mBottomNavigationView;
+    @BindView(R.id.bnv_navigation)
+    BottomNavigationView bnv_navigation;
 
-    @BindView(R.id.fragment_container)
-    ViewPager mViewPager;
+    @BindView(R.id.vp_fragment_container)
+    ViewPager vp_fragment_container;
 
-    MenuItem prevMenuItem;
+    MenuItem prev_menu_item;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,25 +32,25 @@ public class MainActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
-        mBottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bnv_navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.navigation_home:
-                        mViewPager.setCurrentItem(0);
+                        vp_fragment_container.setCurrentItem(0);
                         break;
                     case R.id.navigation_order:
-                        mViewPager.setCurrentItem(1);
+                        vp_fragment_container.setCurrentItem(1);
                         break;
                     case R.id.navigation_account:
-                        mViewPager.setCurrentItem(2);
+                        vp_fragment_container.setCurrentItem(2);
                         break;
                 }
                 return false;
             }
         });
 
-        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        vp_fragment_container.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
@@ -58,13 +58,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-                if (prevMenuItem != null) {
-                    prevMenuItem.setChecked(false);
+                if (prev_menu_item != null) {
+                    prev_menu_item.setChecked(false);
                 } else {
-                    mBottomNavigationView.getMenu().getItem(0).setChecked(false);
+                    bnv_navigation.getMenu().getItem(0).setChecked(false);
                 }
-                mBottomNavigationView.getMenu().getItem(position).setChecked(true);
-                prevMenuItem = mBottomNavigationView.getMenu().getItem(position);
+                bnv_navigation.getMenu().getItem(position).setChecked(true);
+                prev_menu_item = bnv_navigation.getMenu().getItem(position);
 
             }
 
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        setupViewPager(mViewPager);
+        setupViewPager(vp_fragment_container);
     }
 
     private void setupViewPager(ViewPager viewPager) {

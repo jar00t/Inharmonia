@@ -14,17 +14,17 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import id.inharmonia.app.Main.Pages.Order.Lists.Order.OrderList;
-import id.inharmonia.app.Main.Pages.Order.Lists.Order.OrderListAdapter;
+import id.inharmonia.app.Main.Pages.Order.List.OrderList;
+import id.inharmonia.app.Main.Pages.Order.Adapter.OrderListAdapter;
 import id.inharmonia.app.R;
 
 public class OrderFragment extends Fragment {
 
-    @BindView(R.id.rv_order_list)
-    RecyclerView mRecyclerView;
+    @BindView(R.id.rv_list_order)
+    RecyclerView rv_order_list;
 
-    List<OrderList> mOrderList;
-    OrderList mOrderItem;
+    List<OrderList> list_order;
+    OrderList item_order;
 
     public OrderFragment() {}
 
@@ -39,12 +39,12 @@ public class OrderFragment extends Fragment {
 
         ButterKnife.bind(this, view);
 
-        mRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 1));
-        mRecyclerView.setFocusable(false);
+        rv_order_list.setLayoutManager(new GridLayoutManager(getActivity(), 1));
+        rv_order_list.setFocusable(false);
 
-        mOrderList = new ArrayList<>();
+        list_order = new ArrayList<>();
 
-        mOrderItem = new OrderList(
+        item_order = new OrderList(
                 "DP-1234567890",
                 "Selesai",
                 R.drawable.in_ic_order_finish,
@@ -54,9 +54,9 @@ public class OrderFragment extends Fragment {
                 "Jl.Surawinata No.04 Purwakarta",
                 "12 Desember 2018 - 12:12"
         );
-        mOrderList.add(mOrderItem);
+        list_order.add(item_order);
 
-        mOrderItem = new OrderList(
+        item_order = new OrderList(
                 "DP-8123912837",
                 "Dikirim",
                 R.drawable.in_ic_order_send,
@@ -66,9 +66,9 @@ public class OrderFragment extends Fragment {
                 "Jl.Depan No.04 Purwakarta",
                 "12 November 2018 - 20:12"
         );
-        mOrderList.add(mOrderItem);
+        list_order.add(item_order);
 
-        mOrderItem = new OrderList(
+        item_order = new OrderList(
                 "DP-2348291834",
                 "Diproses",
                 R.drawable.in_ic_order_process,
@@ -78,9 +78,9 @@ public class OrderFragment extends Fragment {
                 "Jl.Rata di Aspal Purwakarta",
                 "1 November 2018 - 10:12"
         );
-        mOrderList.add(mOrderItem);
+        list_order.add(item_order);
 
-        mRecyclerView.setAdapter(new OrderListAdapter(getActivity(), mOrderList));
+        rv_order_list.setAdapter(new OrderListAdapter(getActivity(), list_order));
 
         return view;
     }

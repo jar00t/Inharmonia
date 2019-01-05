@@ -71,7 +71,7 @@
                         android:focusable="true">
 
                         <ImageView
-                            android:id="@+id/ivUserPicture"
+                            android:id="@+id/iv_user_picture"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
                             android:adjustViewBounds="true"
@@ -102,7 +102,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tvUserFullName"
+                        android:id="@+id/tv_user_full_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
@@ -128,7 +128,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tvUserEmail"
+                    android:id="@+id/tv_user_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
@@ -151,7 +151,7 @@
                         android:layout_height="wrap_content">
 
                         <android.support.v7.widget.RecyclerView
-                            android:id="@+id/rv_menu_link_list"
+                            android:id="@+id/rv_list_link_menu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
 
@@ -216,7 +216,7 @@
                 </android.support.v7.widget.CardView>
 
                 <TextView
-                    android:id="@+id/tvAppName"
+                    android:id="@+id/tv_app_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
@@ -228,7 +228,7 @@
                     android:text="@string/inharmonia_app" />
 
                 <TextView
-                    android:id="@+id/tvAppVersion"
+                    android:id="@+id/tv_app_version"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"

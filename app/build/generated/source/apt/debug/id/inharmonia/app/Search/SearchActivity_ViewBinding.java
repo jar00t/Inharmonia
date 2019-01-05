@@ -31,8 +31,8 @@ public class SearchActivity_ViewBinding implements Unbinder {
     this.target = target;
 
     View view;
-    view = Utils.findRequiredView(source, R.id.ibBackButton, "field 'mBackButton' and method 'exit'");
-    target.mBackButton = Utils.castView(view, R.id.ibBackButton, "field 'mBackButton'", ImageButton.class);
+    view = Utils.findRequiredView(source, R.id.ib_button_back, "field 'ib_button_back' and method 'exit'");
+    target.ib_button_back = Utils.castView(view, R.id.ib_button_back, "field 'ib_button_back'", ImageButton.class);
     view2131296362 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
@@ -40,8 +40,8 @@ public class SearchActivity_ViewBinding implements Unbinder {
         target.exit();
       }
     });
-    view = Utils.findRequiredView(source, R.id.ibClearButton, "field 'mClearButton' and method 'clear'");
-    target.mClearButton = Utils.castView(view, R.id.ibClearButton, "field 'mClearButton'", ImageButton.class);
+    view = Utils.findRequiredView(source, R.id.ib_button_clear, "field 'ib_button_clear' and method 'clear'");
+    target.ib_button_clear = Utils.castView(view, R.id.ib_button_clear, "field 'ib_button_clear'", ImageButton.class);
     view2131296364 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
@@ -49,8 +49,8 @@ public class SearchActivity_ViewBinding implements Unbinder {
         target.clear();
       }
     });
-    target.mSearchInput = Utils.findRequiredViewAsType(source, R.id.etSearchInput, "field 'mSearchInput'", EditText.class);
-    target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_store_list, "field 'mRecyclerView'", RecyclerView.class);
+    target.et_input_search = Utils.findRequiredViewAsType(source, R.id.et_input_search, "field 'et_input_search'", EditText.class);
+    target.rv_list_store = Utils.findRequiredViewAsType(source, R.id.rv_list_store, "field 'rv_list_store'", RecyclerView.class);
   }
 
   @Override
@@ -60,10 +60,10 @@ public class SearchActivity_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.mBackButton = null;
-    target.mClearButton = null;
-    target.mSearchInput = null;
-    target.mRecyclerView = null;
+    target.ib_button_back = null;
+    target.ib_button_clear = null;
+    target.et_input_search = null;
+    target.rv_list_store = null;
 
     view2131296362.setOnClickListener(null);
     view2131296362 = null;

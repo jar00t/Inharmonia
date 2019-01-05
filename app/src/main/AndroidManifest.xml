@@ -18,7 +18,7 @@
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Splash.SplashScreen"
+            android:name=".Splash.SplashScreenActivity"
             android:configChanges="orientation"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait"
@@ -40,7 +40,8 @@
         <activity android:name=".Main.Pages.Order.OrderDetailActivity" />
         <activity android:name=".Main.Pages.Account.AccountSettingActivity" />
         <activity android:name=".Setting.SettingActivity" />
-        <activity android:name=".Cart.CartActivity"></activity>
+        <activity android:name=".Cart.CartActivity" />
+        <activity android:name=".Store.StoreFinderActivity"></activity>
     </application>
 
 </manifest>

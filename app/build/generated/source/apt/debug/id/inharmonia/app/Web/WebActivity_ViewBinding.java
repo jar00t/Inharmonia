@@ -29,10 +29,10 @@ public class WebActivity_ViewBinding implements Unbinder {
     this.target = target;
 
     View view;
-    target.mWebView = Utils.findRequiredViewAsType(source, R.id.wvWebContainer, "field 'mWebView'", WebView.class);
-    target.mPageName = Utils.findRequiredViewAsType(source, R.id.tvPageName, "field 'mPageName'", TextView.class);
-    view = Utils.findRequiredView(source, R.id.ibBackButton, "field 'mBackButton' and method 'exit'");
-    target.mBackButton = Utils.castView(view, R.id.ibBackButton, "field 'mBackButton'", ImageButton.class);
+    target.wv_container_web = Utils.findRequiredViewAsType(source, R.id.wv_container_web, "field 'wv_container_web'", WebView.class);
+    target.tv_page_name = Utils.findRequiredViewAsType(source, R.id.tv_page_name, "field 'tv_page_name'", TextView.class);
+    view = Utils.findRequiredView(source, R.id.ib_button_back, "field 'ib_button_back' and method 'exit'");
+    target.ib_button_back = Utils.castView(view, R.id.ib_button_back, "field 'ib_button_back'", ImageButton.class);
     view2131296362 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
@@ -49,9 +49,9 @@ public class WebActivity_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.mWebView = null;
-    target.mPageName = null;
-    target.mBackButton = null;
+    target.wv_container_web = null;
+    target.tv_page_name = null;
+    target.ib_button_back = null;
 
     view2131296362.setOnClickListener(null);
     view2131296362 = null;

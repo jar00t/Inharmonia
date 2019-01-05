@@ -18,16 +18,16 @@ import id.inharmonia.app.R;
 
 public class WebActivity extends AppCompatActivity {
 
-    @BindView(R.id.wvWebContainer)
-    WebView mWebView;
+    @BindView(R.id.wv_container_web)
+    WebView wv_container_web;
 
-    @BindView(R.id.tvPageName)
-    TextView mPageName;
+    @BindView(R.id.tv_page_name)
+    TextView tv_page_name;
 
-    @BindView(R.id.ibBackButton)
-    ImageButton mBackButton;
+    @BindView(R.id.ib_button_back)
+    ImageButton ib_button_back;
 
-    Bundle mBundle;
+    Bundle bundle_me;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,44 +36,44 @@ public class WebActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
-        mBundle = getIntent().getExtras();
-        if (!mBundle.getString("pageTitle").isEmpty()) {
-            mPageName.setText(mBundle.getString("pageTitle"));
+        bundle_me = getIntent().getExtras();
+        if (!bundle_me.getString("pageTitle").isEmpty()) {
+            tv_page_name.setText(bundle_me.getString("pageTitle"));
         }
 
-        final ProgressDialog mProgressDialog = ProgressDialog.show(WebActivity.this, "", "Loading...", true);
-        mWebView.getSettings().setJavaScriptEnabled(true);
-        mWebView.getSettings().setLoadWithOverviewMode(true);
-        mWebView.getSettings().setUseWideViewPort(true);
-        mWebView.getSettings().setBuiltInZoomControls(true);
+        final ProgressDialog dialog_progress = ProgressDialog.show(WebActivity.this, "", "Loading...", true);
+        wv_container_web.getSettings().setJavaScriptEnabled(true);
+        wv_container_web.getSettings().setLoadWithOverviewMode(true);
+        wv_container_web.getSettings().setUseWideViewPort(true);
+        wv_container_web.getSettings().setBuiltInZoomControls(true);
 
-        mWebView.setWebViewClient(new WebViewClient() {
+        wv_container_web.setWebViewClient(new WebViewClient() {
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
                 Toast.makeText(WebActivity.this, description, Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                mProgressDialog.show();
+                dialog_progress.show();
             }
 
             @Override
             public void onPageFinished(WebView view, String url) {
-                mProgressDialog.dismiss();
+                dialog_progress.dismiss();
             }
         });
 
-        mWebView.loadUrl("https://www.detik.com/");
+        wv_container_web.loadUrl("https://www.detik.com/");
     }
 
-    @OnClick(R.id.ibBackButton)
+    @OnClick(R.id.ib_button_back)
     public void exit() {
         finish();
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if ((keyCode == KeyEvent.KEYCODE_BACK) && mWebView.canGoBack()) {
-            mWebView.goBack();
+        if ((keyCode == KeyEvent.KEYCODE_BACK) && wv_container_web.canGoBack()) {
+            wv_container_web.goBack();
             return true;
         }
         return super.onKeyDown(keyCode, event);

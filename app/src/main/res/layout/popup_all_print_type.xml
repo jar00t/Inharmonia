@@ -11,7 +11,7 @@
         android:padding="10dp">
 
         <TextView
-            android:id="@+id/tvPopupTitle"
+            android:id="@+id/tv_title_popup"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:gravity="center_vertical"
@@ -22,7 +22,7 @@
             android:text="@string/semua_layanan"/>
 
         <ImageButton
-            android:id="@+id/ibClosePopup"
+            android:id="@+id/ib_button_close_popup"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/in_ic_close"
@@ -38,7 +38,7 @@
     </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_type_list"
+        android:id="@+id/rv_list_type"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

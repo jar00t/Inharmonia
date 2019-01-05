@@ -36,7 +36,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/ibBackButton"
+                        android:id="@+id/ib_button_back"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:src="@drawable/in_ic_back"
@@ -49,7 +49,7 @@
                         android:contentDescription="@string/back_button" />
 
                     <EditText
-                        android:id="@+id/etSearchInput"
+                        android:id="@+id/et_input_search"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:gravity="center_vertical"
@@ -64,7 +64,7 @@
                 </LinearLayout>
 
                 <ImageButton
-                    android:id="@+id/ibClearButton"
+                    android:id="@+id/ib_button_clear"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@drawable/in_ic_close"
@@ -93,7 +93,7 @@
                 android:orientation="vertical">
 
                 <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rv_store_list"
+                    android:id="@+id/rv_list_store"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 

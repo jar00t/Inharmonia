@@ -14,17 +14,17 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import id.inharmonia.app.Main.Pages.Account.Lists.Menu.Menu;
-import id.inharmonia.app.Main.Pages.Account.Lists.Menu.MenuAdapter;
+import id.inharmonia.app.Main.Pages.Account.Adapter.MenuListAdapter;
+import id.inharmonia.app.Main.Pages.Account.List.MenuList;
 import id.inharmonia.app.R;
 
 public class AccountFragment extends Fragment {
 
-    @BindView(R.id.rv_menu_link_list)
-    RecyclerView mRecyclerView;
+    @BindView(R.id.rv_list_link_menu)
+    RecyclerView rv_list_link_menu;
 
-    List<Menu> mMenuList;
-    Menu mMenuItem;
+    List<MenuList> list_menu;
+    MenuList list_item_menu;
 
     public AccountFragment() {}
 
@@ -39,23 +39,23 @@ public class AccountFragment extends Fragment {
 
         ButterKnife.bind(this, view);
 
-        mRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 1));
-        mRecyclerView.setFocusable(false);
+        rv_list_link_menu.setLayoutManager(new GridLayoutManager(getActivity(), 1));
+        rv_list_link_menu.setFocusable(false);
 
-        mMenuList = new ArrayList<>();
+        list_menu = new ArrayList<>();
 
-        mMenuItem = new Menu("Profil", R.drawable.in_ic_profile);
-        mMenuList.add(mMenuItem);
-        mMenuItem = new Menu("Pengaturan", R.drawable.in_ic_setting);
-        mMenuList.add(mMenuItem);
-        mMenuItem = new Menu("Bantuan", R.drawable.in_ic_help);
-        mMenuList.add(mMenuItem);
-        mMenuItem = new Menu("Hubungi Kami", R.drawable.in_ic_contact);
-        mMenuList.add(mMenuItem);
-        mMenuItem = new Menu("Kebijakan Privasi", R.drawable.in_ic_secure);
-        mMenuList.add(mMenuItem);
+        list_item_menu = new MenuList("Profil", R.drawable.in_ic_profile);
+        list_menu.add(list_item_menu);
+        list_item_menu = new MenuList("Pengaturan", R.drawable.in_ic_setting);
+        list_menu.add(list_item_menu);
+        list_item_menu = new MenuList("Bantuan", R.drawable.in_ic_help);
+        list_menu.add(list_item_menu);
+        list_item_menu = new MenuList("Hubungi Kami", R.drawable.in_ic_contact);
+        list_menu.add(list_item_menu);
+        list_item_menu = new MenuList("Kebijakan Privasi", R.drawable.in_ic_secure);
+        list_menu.add(list_item_menu);
 
-        mRecyclerView.setAdapter(new MenuAdapter(getActivity(), mMenuList, R.layout.rv_menu_link_item_row));
+        rv_list_link_menu.setAdapter(new MenuListAdapter(getActivity(), list_menu, R.layout.rv_item_link_menu));
 
         return view;
     }

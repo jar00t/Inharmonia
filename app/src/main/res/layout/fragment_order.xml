@@ -41,7 +41,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/tvPageName"
+                            android:id="@+id/tv_page_name"
                             android:layout_width="wrap_content"
                             android:layout_height="30dp"
                             android:gravity="center_vertical"
@@ -70,7 +70,7 @@
                     android:orientation="vertical">
 
                     <android.support.v7.widget.RecyclerView
-                        android:id="@+id/rv_order_list"
+                        android:id="@+id/rv_list_order"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 

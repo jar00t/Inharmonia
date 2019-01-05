@@ -11,8 +11,8 @@ import id.inharmonia.app.R;
 
 public class AccountSettingActivity extends AppCompatActivity {
 
-    @BindView(R.id.ibBackButton)
-    ImageButton mBackButton;
+    @BindView(R.id.ib_button_back)
+    ImageButton ib_button_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class AccountSettingActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick(R.id.ibBackButton)
+    @OnClick(R.id.ib_button_back)
     public void exit() {
         finish();
     }

@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/llListLayout"
+            android:id="@+id/ll_layout_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="70dp"
@@ -46,7 +46,7 @@
                         android:orientation="horizontal">
 
                         <ImageButton
-                            android:id="@+id/ibBackButton"
+                            android:id="@+id/ib_button_back"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/in_ic_back"
@@ -59,7 +59,7 @@
                             android:contentDescription="@string/back_button" />
 
                         <TextView
-                            android:id="@+id/tvPageName"
+                            android:id="@+id/tv_page_name"
                             android:layout_width="wrap_content"
                             android:layout_height="30dp"
                             android:gravity="center_vertical"
@@ -87,7 +87,7 @@
                     android:orientation="vertical">
 
                     <android.support.v7.widget.RecyclerView
-                        android:id="@+id/rv_cart_list"
+                        android:id="@+id/rv_list_cart"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -105,7 +105,7 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/cvSelectStoreButton"
+                android:id="@+id/cv_button_store_selecter"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -152,19 +152,19 @@
                         android:orientation="horizontal">
 
                         <CheckBox
-                            android:id="@+id/cbCheckAll"
+                            android:id="@+id/cb_select_all"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginStart="8dp"
                             android:layout_gravity="center_vertical"
-                            app:layout_constraintBaseline_toBaselineOf="@+id/llRightSection"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/ll_section_right"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.69"
-                            app:layout_constraintStart_toEndOf="@+id/llRightSection" />
+                            app:layout_constraintStart_toEndOf="@+id/ll_section_right" />
 
                         <TextView
-                            android:id="@+id/tvSelectAll"
+                            android:id="@+id/tv_select_all"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -178,7 +178,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/llRightSection"
+                        android:id="@+id/ll_section_right"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_alignParentEnd="true"
@@ -202,7 +202,7 @@
                                 android:text="@string/subtotal"/>
 
                             <TextView
-                                android:id="@+id/tvSubTotal"
+                                android:id="@+id/tv_sub_total"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="end"
@@ -216,7 +216,7 @@
                         </LinearLayout>
 
                         <android.support.v7.widget.CardView
-                            android:id="@+id/cvCheckoutButton"
+                            android:id="@+id/cv_button_checkout"
                             android:layout_width="wrap_content"
                             android:layout_height="50dp"
                             android:layout_gravity="center_vertical"
@@ -230,7 +230,7 @@
                             app:cardUseCompatPadding="false">
 
                             <TextView
-                                android:id="@+id/tvCheckoutText"
+                                android:id="@+id/tv_checkout"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="10dp"

@@ -18,7 +18,7 @@ public class OrderFragment_ViewBinding implements Unbinder {
   public OrderFragment_ViewBinding(OrderFragment target, View source) {
     this.target = target;
 
-    target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_order_list, "field 'mRecyclerView'", RecyclerView.class);
+    target.rv_order_list = Utils.findRequiredViewAsType(source, R.id.rv_list_order, "field 'rv_order_list'", RecyclerView.class);
   }
 
   @Override
@@ -28,6 +28,6 @@ public class OrderFragment_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.mRecyclerView = null;
+    target.rv_order_list = null;
   }
 }

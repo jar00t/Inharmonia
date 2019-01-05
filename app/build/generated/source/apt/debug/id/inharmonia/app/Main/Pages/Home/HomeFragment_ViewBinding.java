@@ -19,7 +19,7 @@ import java.lang.Override;
 public class HomeFragment_ViewBinding implements Unbinder {
   private HomeFragment target;
 
-  private View view2131296322;
+  private View view2131296320;
 
   private View view2131296363;
 
@@ -28,27 +28,27 @@ public class HomeFragment_ViewBinding implements Unbinder {
     this.target = target;
 
     View view;
-    target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.rv_menu_list, "field 'mRecyclerView'", RecyclerView.class);
-    view = Utils.findRequiredView(source, R.id.cvSearchOpener, "field 'mSearchOpener' and method 'openSearch'");
-    target.mSearchOpener = Utils.castView(view, R.id.cvSearchOpener, "field 'mSearchOpener'", CardView.class);
-    view2131296322 = view;
+    target.rv_list_menu = Utils.findRequiredViewAsType(source, R.id.rv_list_menu, "field 'rv_list_menu'", RecyclerView.class);
+    view = Utils.findRequiredView(source, R.id.cv_button_search, "field 'cv_button_search' and method 'open_search'");
+    target.cv_button_search = Utils.castView(view, R.id.cv_button_search, "field 'cv_button_search'", CardView.class);
+    view2131296320 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
-        target.openSearch();
+        target.open_search();
       }
     });
-    view = Utils.findRequiredView(source, R.id.ibCartButton, "field 'mCartButton' and method 'openCart'");
-    target.mCartButton = Utils.castView(view, R.id.ibCartButton, "field 'mCartButton'", ImageButton.class);
+    view = Utils.findRequiredView(source, R.id.ib_button_cart, "field 'ib_button_cart' and method 'open_cart'");
+    target.ib_button_cart = Utils.castView(view, R.id.ib_button_cart, "field 'ib_button_cart'", ImageButton.class);
     view2131296363 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
-        target.openCart();
+        target.open_cart();
       }
     });
-    target.mCartTotal = Utils.findRequiredViewAsType(source, R.id.tvCartTotal, "field 'mCartTotal'", TextView.class);
-    target.mPromoSlider = Utils.findRequiredViewAsType(source, R.id.clPromoSlide, "field 'mPromoSlider'", CarouselView.class);
+    target.tv_cart_total = Utils.findRequiredViewAsType(source, R.id.tv_cart_total, "field 'tv_cart_total'", TextView.class);
+    target.cl_promo_slide = Utils.findRequiredViewAsType(source, R.id.cl_promo_slide, "field 'cl_promo_slide'", CarouselView.class);
   }
 
   @Override
@@ -58,14 +58,14 @@ public class HomeFragment_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.mRecyclerView = null;
-    target.mSearchOpener = null;
-    target.mCartButton = null;
-    target.mCartTotal = null;
-    target.mPromoSlider = null;
+    target.rv_list_menu = null;
+    target.cv_button_search = null;
+    target.ib_button_cart = null;
+    target.tv_cart_total = null;
+    target.cl_promo_slide = null;
 
-    view2131296322.setOnClickListener(null);
-    view2131296322 = null;
+    view2131296320.setOnClickListener(null);
+    view2131296320 = null;
     view2131296363.setOnClickListener(null);
     view2131296363 = null;
   }

@@ -30,33 +30,33 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import id.inharmonia.app.Animations.BounceAnimation;
+import id.inharmonia.app.Animation.BounceActivity;
 import id.inharmonia.app.Cart.CartActivity;
-import id.inharmonia.app.Main.Pages.Home.Lists.MainMenu.MainMenu;
-import id.inharmonia.app.Main.Pages.Home.Lists.MainMenu.MainMenuAdapter;
+import id.inharmonia.app.Main.Pages.Home.List.MenuList;
+import id.inharmonia.app.Main.Pages.Home.Adapter.MenuListAdapter;
 import id.inharmonia.app.R;
 import id.inharmonia.app.Search.SearchActivity;
 
 public class HomeFragment extends Fragment {
 
-    @BindView(R.id.rv_menu_list)
-    RecyclerView mRecyclerView;
+    @BindView(R.id.rv_list_menu)
+    RecyclerView rv_list_menu;
 
-    @BindView(R.id.cvSearchOpener)
-    CardView mSearchOpener;
+    @BindView(R.id.cv_button_search)
+    CardView cv_button_search;
 
-    @BindView(R.id.ibCartButton)
-    ImageButton mCartButton;
+    @BindView(R.id.ib_button_cart)
+    ImageButton ib_button_cart;
 
-    @BindView(R.id.tvCartTotal)
-    TextView mCartTotal;
+    @BindView(R.id.tv_cart_total)
+    TextView tv_cart_total;
 
-    @BindView(R.id.clPromoSlide)
-    CarouselView mPromoSlider;
+    @BindView(R.id.cl_promo_slide)
+    CarouselView cl_promo_slide;
 
-    List<MainMenu> mMenuList;
-    MainMenu mMenuItem;
-    int[] sampleImages = {R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape};
+    List<MenuList> list_menu;
+    MenuList item_menu;
+    int[] sample_image = {R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape};
 
     public HomeFragment() {}
 
@@ -71,57 +71,57 @@ public class HomeFragment extends Fragment {
 
         ButterKnife.bind(this, view);
 
-        mPromoSlider.setPageCount(sampleImages.length);
-        mPromoSlider.setImageListener(imageListener);
+        cl_promo_slide.setPageCount(sample_image.length);
+        cl_promo_slide.setImageListener(imageListener);
 
-        mRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 4));
-        mRecyclerView.setFocusable(false);
+        rv_list_menu.setLayoutManager(new GridLayoutManager(getActivity(), 4));
+        rv_list_menu.setFocusable(false);
 
-        mMenuList = new ArrayList<>();
+        list_menu = new ArrayList<>();
 
-        mMenuItem = new MainMenu("Dokumen", R.drawable.in_thumb_documents_square, true);
-        mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Gambar", R.drawable.in_thumb_pictures_square, true);
-        mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Flyer", R.drawable.in_thumb_flyer_square, false);
-        mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Undangan", R.drawable.in_thumb_invitation_square, false);
-        mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Spanduk", R.drawable.in_thumb_spanduk_square, false);
-        mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Stand Banner", R.drawable.in_thumb_stand_banner_square, false);
-        mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Kartu Nama", R.drawable.in_thumb_namecard_square, false);
-        mMenuList.add(mMenuItem);
-        mMenuItem = new MainMenu("Lainnya", R.drawable.in_more_square, true);
-        mMenuList.add(mMenuItem);
+        item_menu = new MenuList("Dokumen", R.drawable.in_thumb_documents_square, true);
+        list_menu.add(item_menu);
+        item_menu = new MenuList("Gambar", R.drawable.in_thumb_pictures_square, true);
+        list_menu.add(item_menu);
+        item_menu = new MenuList("Flyer", R.drawable.in_thumb_flyer_square, false);
+        list_menu.add(item_menu);
+        item_menu = new MenuList("Undangan", R.drawable.in_thumb_invitation_square, false);
+        list_menu.add(item_menu);
+        item_menu = new MenuList("Spanduk", R.drawable.in_thumb_spanduk_square, false);
+        list_menu.add(item_menu);
+        item_menu = new MenuList("Stand Banner", R.drawable.in_thumb_stand_banner_square, false);
+        list_menu.add(item_menu);
+        item_menu = new MenuList("Kartu Nama", R.drawable.in_thumb_namecard_square, false);
+        list_menu.add(item_menu);
+        item_menu = new MenuList("Lainnya", R.drawable.in_more_square, true);
+        list_menu.add(item_menu);
 
-        mRecyclerView.setAdapter(new MainMenuAdapter(getActivity(), mMenuList, R.layout.rv_menu_item_row, this));
+        rv_list_menu.setAdapter(new MenuListAdapter(getActivity(), list_menu, R.layout.rv_item_menu, this));
 
         return view;
     }
 
-    public void updateCart() {
-        final Animation buttonAnim = AnimationUtils.loadAnimation(getActivity(), R.anim.bounce);
+    public void update_cart() {
+        final Animation animate_button = AnimationUtils.loadAnimation(getActivity(), R.anim.bounce);
 
-        BounceAnimation interpolator = new BounceAnimation(0.2, 20);
-        buttonAnim.setInterpolator(interpolator);
+        BounceActivity interpolator = new BounceActivity(0.2, 20);
+        animate_button.setInterpolator(interpolator);
 
-        mCartTotal.setVisibility(View.VISIBLE);
-        mCartTotal.startAnimation(buttonAnim);
-        mCartTotal.setText(String.format("%s", (Integer.parseInt(mCartTotal.getText().toString()) + 1)));
-        msgPopup("Pesanan berhasil ditambahkan ke keranjang");
+        tv_cart_total.setVisibility(View.VISIBLE);
+        tv_cart_total.startAnimation(animate_button);
+        tv_cart_total.setText(String.format("%s", (Integer.parseInt(tv_cart_total.getText().toString()) + 1)));
+        popup_message("Pesanan berhasil ditambahkan ke keranjang");
     }
 
-    public void msgPopup(String messages) {
-        AlertDialog.Builder msgPopup = new AlertDialog.Builder(getActivity(), R.style.DialogTheme);
-        View msgPopupView = getLayoutInflater().inflate(R.layout.dialog_message_popup, null);
-        msgPopup.setView(msgPopupView);
+    public void popup_message(String messages) {
+        AlertDialog.Builder popup_message = new AlertDialog.Builder(getActivity(), R.style.DialogTheme);
+        View popup_view_message = getLayoutInflater().inflate(R.layout.dialog_popup_message, null);
+        popup_message.setView(popup_view_message);
 
-        TextView mMessages = msgPopupView.findViewById(R.id.tvMessages);
-        mMessages.setText(messages);
+        TextView the_message = popup_view_message.findViewById(R.id.tv_message);
+        the_message.setText(messages);
 
-        msgPopup.setPositiveButton("Ok Sip", new DialogInterface.OnClickListener() {
+        popup_message.setPositiveButton("Ok Sip", new DialogInterface.OnClickListener() {
 
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -130,29 +130,29 @@ public class HomeFragment extends Fragment {
 
         });
 
-        Dialog dialogMsgPopup = msgPopup.create();
-        dialogMsgPopup.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-        dialogMsgPopup.setCancelable(true);
+        Dialog dialog_popup_message = popup_message.create();
+        dialog_popup_message.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialog_popup_message.setCancelable(true);
 
-        dialogMsgPopup.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog_popup_message.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        dialogMsgPopup.show();
+        dialog_popup_message.show();
     }
 
-    @OnClick(R.id.cvSearchOpener)
-    public void openSearch() {
+    @OnClick(R.id.cv_button_search)
+    public void open_search() {
         getActivity().startActivity(new Intent(getActivity(), SearchActivity.class));
     }
 
-    @OnClick(R.id.ibCartButton)
-    public void openCart() {
+    @OnClick(R.id.ib_button_cart)
+    public void open_cart() {
         getActivity().startActivity(new Intent(getActivity(), CartActivity.class));
     }
 
     ImageListener imageListener = new ImageListener() {
         @Override
         public void setImageForPosition(int position, ImageView imageView) {
-            imageView.setImageResource(sampleImages[position]);
+            imageView.setImageResource(sample_image[position]);
         }
     };
 

@@ -36,7 +36,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/ibBackButton"
+                        android:id="@+id/ib_button_back"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:src="@drawable/in_ic_back"
@@ -49,7 +49,7 @@
                         android:contentDescription="@string/back_button" />
 
                     <TextView
-                        android:id="@+id/tvPageName"
+                        android:id="@+id/tv_page_name"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:gravity="center_vertical"

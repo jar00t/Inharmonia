@@ -28,8 +28,8 @@ public class SettingActivity_ViewBinding implements Unbinder {
     this.target = target;
 
     View view;
-    view = Utils.findRequiredView(source, R.id.ibBackButton, "field 'mBackButton' and method 'exit'");
-    target.mBackButton = Utils.castView(view, R.id.ibBackButton, "field 'mBackButton'", ImageButton.class);
+    view = Utils.findRequiredView(source, R.id.ib_button_back, "field 'ib_button_back' and method 'exit'");
+    target.ib_button_back = Utils.castView(view, R.id.ib_button_back, "field 'ib_button_back'", ImageButton.class);
     view2131296362 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
@@ -37,7 +37,7 @@ public class SettingActivity_ViewBinding implements Unbinder {
         target.exit();
       }
     });
-    target.mPageName = Utils.findRequiredViewAsType(source, R.id.tvPageName, "field 'mPageName'", TextView.class);
+    target.tv_page_name = Utils.findRequiredViewAsType(source, R.id.tv_page_name, "field 'tv_page_name'", TextView.class);
   }
 
   @Override
@@ -47,8 +47,8 @@ public class SettingActivity_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.mBackButton = null;
-    target.mPageName = null;
+    target.ib_button_back = null;
+    target.tv_page_name = null;
 
     view2131296362.setOnClickListener(null);
     view2131296362 = null;

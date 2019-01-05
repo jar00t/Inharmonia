@@ -27,7 +27,7 @@
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait" />
         <activity
-            android:name="id.inharmonia.app.Splash.SplashScreen"
+            android:name="id.inharmonia.app.Splash.SplashScreenActivity"
             android:configChanges="orientation"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait"
@@ -50,6 +50,7 @@
         <activity android:name="id.inharmonia.app.Main.Pages.Account.AccountSettingActivity" />
         <activity android:name="id.inharmonia.app.Setting.SettingActivity" />
         <activity android:name="id.inharmonia.app.Cart.CartActivity" />
+        <activity android:name="id.inharmonia.app.Store.StoreFinderActivity" />
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"
