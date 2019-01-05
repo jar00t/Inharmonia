@@ -71,4 +71,7 @@
     <string name="layout_switch">Layout Switch</string>
     <string name="sorting_icon">Sorting Icon</string>
     <string name="store_picture">Store Picture</string>
+    <string name="location_icon">Location Icon</string>
+    <string name="free_ongkir_icon">Free Ongkir Icon</string>
+    <string name="favorite_button">Favorite Button</string>
 </resources>

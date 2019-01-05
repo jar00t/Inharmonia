@@ -1269,7 +1269,9 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id iv_button_favorite
 id iv_button_toggle
+id iv_free_ongkir
 id iv_icon
 id iv_label_corner
 id iv_order_status
@@ -1401,6 +1403,7 @@ id tv_buyer_address
 id tv_buyer_name
 id tv_cart_total
 id tv_checkout
+id tv_cost
 id tv_date_time
 id tv_list_size
 id tv_message
@@ -1411,6 +1414,7 @@ id tv_page_name
 id tv_quantity_total
 id tv_select_all
 id tv_selected_type_title
+id tv_store_location
 id tv_store_name
 id tv_sub_total
 id tv_title
@@ -1608,8 +1612,10 @@ string dokumen
 string end_separator
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string favorite_button
 string filter
 string filter_icon
+string free_ongkir_icon
 string gambar
 string hapus
 string hide_bottom_view_on_scroll_behavior
@@ -1624,6 +1630,7 @@ string lainnya
 string lanjut
 string layout_switch
 string list_icon
+string location_icon
 string logout
 string logout_menu_link
 string menu_image

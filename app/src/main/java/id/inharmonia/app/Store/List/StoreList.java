@@ -47,5 +47,13 @@ public class StoreList {
     public boolean get_is_favorited() {
         return is_favorited;
     }
+
+    public void set_is_free_ongkir(boolean is_free_ongkir) {
+        this.is_free_ongkir = is_free_ongkir;
+    }
+
+    public void set_is_favorited(boolean is_favorited) {
+        this.is_favorited = is_favorited;
+    }
 }
 
