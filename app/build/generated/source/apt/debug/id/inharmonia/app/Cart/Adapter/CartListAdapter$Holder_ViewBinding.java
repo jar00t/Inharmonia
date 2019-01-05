@@ -21,11 +21,11 @@ import java.lang.Override;
 public class CartListAdapter$Holder_ViewBinding implements Unbinder {
   private CartListAdapter.Holder target;
 
-  private View view2131296380;
+  private View view2131296381;
 
   private View view2131296298;
 
-  private View view2131296318;
+  private View view2131296319;
 
   @UiThread
   public CartListAdapter$Holder_ViewBinding(final CartListAdapter.Holder target, View source) {
@@ -38,7 +38,7 @@ public class CartListAdapter$Holder_ViewBinding implements Unbinder {
     target.tv_list_size = Utils.findRequiredViewAsType(source, R.id.tv_list_size, "field 'tv_list_size'", TextView.class);
     view = Utils.findRequiredView(source, R.id.iv_button_toggle, "field 'iv_button_toggle' and method 'toggle_detail'");
     target.iv_button_toggle = Utils.castView(view, R.id.iv_button_toggle, "field 'iv_button_toggle'", ImageView.class);
-    view2131296380 = view;
+    view2131296381 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -59,7 +59,7 @@ public class CartListAdapter$Holder_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.cv_button_cart_deleter, "field 'cv_button_cart_deleter' and method 'delete_cart'");
     target.cv_button_cart_deleter = Utils.castView(view, R.id.cv_button_cart_deleter, "field 'cv_button_cart_deleter'", CardView.class);
-    view2131296318 = view;
+    view2131296319 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -86,11 +86,11 @@ public class CartListAdapter$Holder_ViewBinding implements Unbinder {
     target.cb_cart_selecter = null;
     target.cv_button_cart_deleter = null;
 
-    view2131296380.setOnClickListener(null);
-    view2131296380 = null;
+    view2131296381.setOnClickListener(null);
+    view2131296381 = null;
     ((CompoundButton) view2131296298).setOnCheckedChangeListener(null);
     view2131296298 = null;
-    view2131296318.setOnClickListener(null);
-    view2131296318 = null;
+    view2131296319.setOnClickListener(null);
+    view2131296319 = null;
   }
 }

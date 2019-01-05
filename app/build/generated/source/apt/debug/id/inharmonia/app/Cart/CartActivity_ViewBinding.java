@@ -20,11 +20,11 @@ import java.lang.Override;
 public class CartActivity_ViewBinding implements Unbinder {
   private CartActivity target;
 
-  private View view2131296362;
+  private View view2131296363;
 
   private View view2131296299;
 
-  private View view2131296321;
+  private View view2131296322;
 
   @UiThread
   public CartActivity_ViewBinding(CartActivity target) {
@@ -38,7 +38,7 @@ public class CartActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.ib_button_back, "field 'ib_button_back' and method 'exit'");
     target.ib_button_back = Utils.castView(view, R.id.ib_button_back, "field 'ib_button_back'", ImageButton.class);
-    view2131296362 = view;
+    view2131296363 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,7 +62,7 @@ public class CartActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.cv_button_store_selecter, "field 'cv_button_store_selecter' and method 'go_to_store_finder'");
     target.cv_button_store_selecter = Utils.castView(view, R.id.cv_button_store_selecter, "field 'cv_button_store_selecter'", CardView.class);
-    view2131296321 = view;
+    view2131296322 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -88,11 +88,11 @@ public class CartActivity_ViewBinding implements Unbinder {
     target.cb_select_all = null;
     target.cv_button_store_selecter = null;
 
-    view2131296362.setOnClickListener(null);
-    view2131296362 = null;
+    view2131296363.setOnClickListener(null);
+    view2131296363 = null;
     view2131296299.setOnClickListener(null);
     view2131296299 = null;
-    view2131296321.setOnClickListener(null);
-    view2131296321 = null;
+    view2131296322.setOnClickListener(null);
+    view2131296322 = null;
   }
 }

@@ -1194,6 +1194,7 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id cv_button_auto_store_finder
 id cv_button_cart_deleter
 id cv_button_checkout
 id cv_button_search
@@ -1623,6 +1624,7 @@ string pengaturan
 string pengaturan_akun
 string pesanan
 string pilih_lokasi_percetakan
+string pilih_otomatis_percetakan
 string pilih_semua
 string plus
 string q_hapus_dari_keranjang
