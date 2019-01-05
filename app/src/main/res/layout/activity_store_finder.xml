@@ -194,7 +194,6 @@
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rv_list_store"
                 android:layout_width="match_parent"
-                android:padding="5dp"
                 android:layout_height="wrap_content" />
 
         </LinearLayout>

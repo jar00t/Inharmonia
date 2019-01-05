@@ -43,8 +43,8 @@ public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.Hold
         holder.tv_store_name.setText(list_store.get(position).get_name());
         holder.tv_store_location.setText(list_store.get(position).get_location());
         holder.tv_cost.setText(duit(list_store.get(position).get_cost()));
-        if(list_store.get(position).get_is_free_ongkir()) holder.iv_free_ongkir.setVisibility(View.VISIBLE);
-        if(list_store.get(position).get_is_favorited()) holder.iv_button_favorite.setImageResource(R.drawable.in_ic_heart_on);
+        holder.iv_free_ongkir.setVisibility((list_store.get(position).get_is_free_ongkir())? View.VISIBLE : View.INVISIBLE);
+        holder.iv_button_favorite.setImageResource((list_store.get(position).get_is_favorited())? R.drawable.in_ic_heart_on : R.drawable.in_ic_heart_off);
     }
 
     @Override
@@ -85,7 +85,6 @@ public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.Hold
         @OnClick(R.id.iv_button_favorite)
         public void toggle_favorite() {
             list_store.get(getAdapterPosition()).set_is_favorited(!list_store.get(getAdapterPosition()).get_is_favorited());
-            list_store.get(getAdapterPosition()).set_is_free_ongkir(list_store.get(getAdapterPosition()).get_is_free_ongkir());
             notifyItemChanged(getAdapterPosition());
         }
 
