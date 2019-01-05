@@ -16,7 +16,7 @@ import java.lang.Override;
 public class SettingActivity_ViewBinding implements Unbinder {
   private SettingActivity target;
 
-  private View view2131296363;
+  private View view2131296366;
 
   @UiThread
   public SettingActivity_ViewBinding(SettingActivity target) {
@@ -30,7 +30,7 @@ public class SettingActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.ib_button_back, "field 'ib_button_back' and method 'exit'");
     target.ib_button_back = Utils.castView(view, R.id.ib_button_back, "field 'ib_button_back'", ImageButton.class);
-    view2131296363 = view;
+    view2131296366 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -50,7 +50,7 @@ public class SettingActivity_ViewBinding implements Unbinder {
     target.ib_button_back = null;
     target.tv_page_name = null;
 
-    view2131296363.setOnClickListener(null);
-    view2131296363 = null;
+    view2131296366.setOnClickListener(null);
+    view2131296366 = null;
   }
 }

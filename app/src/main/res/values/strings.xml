@@ -65,4 +65,10 @@
     <string name="q_hapus_dari_keranjang">Hapus dari keranjang?</string>
     <string name="pilih_lokasi_percetakan">Pilih Lokasi Percetakan</string>
     <string name="pilih_otomatis_percetakan">Pilih Otomatis Percetakan</string>
+    <string name="filter_icon">Filter Icon</string>
+    <string name="filter">Filter</string>
+    <string name="terdekat">Terdekat</string>
+    <string name="layout_switch">Layout Switch</string>
+    <string name="sorting_icon">Sorting Icon</string>
+    <string name="store_picture">Store Picture</string>
 </resources>

@@ -21,7 +21,7 @@ import java.lang.Override;
 public class CartListAdapter$Holder_ViewBinding implements Unbinder {
   private CartListAdapter.Holder target;
 
-  private View view2131296381;
+  private View view2131296384;
 
   private View view2131296298;
 
@@ -38,7 +38,7 @@ public class CartListAdapter$Holder_ViewBinding implements Unbinder {
     target.tv_list_size = Utils.findRequiredViewAsType(source, R.id.tv_list_size, "field 'tv_list_size'", TextView.class);
     view = Utils.findRequiredView(source, R.id.iv_button_toggle, "field 'iv_button_toggle' and method 'toggle_detail'");
     target.iv_button_toggle = Utils.castView(view, R.id.iv_button_toggle, "field 'iv_button_toggle'", ImageView.class);
-    view2131296381 = view;
+    view2131296384 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -86,8 +86,8 @@ public class CartListAdapter$Holder_ViewBinding implements Unbinder {
     target.cb_cart_selecter = null;
     target.cv_button_cart_deleter = null;
 
-    view2131296381.setOnClickListener(null);
-    view2131296381 = null;
+    view2131296384.setOnClickListener(null);
+    view2131296384 = null;
     ((CompoundButton) view2131296298).setOnCheckedChangeListener(null);
     view2131296298 = null;
     view2131296319.setOnClickListener(null);

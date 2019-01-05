@@ -3,6 +3,7 @@ package id.inharmonia.app.Store;
 
 import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -16,7 +17,7 @@ import java.lang.Override;
 public class StoreFinderActivity_ViewBinding implements Unbinder {
   private StoreFinderActivity target;
 
-  private View view2131296363;
+  private View view2131296366;
 
   @UiThread
   public StoreFinderActivity_ViewBinding(StoreFinderActivity target) {
@@ -30,7 +31,7 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.ib_button_back, "field 'ib_button_back' and method 'exit'");
     target.ib_button_back = Utils.castView(view, R.id.ib_button_back, "field 'ib_button_back'", ImageButton.class);
-    view2131296363 = view;
+    view2131296366 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -38,6 +39,7 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
       }
     });
     target.tv_page_name = Utils.findRequiredViewAsType(source, R.id.tv_page_name, "field 'tv_page_name'", TextView.class);
+    target.rv_list_store = Utils.findRequiredViewAsType(source, R.id.rv_list_store, "field 'rv_list_store'", RecyclerView.class);
   }
 
   @Override
@@ -49,8 +51,9 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
 
     target.ib_button_back = null;
     target.tv_page_name = null;
+    target.rv_list_store = null;
 
-    view2131296363.setOnClickListener(null);
-    view2131296363 = null;
+    view2131296366.setOnClickListener(null);
+    view2131296366 = null;
   }
 }

@@ -21,7 +21,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
 
   private View view2131296321;
 
-  private View view2131296364;
+  private View view2131296367;
 
   @UiThread
   public HomeFragment_ViewBinding(final HomeFragment target, View source) {
@@ -40,7 +40,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.ib_button_cart, "field 'ib_button_cart' and method 'open_cart'");
     target.ib_button_cart = Utils.castView(view, R.id.ib_button_cart, "field 'ib_button_cart'", ImageButton.class);
-    view2131296364 = view;
+    view2131296367 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -66,7 +66,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
 
     view2131296321.setOnClickListener(null);
     view2131296321 = null;
-    view2131296364.setOnClickListener(null);
-    view2131296364 = null;
+    view2131296367.setOnClickListener(null);
+    view2131296367 = null;
   }
 }

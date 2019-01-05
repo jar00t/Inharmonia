@@ -1075,8 +1075,15 @@ drawable in_ic_camera_circle
 drawable in_ic_close
 drawable in_ic_contact
 drawable in_ic_edit
+drawable in_ic_filter
+drawable in_ic_free_shipping
+drawable in_ic_grid
+drawable in_ic_heart_off
+drawable in_ic_heart_on
 drawable in_ic_help
 drawable in_ic_home
+drawable in_ic_list
+drawable in_ic_location
 drawable in_ic_minus
 drawable in_ic_order
 drawable in_ic_order_finish
@@ -1084,9 +1091,11 @@ drawable in_ic_order_process
 drawable in_ic_order_send
 drawable in_ic_plus
 drawable in_ic_profile
+drawable in_ic_radar
 drawable in_ic_search
 drawable in_ic_secure
 drawable in_ic_setting
+drawable in_ic_sort
 drawable in_ic_store
 drawable in_ic_troli
 drawable in_label_corner_coming_soon
@@ -1229,7 +1238,10 @@ id fill_vertical
 id filled
 id fixed
 id fl_button_add_to_cart
+id fl_button_filter
 id fl_button_next_step
+id fl_button_sort_by
+id fl_button_switch_layout
 id flow
 id forever
 id ghost_view
@@ -1262,6 +1274,7 @@ id iv_icon
 id iv_label_corner
 id iv_order_status
 id iv_selected_type_icon
+id iv_store_picture
 id iv_user_picture
 id labeled
 id largeLabel
@@ -1398,6 +1411,7 @@ id tv_page_name
 id tv_quantity_total
 id tv_select_all
 id tv_selected_type_title
+id tv_store_name
 id tv_sub_total
 id tv_title
 id tv_title_popup
@@ -1517,6 +1531,7 @@ layout rv_item_link_menu
 layout rv_item_menu
 layout rv_item_order
 layout rv_item_size_quantity
+layout rv_item_store_finder
 layout rv_list_item_cart
 layout rv_list_item_quantity
 layout rv_list_item_store
@@ -1593,6 +1608,8 @@ string dokumen
 string end_separator
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string filter
+string filter_icon
 string gambar
 string hapus
 string hide_bottom_view_on_scroll_behavior
@@ -1605,6 +1622,7 @@ string konfirmasi_pesanan
 string label_corner
 string lainnya
 string lanjut
+string layout_switch
 string list_icon
 string logout
 string logout_menu_link
@@ -1632,14 +1650,17 @@ string search_hint
 string search_icon
 string search_menu_title
 string semua_layanan
+string sorting_icon
 string status_bar_notification_info_overflow
 string status_icon
 string store_cover
 string store_icon
+string store_picture
 string subtotal
 string tambah
 string tambahkan_ke_keranjang
 string tempat_percetakan
+string terdekat
 string title_account
 string title_activity_main
 string title_activity_search
