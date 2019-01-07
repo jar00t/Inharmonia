@@ -74,7 +74,7 @@ public class AllPrintTypePopup extends BottomSheetDialogFragment {
         item_type = new TypeList("Sticker", R.drawable.in_thumb_sticker_square, false);
         list_type.add(item_type);
 
-        rv_list_type.setAdapter(new TypeListAdapter(getActivity(), list_type, R.layout.rv_item_menu, fragment_home));
+        rv_list_type.setAdapter(new TypeListAdapter(getActivity(), list_type, R.layout.rv_item_menu_grid, fragment_home));
 
         return view;
     }

@@ -27,7 +27,7 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
 
   private View view2131296356;
 
-  private View view2131296388;
+  private View view2131296387;
 
   @UiThread
   public StoreFinderActivity_ViewBinding(StoreFinderActivity target) {
@@ -79,7 +79,7 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.iv_button_toggle_sort_by, "field 'iv_button_toggle_sort_by' and method 'toggle_sort_by'");
     target.iv_button_toggle_sort_by = Utils.castView(view, R.id.iv_button_toggle_sort_by, "field 'iv_button_toggle_sort_by'", ImageView.class);
-    view2131296388 = view;
+    view2131296387 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -115,7 +115,7 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
     view2131296355 = null;
     view2131296356.setOnClickListener(null);
     view2131296356 = null;
-    view2131296388.setOnClickListener(null);
-    view2131296388 = null;
+    view2131296387.setOnClickListener(null);
+    view2131296387 = null;
   }
 }

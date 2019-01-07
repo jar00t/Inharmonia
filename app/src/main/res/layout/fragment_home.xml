@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
+    android:background="@color/colorLightGrey"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Main.Pages.Home.HomeFragment">
 
@@ -23,7 +23,6 @@
                 android:scrollbars="none">
 
                 <LinearLayout
-                    android:id="@+id/in_header"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -52,47 +51,71 @@
 
                     </android.support.v7.widget.CardView>
 
-                    <LinearLayout
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv_item"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:paddingStart="20dp"
-                        android:paddingEnd="20dp"
-                        android:paddingBottom="20dp"
-                        android:paddingTop="0dp">
+                        android:layout_gravity="center_vertical"
+                        app:cardElevation="0dp"
+                        app:cardUseCompatPadding="false"
+                        android:layout_marginBottom="1dp"
+                        app:cardCornerRadius="0dp">
 
-                        <RelativeLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="15dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginStart="5dp"
-                            android:gravity="start">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="15dp"
-                                android:scaleType="fitStart"
-                                android:layout_alignParentStart="true"
-                                android:src="@drawable/in_logo_moni_print"
-                                android:contentDescription="@string/moniprint_logo"/>
-
-                        </RelativeLayout>
-
-                        <android.support.v7.widget.RecyclerView
-                            android:id="@+id/rv_list_menu"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
-                        <ImageView
-                            android:id="@+id/in_logo_bottom"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginTop="20dp"
-                            android:src="@drawable/in_symbol_dekok_100"
-                            android:contentDescription="@string/end_separator" />
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="15dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="start">
 
-                    </LinearLayout>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="15dp"
+                                    android:scaleType="fitStart"
+                                    android:layout_alignParentStart="true"
+                                    android:src="@drawable/in_logo_moni_print"
+                                    android:contentDescription="@string/moniprint_logo"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="15dp"
+                                    android:text="@string/lainnya"
+                                    android:fontFamily="@font/harabara_mais"
+                                    android:textColor="@color/colorPurple"
+                                    android:textSize="6pt"
+                                    android:layout_alignParentEnd="true" />
+
+                            </RelativeLayout>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rv_list_menu"
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_gravity="center_vertical" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <ImageView
+                        android:id="@+id/in_logo_bottom"
+                        android:layout_width="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:layout_height="90dp"
+                        android:padding="20dp"
+                        android:layout_marginTop="-2dp"
+                        android:background="@color/colorWhite"
+                        android:src="@drawable/in_symbol_dekok_100"
+                        android:contentDescription="@string/end_separator" />
 
                 </LinearLayout>
 
