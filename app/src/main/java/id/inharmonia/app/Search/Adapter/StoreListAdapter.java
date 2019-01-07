@@ -52,7 +52,7 @@ public class StoreListAdapter extends RecyclerView.Adapter<StoreListAdapter.Hold
         @BindView(R.id.tv_address)
         TextView tv_address;
 
-        @BindView(R.id.cv_item_type)
+        @BindView(R.id.cv_item)
         CardView cv_item_type;
 
         Holder(final View itemView) {

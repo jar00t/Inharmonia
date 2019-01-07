@@ -74,7 +74,7 @@ public class TypeListAdapter extends RecyclerView.Adapter<TypeListAdapter.Holder
         @BindView(R.id.iv_icon)
         ImageView iv_icon;
 
-        @BindView(R.id.cv_item_type)
+        @BindView(R.id.cv_item)
         CardView cv_item_type;
 
         @BindView(R.id.iv_label_corner)
@@ -85,7 +85,7 @@ public class TypeListAdapter extends RecyclerView.Adapter<TypeListAdapter.Holder
             ButterKnife.bind(this, itemView);
         }
 
-        @OnClick(R.id.cv_item_type)
+        @OnClick(R.id.cv_item)
         public void show_all() {
             if (popup_size_quantity.check_sheet()) {
                 Bundle data_sheet = new Bundle();

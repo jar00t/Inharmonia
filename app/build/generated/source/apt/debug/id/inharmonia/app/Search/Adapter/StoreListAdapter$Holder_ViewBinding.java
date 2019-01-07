@@ -21,7 +21,7 @@ public class StoreListAdapter$Holder_ViewBinding implements Unbinder {
 
     target.tv_name = Utils.findRequiredViewAsType(source, R.id.tv_name, "field 'tv_name'", TextView.class);
     target.tv_address = Utils.findRequiredViewAsType(source, R.id.tv_address, "field 'tv_address'", TextView.class);
-    target.cv_item_type = Utils.findRequiredViewAsType(source, R.id.cv_item_type, "field 'cv_item_type'", CardView.class);
+    target.cv_item_type = Utils.findRequiredViewAsType(source, R.id.cv_item, "field 'cv_item_type'", CardView.class);
   }
 
   @Override

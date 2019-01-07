@@ -80,7 +80,7 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.Hold
         @BindView(R.id.tv_date_time)
         TextView tv_date_time;
 
-        @BindView(R.id.cv_item_type)
+        @BindView(R.id.cv_item)
         CardView cv_item_type;
 
         Holder(final View itemView) {
@@ -88,7 +88,7 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.Hold
             ButterKnife.bind(this, itemView);
         }
 
-        @OnClick(R.id.cv_item_type)
+        @OnClick(R.id.cv_item)
         public void go_to_detail() {
             Intent intent = new Intent();
             switch (getAdapterPosition()){

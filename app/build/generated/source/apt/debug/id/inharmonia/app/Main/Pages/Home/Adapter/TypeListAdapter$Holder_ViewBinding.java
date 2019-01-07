@@ -26,8 +26,8 @@ public class TypeListAdapter$Holder_ViewBinding implements Unbinder {
     View view;
     target.tv_title = Utils.findRequiredViewAsType(source, R.id.tv_title, "field 'tv_title'", TextView.class);
     target.iv_icon = Utils.findRequiredViewAsType(source, R.id.iv_icon, "field 'iv_icon'", ImageView.class);
-    view = Utils.findRequiredView(source, R.id.cv_item_type, "field 'cv_item_type' and method 'show_all'");
-    target.cv_item_type = Utils.castView(view, R.id.cv_item_type, "field 'cv_item_type'", CardView.class);
+    view = Utils.findRequiredView(source, R.id.cv_item, "field 'cv_item_type' and method 'show_all'");
+    target.cv_item_type = Utils.castView(view, R.id.cv_item, "field 'cv_item_type'", CardView.class);
     view2131296324 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override

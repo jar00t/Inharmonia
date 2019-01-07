@@ -97,7 +97,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:padding="10dp"
-                                android:gravity="center_horizontal"
                                 android:orientation="horizontal">
 
                                 <ImageView
@@ -107,13 +106,13 @@
                                     android:contentDescription="@string/filter_icon" />
 
                                 <TextView
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="30dp"
                                     android:gravity="center_vertical"
+                                    android:textAlignment="center"
                                     android:textColor="@color/colorDarkGrey"
                                     android:textStyle="bold"
                                     android:fontFamily="@font/harabara_mais"
-                                    android:layout_marginStart="10dp"
                                     android:text="@string/filter"/>
 
                             </LinearLayout>
@@ -135,24 +134,25 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:padding="10dp"
-                                android:gravity="center_horizontal"
                                 android:orientation="horizontal">
 
                                 <ImageView
+                                    android:id="@+id/iv_button_toggle_sort_by"
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
-                                    android:src="@drawable/in_ic_sort"
+                                    android:src="@drawable/in_ic_sort_asc"
                                     android:contentDescription="@string/sorting_icon" />
 
                                 <TextView
-                                    android:layout_width="wrap_content"
+                                    android:id="@+id/tv_sort_by"
+                                    android:layout_width="match_parent"
                                     android:layout_height="30dp"
+                                    android:textAlignment="center"
                                     android:gravity="center_vertical"
                                     android:textColor="@color/colorDarkGrey"
                                     android:textStyle="bold"
                                     android:fontFamily="@font/harabara_mais"
-                                    android:layout_marginStart="10dp"
-                                    android:text="@string/terdekat"/>
+                                    android:text="@string/lokasi"/>
 
                             </LinearLayout>
 
@@ -176,9 +176,10 @@
                                 android:orientation="horizontal">
 
                                 <ImageView
+                                    android:id="@+id/iv_button_toggle_layout"
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
-                                    android:src="@drawable/in_ic_grid"
+                                    android:src="@drawable/in_ic_list"
                                     android:contentDescription="@string/layout_switch" />
 
                             </LinearLayout>
@@ -218,15 +219,32 @@
                 android:clickable="true"
                 app:cardUseCompatPadding="false">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:text="@string/pilih_otomatis_percetakan"
-                    android:fontFamily="@font/comfortaa_regular"
-                    android:textAlignment="center"
-                    android:gravity="center_vertical"
-                    android:textSize="7pt"
-                    android:textColor="@color/colorWhite" />
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:tint="@color/colorWhite"
+                        android:src="@drawable/in_ic_radar"
+                        android:contentDescription="@string/filter_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="@string/pilih_otomatis"
+                        android:fontFamily="@font/comfortaa_regular"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:textSize="7pt"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/colorWhite" />
+
+                </LinearLayout>
 
             </android.support.v7.widget.CardView>
 

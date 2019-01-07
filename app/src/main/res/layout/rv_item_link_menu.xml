@@ -7,7 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cv_item_type"
+        android:id="@+id/cv_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -52,12 +52,13 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/iv_sign"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:tint="@color/colorGrey"
                 android:src="@drawable/ic_chevron_right_black_24dp"
                 android:layout_alignParentEnd="true"
-                android:contentDescription="@string/next_icon"/>
+                android:contentDescription="@string/sign_icon"/>
 
         </RelativeLayout>
 

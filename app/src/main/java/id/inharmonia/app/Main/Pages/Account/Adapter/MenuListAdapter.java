@@ -61,7 +61,7 @@ public class MenuListAdapter extends RecyclerView.Adapter<MenuListAdapter.Holder
         @BindView(R.id.iv_icon)
         ImageView iv_icon;
 
-        @BindView(R.id.cv_item_type)
+        @BindView(R.id.cv_item)
         CardView cv_item_menu;
 
         Holder(final View itemView) {
@@ -69,7 +69,7 @@ public class MenuListAdapter extends RecyclerView.Adapter<MenuListAdapter.Holder
             ButterKnife.bind(this, itemView);
         }
 
-        @OnClick(R.id.cv_item_type)
+        @OnClick(R.id.cv_item)
         public void go_to() {
             Intent intent = new Intent();
             switch (getAdapterPosition()){

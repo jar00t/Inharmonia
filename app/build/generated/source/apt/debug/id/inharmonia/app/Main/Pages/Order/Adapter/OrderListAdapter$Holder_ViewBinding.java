@@ -32,8 +32,8 @@ public class OrderListAdapter$Holder_ViewBinding implements Unbinder {
     target.tv_buyer_name = Utils.findRequiredViewAsType(source, R.id.tv_buyer_name, "field 'tv_buyer_name'", TextView.class);
     target.tv_buyer_address = Utils.findRequiredViewAsType(source, R.id.tv_buyer_address, "field 'tv_buyer_address'", TextView.class);
     target.tv_date_time = Utils.findRequiredViewAsType(source, R.id.tv_date_time, "field 'tv_date_time'", TextView.class);
-    view = Utils.findRequiredView(source, R.id.cv_item_type, "field 'cv_item_type' and method 'go_to_detail'");
-    target.cv_item_type = Utils.castView(view, R.id.cv_item_type, "field 'cv_item_type'", CardView.class);
+    view = Utils.findRequiredView(source, R.id.cv_item, "field 'cv_item_type' and method 'go_to_detail'");
+    target.cv_item_type = Utils.castView(view, R.id.cv_item, "field 'cv_item_type'", CardView.class);
     view2131296324 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override

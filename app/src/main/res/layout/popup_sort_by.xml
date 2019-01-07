@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_title_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/colorDarkGrey"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/harabara_mais"
+            android:text="@string/urut_berdasarkan"/>
+
+        <ImageButton
+            android:id="@+id/ib_button_close_popup"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/in_ic_close"
+            android:layout_alignParentEnd="true"
+            android:padding="2dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/next_icon"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list_sort_by"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

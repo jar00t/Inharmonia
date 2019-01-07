@@ -74,4 +74,8 @@
     <string name="location_icon">Location Icon</string>
     <string name="free_ongkir_icon">Free Ongkir Icon</string>
     <string name="favorite_button">Favorite Button</string>
+    <string name="pilih_otomatis">Pilih Otomatis</string>
+    <string name="sign_icon">Sign Icon</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="urut_berdasarkan">Urut berdasarkan</string>
 </resources>

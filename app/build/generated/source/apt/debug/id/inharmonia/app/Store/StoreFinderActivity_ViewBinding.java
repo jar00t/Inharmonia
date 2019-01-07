@@ -5,7 +5,9 @@ import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
@@ -18,6 +20,14 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
   private StoreFinderActivity target;
 
   private View view2131296366;
+
+  private View view2131296353;
+
+  private View view2131296355;
+
+  private View view2131296356;
+
+  private View view2131296388;
 
   @UiThread
   public StoreFinderActivity_ViewBinding(StoreFinderActivity target) {
@@ -40,6 +50,44 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
     });
     target.tv_page_name = Utils.findRequiredViewAsType(source, R.id.tv_page_name, "field 'tv_page_name'", TextView.class);
     target.rv_list_store = Utils.findRequiredViewAsType(source, R.id.rv_list_store, "field 'rv_list_store'", RecyclerView.class);
+    view = Utils.findRequiredView(source, R.id.fl_button_filter, "field 'fl_button_filter' and method 'open_filter'");
+    target.fl_button_filter = Utils.castView(view, R.id.fl_button_filter, "field 'fl_button_filter'", FrameLayout.class);
+    view2131296353 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.open_filter();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.fl_button_sort_by, "field 'fl_button_sort_by' and method 'show_sort_by'");
+    target.fl_button_sort_by = Utils.castView(view, R.id.fl_button_sort_by, "field 'fl_button_sort_by'", FrameLayout.class);
+    view2131296355 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.show_sort_by();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.fl_button_switch_layout, "field 'fl_button_switch_layout' and method 'switch_layout'");
+    target.fl_button_switch_layout = Utils.castView(view, R.id.fl_button_switch_layout, "field 'fl_button_switch_layout'", FrameLayout.class);
+    view2131296356 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.switch_layout();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.iv_button_toggle_sort_by, "field 'iv_button_toggle_sort_by' and method 'toggle_sort_by'");
+    target.iv_button_toggle_sort_by = Utils.castView(view, R.id.iv_button_toggle_sort_by, "field 'iv_button_toggle_sort_by'", ImageView.class);
+    view2131296388 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.toggle_sort_by();
+      }
+    });
+    target.iv_button_toggle_layout = Utils.findRequiredViewAsType(source, R.id.iv_button_toggle_layout, "field 'iv_button_toggle_layout'", ImageView.class);
+    target.tv_sort_by = Utils.findRequiredViewAsType(source, R.id.tv_sort_by, "field 'tv_sort_by'", TextView.class);
   }
 
   @Override
@@ -52,8 +100,22 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
     target.ib_button_back = null;
     target.tv_page_name = null;
     target.rv_list_store = null;
+    target.fl_button_filter = null;
+    target.fl_button_sort_by = null;
+    target.fl_button_switch_layout = null;
+    target.iv_button_toggle_sort_by = null;
+    target.iv_button_toggle_layout = null;
+    target.tv_sort_by = null;
 
     view2131296366.setOnClickListener(null);
     view2131296366 = null;
+    view2131296353.setOnClickListener(null);
+    view2131296353 = null;
+    view2131296355.setOnClickListener(null);
+    view2131296355 = null;
+    view2131296356.setOnClickListener(null);
+    view2131296356 = null;
+    view2131296388.setOnClickListener(null);
+    view2131296388 = null;
   }
 }

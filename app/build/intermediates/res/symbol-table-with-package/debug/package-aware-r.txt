@@ -1055,6 +1055,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_check_black_24dp
 drawable ic_chevron_right_black_24dp
 drawable ic_expand_more_black_24dp
 drawable ic_launcher_background
@@ -1070,10 +1071,12 @@ drawable in_count_label_background
 drawable in_ic_about
 drawable in_ic_account
 drawable in_ic_back
+drawable in_ic_badge
 drawable in_ic_camera
 drawable in_ic_camera_circle
 drawable in_ic_close
 drawable in_ic_contact
+drawable in_ic_cost
 drawable in_ic_edit
 drawable in_ic_filter
 drawable in_ic_free_shipping
@@ -1096,6 +1099,8 @@ drawable in_ic_search
 drawable in_ic_secure
 drawable in_ic_setting
 drawable in_ic_sort
+drawable in_ic_sort_asc
+drawable in_ic_sort_desc
 drawable in_ic_store
 drawable in_ic_troli
 drawable in_label_corner_coming_soon
@@ -1209,7 +1214,7 @@ id cv_button_checkout
 id cv_button_search
 id cv_button_store_selecter
 id cv_cart_detail
-id cv_item_type
+id cv_item
 id cv_list_item_quantity
 id decor_content_parent
 id default_activity_button
@@ -1254,6 +1259,7 @@ id horizontal
 id ib_button_back
 id ib_button_cart
 id ib_button_clear
+id ib_button_close
 id ib_button_close_popup
 id ib_button_decrease
 id ib_button_increase
@@ -1271,11 +1277,14 @@ id italic
 id item_touch_helper_previous_elevation
 id iv_button_favorite
 id iv_button_toggle
+id iv_button_toggle_layout
+id iv_button_toggle_sort_by
 id iv_free_ongkir
 id iv_icon
 id iv_label_corner
 id iv_order_status
 id iv_selected_type_icon
+id iv_sign
 id iv_store_picture
 id iv_user_picture
 id labeled
@@ -1325,6 +1334,7 @@ id rv_list_link_menu
 id rv_list_menu
 id rv_list_order
 id rv_list_quantity
+id rv_list_sort_by
 id rv_list_store
 id rv_list_type
 id save_image_matrix
@@ -1414,6 +1424,7 @@ id tv_page_name
 id tv_quantity_total
 id tv_select_all
 id tv_selected_type_title
+id tv_sort_by
 id tv_store_location
 id tv_store_name
 id tv_sub_total
@@ -1491,6 +1502,7 @@ layout activity_order_new
 layout activity_search
 layout activity_setting
 layout activity_store_finder
+layout activity_store_finder_filter
 layout activity_web
 layout ad_dialog_title
 layout design_bottom_navigation_item
@@ -1531,6 +1543,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout popup_all_print_type
 layout popup_size_quantity
+layout popup_sort_by
 layout rv_item_link_menu
 layout rv_item_menu
 layout rv_item_order
@@ -1539,6 +1552,7 @@ layout rv_item_store_finder
 layout rv_list_item_cart
 layout rv_list_item_quantity
 layout rv_list_item_store
+layout rv_list_item_store_finder
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -1633,6 +1647,7 @@ string list_icon
 string location_icon
 string logout
 string logout_menu_link
+string lokasi
 string menu_image
 string menu_link_icon
 string minus
@@ -1649,6 +1664,7 @@ string pengaturan
 string pengaturan_akun
 string pesanan
 string pilih_lokasi_percetakan
+string pilih_otomatis
 string pilih_otomatis_percetakan
 string pilih_semua
 string plus
@@ -1657,6 +1673,7 @@ string search_hint
 string search_icon
 string search_menu_title
 string semua_layanan
+string sign_icon
 string sorting_icon
 string status_bar_notification_info_overflow
 string status_icon
@@ -1676,6 +1693,7 @@ string title_home
 string title_order
 string total
 string type_icon
+string urut_berdasarkan
 string user_picture
 string zero
 style AlertDialog_AppCompat
