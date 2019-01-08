@@ -56,11 +56,11 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.Holder
     public void onBindViewHolder(@NonNull final CartListAdapter.Holder holder, final int position) {
         switch (list_cart.get(position).get_name()) {
             case "dokumen":
-                holder.iv_icon.setImageResource(R.drawable.in_thumb_documents_square);
+                holder.iv_icon.setImageResource(R.drawable.in_thumb_moniprint_documents_square);
                 holder.tv_name.setText(adapter_context.getString(R.string.dokumen));
                 break;
             case "gambar":
-                holder.iv_icon.setImageResource(R.drawable.in_thumb_pictures_square);
+                holder.iv_icon.setImageResource(R.drawable.in_thumb_moniprint_pictures_square);
                 holder.tv_name.setText(adapter_context.getString(R.string.gambar));
                 break;
         }

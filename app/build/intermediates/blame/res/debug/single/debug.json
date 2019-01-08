@@ -8,24 +8,16 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
-    },
-    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_blank_square.jpg.flat",
         "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_blank_square.jpg"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_spanduk_square.jpg.flat",
-        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_spanduk_square.jpg"
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_pictures_square.jpg.flat",
-        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_pictures_square.jpg"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_navigation_item.xml.flat",
@@ -40,12 +32,12 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
-    },
-    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\5c75e2ff5e81ad8d2d85ff2d31579db0\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
@@ -60,12 +52,12 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\animator_design_fab_hide_motion_spec.xml.flat",
-        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\animator\\design_fab_hide_motion_spec.xml"
-    },
-    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_ic_sort_asc.png.flat",
         "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_ic_sort_asc.png"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\animator_design_fab_hide_motion_spec.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\animator\\design_fab_hide_motion_spec.xml"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_multichoice_material.xml.flat",
@@ -84,32 +76,32 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
-    },
-    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_button_secondary.xml.flat",
         "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_button_secondary.xml"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_dark.xml.flat",
-        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\color\\abc_primary_text_material_dark.xml"
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_dark.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -124,12 +116,16 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\drawable-mdpi-v4\\design_ic_visibility_off.png"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_moniprint_sticker_square.jpg.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_moniprint_sticker_square.jpg"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_ic_search.png.flat",
@@ -146,10 +142,6 @@
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
-    },
-    {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_flyer_square.jpg.flat",
-        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_flyer_square.jpg"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
@@ -220,24 +212,20 @@
         "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\ic_check_black_24dp.xml"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\color-v23\\abc_tint_default.xml"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\5c75e2ff5e81ad8d2d85ff2d31579db0\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
-        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\color-v23\\abc_tint_default.xml"
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png"
-    },
-    {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_sticker_square.jpg.flat",
-        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_sticker_square.jpg"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -272,12 +260,12 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\color\\mtrl_tabs_icon_color_selector.xml"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_menu_item_action_area.xml.flat",
-        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\layout\\design_menu_item_action_area.xml"
-    },
-    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_layout.xml.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_menu_item_action_area.xml.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\menu_main_navigation.xml.flat",
@@ -320,12 +308,12 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility_off.png.flat",
-        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\drawable-hdpi-v4\\design_ic_visibility_off.png"
-    },
-    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_spinner.xml.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\color\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility_off.png.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\drawable-hdpi-v4\\design_ic_visibility_off.png"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple.xml.flat",
@@ -336,12 +324,12 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png"
-    },
-    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_stroke_color_selector.xml.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\color\\mtrl_btn_stroke_color_selector.xml"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
@@ -376,8 +364,16 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_ic_profile_black.png.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_ic_profile_black.png"
+    },
+    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_ic_order_black.png.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_ic_order_black.png"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -404,12 +400,12 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_namecard_square.jpg.flat",
-        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_namecard_square.jpg"
-    },
-    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_monitrans_mobil_square.jpg.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_monitrans_mobil_square.jpg"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -462,6 +458,10 @@
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view_list_item.xml.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_moniprint_spanduk_square.jpg.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_moniprint_spanduk_square.jpg"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_text_material.xml.flat",
@@ -728,6 +728,10 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_ic_plus_black.png.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_ic_plus_black.png"
+    },
+    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
@@ -764,10 +768,6 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_stand_banner_square.jpg.flat",
-        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_stand_banner_square.jpg"
-    },
-    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
@@ -786,6 +786,10 @@
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_ic_home.png.flat",
         "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_ic_home.png"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_ic_chat_black.png.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_ic_chat_black.png"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
@@ -812,6 +816,10 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_logo_moni_trans.png.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_logo_moni_trans.png"
+    },
+    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
     },
@@ -830,6 +838,10 @@
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_action_bar_item_background_material.xml.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_moniprint_pictures_square.jpg.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_moniprint_pictures_square.jpg"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -872,12 +884,20 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_moniprint_namecard_square.jpg.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_moniprint_namecard_square.jpg"
+    },
+    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_icon.xml.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_hide_motion_spec.xml.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\animator\\mtrl_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_moniprint_brochure_square.jpg.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_moniprint_brochure_square.jpg"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_text.xml.flat",
@@ -1036,6 +1056,10 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_moniprint_documents_square.jpg.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_moniprint_documents_square.jpg"
+    },
+    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_fast_out_slow_in.xml.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\interpolator-v21\\mtrl_fast_out_slow_in.xml"
     },
@@ -1160,6 +1184,10 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-mdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
     {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_ic_home_black.png.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_ic_home_black.png"
+    },
+    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
     },
@@ -1218,6 +1246,10 @@
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_text_input_password_icon.xml.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_monitrans_bus_square.jpg.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_monitrans_bus_square.jpg"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
@@ -1564,6 +1596,10 @@
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_moniprint_stand_banner_square.jpg.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_moniprint_stand_banner_square.jpg"
+    },
+    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
@@ -1868,16 +1904,16 @@
         "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\layout\\activity_order_new.xml"
     },
     {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_invitation_square.jpg.flat",
-        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_invitation_square.jpg"
-    },
-    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\5c75e2ff5e81ad8d2d85ff2d31579db0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f4ad9a073d14abfc35469d8a15f5f56f\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
+    },
+    {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_moniprint_invitation_square.jpg.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_moniprint_invitation_square.jpg"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_rv_item_menu.xml.flat",
@@ -2112,6 +2148,10 @@
         "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_monitrans_motor_square.jpg.flat",
+        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_monitrans_motor_square.jpg"
+    },
+    {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
@@ -2318,10 +2358,6 @@
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "C:\\Users\\Fajar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5cdc40585ed2290288af7eb5530f0508\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
-    },
-    {
-        "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_in_thumb_documents_square.jpg.flat",
-        "source": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\src\\main\\res\\drawable\\in_thumb_documents_square.jpg"
     },
     {
         "merged": "D:\\Jayabaru\\jar00t\\project\\Inharmonia\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_subheader.xml.flat",

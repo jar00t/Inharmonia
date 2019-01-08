@@ -19,6 +19,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.synnapps.carouselview.CarouselView;
@@ -32,15 +33,24 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import id.inharmonia.app.Animation.BounceActivity;
 import id.inharmonia.app.Cart.CartActivity;
-import id.inharmonia.app.Main.Pages.Home.List.MenuList;
-import id.inharmonia.app.Main.Pages.Home.Adapter.MenuListAdapter;
+import id.inharmonia.app.Main.Pages.Home.Adapter.MoniTransListAdapter;
+import id.inharmonia.app.Main.Pages.Home.List.MoniPrintList;
+import id.inharmonia.app.Main.Pages.Home.Adapter.MoniPrintListAdapter;
+import id.inharmonia.app.Main.Pages.Home.List.MoniTransList;
+import id.inharmonia.app.Main.Pages.Home.Popup.AllPrintTypePopup;
 import id.inharmonia.app.R;
 import id.inharmonia.app.Search.SearchActivity;
 
 public class HomeFragment extends Fragment {
 
-    @BindView(R.id.rv_list_menu)
-    RecyclerView rv_list_menu;
+    @BindView(R.id.sv_content_home)
+    ScrollView sv_content_home;
+
+    @BindView(R.id.rv_list_moni_trans)
+    RecyclerView rv_list_moni_trans;
+
+    @BindView(R.id.rv_list_moni_print)
+    RecyclerView rv_list_moni_print;
 
     @BindView(R.id.cv_button_search)
     CardView cv_button_search;
@@ -54,9 +64,18 @@ public class HomeFragment extends Fragment {
     @BindView(R.id.cl_promo_slide)
     CarouselView cl_promo_slide;
 
-    List<MenuList> list_menu;
-    MenuList item_menu;
+    @BindView(R.id.tv_link_more_moni_trans)
+    TextView tv_link_more_moni_trans;
+
+    @BindView(R.id.tv_link_more_moni_print)
+    TextView tv_link_more_moni_print;
+
+    List<MoniTransList> list_monitrans;
+    List<MoniPrintList> list_moniprint;
+
     int[] sample_image = {R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape};
+
+    AllPrintTypePopup popup_all_print_type = new AllPrintTypePopup();
 
     public HomeFragment() {}
 
@@ -74,31 +93,43 @@ public class HomeFragment extends Fragment {
         cl_promo_slide.setPageCount(sample_image.length);
         cl_promo_slide.setImageListener(imageListener);
 
-        rv_list_menu.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
-        rv_list_menu.setFocusable(false);
+        sv_content_home.setSmoothScrollingEnabled(true);
 
-        list_menu = new ArrayList<>();
-
-        item_menu = new MenuList("Dokumen", R.drawable.in_thumb_documents_square, true);
-        list_menu.add(item_menu);
-        item_menu = new MenuList("Gambar", R.drawable.in_thumb_pictures_square, true);
-        list_menu.add(item_menu);
-        item_menu = new MenuList("Flyer", R.drawable.in_thumb_flyer_square, false);
-        list_menu.add(item_menu);
-        item_menu = new MenuList("Undangan", R.drawable.in_thumb_invitation_square, false);
-        list_menu.add(item_menu);
-        item_menu = new MenuList("Spanduk", R.drawable.in_thumb_spanduk_square, false);
-        list_menu.add(item_menu);
-        item_menu = new MenuList("Stand Banner", R.drawable.in_thumb_stand_banner_square, false);
-        list_menu.add(item_menu);
-        item_menu = new MenuList("Kartu Nama", R.drawable.in_thumb_namecard_square, false);
-        list_menu.add(item_menu);
-        item_menu = new MenuList("Lainnya", R.drawable.in_more_square, true);
-        list_menu.add(item_menu);
-
-        rv_list_menu.setAdapter(new MenuListAdapter(getActivity(), list_menu, R.layout.rv_item_menu, this));
+        set_monitrans_list();
+        set_moniprint_list();
 
         return view;
+    }
+
+    public void set_monitrans_list() {
+        list_monitrans = new ArrayList<>();
+
+        list_monitrans.add(new MoniTransList("Motor", R.drawable.in_thumb_monitrans_motor_square, true));
+        list_monitrans.add(new MoniTransList("Mobil", R.drawable.in_thumb_monitrans_mobil_square, true));
+        list_monitrans.add(new MoniTransList("Bus", R.drawable.in_thumb_monitrans_bus_square, false));
+
+        rv_list_moni_trans.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        rv_list_moni_trans.setFocusable(false);
+        rv_list_moni_trans.setAdapter(new MoniTransListAdapter(getActivity(), list_monitrans, R.layout.rv_item_menu));
+    }
+
+    public void set_moniprint_list() {
+        list_moniprint = new ArrayList<>();
+
+        list_moniprint.add(new MoniPrintList("Dokumen", R.drawable.in_thumb_moniprint_documents_square, true));
+        list_moniprint.add(new MoniPrintList("Gambar", R.drawable.in_thumb_moniprint_pictures_square, true));
+        list_moniprint.add(new MoniPrintList("Brosur", R.drawable.in_thumb_moniprint_brochure_square, false));
+        list_moniprint.add(new MoniPrintList("Undangan", R.drawable.in_thumb_moniprint_invitation_square, false));
+        list_moniprint.add(new MoniPrintList("Spanduk", R.drawable.in_thumb_moniprint_spanduk_square, false));
+        list_moniprint.add(new MoniPrintList("Stand Banner", R.drawable.in_thumb_moniprint_stand_banner_square, false));
+        list_moniprint.add(new MoniPrintList("Kartu Nama", R.drawable.in_thumb_moniprint_namecard_square, false));
+        list_moniprint.add(new MoniPrintList("Lainnya", R.drawable.in_more_square, true));
+
+        rv_list_moni_print.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        rv_list_moni_print.setFocusable(false);
+        rv_list_moni_print.setAdapter(new MoniPrintListAdapter(getActivity(), list_moniprint, R.layout.rv_item_menu, this));
+
+        tv_link_more_moni_print.setVisibility(View.VISIBLE);
     }
 
     public void update_cart() {
@@ -137,6 +168,14 @@ public class HomeFragment extends Fragment {
         dialog_popup_message.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         dialog_popup_message.show();
+    }
+
+    @OnClick(R.id.tv_link_more_moni_print)
+    public void more_moni_print() {
+        if (popup_all_print_type.check_sheet()) {
+            popup_all_print_type.send_mom(this);
+            popup_all_print_type.show(getActivity().getSupportFragmentManager(), popup_all_print_type.getTag());
+        }
     }
 
     @OnClick(R.id.cv_button_search)

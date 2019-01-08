@@ -15,12 +15,12 @@ import java.lang.IllegalStateException;
 import java.lang.Override;
 
 public class MenuListAdapter$Holder_ViewBinding implements Unbinder {
-  private MenuListAdapter.Holder target;
+  private MoniPrintListAdapter.Holder target;
 
   private View view2131296324;
 
   @UiThread
-  public MenuListAdapter$Holder_ViewBinding(final MenuListAdapter.Holder target, View source) {
+  public MenuListAdapter$Holder_ViewBinding(final MoniPrintListAdapter.Holder target, View source) {
     this.target = target;
 
     View view;
@@ -41,7 +41,7 @@ public class MenuListAdapter$Holder_ViewBinding implements Unbinder {
   @Override
   @CallSuper
   public void unbind() {
-    MenuListAdapter.Holder target = this.target;
+    MoniPrintListAdapter.Holder target = this.target;
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 

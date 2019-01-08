@@ -10,16 +10,13 @@
         android:orientation="horizontal"
         android:padding="10dp">
 
-        <TextView
-            android:id="@+id/tv_title_popup"
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:gravity="center_vertical"
-            android:textStyle="bold"
-            android:textColor="@color/colorDarkGrey"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
             android:layout_marginStart="10dp"
-            android:fontFamily="@font/harabara_mais"
-            android:text="@string/semua_layanan"/>
+            android:src="@drawable/in_logo_moni_print"
+            android:contentDescription="@string/moniprint_logo"/>
 
         <ImageButton
             android:id="@+id/ib_button_close_popup"

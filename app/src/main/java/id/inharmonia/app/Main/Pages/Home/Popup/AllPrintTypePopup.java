@@ -52,26 +52,26 @@ public class AllPrintTypePopup extends BottomSheetDialogFragment {
 
         ButterKnife.bind(this, view);
 
-        rv_list_type.setLayoutManager(new GridLayoutManager(getActivity(), 4));
+        rv_list_type.setLayoutManager(new GridLayoutManager(getActivity(), 3));
         rv_list_type.setFocusable(false);
 
         list_type = new ArrayList<>();
 
-        item_type = new TypeList("Dokumen", R.drawable.in_thumb_documents_square, true);
+        item_type = new TypeList("Dokumen", R.drawable.in_thumb_moniprint_documents_square, true);
         list_type.add(item_type);
-        item_type = new TypeList("Gambar", R.drawable.in_thumb_pictures_square, true);
+        item_type = new TypeList("Gambar", R.drawable.in_thumb_moniprint_pictures_square, true);
         list_type.add(item_type);
-        item_type = new TypeList("Flyer", R.drawable.in_thumb_flyer_square, false);
+        item_type = new TypeList("Brosur", R.drawable.in_thumb_moniprint_brochure_square, false);
         list_type.add(item_type);
-        item_type = new TypeList("Undangan", R.drawable.in_thumb_invitation_square, false);
+        item_type = new TypeList("Undangan", R.drawable.in_thumb_moniprint_invitation_square, false);
         list_type.add(item_type);
-        item_type = new TypeList("Spanduk", R.drawable.in_thumb_spanduk_square, false);
+        item_type = new TypeList("Spanduk", R.drawable.in_thumb_moniprint_spanduk_square, false);
         list_type.add(item_type);
-        item_type = new TypeList("Stand Banner", R.drawable.in_thumb_stand_banner_square, false);
+        item_type = new TypeList("Stand Banner", R.drawable.in_thumb_moniprint_stand_banner_square, false);
         list_type.add(item_type);
-        item_type = new TypeList("Kartu Nama", R.drawable.in_thumb_namecard_square, false);
+        item_type = new TypeList("Kartu Nama", R.drawable.in_thumb_moniprint_namecard_square, false);
         list_type.add(item_type);
-        item_type = new TypeList("Sticker", R.drawable.in_thumb_sticker_square, false);
+        item_type = new TypeList("Sticker", R.drawable.in_thumb_moniprint_sticker_square, false);
         list_type.add(item_type);
 
         rv_list_type.setAdapter(new TypeListAdapter(getActivity(), list_type, R.layout.rv_item_menu_grid, fragment_home));

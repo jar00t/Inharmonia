@@ -78,4 +78,6 @@
     <string name="sign_icon">Sign Icon</string>
     <string name="lokasi">Lokasi</string>
     <string name="urut_berdasarkan">Urut berdasarkan</string>
+    <string name="inbox">Inbox</string>
+    <string name="monitrans_logo">MoniTrans Logo</string>
 </resources>

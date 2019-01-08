@@ -59,7 +59,7 @@
                             android:id="@+id/iv_icon"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/in_thumb_pictures_square"
+                            android:src="@drawable/in_thumb_moniprint_pictures_square"
                             android:padding="2dp"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
