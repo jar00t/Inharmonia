@@ -20,7 +20,7 @@ import java.lang.Override;
 public class CartActivity_ViewBinding implements Unbinder {
   private CartActivity target;
 
-  private View view2131296366;
+  private View view2131296367;
 
   private View view2131296299;
 
@@ -38,7 +38,7 @@ public class CartActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.ib_button_back, "field 'ib_button_back' and method 'exit'");
     target.ib_button_back = Utils.castView(view, R.id.ib_button_back, "field 'ib_button_back'", ImageButton.class);
-    view2131296366 = view;
+    view2131296367 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -88,8 +88,8 @@ public class CartActivity_ViewBinding implements Unbinder {
     target.cb_select_all = null;
     target.cv_button_store_selecter = null;
 
-    view2131296366.setOnClickListener(null);
-    view2131296366 = null;
+    view2131296367.setOnClickListener(null);
+    view2131296367 = null;
     view2131296299.setOnClickListener(null);
     view2131296299 = null;
     view2131296322.setOnClickListener(null);

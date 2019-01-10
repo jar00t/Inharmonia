@@ -7,7 +7,6 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
@@ -22,7 +21,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
 
   private View view2131296321;
 
-  private View view2131296367;
+  private View view2131296368;
 
   private View view2131296526;
 
@@ -31,9 +30,9 @@ public class HomeFragment_ViewBinding implements Unbinder {
     this.target = target;
 
     View view;
-    target.sv_content_home = Utils.findRequiredViewAsType(source, R.id.sv_content_home, "field 'sv_content_home'", ScrollView.class);
-    target.rv_list_moni_trans = Utils.findRequiredViewAsType(source, R.id.rv_list_moni_trans, "field 'rv_list_moni_trans'", RecyclerView.class);
+    target.rv_list_product = Utils.findRequiredViewAsType(source, R.id.rv_list_product, "field 'rv_list_product'", RecyclerView.class);
     target.rv_list_moni_print = Utils.findRequiredViewAsType(source, R.id.rv_list_moni_print, "field 'rv_list_moni_print'", RecyclerView.class);
+    target.cv_frame_product = Utils.findRequiredViewAsType(source, R.id.cv_frame_product, "field 'cv_frame_product'", CardView.class);
     view = Utils.findRequiredView(source, R.id.cv_button_search, "field 'cv_button_search' and method 'open_search'");
     target.cv_button_search = Utils.castView(view, R.id.cv_button_search, "field 'cv_button_search'", CardView.class);
     view2131296321 = view;
@@ -45,7 +44,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.ib_button_cart, "field 'ib_button_cart' and method 'open_cart'");
     target.ib_button_cart = Utils.castView(view, R.id.ib_button_cart, "field 'ib_button_cart'", ImageButton.class);
-    view2131296367 = view;
+    view2131296368 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -54,7 +53,6 @@ public class HomeFragment_ViewBinding implements Unbinder {
     });
     target.tv_cart_total = Utils.findRequiredViewAsType(source, R.id.tv_cart_total, "field 'tv_cart_total'", TextView.class);
     target.cl_promo_slide = Utils.findRequiredViewAsType(source, R.id.cl_promo_slide, "field 'cl_promo_slide'", CarouselView.class);
-    target.tv_link_more_moni_trans = Utils.findRequiredViewAsType(source, R.id.tv_link_more_moni_trans, "field 'tv_link_more_moni_trans'", TextView.class);
     view = Utils.findRequiredView(source, R.id.tv_link_more_moni_print, "field 'tv_link_more_moni_print' and method 'more_moni_print'");
     target.tv_link_more_moni_print = Utils.castView(view, R.id.tv_link_more_moni_print, "field 'tv_link_more_moni_print'", TextView.class);
     view2131296526 = view;
@@ -73,20 +71,19 @@ public class HomeFragment_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.sv_content_home = null;
-    target.rv_list_moni_trans = null;
+    target.rv_list_product = null;
     target.rv_list_moni_print = null;
+    target.cv_frame_product = null;
     target.cv_button_search = null;
     target.ib_button_cart = null;
     target.tv_cart_total = null;
     target.cl_promo_slide = null;
-    target.tv_link_more_moni_trans = null;
     target.tv_link_more_moni_print = null;
 
     view2131296321.setOnClickListener(null);
     view2131296321 = null;
-    view2131296367.setOnClickListener(null);
-    view2131296367 = null;
+    view2131296368.setOnClickListener(null);
+    view2131296368 = null;
     view2131296526.setOnClickListener(null);
     view2131296526 = null;
   }

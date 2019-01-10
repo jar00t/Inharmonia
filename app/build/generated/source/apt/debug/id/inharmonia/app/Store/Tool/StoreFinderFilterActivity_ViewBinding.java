@@ -15,7 +15,7 @@ import java.lang.Override;
 public class StoreFinderFilterActivity_ViewBinding implements Unbinder {
   private StoreFinderFilterActivity target;
 
-  private View view2131296369;
+  private View view2131296370;
 
   @UiThread
   public StoreFinderFilterActivity_ViewBinding(StoreFinderFilterActivity target) {
@@ -30,7 +30,7 @@ public class StoreFinderFilterActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.ib_button_close, "field 'ib_button_close' and method 'exit'");
     target.ib_button_close = Utils.castView(view, R.id.ib_button_close, "field 'ib_button_close'", ImageButton.class);
-    view2131296369 = view;
+    view2131296370 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -48,7 +48,7 @@ public class StoreFinderFilterActivity_ViewBinding implements Unbinder {
 
     target.ib_button_close = null;
 
-    view2131296369.setOnClickListener(null);
-    view2131296369 = null;
+    view2131296370.setOnClickListener(null);
+    view2131296370 = null;
   }
 }

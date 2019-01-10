@@ -16,7 +16,7 @@ import java.lang.Override;
 public class StoreListAdapter$Holder_ViewBinding implements Unbinder {
   private StoreListAdapter.Holder target;
 
-  private View view2131296384;
+  private View view2131296385;
 
   @UiThread
   public StoreListAdapter$Holder_ViewBinding(final StoreListAdapter.Holder target, View source) {
@@ -30,7 +30,7 @@ public class StoreListAdapter$Holder_ViewBinding implements Unbinder {
     target.iv_free_ongkir = Utils.findRequiredViewAsType(source, R.id.iv_free_ongkir, "field 'iv_free_ongkir'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.iv_button_favorite, "field 'iv_button_favorite' and method 'toggle_favorite'");
     target.iv_button_favorite = Utils.castView(view, R.id.iv_button_favorite, "field 'iv_button_favorite'", ImageView.class);
-    view2131296384 = view;
+    view2131296385 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class StoreListAdapter$Holder_ViewBinding implements Unbinder {
     target.iv_free_ongkir = null;
     target.iv_button_favorite = null;
 
-    view2131296384.setOnClickListener(null);
-    view2131296384 = null;
+    view2131296385.setOnClickListener(null);
+    view2131296385 = null;
   }
 }

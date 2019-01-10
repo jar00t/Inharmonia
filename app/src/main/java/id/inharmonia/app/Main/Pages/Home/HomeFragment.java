@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -19,7 +20,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.synnapps.carouselview.CarouselView;
@@ -33,24 +33,24 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import id.inharmonia.app.Animation.BounceActivity;
 import id.inharmonia.app.Cart.CartActivity;
-import id.inharmonia.app.Main.Pages.Home.Adapter.MoniTransListAdapter;
+import id.inharmonia.app.Main.Pages.Home.Adapter.ProductListAdapter;
 import id.inharmonia.app.Main.Pages.Home.List.MoniPrintList;
 import id.inharmonia.app.Main.Pages.Home.Adapter.MoniPrintListAdapter;
-import id.inharmonia.app.Main.Pages.Home.List.MoniTransList;
+import id.inharmonia.app.Main.Pages.Home.List.ProductList;
 import id.inharmonia.app.Main.Pages.Home.Popup.AllPrintTypePopup;
 import id.inharmonia.app.R;
 import id.inharmonia.app.Search.SearchActivity;
 
 public class HomeFragment extends Fragment {
 
-    @BindView(R.id.sv_content_home)
-    ScrollView sv_content_home;
-
-    @BindView(R.id.rv_list_moni_trans)
-    RecyclerView rv_list_moni_trans;
+    @BindView(R.id.rv_list_product)
+    RecyclerView rv_list_product;
 
     @BindView(R.id.rv_list_moni_print)
     RecyclerView rv_list_moni_print;
+
+    @BindView(R.id.cv_frame_product)
+    CardView cv_frame_product;
 
     @BindView(R.id.cv_button_search)
     CardView cv_button_search;
@@ -64,13 +64,10 @@ public class HomeFragment extends Fragment {
     @BindView(R.id.cl_promo_slide)
     CarouselView cl_promo_slide;
 
-    @BindView(R.id.tv_link_more_moni_trans)
-    TextView tv_link_more_moni_trans;
-
     @BindView(R.id.tv_link_more_moni_print)
     TextView tv_link_more_moni_print;
 
-    List<MoniTransList> list_monitrans;
+    List<ProductList> list_product;
     List<MoniPrintList> list_moniprint;
 
     int[] sample_image = {R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape, R.drawable.in_blank_landscape};
@@ -92,25 +89,29 @@ public class HomeFragment extends Fragment {
 
         cl_promo_slide.setPageCount(sample_image.length);
         cl_promo_slide.setImageListener(imageListener);
+        cv_frame_product.setBackgroundResource(R.drawable.in_bg_grad_purple);
 
-        sv_content_home.setSmoothScrollingEnabled(true);
-
-        set_monitrans_list();
+        set_product_list();
         set_moniprint_list();
 
         return view;
     }
 
-    public void set_monitrans_list() {
-        list_monitrans = new ArrayList<>();
+    public void set_product_list() {
+        list_product = new ArrayList<>();
 
-        list_monitrans.add(new MoniTransList("Motor", R.drawable.in_thumb_monitrans_motor_square, true));
-        list_monitrans.add(new MoniTransList("Mobil", R.drawable.in_thumb_monitrans_mobil_square, true));
-        list_monitrans.add(new MoniTransList("Bus", R.drawable.in_thumb_monitrans_bus_square, false));
+        list_product.add(new ProductList("MoniTrans", R.drawable.in_ic_monitrans_motor_small, true));
+        list_product.add(new ProductList("MoniFood", R.drawable.in_ic_monifood_mangkok_small, true));
+        list_product.add(new ProductList("MoniHealth", R.drawable.in_ic_monihealth_stetoskop_small, true));
+        list_product.add(new ProductList("MoniShop", R.drawable.in_ic_monishop_keranjang_small, true));
+        list_product.add(new ProductList("MoniPrint", R.drawable.in_ic_moniprint_printer_small, true));
+        list_product.add(new ProductList("MoniFix", R.drawable.in_ic_monifix_obeng_small, true));
+        list_product.add(new ProductList("MoniTeach", R.drawable.in_ic_moniteach_buku_small, true));
+        list_product.add(new ProductList("Lainnya", R.drawable.in_more_square, true));
 
-        rv_list_moni_trans.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
-        rv_list_moni_trans.setFocusable(false);
-        rv_list_moni_trans.setAdapter(new MoniTransListAdapter(getActivity(), list_monitrans, R.layout.rv_item_menu));
+        rv_list_product.setLayoutManager(new GridLayoutManager(getActivity(), 4));
+        rv_list_product.setFocusable(false);
+        rv_list_product.setAdapter(new ProductListAdapter(getActivity(), list_product, R.layout.rv_item_menu_grid, this));
     }
 
     public void set_moniprint_list() {

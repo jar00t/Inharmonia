@@ -17,7 +17,7 @@ import java.lang.Override;
 public class WebActivity_ViewBinding implements Unbinder {
   private WebActivity target;
 
-  private View view2131296366;
+  private View view2131296367;
 
   @UiThread
   public WebActivity_ViewBinding(WebActivity target) {
@@ -33,7 +33,7 @@ public class WebActivity_ViewBinding implements Unbinder {
     target.tv_page_name = Utils.findRequiredViewAsType(source, R.id.tv_page_name, "field 'tv_page_name'", TextView.class);
     view = Utils.findRequiredView(source, R.id.ib_button_back, "field 'ib_button_back' and method 'exit'");
     target.ib_button_back = Utils.castView(view, R.id.ib_button_back, "field 'ib_button_back'", ImageButton.class);
-    view2131296366 = view;
+    view2131296367 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class WebActivity_ViewBinding implements Unbinder {
     target.tv_page_name = null;
     target.ib_button_back = null;
 
-    view2131296366.setOnClickListener(null);
-    view2131296366 = null;
+    view2131296367.setOnClickListener(null);
+    view2131296367 = null;
   }
 }

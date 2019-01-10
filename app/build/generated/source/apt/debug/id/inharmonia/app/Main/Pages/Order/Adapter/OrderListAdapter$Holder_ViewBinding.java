@@ -17,7 +17,7 @@ import java.lang.Override;
 public class OrderListAdapter$Holder_ViewBinding implements Unbinder {
   private OrderListAdapter.Holder target;
 
-  private View view2131296324;
+  private View view2131296325;
 
   @UiThread
   public OrderListAdapter$Holder_ViewBinding(final OrderListAdapter.Holder target, View source) {
@@ -34,7 +34,7 @@ public class OrderListAdapter$Holder_ViewBinding implements Unbinder {
     target.tv_date_time = Utils.findRequiredViewAsType(source, R.id.tv_date_time, "field 'tv_date_time'", TextView.class);
     view = Utils.findRequiredView(source, R.id.cv_item, "field 'cv_item_type' and method 'go_to_detail'");
     target.cv_item_type = Utils.castView(view, R.id.cv_item, "field 'cv_item_type'", CardView.class);
-    view2131296324 = view;
+    view2131296325 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -60,7 +60,7 @@ public class OrderListAdapter$Holder_ViewBinding implements Unbinder {
     target.tv_date_time = null;
     target.cv_item_type = null;
 
-    view2131296324.setOnClickListener(null);
-    view2131296324 = null;
+    view2131296325.setOnClickListener(null);
+    view2131296325 = null;
   }
 }
