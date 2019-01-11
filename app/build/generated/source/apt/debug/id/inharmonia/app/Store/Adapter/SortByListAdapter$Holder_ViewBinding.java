@@ -17,7 +17,7 @@ import java.lang.Override;
 public class SortByListAdapter$Holder_ViewBinding implements Unbinder {
   private SortByListAdapter.Holder target;
 
-  private View view2131296325;
+  private View view2131296324;
 
   @UiThread
   public SortByListAdapter$Holder_ViewBinding(final SortByListAdapter.Holder target, View source) {
@@ -29,7 +29,7 @@ public class SortByListAdapter$Holder_ViewBinding implements Unbinder {
     target.iv_sign = Utils.findRequiredViewAsType(source, R.id.iv_sign, "field 'iv_sign'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.cv_item, "field 'cv_item' and method 'select_it'");
     target.cv_item = Utils.castView(view, R.id.cv_item, "field 'cv_item'", CardView.class);
-    view2131296325 = view;
+    view2131296324 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -50,7 +50,7 @@ public class SortByListAdapter$Holder_ViewBinding implements Unbinder {
     target.iv_sign = null;
     target.cv_item = null;
 
-    view2131296325.setOnClickListener(null);
-    view2131296325 = null;
+    view2131296324.setOnClickListener(null);
+    view2131296324 = null;
   }
 }

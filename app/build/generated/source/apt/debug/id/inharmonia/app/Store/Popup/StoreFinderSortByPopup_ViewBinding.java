@@ -16,7 +16,7 @@ import java.lang.Override;
 public class StoreFinderSortByPopup_ViewBinding implements Unbinder {
   private StoreFinderSortByPopup target;
 
-  private View view2131296371;
+  private View view2131296370;
 
   @UiThread
   public StoreFinderSortByPopup_ViewBinding(final StoreFinderSortByPopup target, View source) {
@@ -26,7 +26,7 @@ public class StoreFinderSortByPopup_ViewBinding implements Unbinder {
     target.rv_list_sort_by = Utils.findRequiredViewAsType(source, R.id.rv_list_sort_by, "field 'rv_list_sort_by'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.ib_button_close_popup, "field 'ib_button_close_popup' and method 'hide_me'");
     target.ib_button_close_popup = Utils.castView(view, R.id.ib_button_close_popup, "field 'ib_button_close_popup'", ImageButton.class);
-    view2131296371 = view;
+    view2131296370 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class StoreFinderSortByPopup_ViewBinding implements Unbinder {
     target.rv_list_sort_by = null;
     target.ib_button_close_popup = null;
 
-    view2131296371.setOnClickListener(null);
-    view2131296371 = null;
+    view2131296370.setOnClickListener(null);
+    view2131296370 = null;
   }
 }

@@ -21,9 +21,9 @@ public class HomeFragment_ViewBinding implements Unbinder {
 
   private View view2131296321;
 
-  private View view2131296368;
+  private View view2131296367;
 
-  private View view2131296526;
+  private View view2131296525;
 
   @UiThread
   public HomeFragment_ViewBinding(final HomeFragment target, View source) {
@@ -32,7 +32,6 @@ public class HomeFragment_ViewBinding implements Unbinder {
     View view;
     target.rv_list_product = Utils.findRequiredViewAsType(source, R.id.rv_list_product, "field 'rv_list_product'", RecyclerView.class);
     target.rv_list_moni_print = Utils.findRequiredViewAsType(source, R.id.rv_list_moni_print, "field 'rv_list_moni_print'", RecyclerView.class);
-    target.cv_frame_product = Utils.findRequiredViewAsType(source, R.id.cv_frame_product, "field 'cv_frame_product'", CardView.class);
     view = Utils.findRequiredView(source, R.id.cv_button_search, "field 'cv_button_search' and method 'open_search'");
     target.cv_button_search = Utils.castView(view, R.id.cv_button_search, "field 'cv_button_search'", CardView.class);
     view2131296321 = view;
@@ -44,7 +43,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.ib_button_cart, "field 'ib_button_cart' and method 'open_cart'");
     target.ib_button_cart = Utils.castView(view, R.id.ib_button_cart, "field 'ib_button_cart'", ImageButton.class);
-    view2131296368 = view;
+    view2131296367 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -55,7 +54,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
     target.cl_promo_slide = Utils.findRequiredViewAsType(source, R.id.cl_promo_slide, "field 'cl_promo_slide'", CarouselView.class);
     view = Utils.findRequiredView(source, R.id.tv_link_more_moni_print, "field 'tv_link_more_moni_print' and method 'more_moni_print'");
     target.tv_link_more_moni_print = Utils.castView(view, R.id.tv_link_more_moni_print, "field 'tv_link_more_moni_print'", TextView.class);
-    view2131296526 = view;
+    view2131296525 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -73,7 +72,6 @@ public class HomeFragment_ViewBinding implements Unbinder {
 
     target.rv_list_product = null;
     target.rv_list_moni_print = null;
-    target.cv_frame_product = null;
     target.cv_button_search = null;
     target.ib_button_cart = null;
     target.tv_cart_total = null;
@@ -82,9 +80,9 @@ public class HomeFragment_ViewBinding implements Unbinder {
 
     view2131296321.setOnClickListener(null);
     view2131296321 = null;
-    view2131296368.setOnClickListener(null);
-    view2131296368 = null;
-    view2131296526.setOnClickListener(null);
-    view2131296526 = null;
+    view2131296367.setOnClickListener(null);
+    view2131296367 = null;
+    view2131296525.setOnClickListener(null);
+    view2131296525 = null;
   }
 }

@@ -1063,7 +1063,6 @@ drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable in_bg_grad_purple
 drawable in_blank_landscape
 drawable in_blank_square
 drawable in_button_primary
@@ -1095,8 +1094,8 @@ drawable in_ic_monifix_obeng
 drawable in_ic_monifix_obeng_small
 drawable in_ic_monifood_mangkok
 drawable in_ic_monifood_mangkok_small
-drawable in_ic_monihealth_stetoskop
-drawable in_ic_monihealth_stetoskop_small
+drawable in_ic_monihealth_hati
+drawable in_ic_monihealth_hati_small
 drawable in_ic_monijob_koper
 drawable in_ic_monijob_koper_small
 drawable in_ic_moniprint_printer
@@ -1148,9 +1147,6 @@ drawable in_thumb_moniprint_pictures_square
 drawable in_thumb_moniprint_spanduk_square
 drawable in_thumb_moniprint_stand_banner_square
 drawable in_thumb_moniprint_sticker_square
-drawable in_thumb_monitrans_bus_square
-drawable in_thumb_monitrans_mobil_square
-drawable in_thumb_monitrans_motor_square
 drawable in_thumb_text_blank_square
 drawable in_thumb_text_size_a4_square
 drawable in_thumb_text_size_a5_square
@@ -1244,7 +1240,6 @@ id cv_button_checkout
 id cv_button_search
 id cv_button_store_selecter
 id cv_cart_detail
-id cv_frame_product
 id cv_item
 id cv_list_item_quantity
 id decor_content_parent
@@ -1704,6 +1699,7 @@ string pilih_otomatis_percetakan
 string pilih_semua
 string plus
 string q_hapus_dari_keranjang
+string q_perlu_apa_hari_ini
 string search_hint
 string search_icon
 string search_menu_title

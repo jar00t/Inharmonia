@@ -49,9 +49,6 @@ public class HomeFragment extends Fragment {
     @BindView(R.id.rv_list_moni_print)
     RecyclerView rv_list_moni_print;
 
-    @BindView(R.id.cv_frame_product)
-    CardView cv_frame_product;
-
     @BindView(R.id.cv_button_search)
     CardView cv_button_search;
 
@@ -89,7 +86,6 @@ public class HomeFragment extends Fragment {
 
         cl_promo_slide.setPageCount(sample_image.length);
         cl_promo_slide.setImageListener(imageListener);
-        cv_frame_product.setBackgroundResource(R.drawable.in_bg_grad_purple);
 
         set_product_list();
         set_moniprint_list();
@@ -102,14 +98,16 @@ public class HomeFragment extends Fragment {
 
         list_product.add(new ProductList("MoniTrans", R.drawable.in_ic_monitrans_motor_small, true));
         list_product.add(new ProductList("MoniFood", R.drawable.in_ic_monifood_mangkok_small, true));
-        list_product.add(new ProductList("MoniHealth", R.drawable.in_ic_monihealth_stetoskop_small, true));
+        list_product.add(new ProductList("MoniHealth", R.drawable.in_ic_monihealth_hati_small, true));
         list_product.add(new ProductList("MoniShop", R.drawable.in_ic_monishop_keranjang_small, true));
         list_product.add(new ProductList("MoniPrint", R.drawable.in_ic_moniprint_printer_small, true));
         list_product.add(new ProductList("MoniFix", R.drawable.in_ic_monifix_obeng_small, true));
         list_product.add(new ProductList("MoniTeach", R.drawable.in_ic_moniteach_buku_small, true));
+        list_product.add(new ProductList("MoniJob", R.drawable.in_ic_monijob_koper_small, true));
+        list_product.add(new ProductList("MoniRent", R.drawable.in_ic_monirent_kunci_small, true));
         list_product.add(new ProductList("Lainnya", R.drawable.in_more_square, true));
 
-        rv_list_product.setLayoutManager(new GridLayoutManager(getActivity(), 4));
+        rv_list_product.setLayoutManager(new GridLayoutManager(getActivity(), 5));
         rv_list_product.setFocusable(false);
         rv_list_product.setAdapter(new ProductListAdapter(getActivity(), list_product, R.layout.rv_item_menu_grid, this));
     }
