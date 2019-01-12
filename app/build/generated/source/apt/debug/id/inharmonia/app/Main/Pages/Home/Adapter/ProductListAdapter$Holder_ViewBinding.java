@@ -17,7 +17,7 @@ import java.lang.Override;
 public class ProductListAdapter$Holder_ViewBinding implements Unbinder {
   private ProductListAdapter.Holder target;
 
-  private View view2131296324;
+  private View view2131296326;
 
   @UiThread
   public ProductListAdapter$Holder_ViewBinding(final ProductListAdapter.Holder target,
@@ -29,7 +29,7 @@ public class ProductListAdapter$Holder_ViewBinding implements Unbinder {
     target.iv_icon = Utils.findRequiredViewAsType(source, R.id.iv_icon, "field 'iv_icon'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.cv_item, "field 'cv_item_menu' and method 'go_to'");
     target.cv_item_menu = Utils.castView(view, R.id.cv_item, "field 'cv_item_menu'", CardView.class);
-    view2131296324 = view;
+    view2131296326 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -49,7 +49,7 @@ public class ProductListAdapter$Holder_ViewBinding implements Unbinder {
     target.iv_icon = null;
     target.cv_item_menu = null;
 
-    view2131296324.setOnClickListener(null);
-    view2131296324 = null;
+    view2131296326.setOnClickListener(null);
+    view2131296326 = null;
   }
 }

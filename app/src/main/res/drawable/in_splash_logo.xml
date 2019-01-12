@@ -7,6 +7,16 @@
         android:gravity="center">
 
         <bitmap
+            android:gravity="fill"
+            android:alpha="128"
+            android:src="@drawable/in_bg_memphis"/>
+
+    </item>
+
+    <item
+        android:gravity="center">
+
+        <bitmap
             android:gravity="center_horizontal|center_vertical"
             android:src="@mipmap/ic_launcher_splash"/>
 

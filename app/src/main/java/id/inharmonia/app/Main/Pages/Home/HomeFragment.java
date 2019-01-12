@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -15,11 +16,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.synnapps.carouselview.CarouselView;
@@ -42,6 +46,12 @@ import id.inharmonia.app.R;
 import id.inharmonia.app.Search.SearchActivity;
 
 public class HomeFragment extends Fragment {
+
+    @BindView(R.id.ll_container_header)
+    LinearLayout ll_container_header;
+
+    @BindView(R.id.sv_container_content)
+    ScrollView sv_container_content;
 
     @BindView(R.id.rv_list_product)
     RecyclerView rv_list_product;
@@ -86,6 +96,14 @@ public class HomeFragment extends Fragment {
 
         cl_promo_slide.setPageCount(sample_image.length);
         cl_promo_slide.setImageListener(imageListener);
+
+        sv_container_content.getViewTreeObserver().addOnScrollChangedListener(new ViewTreeObserver.OnScrollChangedListener() {
+            @Override
+            public void onScrollChanged() {
+                ll_container_header.setBackgroundColor((sv_container_content.getScrollY() > 0)? getResources().getColor(R.color.colorWhite) : Color.TRANSPARENT);
+                ll_container_header.getBackground().setAlpha((sv_container_content.getScrollY() <= 255)? sv_container_content.getScrollY() : 255);
+            }
+        });
 
         set_product_list();
         set_moniprint_list();

@@ -20,11 +20,11 @@ import java.lang.Override;
 public class CartActivity_ViewBinding implements Unbinder {
   private CartActivity target;
 
-  private View view2131296366;
+  private View view2131296370;
 
-  private View view2131296299;
+  private View view2131296301;
 
-  private View view2131296322;
+  private View view2131296324;
 
   @UiThread
   public CartActivity_ViewBinding(CartActivity target) {
@@ -38,7 +38,7 @@ public class CartActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.ib_button_back, "field 'ib_button_back' and method 'exit'");
     target.ib_button_back = Utils.castView(view, R.id.ib_button_back, "field 'ib_button_back'", ImageButton.class);
-    view2131296366 = view;
+    view2131296370 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class CartActivity_ViewBinding implements Unbinder {
     target.tv_select_all = Utils.findRequiredViewAsType(source, R.id.tv_select_all, "field 'tv_select_all'", TextView.class);
     view = Utils.findRequiredView(source, R.id.cb_select_all, "field 'cb_select_all' and method 'select_all'");
     target.cb_select_all = Utils.castView(view, R.id.cb_select_all, "field 'cb_select_all'", CheckBox.class);
-    view2131296299 = view;
+    view2131296301 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,7 +62,7 @@ public class CartActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.cv_button_store_selecter, "field 'cv_button_store_selecter' and method 'go_to_store_finder'");
     target.cv_button_store_selecter = Utils.castView(view, R.id.cv_button_store_selecter, "field 'cv_button_store_selecter'", CardView.class);
-    view2131296322 = view;
+    view2131296324 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -88,11 +88,11 @@ public class CartActivity_ViewBinding implements Unbinder {
     target.cb_select_all = null;
     target.cv_button_store_selecter = null;
 
-    view2131296366.setOnClickListener(null);
-    view2131296366 = null;
-    view2131296299.setOnClickListener(null);
-    view2131296299 = null;
-    view2131296322.setOnClickListener(null);
-    view2131296322 = null;
+    view2131296370.setOnClickListener(null);
+    view2131296370 = null;
+    view2131296301.setOnClickListener(null);
+    view2131296301 = null;
+    view2131296324.setOnClickListener(null);
+    view2131296324 = null;
   }
 }

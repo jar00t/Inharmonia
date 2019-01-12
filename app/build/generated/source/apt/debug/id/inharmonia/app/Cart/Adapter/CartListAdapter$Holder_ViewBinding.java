@@ -21,11 +21,11 @@ import java.lang.Override;
 public class CartListAdapter$Holder_ViewBinding implements Unbinder {
   private CartListAdapter.Holder target;
 
-  private View view2131296385;
+  private View view2131296390;
 
-  private View view2131296298;
+  private View view2131296300;
 
-  private View view2131296319;
+  private View view2131296321;
 
   @UiThread
   public CartListAdapter$Holder_ViewBinding(final CartListAdapter.Holder target, View source) {
@@ -38,7 +38,7 @@ public class CartListAdapter$Holder_ViewBinding implements Unbinder {
     target.tv_list_size = Utils.findRequiredViewAsType(source, R.id.tv_list_size, "field 'tv_list_size'", TextView.class);
     view = Utils.findRequiredView(source, R.id.iv_button_toggle, "field 'iv_button_toggle' and method 'toggle_detail'");
     target.iv_button_toggle = Utils.castView(view, R.id.iv_button_toggle, "field 'iv_button_toggle'", ImageView.class);
-    view2131296385 = view;
+    view2131296390 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -50,7 +50,7 @@ public class CartListAdapter$Holder_ViewBinding implements Unbinder {
     target.tv_total = Utils.findRequiredViewAsType(source, R.id.tv_total, "field 'tv_total'", TextView.class);
     view = Utils.findRequiredView(source, R.id.cb_cart_selecter, "field 'cb_cart_selecter' and method 'select_cart'");
     target.cb_cart_selecter = Utils.castView(view, R.id.cb_cart_selecter, "field 'cb_cart_selecter'", CheckBox.class);
-    view2131296298 = view;
+    view2131296300 = view;
     ((CompoundButton) view).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
       @Override
       public void onCheckedChanged(CompoundButton p0, boolean p1) {
@@ -59,7 +59,7 @@ public class CartListAdapter$Holder_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.cv_button_cart_deleter, "field 'cv_button_cart_deleter' and method 'delete_cart'");
     target.cv_button_cart_deleter = Utils.castView(view, R.id.cv_button_cart_deleter, "field 'cv_button_cart_deleter'", CardView.class);
-    view2131296319 = view;
+    view2131296321 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -86,11 +86,11 @@ public class CartListAdapter$Holder_ViewBinding implements Unbinder {
     target.cb_cart_selecter = null;
     target.cv_button_cart_deleter = null;
 
-    view2131296385.setOnClickListener(null);
-    view2131296385 = null;
-    ((CompoundButton) view2131296298).setOnCheckedChangeListener(null);
-    view2131296298 = null;
-    view2131296319.setOnClickListener(null);
-    view2131296319 = null;
+    view2131296390.setOnClickListener(null);
+    view2131296390 = null;
+    ((CompoundButton) view2131296300).setOnCheckedChangeListener(null);
+    view2131296300 = null;
+    view2131296321.setOnClickListener(null);
+    view2131296321 = null;
   }
 }

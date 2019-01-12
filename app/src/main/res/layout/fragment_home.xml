@@ -18,6 +18,7 @@
             android:orientation="vertical">
 
             <ScrollView
+                android:id="@+id/sv_container_content"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scrollbars="none">
@@ -208,6 +209,7 @@
             </ScrollView>
 
             <LinearLayout
+                android:id="@+id/ll_container_header"
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:baselineAligned="false"

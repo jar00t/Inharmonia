@@ -20,11 +20,11 @@ import java.lang.Override;
 public class SizeQuantityPopup_ViewBinding implements Unbinder {
   private SizeQuantityPopup target;
 
-  private View view2131296370;
+  private View view2131296374;
 
-  private View view2131296294;
+  private View view2131296296;
 
-  private View view2131296295;
+  private View view2131296297;
 
   @UiThread
   public SizeQuantityPopup_ViewBinding(final SizeQuantityPopup target, View source) {
@@ -37,7 +37,7 @@ public class SizeQuantityPopup_ViewBinding implements Unbinder {
     target.rv_list_type = Utils.findRequiredViewAsType(source, R.id.rv_list_type, "field 'rv_list_type'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.ib_button_close_popup, "field 'ib_button_close_popup' and method 'hide_me'");
     target.ib_button_close_popup = Utils.castView(view, R.id.ib_button_close_popup, "field 'ib_button_close_popup'", ImageButton.class);
-    view2131296370 = view;
+    view2131296374 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -48,7 +48,7 @@ public class SizeQuantityPopup_ViewBinding implements Unbinder {
     target.fl_button_next_step = Utils.findRequiredViewAsType(source, R.id.fl_button_next_step, "field 'fl_button_next_step'", FrameLayout.class);
     view = Utils.findRequiredView(source, R.id.bt_button_add_to_cart, "field 'bt_button_add_to_cart' and method 'add_to_cart'");
     target.bt_button_add_to_cart = Utils.castView(view, R.id.bt_button_add_to_cart, "field 'bt_button_add_to_cart'", Button.class);
-    view2131296294 = view;
+    view2131296296 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -57,7 +57,7 @@ public class SizeQuantityPopup_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.bt_button_next_step, "field 'bt_button_next_step' and method 'next_step'");
     target.bt_button_next_step = Utils.castView(view, R.id.bt_button_next_step, "field 'bt_button_next_step'", Button.class);
-    view2131296295 = view;
+    view2131296297 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -83,11 +83,11 @@ public class SizeQuantityPopup_ViewBinding implements Unbinder {
     target.bt_button_add_to_cart = null;
     target.bt_button_next_step = null;
 
-    view2131296370.setOnClickListener(null);
-    view2131296370 = null;
-    view2131296294.setOnClickListener(null);
-    view2131296294 = null;
-    view2131296295.setOnClickListener(null);
-    view2131296295 = null;
+    view2131296374.setOnClickListener(null);
+    view2131296374 = null;
+    view2131296296.setOnClickListener(null);
+    view2131296296 = null;
+    view2131296297.setOnClickListener(null);
+    view2131296297 = null;
   }
 }

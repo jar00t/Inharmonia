@@ -19,15 +19,15 @@ import java.lang.Override;
 public class StoreFinderActivity_ViewBinding implements Unbinder {
   private StoreFinderActivity target;
 
-  private View view2131296366;
-
-  private View view2131296353;
-
-  private View view2131296355;
+  private View view2131296370;
 
   private View view2131296356;
 
-  private View view2131296387;
+  private View view2131296358;
+
+  private View view2131296359;
+
+  private View view2131296392;
 
   @UiThread
   public StoreFinderActivity_ViewBinding(StoreFinderActivity target) {
@@ -41,7 +41,7 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.ib_button_back, "field 'ib_button_back' and method 'exit'");
     target.ib_button_back = Utils.castView(view, R.id.ib_button_back, "field 'ib_button_back'", ImageButton.class);
-    view2131296366 = view;
+    view2131296370 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -52,7 +52,7 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
     target.rv_list_store = Utils.findRequiredViewAsType(source, R.id.rv_list_store, "field 'rv_list_store'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.fl_button_filter, "field 'fl_button_filter' and method 'open_filter'");
     target.fl_button_filter = Utils.castView(view, R.id.fl_button_filter, "field 'fl_button_filter'", FrameLayout.class);
-    view2131296353 = view;
+    view2131296356 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,7 +61,7 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.fl_button_sort_by, "field 'fl_button_sort_by' and method 'show_sort_by'");
     target.fl_button_sort_by = Utils.castView(view, R.id.fl_button_sort_by, "field 'fl_button_sort_by'", FrameLayout.class);
-    view2131296355 = view;
+    view2131296358 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -70,7 +70,7 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.fl_button_switch_layout, "field 'fl_button_switch_layout' and method 'switch_layout'");
     target.fl_button_switch_layout = Utils.castView(view, R.id.fl_button_switch_layout, "field 'fl_button_switch_layout'", FrameLayout.class);
-    view2131296356 = view;
+    view2131296359 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -79,7 +79,7 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.iv_button_toggle_sort_by, "field 'iv_button_toggle_sort_by' and method 'toggle_sort_by'");
     target.iv_button_toggle_sort_by = Utils.castView(view, R.id.iv_button_toggle_sort_by, "field 'iv_button_toggle_sort_by'", ImageView.class);
-    view2131296387 = view;
+    view2131296392 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -107,15 +107,15 @@ public class StoreFinderActivity_ViewBinding implements Unbinder {
     target.iv_button_toggle_layout = null;
     target.tv_sort_by = null;
 
-    view2131296366.setOnClickListener(null);
-    view2131296366 = null;
-    view2131296353.setOnClickListener(null);
-    view2131296353 = null;
-    view2131296355.setOnClickListener(null);
-    view2131296355 = null;
+    view2131296370.setOnClickListener(null);
+    view2131296370 = null;
     view2131296356.setOnClickListener(null);
     view2131296356 = null;
-    view2131296387.setOnClickListener(null);
-    view2131296387 = null;
+    view2131296358.setOnClickListener(null);
+    view2131296358 = null;
+    view2131296359.setOnClickListener(null);
+    view2131296359 = null;
+    view2131296392.setOnClickListener(null);
+    view2131296392 = null;
   }
 }
