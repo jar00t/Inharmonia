@@ -31,12 +31,13 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import id.inharmonia.app.R;
 
-public class StoreFinderFilterActivity extends FragmentActivity implements OnMapReadyCallback {
+public class StoreFinderFilterActivity extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnMapLongClickListener {
 
     @BindView(R.id.ib_button_back)
     ImageButton ib_button_back;
 
     GoogleMap mMap;
+    PlaceAutocompleteFragment autocompleteFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +49,7 @@ public class StoreFinderFilterActivity extends FragmentActivity implements OnMap
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
+        autocompleteFragment = (PlaceAutocompleteFragment)
                 getFragmentManager().findFragmentById(R.id.place_autocomplete_fragment);
 
         autocompleteFragment.getView().findViewById(R.id.place_autocomplete_search_button).setVisibility(View.GONE);
@@ -77,6 +78,7 @@ public class StoreFinderFilterActivity extends FragmentActivity implements OnMap
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        mMap.setOnMapLongClickListener(this);
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
@@ -94,6 +96,15 @@ public class StoreFinderFilterActivity extends FragmentActivity implements OnMap
                 }
             });
         }
+    }
+
+    @Override
+    public void onMapLongClick(LatLng position) {
+        mMap.clear();
+        mMap.addMarker(new MarkerOptions().position(position));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(position, 16));
+
+        autocompleteFragment.setText("Bandung");
     }
 
     @OnClick(R.id.ib_button_back)
