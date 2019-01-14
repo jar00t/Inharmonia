@@ -19,9 +19,9 @@ import java.lang.Override;
 public class SizeListAdapter$Holder_ViewBinding implements Unbinder {
   private SizeListAdapter.Holder target;
 
-  private View view2131296375;
+  private View view2131296374;
 
-  private View view2131296376;
+  private View view2131296375;
 
   private View view2131296295;
 
@@ -35,7 +35,7 @@ public class SizeListAdapter$Holder_ViewBinding implements Unbinder {
     target.iv_icon = Utils.findRequiredViewAsType(source, R.id.iv_icon, "field 'iv_icon'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.ib_button_decrease, "field 'ib_button_decrease' and method 'decrease_value'");
     target.ib_button_decrease = Utils.castView(view, R.id.ib_button_decrease, "field 'ib_button_decrease'", ImageButton.class);
-    view2131296375 = view;
+    view2131296374 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -44,7 +44,7 @@ public class SizeListAdapter$Holder_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.ib_button_increase, "field 'ib_button_increase' and method 'increase_value'");
     target.ib_button_increase = Utils.castView(view, R.id.ib_button_increase, "field 'ib_button_increase'", ImageButton.class);
-    view2131296376 = view;
+    view2131296375 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -86,10 +86,10 @@ public class SizeListAdapter$Holder_ViewBinding implements Unbinder {
     target.ll_quantity_customer = null;
     target.et_number_value = null;
 
+    view2131296374.setOnClickListener(null);
+    view2131296374 = null;
     view2131296375.setOnClickListener(null);
     view2131296375 = null;
-    view2131296376.setOnClickListener(null);
-    view2131296376 = null;
     view2131296295.setOnClickListener(null);
     view2131296295 = null;
     view2131296346.setOnClickListener(null);

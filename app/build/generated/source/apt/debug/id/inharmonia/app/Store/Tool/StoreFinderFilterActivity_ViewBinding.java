@@ -15,7 +15,7 @@ import java.lang.Override;
 public class StoreFinderFilterActivity_ViewBinding implements Unbinder {
   private StoreFinderFilterActivity target;
 
-  private View view2131296373;
+  private View view2131296370;
 
   @UiThread
   public StoreFinderFilterActivity_ViewBinding(StoreFinderFilterActivity target) {
@@ -28,9 +28,9 @@ public class StoreFinderFilterActivity_ViewBinding implements Unbinder {
     this.target = target;
 
     View view;
-    view = Utils.findRequiredView(source, R.id.ib_button_close, "field 'ib_button_close' and method 'exit'");
-    target.ib_button_close = Utils.castView(view, R.id.ib_button_close, "field 'ib_button_close'", ImageButton.class);
-    view2131296373 = view;
+    view = Utils.findRequiredView(source, R.id.ib_button_back, "field 'ib_button_back' and method 'exit'");
+    target.ib_button_back = Utils.castView(view, R.id.ib_button_back, "field 'ib_button_back'", ImageButton.class);
+    view2131296370 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -46,9 +46,9 @@ public class StoreFinderFilterActivity_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.ib_button_close = null;
+    target.ib_button_back = null;
 
-    view2131296373.setOnClickListener(null);
-    view2131296373 = null;
+    view2131296370.setOnClickListener(null);
+    view2131296370 = null;
   }
 }

@@ -8,8 +8,9 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="28" />
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <!-- Include required permissions for Google Maps API to run. -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -79,6 +80,11 @@
             android:name="id.inharmonia.app.Store.StoreFinderActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
         <activity
             android:name="id.inharmonia.app.Store.Tool.StoreFinderFilterActivity"
             android:configChanges="orientation"

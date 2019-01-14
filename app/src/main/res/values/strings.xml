@@ -81,4 +81,6 @@
     <string name="inbox">Inbox</string>
     <string name="monitrans_logo">MoniTrans Logo</string>
     <string name="q_perlu_apa_hari_ini">Perlu apa hari ini?</string>
+    <string name="title_activity_store_finder_filter">Map</string>
+    <string name="cari_lokasi">Cari lokasi...</string>
 </resources>

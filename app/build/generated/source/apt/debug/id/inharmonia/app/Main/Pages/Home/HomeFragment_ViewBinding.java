@@ -25,7 +25,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
 
   private View view2131296371;
 
-  private View view2131296536;
+  private View view2131296544;
 
   @UiThread
   public HomeFragment_ViewBinding(final HomeFragment target, View source) {
@@ -58,7 +58,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
     target.cl_promo_slide = Utils.findRequiredViewAsType(source, R.id.cl_promo_slide, "field 'cl_promo_slide'", CarouselView.class);
     view = Utils.findRequiredView(source, R.id.tv_link_more_moni_print, "field 'tv_link_more_moni_print' and method 'more_moni_print'");
     target.tv_link_more_moni_print = Utils.castView(view, R.id.tv_link_more_moni_print, "field 'tv_link_more_moni_print'", TextView.class);
-    view2131296536 = view;
+    view2131296544 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -88,7 +88,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
     view2131296323 = null;
     view2131296371.setOnClickListener(null);
     view2131296371 = null;
-    view2131296536.setOnClickListener(null);
-    view2131296536 = null;
+    view2131296544.setOnClickListener(null);
+    view2131296544 = null;
   }
 }
